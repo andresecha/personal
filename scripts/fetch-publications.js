@@ -6,7 +6,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const idHal = 'andres-echavarria';
-const halUrl = `https://api.archives-ouvertes.fr/search/?q=authIdHal_s:${idHal}&wt=json&fl=title_s,producedDateY_i,docType_s,uri_s,citationFull_s,journalTitle_s,doi_Id_s&sort=producedDateY_i desc&rows=100`;
+const idRef = '291243665';
+const query = `authIdHal_s:${idHal} OR authIdRef_s:${idRef}`;
+const halUrl = `https://api.archives-ouvertes.fr/search/?q=${encodeURIComponent(query)}&wt=json&fl=title_s,producedDateY_i,docType_s,uri_s,citationFull_s,journalTitle_s,doi_Id_s&sort=producedDateY_i desc&rows=100`;
 
 async function fetchPublications() {
   console.log('🔄 Fetching publications from HAL...');

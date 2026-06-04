@@ -107,32 +107,33 @@ const getFriendlyDocType = (type) => {
 
 function App() {
   const [activeTab, setActiveTab] = useState('sobre-mi');
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('light');
   const [lightboxArt, setLightboxArt] = useState(null);
   
   // Publication states
   const [searchQuery, setSearchQuery] = useState('');
   const [typeFilter, setTypeFilter] = useState('ALL');
+  const [avatarError, setAvatarError] = useState(false);
 
   // Load and apply light/dark theme
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') || 'dark';
+    const savedTheme = localStorage.getItem('theme') || 'light';
     setTheme(savedTheme);
-    if (savedTheme === 'light') {
-      document.body.classList.add('light-theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark-theme');
     } else {
-      document.body.classList.remove('light-theme');
+      document.body.classList.remove('dark-theme');
     }
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = theme === 'dark' ? 'light' : 'dark';
+    const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
     localStorage.setItem('theme', newTheme);
-    if (newTheme === 'light') {
-      document.body.classList.add('light-theme');
+    if (newTheme === 'dark') {
+      document.body.classList.add('dark-theme');
     } else {
-      document.body.classList.remove('light-theme');
+      document.body.classList.remove('dark-theme');
     }
   };
 
@@ -275,17 +276,26 @@ function App() {
             <div className="profile-grid">
               <div className="profile-avatar-container">
                 <div className="profile-avatar-glow">
-                  <div className="avatar-placeholder">AE</div>
+                  {!avatarError ? (
+                    <img 
+                      src="/avatar.jpg" 
+                      alt="Andrés Felipe Echavarría Peláez" 
+                      className="profile-avatar"
+                      onError={() => setAvatarError(true)}
+                    />
+                  ) : (
+                    <div className="avatar-placeholder">AE</div>
+                  )}
                 </div>
               </div>
               <div>
                 <p className="profile-title">Digital Humanities & Computer Science</p>
                 <h1>Andrés Felipe Echavarría Peláez</h1>
-                <p className="profile-bio">
-                  Doctor en Humanidades Digitales y miembro del equipo técnico del **CNRS / Huma-Num**. 
-                  Trabajo en la confluencia de la filología y la informática, especializándome en el modelado 
-                  de textos (XML-TEI), tecnologías de reconocimiento de texto manuscrito antiguo (HTR), y la 
-                  creación de ontologías semánticas estructuradas bajo principios FAIR.
+                <p className="profile-bio" style={{ fontSize: '1.05rem', lineHeight: '1.7', color: 'var(--text-secondary)' }}>
+                  Soy un investigador colombo-francés cuya carrera se desarrolla en la convergencia entre las humanidades tradicionales y las tecnologías digitales, combinando historia, filología, lingüística, lexicografía y ciencia de los textos. Actualmente me desempeño como ingeniero de investigación en informática y humanidades digitales en el **Centre National de la Recherche Scientifique (CNRS)** y soy miembro del comité de pilotaje científico del Consorcio **ARIANE** dentro de la infraestructura de investigación **Huma-Num**.
+                </p>
+                <p className="profile-bio" style={{ fontSize: '1.05rem', lineHeight: '1.7', color: 'var(--text-secondary)', marginTop: '1rem', marginBottom: '2.5rem' }}>
+                  Mi formación comenzó con una Licenciatura en Artes Plásticas en la Universidad de Antioquia, complementada con un Diplôme National Supérieur d'Expression Plastique en la École Européenne Supérieure d'Art de Bretagne. Posteriormente obtuve una Maestría en Humanidades Digitales en la Université de Bretagne-Sud y concluí mi doctorado en 2025 en la Université de Montpellier Paul-Valéry con una tesis doctoral centrada en la editorialización de procesos de fe inquisitoriales y su estructuración digital.
                 </p>
                 
                 <div className="profile-socials">
@@ -304,6 +314,10 @@ function App() {
                   <a href="https://orcid.org/0000-0002-0332-8808" target="_blank" rel="noopener noreferrer" className="btn-secondary" id="link-orcid">
                     <ExternalLink size={16} />
                     <span>ORCID</span>
+                  </a>
+                  <a href="https://www.idref.fr/291243665" target="_blank" rel="noopener noreferrer" className="btn-secondary" id="link-idref">
+                    <ExternalLink size={16} />
+                    <span>IdRef (291243665)</span>
                   </a>
                 </div>
               </div>
@@ -372,7 +386,7 @@ function App() {
               <h1>Producción Científica</h1>
               <p>
                 Lista completa de artículos, actas de congresos, tesis doctorales e informes técnicos. 
-                Se actualizan automáticamente mediante GitLab CI en cada compilación del sitio.
+                Se actualizan automáticamente mediante GitHub Actions en cada compilación del sitio.
               </p>
             </div>
 
@@ -531,7 +545,7 @@ function App() {
         <div className="container">
           <p>© {new Date().getFullYear()} Andrés Felipe Echavarría Peláez. Desarrollado con React & Vite.</p>
           <p style={{ fontSize: '0.75rem', marginTop: '0.5rem' }}>
-            Alojado de manera sostenible y escalable en GitLab Pages. Publicaciones sincronizadas vía API de HAL.
+            Alojado de manera sostenible y escalable en GitHub Pages. Publicaciones sincronizadas vía API de HAL e IdRef.
           </p>
         </div>
       </footer>
