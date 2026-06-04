@@ -1,0 +1,63 @@
+# Workflow para desplegar contenido estático en GitHub Pages con compilación de Vite y API de HAL
+name: Deploy static content to Pages
+
+on:
+  # Se ejecuta al empujar cambios a la rama principal (main o master)
+  push:
+    branches: ["main", "master"]
+
+  # Permite ejecutar este flujo de trabajo manualmente desde la pestaña Actions en GitHub
+  workflow_dispatch:
+
+  # Opcional: Se ejecuta periódicamente (ej: todos los lunes a las 00:00 UTC) 
+  # para descargar y sincronizar nuevas publicaciones de HAL sin cambios manuales en el código
+  schedule:
+    - cron: '0 0 * * 1'
+
+# Establece los permisos del GITHUB_TOKEN para permitir el despliegue en GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Permite solo un despliegue concurrente, cancelando ejecuciones en cola
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch academic publications from HAL
+        run: node scripts/fetch-publications.js
+
+      - name: Build static site with Vite
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload build artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
