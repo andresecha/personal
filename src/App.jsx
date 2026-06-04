@@ -307,7 +307,7 @@ function App() {
                     <Code size={16} />
                     <span>GitLab Huma-Num</span>
                   </a>
-                  <a href="https://hal.science/cv/andres-echavarria" target="_blank" rel="noopener noreferrer" className="btn-secondary" id="link-hal">
+                  <a href="https://cv.hal.science/andres-echavarria" target="_blank" rel="noopener noreferrer" className="btn-secondary" id="link-hal">
                     <BookOpen size={16} />
                     <span>HAL Open Science</span>
                   </a>
@@ -493,7 +493,7 @@ function App() {
                 <h1>Currículum Vitae</h1>
                 <p>Resumen estructurado de mi formación y experiencia laboral en el ecosistema digital francés.</p>
               </div>
-              <a href="https://hal.science/cv/andres-echavarria" target="_blank" rel="noopener noreferrer" className="btn-primary" id="download-cv-btn">
+              <a href="https://cv.hal.science/andres-echavarria" target="_blank" rel="noopener noreferrer" className="btn-primary" id="download-cv-btn">
                 <Download size={16} />
                 <span>Ver CV completo en HAL</span>
               </a>
