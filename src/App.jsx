@@ -129,21 +129,21 @@ const NakalaLogo = ({ size = 18, className = "" }) => (
   />
 );
 
-const renderToolIcon = (tool) => {
+const renderToolIcon = (tool, size = 96) => {
   const link = tool.link.toLowerCase();
   const tags = tool.tags.map(t => t.toLowerCase());
   if (link.includes('pypi.org')) {
-    return <PypiLogo size={24} />;
+    return <PypiLogo size={size} />;
   } else if (link.includes('zenodo.org')) {
-    return <ZenodoLogo size={24} />;
+    return <ZenodoLogo size={size} />;
   } else if (link.includes('gitlab')) {
-    return <GitlabLogo size={24} />;
+    return <GitlabLogo size={size} />;
   } else if (link.includes('nakala.fr')) {
-    return <NakalaLogo size={24} />;
+    return <NakalaLogo size={size} />;
   } else if (link.includes('opentheso') || tags.includes('opentheso')) {
-    return <OpenthesoLogo size={24} />;
+    return <OpenthesoLogo size={size} />;
   }
-  return <Code size={20} />;
+  return <Code size={size * 0.8} />;
 };
 
 const renderCardLogo = (logoType) => {

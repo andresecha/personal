@@ -804,19 +804,18 @@ p {
 .tool-card {
   display: flex;
   flex-direction: column;
+  padding-top: 1.25rem;
 }
 
 .tool-icon-wrapper {
-  background-color: var(--accent-glow);
   color: var(--accent);
-  width: 3rem;
-  height: 3rem;
-  border-radius: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.25rem;
-  border: 1px solid var(--border-hover);
+  margin-bottom: 0.625rem;
+  align-self: center;
+  background-color: transparent;
+  border: none;
 }
 
 .tool-card h3 {
