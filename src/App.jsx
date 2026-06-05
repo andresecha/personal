@@ -17,71 +17,60 @@ import {
   GraduationCap
 } from 'lucide-react';
 
-// Custom SVG logos for academic profiles & tech collaborations
-const HalLogo = ({ size = 18, className = "" }) => (
-  <svg 
+// Custom image logos for academic profiles & tech collaborations (stored locally)
+const ThesesLogo = ({ size = 18, className = "" }) => (
+  <img 
+    src="/logos/theses-logo.svg" 
     width={size} 
     height={size} 
-    viewBox="0 0 100 100" 
+    alt="theses.fr" 
     className={className} 
-    style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.25rem' }}
-  >
-    <circle cx="50" cy="50" r="45" fill="#E05224" />
-    <circle cx="50" cy="50" r="28" fill="none" stroke="white" strokeWidth="5" />
-    <circle cx="50" cy="50" r="11" fill="white" />
-    <path d="M 50 10 A 40 40 0 0 1 90 50" fill="none" stroke="white" strokeWidth="5" strokeLinecap="round" />
-    <path d="M 50 90 A 40 40 0 0 1 10 50" fill="none" stroke="white" strokeWidth="5" strokeLinecap="round" />
-  </svg>
+    style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.25rem' }} 
+  />
+);
+
+const HalLogo = ({ size = 18, className = "" }) => (
+  <img 
+    src="/logos/hal-logo.svg" 
+    width={size} 
+    height={size} 
+    alt="HAL" 
+    className={className} 
+    style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.25rem' }} 
+  />
 );
 
 const AmisLogo = ({ size = 18, className = "" }) => (
-  <svg 
+  <img 
+    src="/logos/amis-logo.svg" 
     width={size} 
     height={size} 
-    viewBox="0 0 100 100" 
+    alt="AMIS" 
     className={className} 
-    style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.25rem' }}
-  >
-    <rect width="100" height="100" rx="20" fill="#1E3A8A" />
-    <circle cx="35" cy="50" r="10" fill="#10B981" />
-    <circle cx="65" cy="35" r="8" fill="#60A5FA" />
-    <circle cx="65" cy="65" r="8" fill="#60A5FA" />
-    <line x1="35" y1="50" x2="65" y2="35" stroke="white" strokeWidth="4" />
-    <line x1="35" y1="50" x2="65" y2="65" stroke="white" strokeWidth="4" />
-    <line x1="65" y1="35" x2="65" y2="65" stroke="white" strokeWidth="4" />
-  </svg>
+    style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.25rem' }} 
+  />
 );
 
 const PythonLogo = ({ size = 18, className = "" }) => (
-  <svg 
+  <img 
+    src="/logos/python-logo.svg" 
     width={size} 
     height={size} 
-    viewBox="0 0 24 24" 
-    fill="currentColor" 
-    className={className}
-    style={{ display: 'inline-block', verticalAlign: 'middle', color: '#3776AB', marginRight: '0.25rem' }}
-  >
-    <path d="M11.933 0c-3.766 0-3.957.016-5.433.084-2.822.13-4.148 1.41-4.394 4.393-.07 2.87-.063 3.63-.005 5.5.068 2.223.167 3.39.52 4.1.487.973 1.258 1.637 2.457 1.87 1.477.29 2.148.334 5.92.336H12v-1.89h-.067c-3.136-.002-3.666-.027-4.475-.187-.803-.16-1.127-.473-1.295-.973-.2-.596-.282-1.42-.323-3.754H12V9.5H5.842c.005-2.036.053-2.92.194-3.41.332-1.16 1.157-1.87 2.664-1.928.91-.035 3.3-.038 3.3-.038V0zM12 24c3.766 0 3.957-.016 5.433-.084 2.822-.13 4.148-1.41 4.394-4.393.07-2.87.063-3.63.005-5.5-.068-2.223-.167-3.39-.52-4.1-.487-.973-1.258-1.637-2.457-1.87-1.477-.29-2.148-.334-5.92-.336H12v1.89h.067c3.136.002 3.666.027 4.475.187.803.16 1.127.473 1.295.973.2.596.282 1.42.323 3.754H12V14.5h6.158c-.005 2.036-.053 2.92-.194 3.41-.332 1.16-1.157 1.87-2.664 1.928-.91.035-3.3.038-3.3.038V24zM9 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm6 16a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-  </svg>
+    alt="Python" 
+    className={className} 
+    style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.25rem' }} 
+  />
 );
 
 const OpenthesoLogo = ({ size = 18, className = "" }) => (
-  <svg 
+  <img 
+    src="/logos/opentheso-logo.svg" 
     width={size} 
     height={size} 
-    viewBox="0 0 100 100" 
+    alt="Opentheso" 
     className={className} 
-    style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.25rem' }}
-  >
-    <rect width="100" height="100" rx="20" fill="#0D9488" />
-    <circle cx="50" cy="25" r="10" fill="white" />
-    <circle cx="25" cy="60" r="8" fill="white" />
-    <circle cx="50" cy="60" r="8" fill="white" />
-    <circle cx="75" cy="60" r="8" fill="white" />
-    <line x1="50" y1="25" x2="25" y2="60" stroke="white" strokeWidth="4" />
-    <line x1="50" y1="25" x2="50" y2="60" stroke="white" strokeWidth="4" />
-    <line x1="50" y1="25" x2="75" y2="60" stroke="white" strokeWidth="4" />
-  </svg>
+    style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.25rem' }} 
+  />
 );
 
 // Helper functions for direct publication downloads
@@ -493,7 +482,7 @@ function App() {
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
                 <div className="card" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
-                    <HalLogo size={18} /> Tesis Doctoral & Nakala Datasets
+                    <ThesesLogo size={18} /> Tesis Doctoral & Nakala Datasets
                   </h3>
                   <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)', flexGrow: 1 }}>
                     Mi investigación de doctorado (2025, dirigida por G. Williams y K. Benmiloud, accesible en <a href="https://theses.hal.science/tel-05318449v1" target="_blank" rel="noopener noreferrer">theses.hal</a>) derivó en tres conjuntos de datos publicados en <strong>Nakala</strong>: el prototipo de anotación del <a href="https://nakala.fr/10.34847/nkl.aaeej9jp" target="_blank" rel="noopener noreferrer">proceso de Pedro de Cazalla</a>, el <a href="https://nakala.fr/10.34847/nkl.2a4e2h52" target="_blank" rel="noopener noreferrer">tesauro de tipologías inquisitoriales (SKOS)</a> y el <a href="https://nakala.fr/10.34847/nkl.ab374s00" target="_blank" rel="noopener noreferrer">esquema de anotación TEI (ODD, RNG)</a>. La documentación y scripts adicionales se hallan en <a href="https://zenodo.org/records/15035164" target="_blank" rel="noopener noreferrer">Zenodo</a> y <a href="https://gitlab.huma-num.fr/aechavarria/annexesthese" target="_blank" rel="noopener noreferrer">GitLab</a>.
