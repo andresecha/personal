@@ -1,5 +1,14 @@
 [
   {
+    "title": "Typologie des genres textuels (traducción al español)",
+    "year": 2026,
+    "type": "THES",
+    "url": "https://opentheso.huma-num.fr/?idt=43",
+    "citation": "Andrés Felipe Echavarría Peláez, Amelia Sanz Cabrerizo. <i>Typologie des genres textuels (traducción al español)</i>. Vocabulario controlado bilingüe de 371 conceptos (ARIANE-CORLI). Este tesauro se inició en el consorcio HN CAHIER (2016-2022) y es mantenido por Huma-Num ARIANE y Cluster 5b de Biblissima+ con la colaboración de CORLI 2. Documentación en HAL: <a target=\"_blank\" href=\"https://shs.hal.science/halshs-03402679\">&#x27E8;halshs-03402679&#x27E9;</a>. <a target=\"_blank\" href=\"https://opentheso.huma-num.fr/?idt=43\">&#x27E8;Acceder al tesauro&#x27E9;</a>",
+    "journal": "Opentheso Huma-Num",
+    "doi": null
+  },
+  {
     "title": "Importar y exportar un tesauro",
     "year": 2026,
     "type": "ART",

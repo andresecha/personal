@@ -191,13 +191,6 @@ export default {
       tags: ['Nakala', 'ODD', 'RelaxNG', 'RNC', 'XSD', 'Validation'],
       link: 'https://nakala.fr/10.34847/nkl.ab374s00',
       buttonText: 'Voir sur Nakala'
-    },
-    {
-      title: 'Traduction et Documentation d\'Opentheso (Hypotheses)',
-      desc: 'Traduction complète en espagnol de l\'interface d\'administration du gestionnaire de thésaurus Opentheso, accompagnée de la publication de guides méthodologiques : "Buenas prácticas para estructurar un tesauro", "Construir un tesauro" et "Importar y Exportar un Tesauro".',
-      tags: ['Opentheso', 'Traduction', 'Documentation', 'ARIANE', 'Hypotheses'],
-      link: 'https://opentheso.hypotheses.org/5174',
-      buttonText: 'Voir sur Hypotheses'
     }
   ],
   cvItems: [

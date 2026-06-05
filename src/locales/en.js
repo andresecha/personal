@@ -191,13 +191,6 @@ export default {
       tags: ['Nakala', 'ODD', 'RelaxNG', 'RNC', 'XSD', 'Validation'],
       link: 'https://nakala.fr/10.34847/nkl.ab374s00',
       buttonText: 'View Schema on Nakala'
-    },
-    {
-      title: 'Opentheso Translation and Documentation (Hypotheses)',
-      desc: 'Complete translation of the Opentheso administration interface into Spanish, with methodological guides: "Best practices for structuring a thesaurus", "Building a thesaurus", and "Importing and Exporting a Thesaurus".',
-      tags: ['Opentheso', 'Translation', 'Documentation', 'ARIANE', 'Hypotheses'],
-      link: 'https://opentheso.hypotheses.org/5174',
-      buttonText: 'View on Hypotheses'
     }
   ],
   cvItems: [
