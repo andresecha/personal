@@ -357,11 +357,11 @@ function App() {
             <button 
               id="lang-toggle-btn"
               className="icon-btn lang-btn" 
-              onClick={() => setLang(prev => prev === 'es' ? 'fr' : 'es')} 
+              onClick={() => setLang(prev => prev === 'es' ? 'fr' : prev === 'fr' ? 'en' : 'es')} 
               aria-label={t.ui.langToggleAriaLabel}
               style={{ fontWeight: 600, fontSize: '0.8rem', paddingLeft: '0.65rem', paddingRight: '0.65rem' }}
             >
-              {lang === 'es' ? 'FR' : 'ES'}
+              {lang === 'es' ? 'FR' : lang === 'fr' ? 'EN' : 'ES'}
             </button>
             <button 
               id="theme-toggle-btn"
