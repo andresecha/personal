@@ -41,9 +41,9 @@ const HalLogo = ({ size = 18, className = "" }) => (
   />
 );
 
-const AmisLogo = ({ size = 18, className = "" }) => (
+const AmisLogo = ({ size = 18, className = "", theme = "light" }) => (
   <img 
-    src="/logos/amis-logo.svg" 
+    src={theme === 'dark' ? "/logos/amis-blanc.svg" : "/logos/amis-logo.svg"} 
     width={size} 
     height={size} 
     alt="AMIS" 
@@ -146,7 +146,7 @@ const renderToolIcon = (tool, size = 96) => {
   return <Code size={size * 0.8} />;
 };
 
-const renderCardLogo = (logoType, size = 72) => {
+const renderCardLogo = (logoType, size = 72, theme = 'light') => {
   switch (logoType) {
     case 'theses':
       return <ThesesLogo size={size} />;
@@ -155,7 +155,7 @@ const renderCardLogo = (logoType, size = 72) => {
     case 'ariane':
       return <ArianeLogo size={size} />;
     case 'amis':
-      return <AmisLogo size={size} />;
+      return <AmisLogo size={size * 1.3} theme={theme} />;
     case 'python':
       return <PythonLogo size={size} />;
     case 'opentheso':
@@ -481,7 +481,7 @@ function App() {
                     onClick={(e) => handleCardClick(card.link, e)}
                   >
                     <div className="research-icon-wrapper">
-                      {renderCardLogo(card.logoType, 72)}
+                      {renderCardLogo(card.logoType, 72, theme)}
                     </div>
                     <h3 style={{ color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
                       {card.title}
