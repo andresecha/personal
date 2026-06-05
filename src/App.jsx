@@ -64,7 +64,7 @@ const PythonLogo = ({ size = 18, className = "" }) => (
 
 const OpenthesoLogo = ({ size = 18, className = "" }) => (
   <img 
-    src="/logos/opentheso-logo.svg" 
+    src="/logos/opentheso-logo.png" 
     width={size} 
     height={size} 
     alt="Opentheso" 
@@ -72,6 +72,67 @@ const OpenthesoLogo = ({ size = 18, className = "" }) => (
     style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.25rem' }} 
   />
 );
+
+const PypiLogo = ({ size = 18, className = "" }) => (
+  <img 
+    src="/logos/pypi-logo.svg" 
+    width={size} 
+    height={size} 
+    alt="PyPI" 
+    className={className} 
+    style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.25rem' }} 
+  />
+);
+
+const ZenodoLogo = ({ size = 18, className = "" }) => (
+  <img 
+    src="/logos/zenodo-logo.svg" 
+    width={size} 
+    height={size} 
+    alt="Zenodo" 
+    className={className} 
+    style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.25rem' }} 
+  />
+);
+
+const GitlabLogo = ({ size = 18, className = "" }) => (
+  <img 
+    src="/logos/gitlab-logo.svg" 
+    width={size} 
+    height={size} 
+    alt="GitLab" 
+    className={className} 
+    style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.25rem' }} 
+  />
+);
+
+const NakalaLogo = ({ size = 18, className = "" }) => (
+  <img 
+    src="/logos/nakala-logo.png" 
+    width={size} 
+    height={size} 
+    alt="Nakala" 
+    className={className} 
+    style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.25rem' }} 
+  />
+);
+
+const renderToolIcon = (tool) => {
+  const link = tool.link.toLowerCase();
+  const tags = tool.tags.map(t => t.toLowerCase());
+  if (link.includes('pypi.org')) {
+    return <PypiLogo size={24} />;
+  } else if (link.includes('zenodo.org')) {
+    return <ZenodoLogo size={24} />;
+  } else if (link.includes('gitlab')) {
+    return <GitlabLogo size={24} />;
+  } else if (link.includes('nakala.fr')) {
+    return <NakalaLogo size={24} />;
+  } else if (link.includes('opentheso') || tags.includes('opentheso')) {
+    return <OpenthesoLogo size={24} />;
+  }
+  return <Code size={20} />;
+};
 
 // Helper functions for direct publication downloads
 const getDownloadUrl = (url) => {
@@ -641,7 +702,7 @@ function App() {
               <input 
                 id="pub-search-bar"
                 type="text" 
-                placeholder="🔍 Buscar por título, año, autores..."
+                placeholder="Buscar por título, año, autores..."
                 className="pub-search"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -756,7 +817,7 @@ function App() {
               {tools.map((tool, idx) => (
                 <div key={idx} className="card tool-card" id={`tool-card-${idx}`}>
                   <div className="tool-icon-wrapper">
-                    <Code size={20} />
+                    {renderToolIcon(tool)}
                   </div>
                   <h3>{tool.title}</h3>
                   <p>{tool.desc}</p>
