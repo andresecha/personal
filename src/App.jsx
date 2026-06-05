@@ -50,6 +50,12 @@ const tools = [
     link: 'https://gitlab.huma-num.fr/aechavarria/cer-wer'
   },
   {
+    title: 'Guías de Transcripción con Mistral y Whisper',
+    desc: 'Metodologías y flujos de trabajo en Python para transcribir audios de investigación de manera automatizada con OpenAI Whisper e integrar modelos de lenguaje abiertos como Mistral para el post-procesamiento lingüístico de textos antiguos.',
+    tags: ['Python', 'Mistral LLM', 'Whisper ASR', 'AI'],
+    link: 'https://gitlab.huma-num.fr/aechavarria/whisper-mistral-guides'
+  },
+  {
     title: 'Script Ariane de FAIRización de Datos',
     desc: 'Repositorio de scripts y guías desarrollados en el marco del consorcio CAHIER de Huma-Num para limpiar, estructurar y publicar metadatos científicos bajo principios FAIR.',
     tags: ['Shell', 'Python', 'FAIR'],
@@ -324,18 +330,53 @@ function App() {
             </div>
 
             {/* Featured Research Card */}
-            <div className="card animate-slide-up" style={{ marginTop: '2rem' }} id="featured-project-card">
-              <h2 className="text-gradient">Investigación Destacada: Proyecto ANR-D4R</h2>
-              <p style={{ fontSize: '1.05rem', lineHeight: '1.7', marginBottom: '1.5rem' }}>
-                He participado activamente en el proyecto **ANR D4R** (Dissidences Religieuses et Réception de la Réforme en Espagne au XVIe siècle), 
-                diseñando e implementando la infraestructura metodológica para la transcripción HTR de miles de páginas de 
-                procesos de fe inquisitoriales y su posterior marcado semántico mediante grafos de red.
-              </p>
-              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                <span className="tool-tag" style={{ padding: '0.4rem 0.8rem', fontSize: '0.8rem' }}>HTR (Transkribus)</span>
-                <span className="tool-tag" style={{ padding: '0.4rem 0.8rem', fontSize: '0.8rem' }}>XML-TEI</span>
-                <span className="tool-tag" style={{ padding: '0.4rem 0.8rem', fontSize: '0.8rem' }}>Grafos de Redes</span>
-                <span className="tool-tag" style={{ padding: '0.4rem 0.8rem', fontSize: '0.8rem' }}>Bases de datos Heurist</span>
+            <div className="card animate-slide-up" style={{ marginTop: '2rem', textAlign: 'left' }} id="featured-project-card">
+              <h2 className="text-gradient" style={{ marginBottom: '1.5rem' }}>Investigación & Desarrollo Tecnológico</h2>
+              
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
+                <div>
+                  <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
+                    🎓 Tesis Doctoral & Editorialización
+                  </h3>
+                  <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
+                    Mi investigación doctoral (2025) desarrolló metodologías para la <strong>editorialización y estructuración digital de textos históricos</strong>. Diseñé modelos avanzados en XML-TEI y ontologías semánticas (SKOS) para sistematizar manuscritos e impresos españoles antiguos bajo estándares de Ciencia Abierta.
+                  </p>
+                </div>
+                
+                <div>
+                  <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
+                    📦 Métricas HTR (Librería CER/WER)
+                  </h3>
+                  <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
+                    Desarrollé una <strong>librería de Python</strong> especializada en el cálculo de las tasas de error de caracteres (CER) y palabras (WER). Esta herramienta permite evaluar de manera cuantitativa y rigurosa la calidad del Reconocimiento de Textos Manuscritos (HTR) e impresos antiguos, publicada en colaboración con el consorcio ARIANE.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
+                    🤖 Transcripción con IA (Mistral & Whisper)
+                  </h3>
+                  <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
+                    Investigo e implemento <strong>guías metodológicas y flujos de trabajo</strong> para automatizar la transcripción de audios de investigación utilizando modelos de reconocimiento de voz ASR como <strong>OpenAI Whisper</strong>, junto con el post-procesamiento lingüístico de textos antiguos con modelos de lenguaje (LLM) abiertos como <strong>Mistral</strong>.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
+                    🌐 Infraestructura de Datos (ANR D4R)
+                  </h3>
+                  <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
+                    Diseñé también la infraestructura de datos para el modelado de grafos de redes y bases de datos relacionales Heurist para el proyecto **ANR D4R**, facilitando el análisis visual e interactivo de las relaciones y disidencias religiosas en la España del siglo XVI.
+                  </p>
+                </div>
+              </div>
+
+              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginTop: '1.5rem', borderTop: '1px solid var(--border-color)', paddingTop: '1.25rem' }}>
+                <span className="tool-tag">Métricas CER/WER</span>
+                <span className="tool-tag">NLP & LLMs (Mistral)</span>
+                <span className="tool-tag">ASR (Whisper)</span>
+                <span className="tool-tag">XML-TEI / SKOS</span>
+                <span className="tool-tag">Bases de datos Heurist</span>
               </div>
             </div>
           </section>
