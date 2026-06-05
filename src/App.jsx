@@ -257,6 +257,13 @@ function App() {
   const [theme, setTheme] = useState('light');
   const [lightboxArt, setLightboxArt] = useState(null);
   
+  const handleCardClick = (url, e) => {
+    if (e.target.tagName.toLowerCase() === 'a' || e.target.closest('a') || e.target.classList.contains('tool-tag')) {
+      return;
+    }
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+  
   // Publication states
   const [searchQuery, setSearchQuery] = useState('');
   const [typeFilter, setTypeFilter] = useState('ALL');
@@ -488,7 +495,11 @@ function App() {
               <h2 className="text-gradient" style={{ marginBottom: '1.5rem' }}>Investigación & Desarrollo Tecnológico</h2>
               
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
-                <div className="card" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+                <div 
+                  className="card" 
+                  style={{ display: 'flex', flexDirection: 'column', height: '100%', cursor: 'pointer' }}
+                  onClick={(e) => handleCardClick('https://theses.hal.science/tel-05318449v1', e)}
+                >
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
                     <ThesesLogo size={18} /> Tesis Doctoral & Nakala Datasets
                   </h3>
@@ -501,7 +512,11 @@ function App() {
                   </div>
                 </div>
                 
-                <div className="card" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+                <div 
+                  className="card" 
+                  style={{ display: 'flex', flexDirection: 'column', height: '100%', cursor: 'pointer' }}
+                  onClick={(e) => handleCardClick('https://hal.science/hal-05267874v1', e)}
+                >
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
                     <HalLogo size={18} /> Métricas HTR (CER/WER)
                   </h3>
@@ -513,7 +528,11 @@ function App() {
                   </div>
                 </div>
 
-                <div className="card" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+                <div 
+                  className="card" 
+                  style={{ display: 'flex', flexDirection: 'column', height: '100%', cursor: 'pointer' }}
+                  onClick={(e) => handleCardClick('https://oscars-project.eu/projects/amis-advanced-metadata-intelligent-system', e)}
+                >
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
                     <AmisLogo size={18} /> Post-Doctorado — Proyecto AMIS
                   </h3>
@@ -525,7 +544,11 @@ function App() {
                   </div>
                 </div>
 
-                <div className="card" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+                <div 
+                  className="card" 
+                  style={{ display: 'flex', flexDirection: 'column', height: '100%', cursor: 'pointer' }}
+                  onClick={(e) => handleCardClick('https://pypi.org/project/calendario-liturgico/0.1.0/', e)}
+                >
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
                     <PythonLogo size={18} /> Computus y calendario-liturgico
                   </h3>
@@ -537,7 +560,11 @@ function App() {
                   </div>
                 </div>
 
-                <div className="card" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+                <div 
+                  className="card" 
+                  style={{ display: 'flex', flexDirection: 'column', height: '100%', cursor: 'pointer' }}
+                  onClick={(e) => handleCardClick('https://opentheso.hypotheses.org/4944', e)}
+                >
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
                     <OpenthesoLogo size={18} /> Colaboración con Opentheso
                   </h3>
@@ -566,7 +593,13 @@ function App() {
 
             <div className="portfolio-grid">
               {artworks.map((art) => (
-                <div key={art.id} className="card portfolio-card" id={`art-card-${art.id}`}>
+                <div 
+                  key={art.id} 
+                  className="card portfolio-card" 
+                  id={`art-card-${art.id}`}
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => setLightboxArt(art)}
+                >
                   <div className="portfolio-img-container">
                     <img src={art.img} alt={art.title} className="portfolio-img" loading="lazy" />
                     <span className="portfolio-badge">{art.tag}</span>
@@ -578,7 +611,10 @@ function App() {
                       id={`open-lightbox-${art.id}`}
                       className="portfolio-action" 
                       style={{ background: 'none', border: 'none', cursor: 'pointer' }}
-                      onClick={() => setLightboxArt(art)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setLightboxArt(art);
+                      }}
                     >
                       Ver Identidad Visual →
                     </button>
@@ -879,7 +915,7 @@ function App() {
       {/* Lightbox / Art Mini Expo Overlay */}
       {lightboxArt && (
         <div className="lightbox-overlay" onClick={() => setLightboxArt(null)} id="lightbox-modal">
-          <div className="lightbox-content animate-slide-up" onClick={(e) => e.stopPropagation()}>
+          <div className="lightbox-content animate-scale-up" onClick={(e) => e.stopPropagation()}>
             <button 
               id="close-lightbox-btn"
               className="lightbox-close" 
