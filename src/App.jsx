@@ -196,7 +196,7 @@ const artworks = [
 const tools = [
   {
     title: 'calendario-liturgico (PyPI)',
-    desc: 'Librería de Python publicada en PyPI para el cálculo automático de fechas litúrgicas cristianas basada en el algoritmo de computus de Gauss. Su evolución desde un script personal a una biblioteca reproducible de Ciencia Abierta se describe en la ponencia presentada en el coloquio Humanistica 2026: "Du script artisanal à l\'infrastructure ouverte : genèse, enjeux et fondements de calendario_liturgico".',
+    desc: 'Librería de Python en PyPI para el cálculo automático de fechas del calendario litúrgico cristiano, enfocada en la resolución del calendario juliano (previo a 1582) y su integración en el marcado XML-TEI. Su concepción y validación histórica se detallan en la ponencia "Du script artisanal à l\'infrastructure ouverte : genèse, enjeux et fondements de Calendario litúrgico" (Coloquio Humanistica 2026).',
     tags: ['Python', 'Computus', 'Gauss', 'PyPI', 'Humanistica', 'Ciencia Abierta'],
     link: 'https://pypi.org/project/calendario-liturgico/0.1.0/',
     buttonText: 'Ver en PyPI'
@@ -245,7 +245,7 @@ const tools = [
   },
   {
     title: 'Traducción y Documentación de Opentheso (Hypotheses)',
-    desc: 'Traducción completa al castellano de la interfaz de administración del gestor de tesauros Opentheso, junto a la publicación de guías metodológicas detalladas sobre la estructuración de tesauros (post 4944), construcción de conceptos (post 4978) e importación/exportación de archivos (post 5174).',
+    desc: 'Traducción al castellano de la interfaz de administración de Opentheso y publicación de las guías metodológicas: "Buenas prácticas para estructurar un tesauro", "Construir un tesauro" (que muestra las principales funcionalidades de la interfaz) e "Importar y Exportar un Tesauro".',
     tags: ['Opentheso', 'Traducción', 'Documentación', 'ARIANE', 'Hypotheses'],
     link: 'https://opentheso.hypotheses.org/5174',
     buttonText: 'Ver en Hypotheses'
@@ -263,8 +263,8 @@ const cvItems = [
   {
     role: 'Investigador Post-Doctoral / Ingeniero de Investigación (Proyecto AMIS)',
     institution: 'CNRS / Consorcio ARIANE / TGIR Huma-Num / Université de Poitiers - París/Poitiers, Francia',
-    date: '2024 - Presente',
-    desc: 'Investigación post-doctoral enfocada en el desarrollo y modelización del asistente de metadatos inteligente AMIS (Advanced Metadata Intelligent System), financiado por el programa europeo Horizon Europe (OSCARS). Encargado de la modelización de metadatos (Dublin Core, alineación con la ontología CAO_CRM) y de la integración de tesauros multilingües normalizados (ISO 25964 en SKOS) con la plataforma Opentheso y la infraestructura Huma-Num.'
+    date: 'Septiembre de 2025 - Presente',
+    desc: 'Investigación post-doctoral enfocada en el desarrollo y modelización del asistente de metadatos inteligente AMIS (Advanced Metadata Intelligent System), financiado por el programa europeo Horizon Europe (OSCARS). Encargado de la modelización de metadatos y de la integración de tesauros multilingües con la plataforma Opentheso y la infraestructura Huma-Num, en colaboración con los consorcios ARIANE, CAHIER, CORLI 2 y Biblissima+.'
   },
   {
     role: 'Docente (Chargé de Cours)',
@@ -279,10 +279,10 @@ const cvItems = [
     desc: 'Coordinador del grupo enfocado en adquisición de datos y transcripción asistida por ordenador (HTR/OCR). Coordinación y animación de talleres especializados en Transkribus y eScriptorium en diversas universidades europeas (Madrid Complutense, UCLouvain, etc.).'
   },
   {
-    role: 'Doctor en Estudios Romanes y Humanidades Digitales',
+    role: 'Doctor en Estudios Románicos y Humanidades Digitales',
     institution: 'Université de Montpellier Paul-Valéry - Montpellier, Francia',
     date: '2021 - 2025',
-    desc: 'Defensa en junio de 2025 de la tesis de doctorado titulada "Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire", realizada bajo la dirección de Geoffrey Williams y Karim Benmiloud. Especialización en modelización TEI de documentos históricos, taxonomías semánticas en SKOS/RDF y principios de Ciencia Abierta.'
+    desc: 'Defensa en junio de 2025 de la tesis de doctorado titulada "Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire", realizada bajo la dirección de Geoffrey Clive Williams. Especialización en modelización TEI de documentos históricos, taxonomías semánticas en SKOS/RDF y principios de Ciencia Abierta.'
   },
   {
     role: 'Doctorando y Editor de Corpus Digitales (Proyecto ANR-D4R)',
@@ -297,7 +297,7 @@ const cvItems = [
     desc: 'Migración y estructuración de bases de datos científicas de las SHS según los principios FAIR. Optimización de archivos XML-TEI.'
   },
   {
-    role: 'Máster en Humanidades Numéricas, Letras y Lexicografía',
+    role: 'Máster en Humanidades Digitales, Letras y Lexicografía',
     institution: 'Université de Bretagne-Sud - Lorient, Francia',
     date: '2018 - 2020',
     desc: 'Especialización en lexicografía histórica y procesamiento digital. Trabajo en el proyecto BasNum (ANR-18-CE38-0003) para el marcado diplomático del Dictionnaire Universel de Furetière (1690-1725) y entrenamiento de modelos automáticos.'
@@ -306,7 +306,7 @@ const cvItems = [
     role: 'Licenciado en Educación: Artes Plásticas',
     institution: 'Universidad de Antioquia - Medellín, Colombia',
     date: '2010 - 2017',
-    desc: 'Formación pedagógica y en artes visuales. Complementada en 2018 con un Diplôme National Supérieur d\'Expression Plastique (DNSEP) en la École Européenne Supérieure d\'Art de Bretagne (EESAB Lorient).'
+    desc: 'Formación pedagógica y en artes visuales. Complementada en 2018 con un Diploma Nacional Superior de Expresión Plástica (DNSEP) en la Escuela Europea Superior de Arte de Bretaña (EESAB Lorient).'
   }
 ];
 
@@ -552,10 +552,10 @@ function App() {
                 <p className="profile-title">Humanidades Digitales & Ciencia de Textos</p>
                 <h1>Andrés Felipe Echavarría Peláez</h1>
                 <p className="profile-bio" style={{ fontSize: '1.05rem', lineHeight: '1.7', color: 'var(--text-secondary)' }}>
-                  Soy un investigador colombo-francés cuya carrera se desarrolla en la convergencia entre las humanidades tradicionales y las tecnologías digitales, combinando historia, filología, lingüística, lexicografía y ciencia de los textos. Actualmente me desempeño como ingeniero de investigación en informática y humanidades digitales en el <strong>Centre National de la Recherche Scientifique (CNRS)</strong>, trabajando en el proyecto europeo <strong>AMIS (Advanced Metadata Intelligent System)</strong> financiado por el programa Horizon Europe (OSCARS), y soy miembro del comité de pilotaje científico y webmaster del Consorcio <strong>ARIANE</strong> y del proyecto <strong><a href="http://cartas.huma-num.fr/" target="_blank" rel="noopener noreferrer">ANR CARTAS</a></strong>, dentro de la infraestructura de investigación <strong>Huma-Num</strong>.
+                  Soy un investigador colombo-francés especializado en la convergencia de las humanidades tradicionales con las tecnologías digitales. Mi labor integra disciplinas tales como historia, filología, lingüística, lexicografía o ciencia de los textos. Actualmente me desempeño como ingeniero de investigación en informática aplicada a las humanidades digitales en el <strong>Centre National de la Recherche Scientifique (CNRS)</strong>. Desde este rol participo en el desarrollo del proyecto europeo <strong>AMIS (Advanced Metadata Intelligent System)</strong>, financiado por el programa Horizon Europe (OSCARS). Asimismo, soy miembro del comité de pilotaje científico, ejerzo de webmaster para el Consorcio <strong>ARIANE</strong> y colaboro en el proyecto <strong><a href="http://cartas.huma-num.fr/" target="_blank" rel="noopener noreferrer">ANR CARTAS</a></strong>, iniciativas adscritas a la infraestructura de investigación <strong>Huma-Num</strong>.
                 </p>
                 <p className="profile-bio" style={{ fontSize: '1.05rem', lineHeight: '1.7', color: 'var(--text-secondary)', marginTop: '1rem', marginBottom: '2.5rem' }}>
-                  Mi formación comenzó con una Licenciatura en Artes Plásticas en la Universidad de Antioquia, complementada con un Diplôme National Supérieur d'Expression Plastique en la École Européenne Supérieure d'Art de Bretagne. Posteriormente obtuve una Maestría en Humanidades Digitales en la Université de Bretagne-Sud y concluí mi doctorado en 2025 en la Université de Montpellier Paul-Valéry con una tesis doctoral centrada en la editorialización de procesos de fe inquisitoriales y su estructuración digital.
+                  Mi formación académica comenzó con una Licenciatura en Artes Plásticas en la Universidad de Antioquia, complementada con un Diploma Nacional Superior de Expresión Plástica en la Escuela Europea Superior de Arte de Bretaña. Posteriormente obtuve una Maestría en Humanidades Digitales, Letras y Lexicografía en la Universidad de Bretagne Sud y concluí mi doctorado en Estudios Románicos y Humanidades Digitales en la Universidad de Montpellier Paul-Valéry. Una tesis que toma como prototipo los procesos de la inquisición para proponer un ejercicio práctico de la teoría de la <a href="https://networkcultures.org/wp-content/uploads/2018/03/Marcello_Vitali-Rosati_OnEditorialization-complete.pdf" target="_blank" rel="noopener noreferrer">editorialización</a> de <a href="https://networkcultures.org/wp-content/uploads/2018/03/Marcello_Vitali-Rosati_OnEditorialization-complete.pdf" target="_blank" rel="noopener noreferrer">Marcello Vitali-Rosati</a> es un ejercicio de abrir la ciencia y de producir aproximaciones metodológicas que fomentan la colaboración alrededor de datos históricos.
                 </p>
                 
                 <div className="profile-socials">
@@ -578,13 +578,13 @@ function App() {
                 <div 
                   className="card" 
                   style={{ display: 'flex', flexDirection: 'column', height: '100%', cursor: 'pointer' }}
-                  onClick={(e) => handleCardClick('https://theses.hal.science/tel-05318449v1', e)}
+                  onClick={(e) => handleCardClick('https://theses.hal.science/tel-05318449v1/file/2025_ECHAVARRIA-PELAEZ_arch.pdf', e)}
                 >
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
                     <ThesesLogo size={18} /> Tesis Doctoral & Nakala Datasets
                   </h3>
                   <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)', flexGrow: 1 }}>
-                    Mi investigación de doctorado (2025, dirigida por G. Williams y K. Benmiloud, accesible en <a href="https://theses.hal.science/tel-05318449v1" target="_blank" rel="noopener noreferrer">theses.hal</a>) derivó en tres conjuntos de datos publicados en <strong>Nakala</strong>: el prototipo de anotación del <a href="https://nakala.fr/10.34847/nkl.aaeej9jp" target="_blank" rel="noopener noreferrer">proceso de Pedro de Cazalla</a>, el <a href="https://nakala.fr/10.34847/nkl.2a4e2h52" target="_blank" rel="noopener noreferrer">tesauro de tipologías inquisitoriales (SKOS)</a> y el <a href="https://nakala.fr/10.34847/nkl.ab374s00" target="_blank" rel="noopener noreferrer">esquema de anotación TEI (ODD, RNG)</a>. La documentación y scripts adicionales se hallan en <a href="https://zenodo.org/records/15035164" target="_blank" rel="noopener noreferrer">Zenodo</a> y <a href="https://gitlab.huma-num.fr/aechavarria/annexesthese" target="_blank" rel="noopener noreferrer">GitLab</a>.
+                    Mi investigación doctoral (2025, dirigida por Geoffrey Clive Williams, disponible para descarga en <a href="https://theses.hal.science/tel-05318449v1/file/2025_ECHAVARRIA-PELAEZ_arch.pdf" target="_blank" rel="noopener noreferrer">theses.hal</a>) propone un modelo de estructuración de los contenidos substanciales de los textos provenientes de los expedientes en Text Encoding Initiative con unas <a href="https://aechavarria.gitpages.huma-num.fr/annexesthese/" target="_blank" rel="noopener noreferrer">guidelines propias compatibles con la recomendación general de la TEI</a> con un vocabulario controlado que organiza las unidades documentales simples por su forma, su función y su fondo jurisdiccional. Acceda a la interfaz del <a href="https://opentheso.huma-num.fr/?idt=Inq_Thes" target="_blank" rel="noopener noreferrer">Tesauro en Opentheso</a>.
                   </p>
                   <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '1.25rem', borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
                     <span className="tool-tag">XML-TEI / SKOS</span>
@@ -598,13 +598,14 @@ function App() {
                   onClick={(e) => handleCardClick('https://hal.science/hal-05267874v1', e)}
                 >
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
-                    <HalLogo size={18} /> Métricas HTR (CER/WER)
+                    <HalLogo size={18} /> Métricas ATR (CER/WER)
                   </h3>
                   <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)', flexGrow: 1 }}>
-                    Colaboré en la definición cuantitativa para evaluar el rendimiento de modelos de reconocimiento de manuscritos e impresos antiguos mediante las tasas de error de caracteres (CER) y palabras (WER), publicadas en español (<a href="https://hal.science/hal-05267874v1" target="_blank" rel="noopener noreferrer">hal-05267874v1</a>) y francés (<a href="https://hal.science/hal-05267873v1" target="_blank" rel="noopener noreferrer">hal-05267873v1</a>) en el Consorcio ARIANE.
+                    Se presenta como una contribución a las comunidades francófona e hispanohablante para responder a las preguntas sobre cómo evaluar los modelos de transcripción. Se trata de una suerte de fichas prácticas que documentan los principios de estas métricas de evaluación, algunos de sus límites y las discusiones de la comunidad científica alrededor de algunas de las tareas asociadas a la evaluación de la calidad de los modelos de transcripción. Estas fichas tratan de responder a preguntas que aparecían con frecuencia durante la formación de equipos de transcripción de textos antiguos y manuscritos (disponibles en <a href="https://hal.science/hal-05267874v1" target="_blank" rel="noopener noreferrer">español</a> y <a href="https://hal.science/hal-05267873v1" target="_blank" rel="noopener noreferrer">francés</a>).
                   </p>
                   <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '1.25rem', borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
                     <span className="tool-tag">Métricas CER/WER</span>
+                    <span className="tool-tag">ATR / HTR</span>
                   </div>
                 </div>
 
@@ -617,7 +618,7 @@ function App() {
                     <ArianeLogo size={18} /> Post-Doctorado — Proyecto AMIS
                   </h3>
                   <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)', flexGrow: 1 }}>
-                    Desde noviembre de 2024, realizo mi investigación post-doctoral en el equipo técnico y científico del proyecto europeo <a href="https://oscars-project.eu/projects/amis-advanced-metadata-intelligent-system" target="_blank" rel="noopener noreferrer">AMIS (Advanced Metadata Intelligent System)</a>, financiado por OSCARS EU (Horizon Europe). Estoy a cargo de la <strong>modelización de metadatos</strong> (Dublin Core, CAO_CRM) y de la integración de tesauros multilingües (370 conceptos estructurados según ISO 25964 en SKOS) con Opentheso y Huma-Num.
+                    Desde septiembre de 2025, realizo mi investigación post-doctoral en el equipo técnico y científico del proyecto europeo <a href="https://oscars-project.eu/projects/amis-advanced-metadata-intelligent-system" target="_blank" rel="noopener noreferrer">AMIS (Advanced Metadata Intelligent System)</a>, financiado por OSCARS EU (Horizon Europe). Estoy a cargo de la <strong>modelización de metadatos</strong> (Dublin Core, CAO_CRM) y de la integración de tesauros multilingües con Opentheso y Huma-Num. Este tesauro, cuya elaboración comenzó en el marco del consorcio HN CAHIER (2016-2022), es mantenido actualmente por el consorcio Huma-Num ARIANE y el Cluster 5b de Biblissima+, en colaboración con el consorcio CORLI 2. Acceda al tesauro en la interfaz de <a href="https://opentheso.huma-num.fr/?idt=43" target="_blank" rel="noopener noreferrer">Opentheso</a>.
                   </p>
                   <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '1.25rem', borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
                     <span className="tool-tag">NLP & LLMs (AMIS)</span>
@@ -633,10 +634,11 @@ function App() {
                     <PythonLogo size={18} /> Computus y calendario-liturgico
                   </h3>
                   <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)', flexGrow: 1 }}>
-                    Desarrollé la librería de Python <strong>calendario-liturgico</strong> para calcular fechas litúrgicas mediante el algoritmo de computus de Gauss. El proceso de evolución de este script a una biblioteca reproducible de Ciencia Abierta se describe en mi publicación de Humanistica 2026 (<a href="https://hal.science/hal-05631254v1" target="_blank" rel="noopener noreferrer">hal-05631254v1</a> / <a href="https://anthology.ach.org/volumes/vol0004/du-script-artisanal-l-infrastructure-ouverte-gen-se-enjeux/" target="_blank" rel="noopener noreferrer">Anthology ACH</a>) y está disponible en <a href="https://pypi.org/project/calendario-liturgico/0.1.0/" target="_blank" rel="noopener noreferrer">PyPI</a>.
+                    Desarrollé la librería de Python <strong>calendario-liturgico</strong> para la identificación y cálculo automático de fechas del calendario litúrgico cristiano, que resultan especialmente difíciles de determinar en el calendario juliano (para documentos anteriores a octubre de 1582). Nacida ante la necesidad de generar anotaciones XML-TEI normalizadas en la codificación de procesos de la Inquisición, implementa una estrategia híbrida única: computus mediante Gauss-Meeus para el periodo gregoriano y un conjunto de 1.052 fechas julianas (532–1582) transcritas de tablas medievales (Beda, Grosseteste) y verificadas con algoritmos de calculations calendáricas, asegurando la fiabilidad hermenéutica y previniendo anacronismos históricos. Disponible en <a href="https://pypi.org/project/calendario-liturgico/0.1.0/" target="_blank" rel="noopener noreferrer">PyPI</a>.
                   </p>
                   <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '1.25rem', borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
                     <span className="tool-tag">computus (Gauss)</span>
+                    <span className="tool-tag">Calendario Juliano</span>
                   </div>
                 </div>
 
@@ -649,7 +651,7 @@ function App() {
                     <OpenthesoLogo size={18} /> Colaboración con Opentheso
                   </h3>
                   <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)', flexGrow: 1 }}>
-                    Colaboración con el ecosistema de <strong>Opentheso</strong>, un gestor de tesauros multilingüe y de código abierto desarrollado bajo la dirección de <strong>Miled Rousset</strong> (MOM-CNRS). Realicé la traducción completa de su interfaz de administración al castellano y publiqué guías metodológicas sobre la construcción y gestión de tesauros (<a href="https://opentheso.hypotheses.org/4944" target="_blank" rel="noopener noreferrer">buenas prácticas</a>, <a href="https://opentheso.hypotheses.org/4978" target="_blank" rel="noopener noreferrer">conceptos</a> e <a href="https://opentheso.hypotheses.org/5174" target="_blank" rel="noopener noreferrer">importación/exportación</a>).
+                    Colaboración con el ecosistema de <strong>Opentheso</strong>, un gestor de tesauros multilingüe y de código abierto desarrollado bajo la dirección de <strong>Miled Rousset</strong> (MOM-CNRS). Realicé la traducción completa de su interfaz de administración al castellano y publiqué guías metodológicas sobre la construcción y gestión de tesauros: «<a href="https://opentheso.hypotheses.org/4944" target="_blank" rel="noopener noreferrer">Buenas prácticas para estructurar un tesauro</a>», «<a href="https://opentheso.hypotheses.org/4978" target="_blank" rel="noopener noreferrer">Construir un tesauro</a>» (que muestra las principales funcionalidades de la interfaz) e «<a href="https://opentheso.hypotheses.org/5174" target="_blank" rel="noopener noreferrer">Importar y Exportar un Tesauro</a>».
                   </p>
                   <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '1.25rem', borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
                     <span className="tool-tag">Opentheso</span>
