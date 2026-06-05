@@ -202,9 +202,19 @@ const getFriendlyDocType = (type, lang) => {
       'COUV': 'Chapitre de Livre',
       'ART': 'Article de Revue',
       'THES': 'Thésaurus Documentaire'
+    },
+    en: {
+      'COMM': 'Conference Paper',
+      'THESE': 'Doctoral Thesis',
+      'REPORT': 'Technical Report',
+      'PROCEEDINGS': 'Conference Proceedings',
+      'OUV': 'Book',
+      'COUV': 'Book Chapter',
+      'ART': 'Journal Article',
+      'THES': 'Documentary Thesaurus'
     }
   };
-  return types[lang]?.[type] || (lang === 'fr' ? 'Publication' : 'Publicación');
+  return types[lang]?.[type] || (lang === 'es' ? 'Publicación' : 'Publication');
 };
 
 function App() {

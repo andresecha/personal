@@ -1,5 +1,32 @@
 [
   {
+    "title": "Importar y exportar un tesauro",
+    "year": 2026,
+    "type": "ART",
+    "url": "https://doi.org/10.58079/15uxf",
+    "citation": "Andrés Felipe Echavarría Peláez. \"Importar y exportar un tesauro\". <i>Opentheso</i>, marzo de 2026. <a target=\"_blank\" href=\"https://doi.org/10.58079/15uxf\">&#x27E8;doi:10.58079/15uxf&#x27E9;</a>",
+    "journal": "Opentheso",
+    "doi": "10.58079/15uxf"
+  },
+  {
+    "title": "Construir un tesauro",
+    "year": 2026,
+    "type": "ART",
+    "url": "https://doi.org/10.58079/15uxe",
+    "citation": "Andrés Felipe Echavarría Peláez. \"Construir un tesauro\". <i>Opentheso</i>, marzo de 2026. <a target=\"_blank\" href=\"https://doi.org/10.58079/15uxe\">&#x27E8;doi:10.58079/15uxe&#x27E9;</a>",
+    "journal": "Opentheso",
+    "doi": "10.58079/15uxe"
+  },
+  {
+    "title": "Buenas prácticas para estructurar un tesauro",
+    "year": 2026,
+    "type": "ART",
+    "url": "https://doi.org/10.58079/15tup",
+    "citation": "Andrés Felipe Echavarría Peláez. \"Buenas prácticas para estructurar un tesauro\". <i>Opentheso</i>, marzo de 2026. <a target=\"_blank\" href=\"https://doi.org/10.58079/15tup\">&#x27E8;doi:10.58079/15tup&#x27E9;</a>",
+    "journal": "Opentheso",
+    "doi": "10.58079/15tup"
+  },
+  {
     "title": "Du script artisanal à l’infrastructure ouverte",
     "year": 2026,
     "type": "COMM",
