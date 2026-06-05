@@ -65,9 +65,9 @@ export default {
   artworks: [
     {
       id: 'logo-zorro',
-      title: 'The Fox (Personal Brand)',
+      title: 'El Zorro (Personal Brand)',
       tag: 'Visual Identity',
-      desc: 'Visual identity design for the personal brand "El Zorro" (The Fox). Inspired by the figure of Joaquín Murrieta (mid-19th century), who stood up to external interests to defend Latin American resources, this graphic concept symbolizes the reclaiming of situated critical thinking and intellectual resistance. The fox represents biological and cultural adaptability, capable of inhabiting any environment. Its geometric and dynamic design evokes cleverness, the active search for solutions to complex problems, and the ability to blend in and integrate with the surroundings. The visual composition plays on the duality of the masked character, articulating tensions between legality and justice, life and historical narrative.',
+      desc: 'Visual identity design for the personal brand "El Zorro". Inspired by the figure of Joaquín Murrieta (mid-19th century), who stood up to external interests to defend Latin American resources, this graphic concept symbolizes the reclaiming of situated critical thinking and intellectual resistance. The fox represents biological and cultural adaptability, capable of inhabiting any environment. Its geometric and dynamic design evokes cleverness, the active search for solutions to complex problems, and the ability to blend in and integrate with the surroundings. The visual composition plays on the duality of the masked character, articulating tensions between legality and justice, life and historical narrative.',
       img: '/portfolio/zorro_presentation.png'
     },
     {
@@ -97,7 +97,7 @@ export default {
       id: 'tesis',
       logoType: 'theses',
       title: 'Doctoral Thesis & Nakala Datasets',
-      desc: `This research (2025, directed by Geoffrey Clive Williams and available for <a href="https://theses.hal.science/tel-05318449v1/file/2025_ECHAVARRIA-PELAEZ_arch.pdf" target="_blank" rel="noopener noreferrer">download on HAL</a>) introduces a formal model to structure the diplomatic and substantive content of inquisitorial files under the XML-TEI standard. The model defines <a href="https://aechavarria.gitpages.huma-num.fr/annexesthese/" target="_blank" rel="noopener noreferrer">custom coding guidelines compatible with TEI recommendations</a>, integrating a controlled vocabulary that classifies and organizes document units according to their diplomatic form, procedural role, and jurisdictional scope. Access the <a href="https://opentheso.huma-num.fr/?idt=Inq_Thes" target="_blank" rel="noopener noreferrer">Thesaurus interface on Opentheso</a>.`,
+      desc: `This doctoral research (2025) proposes a formal model to encode inquisitorial trials under the XML-TEI standard. The thesis was conducted under the scientific supervision of Geoffrey Clive Williams. The full text of the study is available for <a href="https://theses.hal.science/tel-05318449v1/file/2025_ECHAVARRIA-PELAEZ_arch.pdf" target="_blank" rel="noopener noreferrer">download on HAL</a>. All the scientific datasets of this project reside in open access on the Nakala repository. These files integrate the TEI validation schema and the annotation of the trial against Pedro de Cazalla. The <a href="https://aechavarria.gitpages.huma-num.fr/annexesthese/" target="_blank" rel="noopener noreferrer">encoding guidelines</a> are published on the Huma-Num infrastructure. Additionally you can consult the vocabulary structure on the <a href="https://opentheso.huma-num.fr/?idt=Inq_Thes" target="_blank" rel="noopener noreferrer">Opentheso</a> interface.`,
       tags: ['XML-TEI / SKOS', 'Opentheso / Nakala'],
       link: 'https://theses.hal.science/tel-05318449v1/file/2025_ECHAVARRIA-PELAEZ_arch.pdf'
     },
@@ -105,7 +105,7 @@ export default {
       id: 'metricas',
       logoType: 'hal',
       title: 'ATR Metrics (CER/WER)',
-      desc: `Conceived as a support resource for researchers and paleographers in both Spanish and French-speaking communities, this work systematizes evaluation criteria for automatic text transcription (ATR) models. It is structured as a set of methodological sheets that explain the foundations of key metrics (such as CER and WER), examine their practical limitations, and present scientific debates surrounding quality measurement in historical handwritten documents. These guides address recurring methodological questions in collaborative digital transcription projects (available in <a href="https://hal.science/hal-05267874v1" target="_blank" rel="noopener noreferrer">Spanish</a> and <a href="https://hal.science/hal-05267873v1" target="_blank" rel="noopener noreferrer">French</a>).`,
+      desc: `This methodological work systematizes the evaluation criteria for automatic text transcription models. The open resource offers a valuable support for paleographers and active researchers in the domain of digital humanities. Its main content is structured as a practical sheet that explains the detailed operation of key metrics like CER and WER. Likewise the text presents some limitations of these algorithms. It details current scientific debates about quality measurement in historical handwritten documents. This study contributes to resolving some of the methodological questions and remains available in <a href="https://hal.science/hal-05267874v1" target="_blank" rel="noopener noreferrer">Spanish</a> and in <a href="https://hal.science/hal-05267873v1" target="_blank" rel="noopener noreferrer">French</a>.`,
       tags: ['CER/WER Metrics', 'ATR / HTR'],
       link: 'https://hal.science/hal-05267874v1'
     },
@@ -113,7 +113,7 @@ export default {
       id: 'postdoc',
       logoType: 'amis',
       title: 'Post-Doctorate — AMIS Project',
-      desc: `Since September 2025 I participate in the infrastructure development of the European web application AMIS (<em>Advanced Metadata Intelligent System</em>). The OSCARS initiative and the Horizon Europe program fund this project. The system automates metadata creation and enrichment through machine learning and natural language processing. My duties center on metadata modeling and vocabulary interoperability. We integrate multilingual thesauri into the Huma-Num Opentheso platform. Users can enrich their research data with external European repositories. You can access the resource on <a href="https://opentheso.huma-num.fr/?idt=43" target="_blank" rel="noopener noreferrer">Opentheso</a>.`,
+      desc: `Since September 2025 I actively participate in the infrastructure development of the European web application AMIS (Advanced Metadata Intelligent System). The open science OSCARS initiative and the Horizon Europe program fund this research project. The platform automates metadata creation and data enrichment through machine learning and natural language processing. My duties center on metadata modeling and controlled vocabulary interoperability. We integrate multilingual thesauri into the Huma-Num Opentheso platform. Consequently scholars and other users can enrich their research documents with external European repositories. You can easily access this research resource on Opentheso.`,
       tags: ['NLP & LLMs (AMIS)'],
       link: 'https://oscars-project.eu/projects/amis-advanced-metadata-intelligent-system'
     },
@@ -121,7 +121,7 @@ export default {
       id: 'computus',
       logoType: 'python',
       title: 'Computus and calendario-liturgico',
-      desc: `I developed the Python library <strong>calendario-liturgico</strong> to automate the calculation of Christian calendar feasts, resolving the mathematical complexity inherent to the Julian calendar (prior to October 1582). Born from the practical need to normalize temporal references in XML-TEI within inquisitorial trials, the package adopts a hybrid approach: it executes the Gauss-Meeus algorithm for Gregorian dates and integrates a database of 1,052 Julian dates (532–1582) verified against historical medieval tables (such as Beda or Grosseteste). This provides a rigorous environment that prevents chronological anachronisms in time attribute coding. Available on <a href="https://pypi.org/project/calendario-liturgico/0.1.0/" target="_blank" rel="noopener noreferrer">PyPI</a>.`,
+      desc: `The Python library calendario-liturgico automates the calculation of feasts in the Christian calendar. This development resolves the mathematical complexity of the Julian calendar prior to October 1582. The package covers the practical need to normalize temporal references in XML-TEI for historical processes. The software system adopts a robust hybrid approach for computing these dates. It executes the Gauss-Meeus algorithm for Gregorian periods and integrates a database with 1,052 Julian dates verified against medieval tables. This prevents all chronological anachronisms in time attribute coding. You can download the compiled resource on <a href="https://pypi.org/project/calendario-liturgico/0.1.0/" target="_blank" rel="noopener noreferrer">PyPI</a>.`,
       tags: ['computus (Gauss)', 'Julian Calendar'],
       link: 'https://pypi.org/project/calendario-liturgico/0.1.0/'
     },
@@ -129,7 +129,7 @@ export default {
       id: 'colab-opentheso',
       logoType: 'opentheso',
       title: 'Collaboration with Opentheso',
-      desc: `As part of my active collaboration with the open-source thesaurus manager <strong>Opentheso</strong>, led by <strong>Miled Rousset</strong> (MOM-CNRS), I translated the entire administration interface into Spanish. I also published a series of methodological articles aimed at the scientific community: "<a href="https://opentheso.hypotheses.org/4944" target="_blank" rel="noopener noreferrer">Best practices for structuring a thesaurus</a>", "<a href="https://opentheso.hypotheses.org/4978" target="_blank" rel="noopener noreferrer">Building a thesaurus</a>" (a practical guide to the main features of the platform), and "<a href="https://opentheso.hypotheses.org/5174" target="_blank" rel="noopener noreferrer">Importing and Exporting a Thesaurus</a>".`,
+      desc: `I actively collaborate on a regular basis with the open-source thesaurus manager Opentheso. Miled Rousset from the MOM-CNRS institution directs this development. My main contribution consisted in translating the entire administration interface into Spanish. Likewise I published several methodological articles on the official research blog. The first text presents the <a href="https://opentheso.hypotheses.org/4944" target="_blank" rel="noopener noreferrer">best practices for structuring</a>. The second guide explains the method to <a href="https://opentheso.hypotheses.org/4978" target="_blank" rel="noopener noreferrer">build a thesaurus</a>. The last article details how to <a href="https://opentheso.hypotheses.org/5174" target="_blank" rel="noopener noreferrer">import and export data</a>. These public methodological resources successfully guide the scientific community in vocabulary design and semantic web standards.`,
       tags: ['Opentheso'],
       link: 'https://opentheso.hypotheses.org/4944'
     },
@@ -137,7 +137,7 @@ export default {
       id: 'tesauro-inq',
       logoType: 'opentheso',
       title: 'Thesaurus of Inquisitorial Typologies (Opentheso)',
-      desc: `I developed a bilingual (Spanish/French) controlled vocabulary under the <strong>SKOS</strong> standard for indexing inquisitorial trial documents. Designed to integrate with <strong>XML-TEI</strong> and <strong>ODD</strong> schemas for validation, it is based on the thesis of B. Santiago Medina and is part of my doctoral research. Available on the Huma-Num institutional Opentheso platform.`,
+      desc: `This digital development consists of a bilingual controlled vocabulary in Spanish and French. The overall structure follows the semantic SKOS standard. Its primary scientific utility lies in indexing all these Spanish Inquisition trial documents. The conceptual model allows direct integration with XML-TEI schemas and ODD specifications for validation purposes. The entire theoretical basis is founded on the doctoral thesis of Bárbara Santiago Medina. The resulting work constitutes an active part of my own doctoral research. The final web interface of this thesaurus is publicly available on the Huma-Num institutional Opentheso platform.`,
       tags: ['SKOS / RDF', 'XML-TEI ODD', 'Semantic Web'],
       link: 'https://opentheso.huma-num.fr/?idt=Inq_Thes'
     }
