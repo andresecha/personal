@@ -88,19 +88,28 @@ body {
   padding: 0 1.5rem;
 }
 
+/* Monospace & Green Links globally (except UI buttons/logos) */
+a:not(.btn-primary):not(.btn-secondary):not(.logo-text):not(.social-link):not(.nav-btn) {
+  font-family: 'Cascadia Code Semilight', 'Cascadia Code', Consolas, 'Courier New', monospace !important;
+  color: #00CC00 !important;
+}
+
+a:not(.btn-primary):not(.btn-secondary):not(.logo-text):not(.social-link):not(.nav-btn):hover {
+  color: #00ff00 !important;
+  text-decoration: underline !important;
+}
+
 /* Header & Navigation */
 .header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background-color: rgba(249, 250, 251, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background-color: var(--bg-main);
   border-bottom: 1px solid var(--border-color);
   transition: background-color var(--transition-normal), border-color var(--transition-normal);
 }
 .dark-theme .header {
-  background-color: rgba(10, 12, 16, 0.7);
+  background-color: var(--bg-main);
 }
 
 .nav-container {
@@ -963,4 +972,76 @@ p {
 
 .animate-slide-up {
   animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Social links styles */
+.social-link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-size: 60% 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+}
+
+.social-link:hover {
+  transform: translateY(-3px) scale(1.1);
+  opacity: 0.9;
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md), var(--shadow-glow);
+}
+
+.social-link.linkedin {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg");
+}
+
+.social-link.email {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/88/At_sign.svg");
+  background-size: 50% 50%;
+}
+
+.social-link.twitter {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cc/X_icon.svg");
+  background-size: 50% 50%;
+}
+
+.social-link.orcid {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg");
+}
+
+.social-link.github {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg");
+}
+
+.social-link.gitlab {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/35/GitLab_icon.svg");
+}
+
+.social-link.idref {
+  background-image: url("https://abes.fr/wp-content/uploads/2019/08/icone-idref.svg");
+}
+
+.social-link.hal {
+  background-image: url("https://cv.hal.science/build/img/idhal.svg");
+}
+
+.social-link.viaf {
+  background-image: url("https://cv.hal.science/build/img/viaf.png");
+}
+
+.social-link.arxiv {
+  background-image: url("https://cv.hal.science/build/img/arxiv.png");
+}
+
+.social-link.website {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/73/Circle-icons-global.svg");
+}
+
+.social-link.theses {
+  background-image: url("https://theses.fr/icone-theses-beta.svg");
 }

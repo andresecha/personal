@@ -475,88 +475,82 @@ function App() {
                 </p>
                 
                 <div className="profile-socials">
-                  <a href="mailto:andres.echavarria@huma-num.fr" className="btn-primary" id="link-email">
-                    <Mail size={16} />
-                    <span>Contacto</span>
-                  </a>
-                  <a href="https://gitlab.huma-num.fr/aechavarria" target="_blank" rel="noopener noreferrer" className="btn-secondary" id="link-gitlab">
-                    <Code size={16} />
-                    <span>GitLab Huma-Num</span>
-                  </a>
-                  <a href="https://cv.hal.science/andres-echavarria" target="_blank" rel="noopener noreferrer" className="btn-secondary" id="link-hal">
-                    <BookOpen size={16} />
-                    <span>HAL Open Science</span>
-                  </a>
-                  <a href="https://orcid.org/0000-0002-0332-8808" target="_blank" rel="noopener noreferrer" className="btn-secondary" id="link-orcid">
-                    <ExternalLink size={16} />
-                    <span>ORCID</span>
-                  </a>
-                  <a href="https://www.idref.fr/291243665" target="_blank" rel="noopener noreferrer" className="btn-secondary" id="link-idref">
-                    <ExternalLink size={16} />
-                    <span>IdRef (291243665)</span>
-                  </a>
+                  <a href="mailto:andres.echavarria@huma-num.fr" className="social-link email" title="Contacto (Email)" id="link-email"></a>
+                  <a href="https://gitlab.huma-num.fr/aechavarria" target="_blank" rel="noopener noreferrer" className="social-link gitlab" title="GitLab Huma-Num" id="link-gitlab"></a>
+                  <a href="https://github.com/andresecha" target="_blank" rel="noopener noreferrer" className="social-link github" title="GitHub" id="link-github"></a>
+                  <a href="https://cv.hal.science/andres-echavarria" target="_blank" rel="noopener noreferrer" className="social-link hal" title="HAL Open Science" id="link-hal"></a>
+                  <a href="https://orcid.org/0000-0002-0332-8808" target="_blank" rel="noopener noreferrer" className="social-link orcid" title="ORCID" id="link-orcid"></a>
+                  <a href="https://www.idref.fr/291243665" target="_blank" rel="noopener noreferrer" className="social-link idref" title="IdRef (291243665)" id="link-idref"></a>
+                  <a href="https://theses.fr/2025UMPV0021" target="_blank" rel="noopener noreferrer" className="social-link theses" title="Tesis (theses.fr)" id="link-theses"></a>
                 </div>
               </div>
             </div>
 
-            {/* Featured Research Card */}
-            <div className="card animate-slide-up" style={{ marginTop: '2rem', textAlign: 'left' }} id="featured-project-card">
+            {/* Featured Research Cards Grid */}
+            <div className="animate-slide-up" style={{ marginTop: '2.5rem', textAlign: 'left' }} id="research-tech-section">
               <h2 className="text-gradient" style={{ marginBottom: '1.5rem' }}>Investigación & Desarrollo Tecnológico</h2>
               
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
-                <div>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
+                <div className="card" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
                     <HalLogo size={18} /> Tesis Doctoral & Nakala Datasets
                   </h3>
-                  <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
+                  <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)', flexGrow: 1 }}>
                     Mi investigación de doctorado (2025, dirigida por G. Williams y K. Benmiloud, accesible en <a href="https://theses.hal.science/tel-05318449v1" target="_blank" rel="noopener noreferrer">theses.hal</a>) derivó en tres conjuntos de datos publicados en <strong>Nakala</strong>: el prototipo de anotación del <a href="https://nakala.fr/10.34847/nkl.aaeej9jp" target="_blank" rel="noopener noreferrer">proceso de Pedro de Cazalla</a>, el <a href="https://nakala.fr/10.34847/nkl.2a4e2h52" target="_blank" rel="noopener noreferrer">tesauro de tipologías inquisitoriales (SKOS)</a> y el <a href="https://nakala.fr/10.34847/nkl.ab374s00" target="_blank" rel="noopener noreferrer">esquema de anotación TEI (ODD, RNG)</a>. La documentación y scripts adicionales se hallan en <a href="https://zenodo.org/records/15035164" target="_blank" rel="noopener noreferrer">Zenodo</a> y <a href="https://gitlab.huma-num.fr/aechavarria/annexesthese" target="_blank" rel="noopener noreferrer">GitLab</a>.
                   </p>
+                  <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '1.25rem', borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
+                    <span className="tool-tag">XML-TEI / SKOS</span>
+                    <span className="tool-tag">Opentheso / Nakala</span>
+                  </div>
                 </div>
                 
-                <div>
+                <div className="card" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
                     <HalLogo size={18} /> Métricas HTR (CER/WER)
                   </h3>
-                  <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
+                  <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)', flexGrow: 1 }}>
                     Colaboré en la definición cuantitativa para evaluar el rendimiento de modelos de reconocimiento de manuscritos e impresos antiguos mediante las tasas de error de caracteres (CER) y palabras (WER), publicadas en español (<a href="https://hal.science/hal-05267874v1" target="_blank" rel="noopener noreferrer">hal-05267874v1</a>) y francés (<a href="https://hal.science/hal-05267873v1" target="_blank" rel="noopener noreferrer">hal-05267873v1</a>) en el Consorcio ARIANE.
                   </p>
+                  <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '1.25rem', borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
+                    <span className="tool-tag">Métricas CER/WER</span>
+                  </div>
                 </div>
 
-                <div>
+                <div className="card" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
                     <AmisLogo size={18} /> Post-Doctorado — Proyecto AMIS
                   </h3>
-                  <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
+                  <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)', flexGrow: 1 }}>
                     Desde noviembre de 2024, realizo mi investigación post-doctoral en el equipo técnico y científico del proyecto europeo <a href="https://oscars-project.eu/projects/amis-advanced-metadata-intelligent-system" target="_blank" rel="noopener noreferrer">AMIS (Advanced Metadata Intelligent System)</a>, financiado por OSCARS EU (Horizon Europe). Estoy a cargo de la <strong>modelización de metadatos</strong> (Dublin Core, CAO_CRM) y de la integración de tesauros multilingües (370 conceptos estructurados según ISO 25964 en SKOS) con Opentheso y Huma-Num.
                   </p>
+                  <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '1.25rem', borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
+                    <span className="tool-tag">NLP & LLMs (AMIS)</span>
+                  </div>
                 </div>
 
-                <div>
+                <div className="card" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
                     <PythonLogo size={18} /> Computus y calendario-liturgico
                   </h3>
-                  <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
+                  <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)', flexGrow: 1 }}>
                     Desarrollé la librería de Python <strong>calendario-liturgico</strong> para calcular fechas litúrgicas mediante el algoritmo de computus de Gauss. El proceso de evolución de este script a una biblioteca reproducible de Ciencia Abierta se describe en mi publicación de Humanistica 2026 (<a href="https://hal.science/hal-05631254v1" target="_blank" rel="noopener noreferrer">hal-05631254v1</a> / <a href="https://anthology.ach.org/volumes/vol0004/du-script-artisanal-l-infrastructure-ouverte-gen-se-enjeux/" target="_blank" rel="noopener noreferrer">Anthology ACH</a>) y está disponible en <a href="https://pypi.org/project/calendario-liturgico/0.1.0/" target="_blank" rel="noopener noreferrer">PyPI</a>.
                   </p>
+                  <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '1.25rem', borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
+                    <span className="tool-tag">computus (Gauss)</span>
+                  </div>
                 </div>
 
-                <div>
+                <div className="card" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
                     <OpenthesoLogo size={18} /> Colaboración con Opentheso
                   </h3>
-                  <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
+                  <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)', flexGrow: 1 }}>
                     Colaboración con el ecosistema de <strong>Opentheso</strong>, un gestor de tesauros multilingüe y de código abierto desarrollado bajo la dirección de <strong>Miled Rousset</strong> (MOM-CNRS). Realicé la traducción completa de su interfaz de administración al castellano y publiqué guías metodológicas sobre la construcción y gestión de tesauros (<a href="https://opentheso.hypotheses.org/4944" target="_blank" rel="noopener noreferrer">buenas prácticas</a>, <a href="https://opentheso.hypotheses.org/4978" target="_blank" rel="noopener noreferrer">conceptos</a> e <a href="https://opentheso.hypotheses.org/5174" target="_blank" rel="noopener noreferrer">importación/exportación</a>).
                   </p>
+                  <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '1.25rem', borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
+                    <span className="tool-tag">Opentheso</span>
+                  </div>
                 </div>
-              </div>
-
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginTop: '1.5rem', borderTop: '1px solid var(--border-color)', paddingTop: '1.25rem' }}>
-                <span className="tool-tag">Métricas CER/WER</span>
-                <span className="tool-tag">NLP & LLMs (AMIS)</span>
-                <span className="tool-tag">XML-TEI / SKOS</span>
-                <span className="tool-tag">Opentheso / Nakala</span>
-                <span className="tool-tag">computus (Gauss)</span>
-                <span className="tool-tag">Opentheso</span>
               </div>
             </div>
           </section>
