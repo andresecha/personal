@@ -91,25 +91,32 @@ const formatCitation = (citation) => {
 // Artworks / illustrations for the artistic portfolio (Mini Expo)
 const artworks = [
   {
-    id: 'art-1',
-    title: 'Humanidades Digitales: Códice y Red',
-    tag: 'Ilustración Digital',
-    desc: 'Una exploración visual del choque y la convergencia entre manuscritos medievales y las redes neuronales artificiales. Creado como metáfora de los procesos de reconocimiento automático de texto (HTR).',
-    img: '/portfolio/digital_humanities.png'
+    id: 'logo-zorro',
+    title: 'El Zorro (Marca Personal)',
+    tag: 'Identidad Visual',
+    desc: 'Diseño de la identidad visual de la marca personal "El Zorro". Inspirado en la figura de Joaquín Murrieta (mediados del siglo XIX), quien enfrentó intereses externos para defender los recursos de América Latina, este concepto gráfico simboliza la recuperación del pensamiento crítico situado y la resistencia intelectual. El zorro representa la adaptabilidad biológica y cultural, capaz de habitar cualquier entorno. Su diseño geométrico y dinámico evoca la astucia, la búsqueda activa de soluciones a problemas complejos, y la capacidad de mimetizarse e integrarse con el entorno. La composición visual juega con la dualidad del personaje enmascarado, articulando tensiones entre la legalidad y la justicia, la vida y la narración de la historia.',
+    img: '/portfolio/zorro_presentation.png'
   },
   {
-    id: 'art-2',
-    title: 'Visualización Semántica de la Inquisición',
-    tag: 'Diseño Gráfico',
-    desc: 'Representación abstracta de la modelización XML-TEI y los grafos semánticos de relaciones y personas extraídas de los procesos de fe de la Inquisición española del siglo XVI.',
-    img: '/portfolio/historical_texts.png'
+    id: 'logo-amis',
+    title: 'Proyecto AMIS (OSCARS)',
+    tag: 'Identidad Visual',
+    desc: 'Identidad visual para el proyecto AMIS (Advanced Metadata Intelligent System), financiado en el marco del programa europeo Horizon Europe a través de la iniciativa OSCARS (Open Science Clusters Action for Research and Society). El diseño del logotipo representa conceptualmente la automatización inteligente, la estructuración semántica y la interconexión de metadatos de investigación en ciencias humanas y sociales, facilitando la ciencia abierta y la interoperabilidad de datos.',
+    img: '/portfolio/amis_presentation.png'
   },
   {
-    id: 'art-3',
-    title: 'Mapas Cognitivos y NLP',
-    tag: 'Ilustración Digital',
-    desc: 'Infografía conceptual que representa la estructura interna de los Modelos de Lenguaje (LLMs) y su relación directa con la dialectología y la lingüística computacional.',
-    img: '/portfolio/semantic_networks.png'
+    id: 'logo-ariane',
+    title: 'Consorcio ARIANE (Huma-Num)',
+    tag: 'Identidad Visual',
+    desc: 'Identidad gráfica desarrollada para el Consortium ARIANE (Analyses, Recherches, Intelligence Artificielle et Nouvelles Éditions numériques), avalado por la infraestructura de investigación francesa IR* Huma-Num. El concepto visual representa la sinergia y el diálogo interdisciplinario entre las ciencias humanas y los métodos informáticos avanzados, abordando desde la edición digital y la inteligencia artificial (HTR, NLP) hasta el análisis semántico y el deep reading.',
+    img: '/portfolio/ariane_presentation.png'
+  },
+  {
+    id: 'logo-cartas',
+    title: 'Proyecto ANR CARTAS',
+    tag: 'Identidad Visual',
+    desc: 'Diseño de la identidad visual para el proyecto CARTAS («Pablo Picasso en toutes lettres»), financiado por la Agence Nationale de la Recherche (ANR). El logotipo y su línea gráfica simbolizan la digitalización, el análisis y la cartografía relacional de la correspondencia histórica de Pablo Picasso, combinando técnicas de humanidades digitales y grafos de conocimiento para mapear las redes de contacto del artista entre 1900 y 1973.',
+    img: '/portfolio/cartas_presentation.png'
   }
 ];
 
@@ -550,11 +557,10 @@ function App() {
         {activeTab === 'portafolio' && (
           <section className="animate-slide-up" id="sec-portfolio">
             <div className="section-intro">
-              <p className="profile-title">Mini Exposición Artística</p>
-              <h1>Arte, Ilustración & Visualización</h1>
+              <p className="profile-title">Diseño y Arte</p>
+              <h1>Identidad Visual & Diseño de Marcas</h1>
               <p>
-                Una galería visual dedicada a mis proyectos de diseño e ilustración digital, cruzando
-                metáforas visuales de computación y humanidades. Almacenado de forma eficiente para garantizar escalabilidad.
+                Una galería de proyectos de diseño gráfico e identidad visual desarrollados para proyectos científicos, consorcios de investigación en humanidades digitales y marcas personales.
               </p>
             </div>
 
@@ -574,7 +580,7 @@ function App() {
                       style={{ background: 'none', border: 'none', cursor: 'pointer' }}
                       onClick={() => setLightboxArt(art)}
                     >
-                      Ampliar Ilustración →
+                      Ver Identidad Visual →
                     </button>
                   </div>
                 </div>

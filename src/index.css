@@ -91,12 +91,12 @@ body {
 /* Monospace & Green Links globally (except UI buttons/logos) */
 a:not(.btn-primary):not(.btn-secondary):not(.logo-text):not(.social-link):not(.nav-btn) {
   font-family: 'Cascadia Code Semilight', 'Cascadia Code', Consolas, 'Courier New', monospace !important;
-  color: #00CC00 !important;
+  color: var(--accent) !important;
   font-weight: bold !important;
 }
 
 a:not(.btn-primary):not(.btn-secondary):not(.logo-text):not(.social-link):not(.nav-btn):hover {
-  color: #00ff00 !important;
+  color: var(--border-hover) !important;
   text-decoration: underline !important;
 }
 
@@ -117,7 +117,10 @@ a:not(.btn-primary):not(.btn-secondary):not(.logo-text):not(.social-link):not(.n
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4.5rem;
+  height: auto;
+  min-height: 5.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .logo-text {
@@ -132,8 +135,8 @@ a:not(.btn-primary):not(.btn-secondary):not(.logo-text):not(.social-link):not(.n
 }
 
 .logo-fox {
-  width: 32px;
-  height: 32px;
+  width: 64px;
+  height: 64px;
   transition: filter var(--transition-normal);
 }
 
@@ -391,8 +394,10 @@ p {
 
 .profile-avatar-glow {
   position: relative;
-  width: 220px;
-  height: 220px;
+  width: 440px;
+  height: 440px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   padding: 3px;
   background: var(--accent-gradient);
