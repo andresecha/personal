@@ -41,59 +41,115 @@ const artworks = [
   }
 ];
 
-// Software tools list
+// Software and Research Data list
 const tools = [
   {
-    title: 'Calculadora de Métricas CER y WER',
-    desc: 'Herramienta en Python para evaluar el rendimiento de modelos de Reconocimiento Automático de Textos (HTR/OCR) en manuscritos antiguos, calculando tasas de error de caracteres (CER) y palabras (WER).',
-    tags: ['Python', 'HTR', 'Evaluación'],
-    link: 'https://gitlab.huma-num.fr/aechavarria/cer-wer'
+    title: 'calendario-liturgico (PyPI)',
+    desc: 'Librería de Python publicada en PyPI para el cálculo automático de fechas litúrgicas cristianas basada en el algoritmo de computus de Gauss. Su evolución desde un script personal a una biblioteca reproducible de Ciencia Abierta se describe en la ponencia presentada en el coloquio Humanistica 2026: "Du script artisanal à l\'infrastructure ouverte : genèse, enjeux et fondements de calendario_liturgico".',
+    tags: ['Python', 'Computus', 'Gauss', 'PyPI', 'Humanistica', 'Ciencia Abierta'],
+    link: 'https://pypi.org/project/calendario-liturgico/0.1.0/',
+    buttonText: 'Ver en PyPI'
   },
   {
-    title: 'Guías de Transcripción con Mistral y Whisper',
-    desc: 'Metodologías y flujos de trabajo en Python para transcribir audios de investigación de manera automatizada con OpenAI Whisper e integrar modelos de lenguaje abiertos como Mistral para el post-procesamiento lingüístico de textos antiguos.',
-    tags: ['Python', 'Mistral LLM', 'Whisper ASR', 'AI'],
-    link: 'https://gitlab.huma-num.fr/aechavarria/whisper-mistral-guides'
+    title: 'RDF a TEI ODD / Taxonomy Converter (Zenodo)',
+    desc: 'Scripts en Python en Zenodo para la conversión de un tesauro SKOS RDF (exportado de Opentheso) en formatos XML conformes a la TEI (valList para ODD y taxonomías estructuradas category/taxonomy), asegurando la trazabilidad de conceptos.',
+    tags: ['Python', 'RDF', 'SKOS', 'TEI', 'Zenodo', 'Web Semántica'],
+    link: 'https://zenodo.org/records/15044448',
+    buttonText: 'Ver en Zenodo'
   },
   {
-    title: 'Script Ariane de FAIRización de Datos',
-    desc: 'Repositorio de scripts y guías desarrollados en el marco del consorcio CAHIER de Huma-Num para limpiar, estructurar y publicar metadatos científicos bajo principios FAIR.',
-    tags: ['Shell', 'Python', 'FAIR'],
-    link: 'https://gitlab.huma-num.fr/aechavarria/ariane'
+    title: 'Scripts de Extracción de Información XML-TEI (Zenodo)',
+    desc: 'Colección de herramientas en Python y hojas de estilo XSLT en Zenodo para verificar esquemas de anotación TEI aplicados a juicios inquisitoriales y extraer tipologías (tachas mediante spaCy, acusaciones y respuestas, asignación de xml:id y reportes CSV).',
+    tags: ['Python', 'XSLT', 'XML-TEI', 'Zenodo', 'Extracción'],
+    link: 'https://zenodo.org/records/15035164',
+    buttonText: 'Ver en Zenodo'
   },
   {
-    title: 'Validador y Parser XML-TEI',
-    desc: 'Un validador personalizado basado en esquemas XML Schema y RelaxNG adaptado a las transcripciones paleográficas de juicios de fe e inquisitoriales.',
-    tags: ['XML', 'TEI', 'RelaxNG'],
-    link: 'https://gitlab.huma-num.fr/aechavarria/tei-validator'
+    title: 'Anexos de la Tesis Doctoral (GitLab)',
+    desc: 'Repositorio institucional en el GitLab de Huma-Num que aloja el código fuente, esquemas de validación y la documentación de apoyo técnica complementaria desarrollada para la tesis de doctorado "Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire".',
+    tags: ['GitLab', 'Huma-Num', 'TEI', 'SKOS', 'Documentación'],
+    link: 'https://gitlab.huma-num.fr/aechavarria/annexesthese',
+    buttonText: 'Ver en GitLab Huma-Num'
+  },
+  {
+    title: 'Proceso de fe de Pedro de Cazalla (Nakala)',
+    desc: 'Dataset publicado en Nakala (10.34847/nkl.aaeej9jp) que contiene la anotación XML/TEI completa del proceso inquisitorial de Valladolid (1558-1559) contra Pedro de Cazalla, clérigo cura de Pedrosa acusado de luteranismo, sirviendo como prototipo para el esquema de anotación de la tesis.',
+    tags: ['Nakala', 'XML-TEI', 'Inquisición', 'Pedro de Cazalla', 'Dataset'],
+    link: 'https://nakala.fr/10.34847/nkl.aaeej9jp',
+    buttonText: 'Ver Dataset en Nakala'
+  },
+  {
+    title: 'Tesauro de tipologías documentales de la Inquisición (Nakala)',
+    desc: 'Vocabulario controlado bilingüe (SKOS/RDF) publicado en Nakala (10.34847/nkl.2a4e2h52) para la indización de piezas procesales en los expedientes inquisitoriales, estructurado bajo el estándar ISO 25964 e integrado con la TEI.',
+    tags: ['Nakala', 'SKOS', 'RDF', 'Vocabulario Controlado', 'Opentheso'],
+    link: 'https://nakala.fr/10.34847/nkl.2a4e2h52',
+    buttonText: 'Ver Tesauro en Nakala'
+  },
+  {
+    title: 'Esquema de anotación TEI para procesos de fe (Nakala)',
+    desc: 'Esquema de validación XML estructurado en Nakala (10.34847/nkl.ab374s00) para codificar juicios históricos. Incluye especificación ODD (One Document Does it all), RelaxNG (RNG/RNC), XML Schema (XSD) y documentación en ODT.',
+    tags: ['Nakala', 'ODD', 'RelaxNG', 'RNC', 'XSD', 'Validación'],
+    link: 'https://nakala.fr/10.34847/nkl.ab374s00',
+    buttonText: 'Ver Esquema en Nakala'
+  },
+  {
+    title: 'Traducción y Documentación de Opentheso (Hypotheses)',
+    desc: 'Traducción completa al castellano de la interfaz de administración del gestor de tesauros Opentheso, junto a la publicación de guías metodológicas detalladas sobre la estructuración de tesauros (post 4944), construcción de conceptos (post 4978) e importación/exportación de archivos (post 5174).',
+    tags: ['Opentheso', 'Traducción', 'Documentación', 'ARIANE', 'Hypotheses'],
+    link: 'https://opentheso.hypotheses.org/5174',
+    buttonText: 'Ver en Hypotheses'
   }
 ];
 
 // Experience timeline
 const cvItems = [
   {
-    role: 'Ingeniero de Investigación en Humanidades Digitales y Ciencias de la Computación',
-    institution: 'CNRS / Huma-Num - París, Francia',
-    date: '2025 - Presente',
-    desc: 'Desarrollo de herramientas informáticas para las ciencias humanas y sociales. Apoyo técnico a los consorcios de Huma-Num (CAHIER, etc.) en la FAIRización de bases de datos de investigación y despliegue de soluciones metodológicas (Heurist, HTR, XML-TEI).'
+    role: 'Ingeniero de Investigación en Humanidades Digitales (Proyecto AMIS)',
+    institution: 'CNRS / Consorcio ARIANE / TGIR Huma-Num / Université de Poitiers - París/Poitiers, Francia',
+    date: '2024 - Presente',
+    desc: 'Desarrollo y modelización del asistente de metadatos AMIS (Advanced Metadata Intelligent System), financiado por el programa europeo Horizon Europe (OSCARS). Encargado de la modelización de metadatos (Dublin Core, alineación con la ontología CAO_CRM) y de la integración de tesauros multilingües normalizados (ISO 25964 en SKOS) con la plataforma Opentheso y la infraestructura Huma-Num.'
   },
   {
-    role: 'Doctor en Ciencias de la Información y de la Comunicación',
+    role: 'Docente (Chargé de Cours)',
+    institution: 'Université Sorbonne Nouvelle - París, Francia',
+    date: '2021 - Presente',
+    desc: 'Impartición de asignaturas en el Master en Humanidades Digitales ("Introducción a la gestión de bases de datos en SHS") y en el Master de Letras Modernas ("Metodología de la investigación digital").'
+  },
+  {
+    role: 'Piloto del Grupo de Trabajo GT2 (Adquisición de Datos)',
+    institution: 'Consorcio ARIANE, Huma-Num - París, Francia',
+    date: '2024 - Presente',
+    desc: 'Coordinador del grupo enfocado en adquisición de datos y transcripción asistida por ordenador (HTR/OCR). Coordinación y animación de talleres especializados en Transkribus y eScriptorium en diversas universidades europeas (Madrid Complutense, UCLouvain, etc.).'
+  },
+  {
+    role: 'Doctor en Estudios Romanes y Humanidades Digitales',
     institution: 'Université de Montpellier Paul-Valéry - Montpellier, Francia',
     date: '2021 - 2025',
-    desc: 'Defensa de tesis doctoral titulada "Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire". Investigación centrada en el modelado TEI de documentos antiguos y la creación de ontologías semánticas.'
+    desc: 'Defensa en junio de 2025 de la tesis de doctorado titulada "Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire", realizada bajo la dirección de Geoffrey Williams y Karim Benmiloud. Especialización en modelización TEI de documentos históricos, taxonomías semánticas en SKOS/RDF y principios de Ciencia Abierta.'
   },
   {
-    role: 'Miembro del Equipo de Investigación - Proyecto ANR-D4R',
+    role: 'Doctorando y Editor de Corpus Digitales (Proyecto ANR-D4R)',
     institution: 'IRIEC - Université Paul-Valéry Montpellier 3 / Universitat de Barcelona',
     date: '2021 - 2025',
-    desc: 'Investigación en la exploración interactiva y visual de un corpus sobre la inquisición española del siglo XVI. Aplicación de tecnologías HTR (Handwritten Text Recognition) y modelado de grafos de red.'
+    desc: 'Investigación en la exploración interactiva y visual de un corpus sobre la inquisición española del siglo XVI. Modelado y representación de redes egocentradas a partir de anotaciones XML-TEI y entrenamiento de modelos HTR.'
   },
   {
-    role: 'Máster en Tecnologías Digitales Aplicadas a la Historia y Filología',
-    institution: 'París, Francia',
-    date: '2019 - 2021',
-    desc: 'Especialización en lenguajes de marcado XML/TEI, procesamiento de lenguajes naturales, desarrollo web y bases de datos estructuradas.'
+    role: 'Ingeniero de Datos (Consorcio CAHIER)',
+    institution: 'CNRS / Université de Poitiers - Francia',
+    date: 'Abril - Octubre 2021',
+    desc: 'Migración y estructuración de bases de datos científicas de las SHS según los principios FAIR. Optimización de archivos XML-TEI.'
+  },
+  {
+    role: 'Máster en Humanidades Numéricas, Letras y Lexicografía',
+    institution: 'Université de Bretagne-Sud - Lorient, Francia',
+    date: '2018 - 2020',
+    desc: 'Especialización en lexicografía histórica y procesamiento digital. Trabajo en el proyecto BasNum (ANR-18-CE38-0003) para el marcado diplomático del Dictionnaire Universel de Furetière (1690-1725) y entrenamiento de modelos automáticos.'
+  },
+  {
+    role: 'Licenciado en Educación: Artes Plásticas',
+    institution: 'Universidad de Antioquia - Medellín, Colombia',
+    date: '2010 - 2017',
+    desc: 'Formación pedagógica y en artes visuales. Complementada en 2018 con un Diplôme National Supérieur d\'Expression Plastique (DNSEP) en la École Européenne Supérieure d\'Art de Bretagne (EESAB Lorient).'
   }
 ];
 
@@ -199,7 +255,7 @@ function App() {
                   className={`nav-btn ${activeTab === 'herramientas' ? 'active' : ''}`}
                   onClick={() => setActiveTab('herramientas')}
                 >
-                  Herramientas
+                  Software & Datos
                 </button>
               </li>
               <li>
@@ -260,7 +316,7 @@ function App() {
             onClick={() => setActiveTab('herramientas')}
           >
             <Code size={18} />
-            <span>Herramientas</span>
+            <span>Software & Datos</span>
           </button>
           <button 
             id="m-tab-btn-cv"
@@ -298,7 +354,7 @@ function App() {
                 <p className="profile-title">Digital Humanities & Computer Science</p>
                 <h1>Andrés Felipe Echavarría Peláez</h1>
                 <p className="profile-bio" style={{ fontSize: '1.05rem', lineHeight: '1.7', color: 'var(--text-secondary)' }}>
-                  Soy un investigador colombo-francés cuya carrera se desarrolla en la convergencia entre las humanidades tradicionales y las tecnologías digitales, combinando historia, filología, lingüística, lexicografía y ciencia de los textos. Actualmente me desempeño como ingeniero de investigación en informática y humanidades digitales en el **Centre National de la Recherche Scientifique (CNRS)** y soy miembro del comité de pilotaje científico del Consorcio **ARIANE** dentro de la infraestructura de investigación **Huma-Num**.
+                  Soy un investigador colombo-francés cuya carrera se desarrolla en la convergencia entre las humanidades tradicionales y las tecnologías digitales, combinando historia, filología, lingüística, lexicografía y ciencia de los textos. Actualmente me desempeño como ingeniero de investigación en informática y humanidades digitales en el **Centre National de la Recherche Scientifique (CNRS)**, trabajando en el proyecto europeo **AMIS (Advanced Metadata Intelligent System)** financiado por el programa Horizon Europe (OSCARS), y soy miembro del comité de pilotaje científico del Consorcio **ARIANE** dentro de la infraestructura de investigación **Huma-Num**.
                 </p>
                 <p className="profile-bio" style={{ fontSize: '1.05rem', lineHeight: '1.7', color: 'var(--text-secondary)', marginTop: '1rem', marginBottom: '2.5rem' }}>
                   Mi formación comenzó con una Licenciatura en Artes Plásticas en la Universidad de Antioquia, complementada con un Diplôme National Supérieur d'Expression Plastique en la École Européenne Supérieure d'Art de Bretagne. Posteriormente obtuve una Maestría en Humanidades Digitales en la Université de Bretagne-Sud y concluí mi doctorado en 2025 en la Université de Montpellier Paul-Valéry con una tesis doctoral centrada en la editorialización de procesos de fe inquisitoriales y su estructuración digital.
@@ -336,47 +392,47 @@ function App() {
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
                 <div>
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
-                    🎓 Tesis Doctoral & Editorialización
+                    🎓 Tesis Doctoral & Nakala Datasets
                   </h3>
                   <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
-                    Mi investigación doctoral (2025) desarrolló metodologías para la <strong>editorialización y estructuración digital de textos históricos</strong>. Diseñé modelos avanzados en XML-TEI y ontologías semánticas (SKOS) para sistematizar manuscritos e impresos españoles antiguos bajo estándares de Ciencia Abierta.
+                    Mi investigación de doctorado (2025, dirigida por G. Williams y K. Benmiloud, accesible en <a href="https://theses.hal.science/tel-05318449v1" target="_blank" rel="noopener noreferrer">theses.hal</a>) derivó en tres conjuntos de datos publicados en <strong>Nakala</strong>: el prototipo de anotación del <a href="https://nakala.fr/10.34847/nkl.aaeej9jp" target="_blank" rel="noopener noreferrer">proceso de Pedro de Cazalla</a>, el <a href="https://nakala.fr/10.34847/nkl.2a4e2h52" target="_blank" rel="noopener noreferrer">tesauro de tipologías inquisitoriales (SKOS)</a> y el <a href="https://nakala.fr/10.34847/nkl.ab374s00" target="_blank" rel="noopener noreferrer">esquema de anotación TEI (ODD, RNG)</a>. La documentación y scripts adicionales se hallan en <a href="https://zenodo.org/records/15035164" target="_blank" rel="noopener noreferrer">Zenodo</a> y <a href="https://gitlab.huma-num.fr/aechavarria/annexesthese" target="_blank" rel="noopener noreferrer">GitLab</a>.
                   </p>
                 </div>
                 
                 <div>
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
-                    📦 Métricas HTR (Librería CER/WER)
+                    📦 Métricas HTR (CER/WER)
                   </h3>
                   <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
-                    Desarrollé una <strong>librería de Python</strong> especializada en el cálculo de las tasas de error de caracteres (CER) y palabras (WER). Esta herramienta permite evaluar de manera cuantitativa y rigurosa la calidad del Reconocimiento de Textos Manuscritos (HTR) e impresos antiguos, publicada en colaboración con el consorcio ARIANE.
+                    Colaboré en la definición cuantitativa para evaluar el rendimiento de modelos de reconocimiento de manuscritos e impresos antiguos mediante las tasas de error de caracteres (CER) y palabras (WER), publicadas en español (<a href="https://hal.science/hal-05267874v1" target="_blank" rel="noopener noreferrer">hal-05267874v1</a>) y francés (<a href="https://hal.science/hal-05267873v1" target="_blank" rel="noopener noreferrer">hal-05267873v1</a>) en el Consorcio ARIANE.
                   </p>
                 </div>
 
                 <div>
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
-                    🤖 Transcripción con IA (Mistral & Whisper)
+                    🚀 Proyecto AMIS — OSCARS (Actualidad)
                   </h3>
                   <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
-                    Investigo e implemento <strong>guías metodológicas y flujos de trabajo</strong> para automatizar la transcripción de audios de investigación utilizando modelos de reconocimiento de voz ASR como <strong>OpenAI Whisper</strong>, junto con el post-procesamiento lingüístico de textos antiguos con modelos de lenguaje (LLM) abiertos como <strong>Mistral</strong>.
+                    Desde noviembre de 2024, formo parte del equipo técnico y científico del proyecto europeo <a href="https://oscars-project.eu/projects/amis-advanced-metadata-intelligent-system" target="_blank" rel="noopener noreferrer">AMIS (Advanced Metadata Intelligent System)</a>, financiado por OSCARS EU, encargado de la <strong>modelización de metadatos</strong> (Dublin Core, CAO_CRM) y de la integración de tesauros multilingües (370 conceptos estructurados según ISO 25964 en SKOS) con Opentheso y Huma-Num.
                   </p>
                 </div>
 
                 <div>
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
-                    🌐 Infraestructura de Datos (ANR D4R)
+                    🐍 Computus y calendario-liturgico
                   </h3>
                   <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
-                    Diseñé también la infraestructura de datos para el modelado de grafos de redes y bases de datos relacionales Heurist para el proyecto **ANR D4R**, facilitando el análisis visual e interactivo de las relaciones y disidencias religiosas en la España del siglo XVI.
+                    Desarrollé la librería de Python <strong>calendario-liturgico</strong> para calcular fechas litúrgicas mediante el algoritmo de computus de Gauss. El proceso de evolución de este script a una biblioteca reproducible de Ciencia Abierta se describe en mi publicación de Humanistica 2026 (<a href="https://hal.science/hal-05631254v1" target="_blank" rel="noopener noreferrer">hal-05631254v1</a> / <a href="https://anthology.ach.org/volumes/vol0004/du-script-artisanal-l-infrastructure-ouverte-gen-se-enjeux/" target="_blank" rel="noopener noreferrer">Anthology ACH</a>).
                   </p>
                 </div>
               </div>
 
               <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginTop: '1.5rem', borderTop: '1px solid var(--border-color)', paddingTop: '1.25rem' }}>
                 <span className="tool-tag">Métricas CER/WER</span>
-                <span className="tool-tag">NLP & LLMs (Mistral)</span>
-                <span className="tool-tag">ASR (Whisper)</span>
+                <span className="tool-tag">NLP & LLMs (AMIS)</span>
                 <span className="tool-tag">XML-TEI / SKOS</span>
-                <span className="tool-tag">Bases de datos Heurist</span>
+                <span className="tool-tag">Opentheso / Nakala</span>
+                <span className="tool-tag">computus (Gauss)</span>
               </div>
             </div>
           </section>
@@ -494,11 +550,10 @@ function App() {
         {activeTab === 'herramientas' && (
           <section className="animate-slide-up" id="sec-tools">
             <div className="section-intro">
-              <p className="profile-title">Código Abierto y Recursos</p>
-              <h1>Herramientas Tecnológicas</h1>
+              <p className="profile-title">Código Abierto, Datos y Recursos</p>
+              <h1>Software & Datos de Investigación</h1>
               <p>
-                Desarrollo scripts, módulos y validadores para facilitar la aplicación de tecnologías
-                en investigaciones de historia y lingüística.
+                Desarrollo librerías, scripts, esquemas de codificación y conjuntos de datos FAIR para facilitar la aplicación de tecnologías en humanidades digitales, historia y lingüística.
               </p>
             </div>
 
@@ -516,7 +571,7 @@ function App() {
                     ))}
                   </div>
                   <a href={tool.link} target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ marginTop: 'auto', textAlign: 'center', display: 'flex', justifyContent: 'center' }} id={`tool-link-${idx}`}>
-                    <span>Ver código en GitLab</span>
+                    <span>{tool.buttonText || 'Ver Recurso'}</span>
                     <ExternalLink size={14} />
                   </a>
                 </div>
