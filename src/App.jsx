@@ -15,7 +15,8 @@ import {
   Sun, 
   Moon, 
   X,
-  GraduationCap
+  GraduationCap,
+  Languages
 } from 'lucide-react';
 
 // Custom image logos for academic profiles & tech collaborations (stored locally)
@@ -369,9 +370,10 @@ function App() {
               className="icon-btn lang-btn" 
               onClick={() => setLang(prev => prev === 'es' ? 'fr' : prev === 'fr' ? 'en' : 'es')} 
               aria-label={t.ui.langToggleAriaLabel}
-              style={{ fontWeight: 600, fontSize: '0.8rem', paddingLeft: '0.65rem', paddingRight: '0.65rem' }}
+              style={{ fontWeight: 600, fontSize: '0.8rem', paddingLeft: '0.65rem', paddingRight: '0.65rem', display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}
             >
-              {lang === 'es' ? 'FR' : lang === 'fr' ? 'EN' : 'ES'}
+              <Languages size={16} />
+              <span>{lang === 'es' ? 'FR' : lang === 'fr' ? 'EN' : 'ES'}</span>
             </button>
             <button 
               id="theme-toggle-btn"
