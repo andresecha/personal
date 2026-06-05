@@ -265,6 +265,14 @@ function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [typeFilter, setTypeFilter] = useState('ALL');
   const [avatarError, setAvatarError] = useState(false);
+  const [expandedPubs, setExpandedPubs] = useState({});
+
+  const togglePub = (idx) => {
+    setExpandedPubs(prev => ({
+      ...prev,
+      [idx]: !prev[idx]
+    }));
+  };
 
   // Load and apply light/dark theme
   useEffect(() => {
@@ -631,9 +639,21 @@ function App() {
             <div className="pub-list" id="pub-items-list">
               {filteredPublications.length > 0 ? (
                 filteredPublications.map((pub, idx) => (
-                  <div key={idx} className="card pub-item" id={`pub-item-${idx}`}>
+                  <div 
+                    key={idx} 
+                    className={`card pub-item ${expandedPubs[idx] ? 'expanded' : ''}`} 
+                    id={`pub-item-${idx}`}
+                    onClick={() => togglePub(idx)}
+                  >
                     <span className="pub-type-badge">{getFriendlyDocType(pub.type)}</span>
-                    <a href={pub.url} target="_blank" rel="noopener noreferrer" className="pub-title-link" id={`pub-link-${idx}`}>
+                    <a 
+                      href={pub.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="pub-title-link" 
+                      id={`pub-link-${idx}`}
+                      onClick={(e) => e.stopPropagation()}
+                    >
                       <h3>{pub.title}</h3>
                     </a>
                     <div className="pub-expandable-details">
@@ -658,6 +678,7 @@ function App() {
                               target="_blank" 
                               rel="noopener noreferrer" 
                               className="pub-download-link"
+                              onClick={(e) => e.stopPropagation()}
                               style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem', color: 'var(--accent)', fontWeight: 600, textDecoration: 'none' }}
                             >
                               <Download size={14} />
@@ -673,6 +694,7 @@ function App() {
                               target="_blank" 
                               rel="noopener noreferrer" 
                               className="pub-publisher-link"
+                              onClick={(e) => e.stopPropagation()}
                               style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem', color: 'var(--accent)', fontWeight: 600, textDecoration: 'none' }}
                             >
                               <ExternalLink size={14} />

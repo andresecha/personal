@@ -706,7 +706,8 @@ p {
   transition: max-height var(--transition-normal), opacity var(--transition-normal), margin-top var(--transition-normal);
 }
 
-.pub-item:hover .pub-expandable-details {
+.pub-item:hover .pub-expandable-details,
+.pub-item.expanded .pub-expandable-details {
   max-height: 500px;
   opacity: 1;
   margin-top: 0.75rem;
@@ -760,6 +761,7 @@ p {
 
 .pub-meta {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   font-size: 0.8rem;
   color: var(--text-muted);
