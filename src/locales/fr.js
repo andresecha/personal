@@ -74,7 +74,7 @@ export default {
       id: 'logo-amis',
       title: 'Projet AMIS (OSCARS)',
       tag: 'Identité Visuelle',
-      desc: 'Identité visuelle développée pour le projet AMIS (Advanced Metadata Intelligent System), financé par l\'Union européenne dans le cadre d\'Horizon Europe via l\'initiative OSCARS (Open Science Clusters Action for Research and Society). Le logotype exprime la structuration sémantique, l\'interconnexion automatique de métadonnées scientifiques et l\'alignement ontologique pour les sciences humaines, favorisant l\'accès ouvert et l\'interopérabilité.',
+      desc: 'Ce concept graphique définit l\'identité visuelle du projet AMIS (<em>Advanced Metadata Intelligent System</em>). L\'initiative OSCARS et le programme Horizon Europe de l\'Union européenne soutiennent cette recherche. Le logotype illustre le traitement intelligent de l\'information et la structuration sémantique des fichiers. Le graphisme met en valeur l\'interconnexion automatique des métadonnées scientifiques. Cette approche renforce l\'accès ouvert aux données en sciences humaines.',
       img: '/portfolio/amis_presentation.png'
     },
     {
@@ -113,7 +113,7 @@ export default {
       id: 'postdoc',
       logoType: 'amis',
       title: 'Post-Doctorat — Projet AMIS',
-      desc: `Depuis septembre 2025, je collabore au développement de l'infrastructure du projet européen <a href="https://oscars-project.eu/projects/amis-advanced-metadata-intelligent-system" target="_blank" rel="noopener noreferrer">AMIS (Advanced Metadata Intelligent System)</a>, financé par l'initiative OSCARS (Horizon Europe). Mes missions se concentrent sur la modélisation de métadonnées (Dublin Core et CAO_CRM) et sur l'interopérabilité de vocabulaires contrôlés sur la plateforme Opentheso de Huma-Num. Ce thésaurus multilingue, initié au sein du consortium HN CAHIER (2016–2022), est aujourd'hui maintenu par le consortium Huma-Num ARIANE et le Cluster 5b de Biblissima+, en collaboration avec CORLI 2. Accédez à la ressource sur <a href="https://opentheso.huma-num.fr/?idt=43" target="_blank" rel="noopener noreferrer">Opentheso</a>.`,
+      desc: `Depuis septembre 2025 je participe à la conception de l'infrastructure pour l'application web AMIS (<em>Advanced Metadata Intelligent System</em>). L'initiative européenne OSCARS finance ce projet sous le programme Horizon Europe. La plateforme applique des méthodes d'apprentissage automatique et de traitement du langage naturel afin d'enrichir la description de documents. Mes travaux portent sur la modélisation des schémas de métadonnées et sur l'interopérabilité des vocabulaires contrôlés. Nous intégrons des thésaurus multilingues au sein d'Opentheso pour faciliter le partage de données. Vous pouvez consulter les ressources sur <a href="https://opentheso.huma-num.fr/?idt=43" target="_blank" rel="noopener noreferrer">Opentheso</a>.`,
       tags: ['NLP & LLMs (AMIS)'],
       link: 'https://oscars-project.eu/projects/amis-advanced-metadata-intelligent-system'
     },
@@ -211,7 +211,7 @@ export default {
       role: 'Chercheur Post-Doctoral / Ingénieur de Recherche (Projet AMIS)',
       institution: 'CNRS / Consortium ARIANE / TGIR Huma-Num / Université de Poitiers - Paris/Poitiers, France',
       date: 'Septembre 2025 - Présent',
-      desc: 'Recherche post-doctorale axée sur le développement et la modélisation de l\'assistant de métadonnées intelligent AMIS (Advanced Metadata Intelligent System), financé par le programme européen Horizon Europe (OSCARS). Chargé de la modélisation des métadonnées et de l\'intégration de thésaurus du consortium avec la plateforme Opentheso et l\'infrastructure Huma-Num, en collaboration avec les consortiums ARIANE, CAHIER, CORLI 2 et Biblissima+.'
+      desc: 'Recherche postdoctorale axée sur la modélisation et le développement de l\'application web AMIS (<em>Advanced Metadata Intelligent System</em>). Le projet bénéficie d\'un financement européen via l\'initiative OSCARS d\'Horizon Europe. Mes tâches incluent la modélisation des métadonnées et l\'alignement de vocabulaires multilingues. Je travaille en lien étroit avec les consortiums ARIANE, CAHIER, CORLI 2 et Biblissima+.'
     },
     {
       role: 'Chargé de Cours',

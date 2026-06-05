@@ -74,7 +74,7 @@ export default {
       id: 'logo-amis',
       title: 'AMIS Project (OSCARS)',
       tag: 'Visual Identity',
-      desc: 'Visual identity for the AMIS (Advanced Metadata Intelligent System) project, funded under the Horizon Europe program through the OSCARS (Open Science Clusters Action for Research and Society) initiative. The logo design conceptually represents intelligent automation, semantic structuring, and the interconnection of research metadata in the humanities and social sciences, facilitating open science and data interoperability.',
+      desc: 'This graphic concept represents the visual identity of the AMIS (<em>Advanced Metadata Intelligent System</em>) project. The initiative is part of the Horizon Europe program and receives backing from the OSCARS (<em>Open Science Clusters Action for Research and Society</em>) framework. The logo design conveys intelligent automation and semantic structuring. The layout highlights the integration of research metadata. This work aims to support open science and data interoperability.',
       img: '/portfolio/amis_presentation.png'
     },
     {
@@ -113,7 +113,7 @@ export default {
       id: 'postdoc',
       logoType: 'amis',
       title: 'Post-Doctorate — AMIS Project',
-      desc: `Since September 2025, I collaborate on the infrastructure development of the European project <a href="https://oscars-project.eu/projects/amis-advanced-metadata-intelligent-system" target="_blank" rel="noopener noreferrer">AMIS (Advanced Metadata Intelligent System)</a>, funded by the OSCARS initiative (Horizon Europe). My role focuses on metadata modeling (Dublin Core and CAO_CRM) and the interoperability of controlled vocabularies on the Huma-Num Opentheso platform. This multilingual thesaurus, initiated within the HN CAHIER consortium (2016–2022), is now maintained by the Huma-Num ARIANE consortium and Cluster 5b of Biblissima+, in collaboration with CORLI 2. Access the resource on <a href="https://opentheso.huma-num.fr/?idt=43" target="_blank" rel="noopener noreferrer">Opentheso</a>.`,
+      desc: `Since September 2025 I participate in the infrastructure development of the European web application AMIS (<em>Advanced Metadata Intelligent System</em>). The OSCARS initiative and the Horizon Europe program fund this project. The system automates metadata creation and enrichment through machine learning and natural language processing. My duties center on metadata modeling and vocabulary interoperability. We integrate multilingual thesauri into the Huma-Num Opentheso platform. Users can enrich their research data with external European repositories. You can access the resource on <a href="https://opentheso.huma-num.fr/?idt=43" target="_blank" rel="noopener noreferrer">Opentheso</a>.`,
       tags: ['NLP & LLMs (AMIS)'],
       link: 'https://oscars-project.eu/projects/amis-advanced-metadata-intelligent-system'
     },
@@ -211,7 +211,7 @@ export default {
       role: 'Post-Doctoral Researcher / Research Engineer (AMIS Project)',
       institution: 'CNRS / ARIANE Consortium / TGIR Huma-Num / Université de Poitiers - Paris/Poitiers, France',
       date: 'September 2025 - Present',
-      desc: 'Post-doctoral research focused on the development and modeling of the AMIS (Advanced Metadata Intelligent System) assistant, funded by the European Horizon Europe program (OSCARS). Responsible for metadata modeling and the integration of multilingual thesauri with the Opentheso platform and Huma-Num infrastructure, in collaboration with the ARIANE, CAHIER, CORLI 2, and Biblissima+ consortia.'
+      desc: 'Post-doctoral research dedicated to the development of the AMIS (<em>Advanced Metadata Intelligent System</em>) web application. The European program Horizon Europe and the OSCARS initiative fund this project. My work includes metadata modeling and the integration of controlled vocabularies. I collaborate directly with the ARIANE, CAHIER, CORLI 2, and Biblissima+ consortia to link multilingual thesauri.'
     },
     {
       role: 'Lecturer (Chargé de Cours)',

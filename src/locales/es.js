@@ -19,22 +19,22 @@ export default {
     noPubsFound: "No se encontraron publicaciones que coincidan con la búsqueda o filtro.",
     downloadCv: "Ver CV completo en HAL",
     closeModal: "Cerrar modal",
-    copyright: "Andrés Felipe Echavarría Peláez. Desarrollado con React & Vite.",
-    footerSustainability: "Alojado de manera sostenible y escalable en GitHub Pages. Publicaciones sincronizadas vía API de HAL e IdRef.",
-    researchSectionTitle: "Investigación & Desarrollo Tecnológico",
-    portfolioSectionTitle: "Identidad Visual & Diseño de Marcas",
+    copyright: "Andrés Felipe Echavarría Peláez © 2026. Todos los derechos reservados",
+    footerSustainability: "Alojado de manera sostenible y escalable en GitHub Pages.",
+    researchSectionTitle: "Investigación & desarrollo tecnológico",
+    portfolioSectionTitle: "Identidad visual & diseño de marcas",
     portfolioSectionIntro: "Una galería de proyectos de diseño gráfico e identidad visual desarrollados para proyectos científicos, consorcios de investigación en humanidades digitales y marcas personales.",
-    publicationsSectionTitle: "Producción Científica",
-    publicationsSectionIntro: "Compilación de mi producción científica y publicaciones académicas, que incluye mi tesis doctoral, actas de congresos, informes técnicos y artículos en revistas especializadas sobre humanidades digitales, codificación de textos XML-TEI e HTR.",
-    toolsSectionTitle: "Software & Datos de Investigación",
-    toolsSectionIntro: "Desarrollo librerías, scripts, esquemas de codificación y conjuntos de datos FAIR para facilitar la aplicación de tecnologías en humanidades digitales, historia y lingüística.",
-    formacionSectionTitle: "Formación & Talleres",
-    formacionSectionIntro: "Detalle de mi trayectoria académica formal, actividades de docencia universitaria y la impartición de talleres especializados en humanidades digitales en instituciones internacionales.",
-    teachingHeader: "Docencia & Talleres Impartidos",
-    educationHeader: "Formación Académica",
-    viewVisualIdentity: "Ver Identidad Visual →",
+    publicationsSectionTitle: "Producción científica",
+    publicationsSectionIntro: "Compilación de mi producción científica y publicaciones académicas, que incluye mi tesis doctoral, actas de congresos, informes técnicos y artículos en revistas especializadas sobre humanidades digitales, codificación de textos XML-TEI y ATR.",
+    toolsSectionTitle: "Software & datos de investigación",
+    toolsSectionIntro: "Desarrollo librerías, scripts, esquemas de codificación y conjuntos de datos que responden a lógicas de los principios FAIR.",
+    formacionSectionTitle: "Formación & talleres",
+    formacionSectionIntro: "Detalle de mi trayectoria académica formal, actividades de docencia universitaria y la animación de talleres especializados en humanidades digitales en instituciones universitarias y centros de investigación.",
+    teachingHeader: "Docencia & talleres impartidos",
+    educationHeader: "Formación académica",
+    viewVisualIdentity: "Ver identidad visual →",
     viewResource: "Ver Recurso",
-    emailTooltip: "Contacto (Email)",
+    emailTooltip: "Contacto (E-mail)",
     gitlabTooltip: "GitLab Huma-Num",
     githubTooltip: "GitHub",
     halTooltip: "HAL Open Science",
@@ -46,10 +46,10 @@ export default {
     pubJournal: "Revista",
     pubDownload: "Descargar PDF",
     pubPublisher: "Sitio del Editor",
-    toolsSectionSubtitle: "Código Abierto, Datos y Recursos",
-    formacionSectionSubtitle: "Educación, Docencia y Divulgación",
-    cvSectionSubtitle: "Trayectoria Profesional",
-    cvSectionIntro: "Resumen estructurado de mi formación y experiencia laboral en el ecosistema digital francés.",
+    toolsSectionSubtitle: "Código abierto, datos y recursos",
+    formacionSectionSubtitle: "Educación, docencia y divulgación",
+    cvSectionSubtitle: "Trayectoria profesional",
+    cvSectionIntro: "Síntesis de mi formación y experiencia laboral en el ecosistema digital francés.",
     logoFoxAlt: "Logo de Zorro",
     langToggleAriaLabel: "Changer de langue en français",
     themeToggleAriaLabel: "Alternar modo claro y oscuro",
@@ -60,28 +60,28 @@ export default {
   profile: {
     name: "Andrés Felipe Echavarría Peláez",
     bioParagraph1: `Soy un investigador colombo-francés especializado en la intersección de las disciplinas humanísticas tradicionales y las tecnologías digitales. Mi labor integra métodos de la historia, la filología, la lingüística, la lexicografía y la ciencia de los textos. Actualmente me desempeño como ingeniero de investigación en humanidades digitales en el <strong>Centre National de la Recherche Scientifique (CNRS)</strong>. En este marco, participo en el desarrollo de <strong>AMIS (Advanced Metadata Intelligent System)</strong>, proyecto europeo financiado por el programa Horizon Europe (OSCARS). Asimismo, formo parte del comité de pilotaje científico como webmaster del Consorcio <strong>ARIANE</strong> y del proyecto <strong><a href="http://cartas.huma-num.fr/" target="_blank" rel="noopener noreferrer">ANR CARTAS</a></strong>, ambas iniciativas integradas en la infraestructura de investigación <strong>Huma-Num</strong>.`,
-    bioParagraph2: `Mi trayectoria académica se inició con una Licenciatura en Artes Plásticas por la Universidad de Antioquia, complementada en Francia con un Diploma Nacional Superior de Expresión Plástica en la Escuela Europea Superior de Arte de Bretaña. Posteriormente, obtuve una Maestría en Humanidades Digitales, Letras y Lexicografía en la Universidad de Bretagne Sud, para luego concluir mi doctorado en Estudios Románicos y Humanidades Digitales en la Universidad de Montpellier Paul-Valéry. Mi tesis doctoral, que toma como caso de estudio los procesos de la Inquisición española, propone una aplicación práctica de la teoría de la <a href="https://networkcultures.org/wp-content/uploads/2018/03/Marcello_Vitali-Rosati_OnEditorialization-complete.pdf" target="_blank" rel="noopener noreferrer">editorialización</a> formulada por Marcello Vitali-Rosati. Esta investigación representa un esfuerzo por impulsar la ciencia abierta y desarrollar marcos metodológicos que promuevan la colaboración académica en torno a datos históricos.`
+    bioParagraph2: `Mi formación académica se inició con una Licenciatura en educación en Artes Plásticas por la Universidad de Antioquia, complementada en Francia con un Diploma Nacional Superior de Expresión Plástica en la Escuela Europea Superior de Arte de Bretaña. Posteriormente, obtuve una Maestría en Humanidades Digitales, Letras y Lexicografía en la Universidad de Bretagne Sud, para luego concluir mi doctorado en Estudios Románicos y Humanidades Digitales en la Universidad de Montpellier Paul-Valéry. Mi tesis doctoral, que toma como caso de estudio los procesos de la Inquisición española, propone una aplicación práctica de la teoría de la <a href="https://networkcultures.org/wp-content/uploads/2018/03/Marcello_Vitali-Rosati_OnEditorialization-complete.pdf" target="_blank" rel="noopener noreferrer">editorialización</a> formulada por Marcello Vitali-Rosati. Esta investigación representa un esfuerzo por impulsar la ciencia abierta y desarrollar marcos metodológicos que promuevan la colaboración académica en torno a datos históricos.`
   },
   artworks: [
     {
       id: 'logo-zorro',
       title: 'El Zorro (Marca Personal)',
       tag: 'Identidad Visual',
-      desc: 'Diseño de la identidad visual de la marca personal "El Zorro". Inspirado en la figura de Joaquín Murrieta (mediados del siglo XIX), quien enfrentó intereses externos para defender los recursos de América Latina, este concepto gráfico simboliza la recuperación del pensamiento crítico situado y la resistencia intelectual. El zorro representa la adaptabilidad biológica y cultural, capaz de habitar cualquier entorno. Su diseño geométrico y dinámico evoca la astucia, la búsqueda activa de soluciones a problemas complejos, y la capacidad de mimetizarse e integrarse con el entorno. La composición visual juega con la dualidad del personaje enmascarado, articulando tensiones entre la legalidad y la justicia, la vida y la narración de la historia.',
+      desc: 'Diseño de la identidad visual de la marca personal "El Zorro". Inspirado en la figura de Joaquín Murrieta (mediados del siglo XIX), quien enfrentó intereses del imperialismo estadouniddense para defender los recursos de América Latina. Este concepto gráfico simboliza la recuperación del pensamiento crítico situado y la resistencia intelectual. El zorro representa la adaptabilidad biológica y cultural, capaz de habitar cualquier entorno. Su diseño geométrico la búsqueda activa de soluciones a problemas complejos y la capacidad de integrarse con el entorno. La composición visual juega con la dualidad del personaje enmascarado y articula tensiones entre la legitimidad de la acción directa, la justicia social, la responsabilidad vital y la participación de los pueblos a consituir sus propios relatos.',
       img: '/portfolio/zorro_presentation.png'
     },
     {
       id: 'logo-amis',
       title: 'Proyecto AMIS (OSCARS)',
       tag: 'Identidad Visual',
-      desc: 'Identidad visual para el proyecto AMIS (Advanced Metadata Intelligent System), financiado en el marco del programa europeo Horizon Europe a través de la iniciativa OSCARS (Open Science Clusters Action for Research and Society). El diseño del logotipo representa conceptualmente la automatización inteligente, la estructuración semántica y la interconexión de metadatos de investigación en ciencias humanas y sociales, facilitando la ciencia abierta y la interoperabilidad de datos.',
+      desc: 'Esta identidad gráfica representa al proyecto AMIS (<em>Advanced Metadata Intelligent System</em>). El programa europeo Horizon Europe y la iniciativa OSCARS (<em>Open Science Clusters Action for Research and Society</em>) subvencionan este desarrollo. El concepto visual evoca el procesamiento inteligente de la información y la estructuración semántica de archivos. La propuesta destaca la interconexión de metadatos en humanidades y ciencias sociales. De este modo se fomenta la ciencia abierta.',
       img: '/portfolio/amis_presentation.png'
     },
     {
       id: 'logo-ariane',
       title: 'Consorcio ARIANE (Huma-Num)',
       tag: 'Identidad Visual',
-      desc: 'Identidad gráfica desarrollada para el Consortium ARIANE (Analyses, Recherches, Intelligence Artificielle et Nouvelles Éditions numériques), avalado por la infraestructura de investigación francesa IR* Huma-Num. El concepto visual representa la sinergia y el diálogo interdisciplinario entre las ciencias humanas y los métodos informáticos avanzados, abordando desde la edición digital y la inteligencia artificial (HTR, NLP) hasta el análisis semántico y el deep reading.',
+      desc: 'Identidad gráfica desarrollada para el Consortium ARIANE (<em>Analyses, Recherches, Intelligence Artificielle et Nouvelles Éditions numériques</em>), avalado por la infraestructura de investigación francesa IR* Huma-Num. El concepto visual representa la sinergia y el diálogo interdisciplinario entre las ciencias humanas y los métodos informáticos avanzados.',
       img: '/portfolio/ariane_presentation.png'
     },
     {
@@ -113,7 +113,7 @@ export default {
       id: 'postdoc',
       logoType: 'amis',
       title: 'Post-Doctorado — Proyecto AMIS',
-      desc: `Desde septiembre de 2025, colaboro en el desarrollo de la infraestructura del proyecto europeo <a href="https://oscars-project.eu/projects/amis-advanced-metadata-intelligent-system" target="_blank" rel="noopener noreferrer">AMIS (Advanced Metadata Intelligent System)</a>, financiado por la iniciativa OSCARS (Horizon Europe). Mi función se centra en la modelización de metadatos (Dublin Core y CAO_CRM) y en la interoperabilidad de vocabularios controlados en la plataforma Opentheso de Huma-Num. Este tesauro multilingüe, iniciado en el seno del consorcio HN CAHIER (2016–2022), es mantenido hoy por el consorcio Huma-Num ARIANE y el Cluster 5b de Biblissima+, en colaboración con CORLI 2. Acceda al recurso en la interfaz de <a href="https://opentheso.huma-num.fr/?idt=43" target="_blank" rel="noopener noreferrer">Opentheso</a>.`,
+      desc: `Desde septiembre de 2025 colaboro en el diseño de la infraestructura para la aplicación web AMIS (<em>Advanced Metadata Intelligent System</em>). La iniciativa europea OSCARS y el programa Horizon Europe financian este proyecto. La plataforma automatiza la extracción y catalogación de información mediante aprendizaje automático y procesamiento de lenguaje natural. Mi labor se enfoca en la modelización de metadatos y la interoperabilidad de vocabularios. Integramos repositorios internacionales y tesauros multilingües en la plataforma Opentheso de Huma-Num. Los usuarios pueden enriquecer sus datos textuales con información de bases de datos europeas. Acceda al recurso en la interfaz de <a href="https://opentheso.huma-num.fr/?idt=43" target="_blank" rel="noopener noreferrer">Opentheso</a>.`,
       tags: ['NLP & LLMs (AMIS)'],
       link: 'https://oscars-project.eu/projects/amis-advanced-metadata-intelligent-system'
     },
@@ -211,7 +211,7 @@ export default {
       role: 'Investigador Post-Doctoral / Ingeniero de Investigación (Proyecto AMIS)',
       institution: 'CNRS / Consorcio ARIANE / TGIR Huma-Num / Université de Poitiers - París/Poitiers, Francia',
       date: 'Septiembre de 2025 - Presente',
-      desc: 'Investigación post-doctoral enfocada en el desarrollo y modelización del asistente de metadatos inteligente AMIS (Advanced Metadata Intelligent System), financiado por el programa europeo Horizon Europe (OSCARS). Encargado de la modelización de metadatos y de la integración de tesauros multilingües con la plataforma Opentheso y la infraestructura Huma-Num, en colaboración con los consorcios ARIANE, CAHIER, CORLI 2 y Biblissima+.'
+      desc: 'Investigación posdoctoral orientada al desarrollo de la aplicación web AMIS (<em>Advanced Metadata Intelligent System</em>). El proyecto cuenta con el financiamiento del programa europeo Horizon Europe mediante la iniciativa OSCARS. Mis tareas comprenden la modelización de esquemas documentales y la vinculación de vocabularios en la plataforma Opentheso. Colaboro de forma directa con los consorcios ARIANE, CAHIER, CORLI 2 y Biblissima+ para integrar tesauros estructurados de humanidades digitales.'
     },
     {
       role: 'Docente (Chargé de Cours)',
