@@ -31,6 +31,15 @@
     "doi": null
   },
   {
+    "title": "Thésaurus des typologies documentaires inquisitoriales",
+    "year": 2025,
+    "type": "THES",
+    "url": "https://opentheso.huma-num.fr/?idt=Inq_Thes",
+    "citation": "Andrés Felipe Echavarría Peláez. <i>Thésaurus des typologies documentaires inquisitoriales</i>. Vocabulaire contrôlé bilingue (français/espagnol) construit selon les standards SKOS et hébergé sur la plateforme Opentheso de Huma-Num. 2025. <a target=\"_blank\" href=\"https://opentheso.huma-num.fr/?idt=Inq_Thes\">&#x27E8;Accéder au Thésaurus&#x27E9;</a>",
+    "journal": "Opentheso Huma-Num",
+    "doi": null
+  },
+  {
     "title": "CER et WER : métriques d'évaluation de modèles de reconnaissance automatique de manuscrits et d'imprimés anciens",
     "year": 2025,
     "type": "REPORT",

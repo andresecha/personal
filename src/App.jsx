@@ -319,7 +319,8 @@ const getFriendlyDocType = (type) => {
     'PROCEEDINGS': 'Actas de Congreso',
     'OUV': 'Libro',
     'COUV': 'Capítulo de Libro',
-    'ART': 'Artículo en Revista'
+    'ART': 'Artículo en Revista',
+    'THES': 'Tesauro Documental'
   };
   return types[type] || 'Publicación';
 };
@@ -652,6 +653,24 @@ function App() {
                   </p>
                   <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '1.25rem', borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
                     <span className="tool-tag">Opentheso</span>
+                  </div>
+                </div>
+
+                <div 
+                  className="card" 
+                  style={{ display: 'flex', flexDirection: 'column', height: '100%', cursor: 'pointer' }}
+                  onClick={(e) => handleCardClick('https://opentheso.huma-num.fr/?idt=Inq_Thes', e)}
+                >
+                  <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
+                    <OpenthesoLogo size={18} /> Tesauro de Tipologías Inquisitoriales (Opentheso)
+                  </h3>
+                  <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)', flexGrow: 1 }}>
+                    Desarrollé un vocabulario controlado bilingüe (español/francés) bajo el estándar <strong>SKOS</strong> para la indización de piezas procesales de la Inquisición española. Diseñado para integrarse con <strong>XML-TEI</strong> y esquemas <strong>ODD</strong> para validación, se fundamenta en la tesis de B. Santiago Medina y forma parte de mi investigación doctoral. Disponible en la plataforma institucional Opentheso de Huma-Num.
+                  </p>
+                  <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '1.25rem', borderTop: '1px solid var(--border-color)', paddingTop: '1rem' }}>
+                    <span className="tool-tag">SKOS / RDF</span>
+                    <span className="tool-tag">XML-TEI ODD</span>
+                    <span className="tool-tag">Web Semántica</span>
                   </div>
                 </div>
               </div>
