@@ -51,6 +51,17 @@ const AmisLogo = ({ size = 18, className = "" }) => (
   />
 );
 
+const ArianeLogo = ({ size = 18, className = "" }) => (
+  <img 
+    src="/logos/ariane-logo.png" 
+    width={size} 
+    height={size} 
+    alt="ARIANE" 
+    className={className} 
+    style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.25rem' }} 
+  />
+);
+
 const PythonLogo = ({ size = 18, className = "" }) => (
   <img 
     src="/logos/python-logo.svg" 
@@ -324,6 +335,13 @@ function App() {
     }
     window.open(url, '_blank', 'noopener,noreferrer');
   };
+
+  const handleEmailClick = (e) => {
+    e.preventDefault();
+    const user = "andres-felipe.echavarria-pelaez";
+    const domain = "sorbonne-nouvelle.fr";
+    window.location.href = `mailto:${user}@${domain}`;
+  };
   
   // Publication states
   const [searchQuery, setSearchQuery] = useState('');
@@ -540,7 +558,7 @@ function App() {
                 </p>
                 
                 <div className="profile-socials">
-                  <a href="mailto:andres.echavarria@huma-num.fr" className="social-link email" title="Contacto (Email)" id="link-email"></a>
+                  <a href="#contacto" onClick={handleEmailClick} className="social-link email" title="Contacto (Email)" id="link-email"></a>
                   <a href="https://gitlab.huma-num.fr/aechavarria" target="_blank" rel="noopener noreferrer" className="social-link gitlab" title="GitLab Huma-Num" id="link-gitlab"></a>
                   <a href="https://github.com/andresecha" target="_blank" rel="noopener noreferrer" className="social-link github" title="GitHub" id="link-github"></a>
                   <a href="https://cv.hal.science/andres-echavarria" target="_blank" rel="noopener noreferrer" className="social-link hal" title="HAL Open Science" id="link-hal"></a>
@@ -595,7 +613,7 @@ function App() {
                   onClick={(e) => handleCardClick('https://oscars-project.eu/projects/amis-advanced-metadata-intelligent-system', e)}
                 >
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
-                    <AmisLogo size={18} /> Post-Doctorado — Proyecto AMIS
+                    <ArianeLogo size={18} /> Post-Doctorado — Proyecto AMIS
                   </h3>
                   <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)', flexGrow: 1 }}>
                     Desde noviembre de 2024, realizo mi investigación post-doctoral en el equipo técnico y científico del proyecto europeo <a href="https://oscars-project.eu/projects/amis-advanced-metadata-intelligent-system" target="_blank" rel="noopener noreferrer">AMIS (Advanced Metadata Intelligent System)</a>, financiado por OSCARS EU (Horizon Europe). Estoy a cargo de la <strong>modelización de metadatos</strong> (Dublin Core, CAO_CRM) y de la integración de tesauros multilingües (370 conceptos estructurados según ISO 25964 en SKOS) con Opentheso y Huma-Num.
