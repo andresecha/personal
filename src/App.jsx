@@ -633,13 +633,13 @@ function App() {
                 filteredPublications.map((pub, idx) => (
                   <div key={idx} className="card pub-item" id={`pub-item-${idx}`}>
                     <span className="pub-type-badge">{getFriendlyDocType(pub.type)}</span>
-                    <a href={getDownloadUrl(pub.url)} target="_blank" rel="noopener noreferrer" className="pub-title-link" id={`pub-link-${idx}`}>
+                    <a href={pub.url} target="_blank" rel="noopener noreferrer" className="pub-title-link" id={`pub-link-${idx}`}>
                       <h3>{pub.title}</h3>
                     </a>
                     <div className="pub-expandable-details">
                       <div 
                         className="pub-citation"
-                        dangerouslySetInnerHTML={{ __html: formatCitation(pub.citation) }} 
+                        dangerouslySetInnerHTML={{ __html: pub.citation }} 
                       />
                       <div className="pub-meta">
                         <Calendar size={14} />
@@ -650,17 +650,36 @@ function App() {
                             <span>Revista: {pub.journal}</span>
                           </>
                         )}
-                        <span>•</span>
-                        <a 
-                          href={getDownloadUrl(pub.url)} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          className="pub-download-link"
-                          style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem', color: 'var(--accent)', fontWeight: 600, textDecoration: 'none' }}
-                        >
-                          <Download size={14} />
-                          <span>Descargar PDF</span>
-                        </a>
+                        {pub.downloadUrl && (
+                          <>
+                            <span>•</span>
+                            <a 
+                              href={pub.downloadUrl} 
+                              target="_blank" 
+                              rel="noopener noreferrer" 
+                              className="pub-download-link"
+                              style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem', color: 'var(--accent)', fontWeight: 600, textDecoration: 'none' }}
+                            >
+                              <Download size={14} />
+                              <span>Descargar PDF</span>
+                            </a>
+                          </>
+                        )}
+                        {pub.publisherUrl && (
+                          <>
+                            <span>•</span>
+                            <a 
+                              href={pub.publisherUrl} 
+                              target="_blank" 
+                              rel="noopener noreferrer" 
+                              className="pub-publisher-link"
+                              style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem', color: 'var(--accent)', fontWeight: 600, textDecoration: 'none' }}
+                            >
+                              <ExternalLink size={14} />
+                              <span>Sitio del Editor</span>
+                            </a>
+                          </>
+                        )}
                       </div>
                     </div>
                   </div>

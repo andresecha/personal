@@ -1,9 +1,21 @@
 [
   {
+    "title": "Las normas del secreto: El Orden de processar de Pablo García y la TEI como modelos de estandarización documental",
+    "year": 2026,
+    "type": "COUV",
+    "url": "https://www.iberoamericana-vervuert.es/FichaLibro2.aspx?P1=266046",
+    "downloadUrl": "https://www.iberoamericana-vervuert.es/capitulos/9783968699554_006.pdf",
+    "citation": "Andrés Felipe Echavarría Peláez, Bárbara Santiago Medina. \"Las normas del secreto: El Orden de processar de Pablo García y la TEI como modelos de estandarización documental\". Nerea Parro Gómez (ed.). <i>La investigación en filología hispánica: humanidades digitales, corpus y estándar TEI</i>, Iberoamericana Editorial Vervuert, pp. 115-138, 2026. <a target=\"_blank\" href=\"https://www.iberoamericana-vervuert.es/FichaLibro2.aspx?P1=266046\">&#x27E8;Ficha de editor&#x27E9;</a>",
+    "journal": "",
+    "doi": null
+  },
+  {
     "title": "Aplicación de HTR a la transcripción de impresos antiguos y manuscritos",
     "year": 2026,
     "type": "COUV",
     "url": "https://hal.science/hal-05631466v1",
+    "downloadUrl": "https://hal.science/hal-05631466v1/file/4-HAL-EchavarriaHTR.pdf",
+    "publisherUrl": "https://ediciones.uniandes.edu.co/gpd-ctrl-f9786287903098-69ea3405d57aa.html",
     "citation": "Andres Echavarria. Aplicación de HTR a la transcripción de impresos antiguos y manuscritos. Maria José Afanador Llach; Nicolás Vaughan. <i>Ctrl+F: Texto, archivo e interpretación en entornos digitales</i>, Universidad de los Andes, pp.268-313, 2026, 978-628-7903-08-1. <a target=\"_blank\" href=\"https://hal.science/hal-05631466v1\">&#x27E8;hal-05631466&#x27E9;</a>",
     "journal": "",
     "doi": null
@@ -13,6 +25,7 @@
     "year": 2026,
     "type": "COMM",
     "url": "https://hal.science/hal-05631254v1",
+    "downloadUrl": "https://hal.science/hal-05631254v1/file/10.63744_at_Sik2vxas691B.pdf",
     "citation": "Andrés Felipe Echavarría Peláez. Du script artisanal à l’infrastructure ouverte. <i>Humanistica 2026</i>, Association francophone des humanités numériques, May 2026, Paris, France. pp.85-91, <a target=\"_blank\" href=\"https://dx.doi.org/10.63744/sik2vxas691b\">&#x27E8;10.63744/sik2vxas691b&#x27E9;</a>. <a target=\"_blank\" href=\"https://hal.science/hal-05631254v1\">&#x27E8;hal-05631254&#x27E9;</a>",
     "journal": "",
     "doi": null
@@ -22,6 +35,7 @@
     "year": 2025,
     "type": "THESE",
     "url": "https://theses.hal.science/tel-05318449v1",
+    "downloadUrl": "https://theses.hal.science/tel-05318449v1/file/2025_ECHAVARRIA-PELAEZ_arch.pdf",
     "citation": "Andrés Felipe Echavarría Peláez. Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire. Sciences de l'information et de la communication. Université de Montpellier Paul-Valéry, 2025. Français. <a target=\"_blank\" href=\"https://www.theses.fr/2025UMPV0021\">&#x27E8;NNT : 2025UMPV0021&#x27E9;</a>. <a target=\"_blank\" href=\"https://theses.hal.science/tel-05318449v1\">&#x27E8;tel-05318449&#x27E9;</a>",
     "journal": "",
     "doi": null
@@ -31,6 +45,7 @@
     "year": 2025,
     "type": "REPORT",
     "url": "https://hal.science/hal-05267873v1",
+    "downloadUrl": "https://hal.science/hal-05267873v1/file/Fr_CER-WER_ARIANE_GT2-Rapport.pdf",
     "citation": "Andres Echavarria, Mathilde Le Meur. CER et WER : métriques d'évaluation de modèles de reconnaissance automatique de manuscrits et d'imprimés anciens. Consortium-HN ARIANE - Analyses, Recherches, Intelligence Artificielle et Nouvelles Editions numériques. 2025. <a target=\"_blank\" href=\"https://hal.science/hal-05267873v1\">&#x27E8;hal-05267873&#x27E9;</a>",
     "journal": "",
     "doi": null
@@ -40,6 +55,7 @@
     "year": 2025,
     "type": "REPORT",
     "url": "https://hal.science/hal-05337238v1",
+    "downloadUrl": "https://hal.science/hal-05337238v1/file/Critere_Scenari.pdf",
     "citation": "Mélanie Bouland, Andrés Felipe Echavarría Peláez. Critères du recensement d'ontologies, thésaurus et vocabulaire contrôlé en littérature. Consortium-HN ARIANE - Analyses, Recherches, Intelligence Artificielle et Nouvelles Editions numériques. 2025. <a target=\"_blank\" href=\"https://hal.science/hal-05337238v1\">&#x27E8;hal-05337238&#x27E9;</a>",
     "journal": "",
     "doi": null
@@ -49,6 +65,7 @@
     "year": 2025,
     "type": "REPORT",
     "url": "https://hal.science/hal-05267874v1",
+    "downloadUrl": "https://hal.science/hal-05267874v1/file/Es_CER-WER_ARIANE_GT2-Rapport.pdf",
     "citation": "Andres Echavarria, Mathilde Le Meur. CER y WER: métricas de evaluación de modelos de reconocimiento automático de manuscritos e impresos antiguos. Consortium-HN ARIANE - Analyses, Recherches, Intelligence Artificielle et Nouvelles Editions numériques. 2025. <a target=\"_blank\" href=\"https://hal.science/hal-05267874v1\">&#x27E8;hal-05267874&#x27E9;</a>",
     "journal": "",
     "doi": null
@@ -99,7 +116,7 @@
     "doi": null
   },
   {
-    "title": "Exploration des réseaux et leur représentation",
+    "title": "Exploration des réseaux et leur representación",
     "year": 2023,
     "type": "COMM",
     "url": "https://hal.science/hal-04148001v1",
@@ -112,6 +129,8 @@
     "year": 2023,
     "type": "OUV",
     "url": "https://shs.hal.science/halshs-04254996v1",
+    "downloadUrl": "https://zenodo.org/records/15020225/files/458-WilliamsEtAl-2025.pdf?download=1",
+    "publisherUrl": "https://langsci-press.org/catalog/book/458",
     "citation": "Geoffrey Clive Williams (Dir.). West meets East. Language Science Press, 2023, 978-3-98554-132-4 ; 978-3-96110-503-8. <a target=\"_blank\" href=\"https://dx.doi.org/10.5281/zenodo.15020225\">&#x27E8;10.5281/zenodo.15020225&#x27E9;</a>. <a target=\"_blank\" href=\"https://shs.hal.science/halshs-04254996v1\">&#x27E8;halshs-04254996&#x27E9;</a>",
     "journal": "",
     "doi": null
@@ -148,7 +167,7 @@
     "year": 2022,
     "type": "COMM",
     "url": "https://hal.science/hal-04101451v1",
-    "citation": "Andres Echavarria. Líneas directrices TEI para la codificación de textos impresos y manuscritos en español del siglo XVI. <i>Séminaire de lancement projet Dissidences religieuses et réception de la Réforme à la Renaissance (Espagne – XVIe s.) – Montpellier Saint Charles</i>, IRIEC – Université Paul-Valéry Montpellier 3; Projet ANR-21-CE38-0011; Institut de recherche en informatique de Toulouse UMR 5505; Praxiling UMR 5267 CNRS – Université Paul Valéry Montpellier 3; GRIAL (Grup de Recerca Interuniversitari en Aplicacions Lingüístiques); DeReHis (De Re Hispanica); UMR 5136 FRAMESPA; Universidad Bretagne Sud, Feb 2022, Montpellier, Francia. <a target=\"_blank\" href=\"https://hal.science/hal-04101451v1\">&#x27E8;hal-04101451&#x27E9;</a>",
+    "citation": "Andres Echavarria. Líneas directrices TEI para la codificación de textos impresos y manuscritos en español del siglo XVI. <i>Séminaire de lancement projet Dissidences religieuses et recepción de la Réforme à la Renaissance (Espagne – XVIe s.) – Montpellier Saint Charles</i>, IRIEC – Université Paul-Valéry Montpellier 3; Projet ANR-21-CE38-0011; Institut de recherche en informatique de Toulouse UMR 5505; Praxiling UMR 5267 CNRS – Université Paul Valéry Montpellier 3; GRIAL (Grup de Recerca Interuniversitari en Aplicacions Lingüístiques); DeReHis (De Re Hispanica); UMR 5136 FRAMESPA; Universidad Bretagne Sud, Feb 2022, Montpellier, Francia. <a target=\"_blank\" href=\"https://hal.science/hal-04101451v1\">&#x27E8;hal-04101451&#x27E9;</a>",
     "journal": "",
     "doi": null
   },
@@ -157,7 +176,7 @@
     "year": 2022,
     "type": "COMM",
     "url": "https://hal.science/hal-04101445v1",
-    "citation": "Andres Echavarria. Tecnologías de HTR aplicadas al proyecto ANR-D4R. <i>Séminaire de lancement projet Dissidences religieuses et réception de la Réforme à la Renaissance (Espagne – XVIe s.) – Montpellier Saint Charles</i>, IRIEC – Université Paul-Valéry Montpellier 3; Projet ANR-21-CE38-0011; Institut de recherche en informatique de Toulouse UMR 5505; Praxiling UMR 5267 CNRS – Université Paul Valéry Montpellier 3; GRIAL (Grup de Recerca Interuniversitari en Aplicacions Lingüístiques); DeReHis (De Re Hispanica); UMR 5136 FRAMESPA; Universidad Bretagne Sud, Feb 2022, Montpellier, Francia. <a target=\"_blank\" href=\"https://hal.science/hal-04101445v1\">&#x27E8;hal-04101445&#x27E9;</a>",
+    "citation": "Andres Echavarria. Tecnologías de HTR aplicadas al proyecto ANR-D4R. <i>Séminaire de lancement projet Dissidences religieuses et recepción de la Réforme à la Renaissance (Espagne – XVIe s.) – Montpellier Saint Charles</i>, IRIEC – Université Paul-Valéry Montpellier 3; Projet ANR-21-CE38-0011; Institut de recherche en informatique de Toulouse UMR 5505; Praxiling UMR 5267 CNRS – Université Paul Valéry Montpellier 3; GRIAL (Grup de Recerca Interuniversitari en Aplicacions Lingüístiques); DeReHis (De Re Hispanica); UMR 5136 FRAMESPA; Universidad Bretagne Sud, Feb 2022, Montpellier, Francia. <a target=\"_blank\" href=\"https://hal.science/hal-04101445v1\">&#x27E8;hal-04101445&#x27E9;</a>",
     "journal": "",
     "doi": null
   },
@@ -166,6 +185,7 @@
     "year": 2021,
     "type": "REPORT",
     "url": "https://shs.hal.science/halshs-03408209v1",
+    "downloadUrl": "https://shs.hal.science/halshs-03408209v1/file/FAIRiser%20vos%20donnees_Memo.pdf",
     "citation": "Fatiha Idmhand, Ioana Galleron, Ala Eddine Laouir, Andres Echavarria, Laurent Passion. FAIRiser vos données : mémorandum. [Rapport Technique] CAHIER - Consortium CAHIER. 2021. <a target=\"_blank\" href=\"https://shs.hal.science/halshs-03408209v1\">&#x27E8;halshs-03408209&#x27E9;</a>",
     "journal": "",
     "doi": null
