@@ -146,20 +146,22 @@ const renderToolIcon = (tool, size = 96) => {
   return <Code size={size * 0.8} />;
 };
 
-const renderCardLogo = (logoType) => {
+const renderCardLogo = (logoType, size = 72) => {
   switch (logoType) {
     case 'theses':
-      return <ThesesLogo size={18} />;
+      return <ThesesLogo size={size} />;
     case 'hal':
-      return <HalLogo size={18} />;
+      return <HalLogo size={size} />;
     case 'ariane':
-      return <ArianeLogo size={18} />;
+      return <ArianeLogo size={size} />;
+    case 'amis':
+      return <AmisLogo size={size} />;
     case 'python':
-      return <PythonLogo size={18} />;
+      return <PythonLogo size={size} />;
     case 'opentheso':
-      return <OpenthesoLogo size={18} />;
+      return <OpenthesoLogo size={size} />;
     default:
-      return <Code size={18} />;
+      return <Code size={size} />;
   }
 };
 
@@ -474,12 +476,15 @@ function App() {
                 {t.researchCards.map((card) => (
                   <div 
                     key={card.id} 
-                    className="card" 
+                    className="card research-card" 
                     style={{ display: 'flex', flexDirection: 'column', height: '100%', cursor: 'pointer' }}
                     onClick={(e) => handleCardClick(card.link, e)}
                   >
-                    <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
-                      {renderCardLogo(card.logoType)} {card.title}
+                    <div className="research-icon-wrapper">
+                      {renderCardLogo(card.logoType, 72)}
+                    </div>
+                    <h3 style={{ color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
+                      {card.title}
                     </h3>
                     <p 
                       style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)', flexGrow: 1 }}

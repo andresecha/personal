@@ -111,7 +111,7 @@ export default {
     },
     {
       id: 'postdoc',
-      logoType: 'ariane',
+      logoType: 'amis',
       title: 'Post-Doctorat — Projet AMIS',
       desc: `Depuis septembre 2025, je collabore au développement de l'infrastructure du projet européen <a href="https://oscars-project.eu/projects/amis-advanced-metadata-intelligent-system" target="_blank" rel="noopener noreferrer">AMIS (Advanced Metadata Intelligent System)</a>, financé par l'initiative OSCARS (Horizon Europe). Mes missions se concentrent sur la modélisation de métadonnées (Dublin Core et CAO_CRM) et sur l'interopérabilité de vocabulaires contrôlés sur la plateforme Opentheso de Huma-Num. Ce thésaurus multilingue, initié au sein du consortium HN CAHIER (2016–2022), est aujourd'hui maintenu par le consortium Huma-Num ARIANE et le Cluster 5b de Biblissima+, en collaboration avec CORLI 2. Accédez à la ressource sur <a href="https://opentheso.huma-num.fr/?idt=43" target="_blank" rel="noopener noreferrer">Opentheso</a>.`,
       tags: ['NLP & LLMs (AMIS)'],

@@ -818,6 +818,23 @@ p {
   border: none;
 }
 
+.research-card {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.25rem;
+}
+
+.research-icon-wrapper {
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.625rem;
+  align-self: center;
+  background-color: transparent;
+  border: none;
+}
+
 .tool-card h3 {
   margin-bottom: 0.5rem;
 }
