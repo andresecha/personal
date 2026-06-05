@@ -302,8 +302,9 @@ function App() {
       {/* Header */}
       <header className="header" id="navbar">
         <div className="container nav-container">
-          <a href="#" className="logo-text" id="logo-nav" onClick={() => setActiveTab('sobre-mi')}>
-            Andrés Felipe Echavarría Peláez
+          <a href="#" className="logo-text" id="logo-nav" onClick={() => setActiveTab('sobre-mi')} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem' }}>
+            <img src="/logos/zorro.svg" alt="Zorro Logo" className="logo-fox" />
+            <span>Andrés Felipe Echavarría Peláez</span>
           </a>
           
           <nav>
@@ -443,7 +444,7 @@ function App() {
                 <div className="profile-avatar-glow">
                   {!avatarError ? (
                     <img 
-                      src="/avatar.jpg" 
+                      src="/images/profile.jpg" 
                       alt="Andrés Felipe Echavarría Peláez" 
                       className="profile-avatar"
                       onError={() => setAvatarError(true)}

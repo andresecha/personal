@@ -131,6 +131,16 @@ a:not(.btn-primary):not(.btn-secondary):not(.logo-text):not(.social-link):not(.n
   text-decoration: none;
 }
 
+.logo-fox {
+  width: 32px;
+  height: 32px;
+  transition: filter var(--transition-normal);
+}
+
+.dark-theme .logo-fox {
+  filter: invert(1);
+}
+
 .nav-links {
   display: flex;
   gap: 0.5rem;
