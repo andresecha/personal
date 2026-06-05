@@ -13,8 +13,91 @@ import {
   Download, 
   Sun, 
   Moon, 
-  X
+  X,
+  GraduationCap
 } from 'lucide-react';
+
+// Custom SVG logos for academic profiles & tech collaborations
+const HalLogo = ({ size = 18, className = "" }) => (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 100 100" 
+    className={className} 
+    style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.25rem' }}
+  >
+    <circle cx="50" cy="50" r="45" fill="#E05224" />
+    <circle cx="50" cy="50" r="28" fill="none" stroke="white" strokeWidth="5" />
+    <circle cx="50" cy="50" r="11" fill="white" />
+    <path d="M 50 10 A 40 40 0 0 1 90 50" fill="none" stroke="white" strokeWidth="5" strokeLinecap="round" />
+    <path d="M 50 90 A 40 40 0 0 1 10 50" fill="none" stroke="white" strokeWidth="5" strokeLinecap="round" />
+  </svg>
+);
+
+const AmisLogo = ({ size = 18, className = "" }) => (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 100 100" 
+    className={className} 
+    style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.25rem' }}
+  >
+    <rect width="100" height="100" rx="20" fill="#1E3A8A" />
+    <circle cx="35" cy="50" r="10" fill="#10B981" />
+    <circle cx="65" cy="35" r="8" fill="#60A5FA" />
+    <circle cx="65" cy="65" r="8" fill="#60A5FA" />
+    <line x1="35" y1="50" x2="65" y2="35" stroke="white" strokeWidth="4" />
+    <line x1="35" y1="50" x2="65" y2="65" stroke="white" strokeWidth="4" />
+    <line x1="65" y1="35" x2="65" y2="65" stroke="white" strokeWidth="4" />
+  </svg>
+);
+
+const PythonLogo = ({ size = 18, className = "" }) => (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="currentColor" 
+    className={className}
+    style={{ display: 'inline-block', verticalAlign: 'middle', color: '#3776AB', marginRight: '0.25rem' }}
+  >
+    <path d="M11.933 0c-3.766 0-3.957.016-5.433.084-2.822.13-4.148 1.41-4.394 4.393-.07 2.87-.063 3.63-.005 5.5.068 2.223.167 3.39.52 4.1.487.973 1.258 1.637 2.457 1.87 1.477.29 2.148.334 5.92.336H12v-1.89h-.067c-3.136-.002-3.666-.027-4.475-.187-.803-.16-1.127-.473-1.295-.973-.2-.596-.282-1.42-.323-3.754H12V9.5H5.842c.005-2.036.053-2.92.194-3.41.332-1.16 1.157-1.87 2.664-1.928.91-.035 3.3-.038 3.3-.038V0zM12 24c3.766 0 3.957-.016 5.433-.084 2.822-.13 4.148-1.41 4.394-4.393.07-2.87.063-3.63.005-5.5-.068-2.223-.167-3.39-.52-4.1-.487-.973-1.258-1.637-2.457-1.87-1.477-.29-2.148-.334-5.92-.336H12v1.89h.067c3.136.002 3.666.027 4.475.187.803.16 1.127.473 1.295.973.2.596.282 1.42.323 3.754H12V14.5h6.158c-.005 2.036-.053 2.92-.194 3.41-.332 1.16-1.157 1.87-2.664 1.928-.91.035-3.3.038-3.3.038V24zM9 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm6 16a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+  </svg>
+);
+
+const OpenthesoLogo = ({ size = 18, className = "" }) => (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 100 100" 
+    className={className} 
+    style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '0.25rem' }}
+  >
+    <rect width="100" height="100" rx="20" fill="#0D9488" />
+    <circle cx="50" cy="25" r="10" fill="white" />
+    <circle cx="25" cy="60" r="8" fill="white" />
+    <circle cx="50" cy="60" r="8" fill="white" />
+    <circle cx="75" cy="60" r="8" fill="white" />
+    <line x1="50" y1="25" x2="25" y2="60" stroke="white" strokeWidth="4" />
+    <line x1="50" y1="25" x2="50" y2="60" stroke="white" strokeWidth="4" />
+    <line x1="50" y1="25" x2="75" y2="60" stroke="white" strokeWidth="4" />
+  </svg>
+);
+
+// Helper functions for direct publication downloads
+const getDownloadUrl = (url) => {
+  if (!url) return '';
+  if (url.includes('hal.science')) {
+    if (url.endsWith('/document')) return url;
+    return `${url}/document`;
+  }
+  return url;
+};
+
+const formatCitation = (citation) => {
+  if (!citation) return '';
+  return citation.replace(/href="https:\/\/([^"]+?\.hal\.science\/[^"]+?)"/g, 'href="https://$1/document"');
+};
 
 // Artworks / illustrations for the artistic portfolio (Mini Expo)
 const artworks = [
@@ -104,10 +187,16 @@ const tools = [
 // Experience timeline
 const cvItems = [
   {
-    role: 'Ingeniero de Investigación en Humanidades Digitales (Proyecto AMIS)',
+    role: 'Webmaster del Consorcio ARIANE y del proyecto ANR CARTAS',
+    institution: 'Consorcio ARIANE (Huma-Num) / Proyecto ANR CARTAS - Francia',
+    date: '2024 - Presente',
+    desc: 'Administración, desarrollo y mantenimiento técnico de los sitios web oficiales y las plataformas de difusión científica del Consorcio ARIANE (dentro de la infraestructura Huma-Num) y del proyecto de investigación <a href="http://cartas.huma-num.fr/" target="_blank" rel="noopener noreferrer">ANR CARTAS</a>.'
+  },
+  {
+    role: 'Investigador Post-Doctoral / Ingeniero de Investigación (Proyecto AMIS)',
     institution: 'CNRS / Consorcio ARIANE / TGIR Huma-Num / Université de Poitiers - París/Poitiers, Francia',
     date: '2024 - Presente',
-    desc: 'Desarrollo y modelización del asistente de metadatos AMIS (Advanced Metadata Intelligent System), financiado por el programa europeo Horizon Europe (OSCARS). Encargado de la modelización de metadatos (Dublin Core, alineación con la ontología CAO_CRM) y de la integración de tesauros multilingües normalizados (ISO 25964 en SKOS) con la plataforma Opentheso y la infraestructura Huma-Num.'
+    desc: 'Investigación post-doctoral enfocada en el desarrollo y modelización del asistente de metadatos inteligente AMIS (Advanced Metadata Intelligent System), financiado por el programa europeo Horizon Europe (OSCARS). Encargado de la modelización de metadatos (Dublin Core, alineación con la ontología CAO_CRM) y de la integración de tesauros multilingües normalizados (ISO 25964 en SKOS) con la plataforma Opentheso y la infraestructura Huma-Num.'
   },
   {
     role: 'Docente (Chargé de Cours)',
@@ -260,6 +349,15 @@ function App() {
               </li>
               <li>
                 <button 
+                  id="tab-btn-formacion"
+                  className={`nav-btn ${activeTab === 'formacion' ? 'active' : ''}`}
+                  onClick={() => setActiveTab('formacion')}
+                >
+                  Formación & Talleres
+                </button>
+              </li>
+              <li>
+                <button 
                   id="tab-btn-cv"
                   className={`nav-btn ${activeTab === 'cv' ? 'active' : ''}`}
                   onClick={() => setActiveTab('cv')}
@@ -319,6 +417,14 @@ function App() {
             <span>Software & Datos</span>
           </button>
           <button 
+            id="m-tab-btn-formacion"
+            className={`mobile-nav-btn ${activeTab === 'formacion' ? 'active' : ''}`}
+            onClick={() => setActiveTab('formacion')}
+          >
+            <GraduationCap size={18} />
+            <span>Formación</span>
+          </button>
+          <button 
             id="m-tab-btn-cv"
             className={`mobile-nav-btn ${activeTab === 'cv' ? 'active' : ''}`}
             onClick={() => setActiveTab('cv')}
@@ -354,7 +460,7 @@ function App() {
                 <p className="profile-title">Digital Humanities & Computer Science</p>
                 <h1>Andrés Felipe Echavarría Peláez</h1>
                 <p className="profile-bio" style={{ fontSize: '1.05rem', lineHeight: '1.7', color: 'var(--text-secondary)' }}>
-                  Soy un investigador colombo-francés cuya carrera se desarrolla en la convergencia entre las humanidades tradicionales y las tecnologías digitales, combinando historia, filología, lingüística, lexicografía y ciencia de los textos. Actualmente me desempeño como ingeniero de investigación en informática y humanidades digitales en el **Centre National de la Recherche Scientifique (CNRS)**, trabajando en el proyecto europeo **AMIS (Advanced Metadata Intelligent System)** financiado por el programa Horizon Europe (OSCARS), y soy miembro del comité de pilotaje científico del Consorcio **ARIANE** dentro de la infraestructura de investigación **Huma-Num**.
+                  Soy un investigador colombo-francés cuya carrera se desarrolla en la convergencia entre las humanidades tradicionales y las tecnologías digitales, combinando historia, filología, lingüística, lexicografía y ciencia de los textos. Actualmente me desempeño como ingeniero de investigación en informática y humanidades digitales en el <strong>Centre National de la Recherche Scientifique (CNRS)</strong>, trabajando en el proyecto europeo <strong>AMIS (Advanced Metadata Intelligent System)</strong> financiado por el programa Horizon Europe (OSCARS), y soy miembro del comité de pilotaje científico y webmaster del Consorcio <strong>ARIANE</strong> y del proyecto <strong><a href="http://cartas.huma-num.fr/" target="_blank" rel="noopener noreferrer">ANR CARTAS</a></strong>, dentro de la infraestructura de investigación <strong>Huma-Num</strong>.
                 </p>
                 <p className="profile-bio" style={{ fontSize: '1.05rem', lineHeight: '1.7', color: 'var(--text-secondary)', marginTop: '1rem', marginBottom: '2.5rem' }}>
                   Mi formación comenzó con una Licenciatura en Artes Plásticas en la Universidad de Antioquia, complementada con un Diplôme National Supérieur d'Expression Plastique en la École Européenne Supérieure d'Art de Bretagne. Posteriormente obtuve una Maestría en Humanidades Digitales en la Université de Bretagne-Sud y concluí mi doctorado en 2025 en la Université de Montpellier Paul-Valéry con una tesis doctoral centrada en la editorialización de procesos de fe inquisitoriales y su estructuración digital.
@@ -392,7 +498,7 @@ function App() {
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
                 <div>
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
-                    🎓 Tesis Doctoral & Nakala Datasets
+                    <HalLogo size={18} /> Tesis Doctoral & Nakala Datasets
                   </h3>
                   <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
                     Mi investigación de doctorado (2025, dirigida por G. Williams y K. Benmiloud, accesible en <a href="https://theses.hal.science/tel-05318449v1" target="_blank" rel="noopener noreferrer">theses.hal</a>) derivó en tres conjuntos de datos publicados en <strong>Nakala</strong>: el prototipo de anotación del <a href="https://nakala.fr/10.34847/nkl.aaeej9jp" target="_blank" rel="noopener noreferrer">proceso de Pedro de Cazalla</a>, el <a href="https://nakala.fr/10.34847/nkl.2a4e2h52" target="_blank" rel="noopener noreferrer">tesauro de tipologías inquisitoriales (SKOS)</a> y el <a href="https://nakala.fr/10.34847/nkl.ab374s00" target="_blank" rel="noopener noreferrer">esquema de anotación TEI (ODD, RNG)</a>. La documentación y scripts adicionales se hallan en <a href="https://zenodo.org/records/15035164" target="_blank" rel="noopener noreferrer">Zenodo</a> y <a href="https://gitlab.huma-num.fr/aechavarria/annexesthese" target="_blank" rel="noopener noreferrer">GitLab</a>.
@@ -401,7 +507,7 @@ function App() {
                 
                 <div>
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
-                    📦 Métricas HTR (CER/WER)
+                    <HalLogo size={18} /> Métricas HTR (CER/WER)
                   </h3>
                   <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
                     Colaboré en la definición cuantitativa para evaluar el rendimiento de modelos de reconocimiento de manuscritos e impresos antiguos mediante las tasas de error de caracteres (CER) y palabras (WER), publicadas en español (<a href="https://hal.science/hal-05267874v1" target="_blank" rel="noopener noreferrer">hal-05267874v1</a>) y francés (<a href="https://hal.science/hal-05267873v1" target="_blank" rel="noopener noreferrer">hal-05267873v1</a>) en el Consorcio ARIANE.
@@ -410,19 +516,28 @@ function App() {
 
                 <div>
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
-                    🚀 Proyecto AMIS — OSCARS (Actualidad)
+                    <AmisLogo size={18} /> Post-Doctorado — Proyecto AMIS
                   </h3>
                   <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
-                    Desde noviembre de 2024, formo parte del equipo técnico y científico del proyecto europeo <a href="https://oscars-project.eu/projects/amis-advanced-metadata-intelligent-system" target="_blank" rel="noopener noreferrer">AMIS (Advanced Metadata Intelligent System)</a>, financiado por OSCARS EU, encargado de la <strong>modelización de metadatos</strong> (Dublin Core, CAO_CRM) y de la integración de tesauros multilingües (370 conceptos estructurados según ISO 25964 en SKOS) con Opentheso y Huma-Num.
+                    Desde noviembre de 2024, realizo mi investigación post-doctoral en el equipo técnico y científico del proyecto europeo <a href="https://oscars-project.eu/projects/amis-advanced-metadata-intelligent-system" target="_blank" rel="noopener noreferrer">AMIS (Advanced Metadata Intelligent System)</a>, financiado por OSCARS EU (Horizon Europe). Estoy a cargo de la <strong>modelización de metadatos</strong> (Dublin Core, CAO_CRM) y de la integración de tesauros multilingües (370 conceptos estructurados según ISO 25964 en SKOS) con Opentheso y Huma-Num.
                   </p>
                 </div>
 
                 <div>
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
-                    🐍 Computus y calendario-liturgico
+                    <PythonLogo size={18} /> Computus y calendario-liturgico
                   </h3>
                   <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
-                    Desarrollé la librería de Python <strong>calendario-liturgico</strong> para calcular fechas litúrgicas mediante el algoritmo de computus de Gauss. El proceso de evolución de este script a una biblioteca reproducible de Ciencia Abierta se describe en mi publicación de Humanistica 2026 (<a href="https://hal.science/hal-05631254v1" target="_blank" rel="noopener noreferrer">hal-05631254v1</a> / <a href="https://anthology.ach.org/volumes/vol0004/du-script-artisanal-l-infrastructure-ouverte-gen-se-enjeux/" target="_blank" rel="noopener noreferrer">Anthology ACH</a>).
+                    Desarrollé la librería de Python <strong>calendario-liturgico</strong> para calcular fechas litúrgicas mediante el algoritmo de computus de Gauss. El proceso de evolución de este script a una biblioteca reproducible de Ciencia Abierta se describe en mi publicación de Humanistica 2026 (<a href="https://hal.science/hal-05631254v1" target="_blank" rel="noopener noreferrer">hal-05631254v1</a> / <a href="https://anthology.ach.org/volumes/vol0004/du-script-artisanal-l-infrastructure-ouverte-gen-se-enjeux/" target="_blank" rel="noopener noreferrer">Anthology ACH</a>) y está disponible en <a href="https://pypi.org/project/calendario-liturgico/0.1.0/" target="_blank" rel="noopener noreferrer">PyPI</a>.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
+                    <OpenthesoLogo size={18} /> Colaboración con Opentheso
+                  </h3>
+                  <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
+                    Colaboración con el ecosistema de <strong>Opentheso</strong>, un gestor de tesauros multilingüe y de código abierto desarrollado bajo la dirección de <strong>Miled Rousset</strong> (MOM-CNRS). Realicé la traducción completa de su interfaz de administración al castellano y publiqué guías metodológicas sobre la construcción y gestión de tesauros (<a href="https://opentheso.hypotheses.org/4944" target="_blank" rel="noopener noreferrer">buenas prácticas</a>, <a href="https://opentheso.hypotheses.org/4978" target="_blank" rel="noopener noreferrer">conceptos</a> e <a href="https://opentheso.hypotheses.org/5174" target="_blank" rel="noopener noreferrer">importación/exportación</a>).
                   </p>
                 </div>
               </div>
@@ -433,6 +548,7 @@ function App() {
                 <span className="tool-tag">XML-TEI / SKOS</span>
                 <span className="tool-tag">Opentheso / Nakala</span>
                 <span className="tool-tag">computus (Gauss)</span>
+                <span className="tool-tag">Opentheso</span>
               </div>
             </div>
           </section>
@@ -479,11 +595,10 @@ function App() {
         {activeTab === 'publicaciones' && (
           <section className="animate-slide-up" id="sec-publications">
             <div className="section-intro">
-              <p className="profile-title">Sincronización en tiempo real desde HAL Open Science</p>
+              <p className="profile-title">Publicaciones Académicas</p>
               <h1>Producción Científica</h1>
               <p>
-                Lista completa de artículos, actas de congresos, tesis doctorales e informes técnicos. 
-                Se actualizan automáticamente mediante GitHub Actions en cada compilación del sitio.
+                Compilación de mi producción científica y publicaciones académicas, que incluye mi tesis doctoral, actas de congresos, informes técnicos y artículos en revistas especializadas sobre humanidades digitales, codificación de textos XML-TEI e HTR.
               </p>
             </div>
 
@@ -518,22 +633,35 @@ function App() {
                 filteredPublications.map((pub, idx) => (
                   <div key={idx} className="card pub-item" id={`pub-item-${idx}`}>
                     <span className="pub-type-badge">{getFriendlyDocType(pub.type)}</span>
-                    <a href={pub.url} target="_blank" rel="noopener noreferrer" className="pub-title-link" id={`pub-link-${idx}`}>
+                    <a href={getDownloadUrl(pub.url)} target="_blank" rel="noopener noreferrer" className="pub-title-link" id={`pub-link-${idx}`}>
                       <h3>{pub.title}</h3>
                     </a>
-                    <div 
-                      className="pub-citation"
-                      dangerouslySetInnerHTML={{ __html: pub.citation }} 
-                    />
-                    <div className="pub-meta">
-                      <Calendar size={14} />
-                      <span>Año: {pub.year}</span>
-                      {pub.journal && (
-                        <>
-                          <span>•</span>
-                          <span>Revista: {pub.journal}</span>
-                        </>
-                      )}
+                    <div className="pub-expandable-details">
+                      <div 
+                        className="pub-citation"
+                        dangerouslySetInnerHTML={{ __html: formatCitation(pub.citation) }} 
+                      />
+                      <div className="pub-meta">
+                        <Calendar size={14} />
+                        <span>Año: {pub.year}</span>
+                        {pub.journal && (
+                          <>
+                            <span>•</span>
+                            <span>Revista: {pub.journal}</span>
+                          </>
+                        )}
+                        <span>•</span>
+                        <a 
+                          href={getDownloadUrl(pub.url)} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="pub-download-link"
+                          style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem', color: 'var(--accent)', fontWeight: 600, textDecoration: 'none' }}
+                        >
+                          <Download size={14} />
+                          <span>Descargar PDF</span>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 ))
@@ -576,6 +704,111 @@ function App() {
                   </a>
                 </div>
               ))}
+            </div>
+          </section>
+        )}
+
+        {/* TAB: FORMACIÓN & TALLERES */}
+        {activeTab === 'formacion' && (
+          <section className="animate-slide-up" id="sec-formacion">
+            <div className="section-intro">
+              <p className="profile-title">Educación, Docencia y Divulgación</p>
+              <h1>Formación & Talleres</h1>
+              <p>
+                Detalle de mi trayectoria académica formal, actividades de docencia universitaria y la impartición de talleres especializados en humanidades digitales en instituciones internacionales.
+              </p>
+            </div>
+
+            <div className="formacion-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', marginTop: '2rem' }}>
+              
+              {/* Column 1: Talleres y Docencia */}
+              <div className="card" style={{ padding: '2rem' }}>
+                <h2 className="text-gradient" style={{ marginBottom: '1.5rem', fontSize: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <Code size={20} /> Docencia & Talleres Impartidos
+                </h2>
+                
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                  <div>
+                    <h3 style={{ fontSize: '1.1rem', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>Consorcio ARIANE (Huma-Num)</h3>
+                    <span className="cv-date" style={{ fontSize: '0.8rem', color: 'var(--accent)', fontWeight: 600 }}>2024 - Presente</span>
+                    <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '0.5rem' }}>
+                      Piloto del GT2 (Adquisición de Datos). Coordinador y docente en talleres especializados sobre <strong>Transkribus</strong> y <strong>eScriptorium</strong> aplicados a la transcripción asistida por ordenador en universidades europeas (como la Universidad Complutense de Madrid y UCLouvain).
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 style={{ fontSize: '1.1rem', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>Université Sorbonne Nouvelle (París, Francia)</h3>
+                    <span className="cv-date" style={{ fontSize: '0.8rem', color: 'var(--accent)', fontWeight: 600 }}>2021 - Presente</span>
+                    <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '0.5rem' }}>
+                      <strong>Docente en Máster en Humanidades Digitales:</strong> Curso de <em>"Introducción a la gestión de bases de datos en SHS"</em>.<br />
+                      <strong>Docente en Máster de Letras Modernas:</strong> Curso de <em>"Metodología de la investigación digital"</em>.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 style={{ fontSize: '1.1rem', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>Université de Montpellier Paul-Valéry (Francia)</h3>
+                    <span className="cv-date" style={{ fontSize: '0.8rem', color: 'var(--accent)', fontWeight: 600 }}>2022 - 2024</span>
+                    <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '0.5rem' }}>
+                      Asignaturas de LANSAD Espagnol (B1-B2), Méthodologie du travail universitaire y reforzamiento metodológico/disciplinario en las Licencias LLCER y LEA.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 style={{ fontSize: '1.1rem', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>Divulgación y Ateliers Invitados</h3>
+                    <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)' }}>
+                      • <strong>Campus Condorcet (2023):</strong> Ponencia invitada <em>"Éclairage TEI sur les procédures Inquisitoriales"</em> (GT Outils et pratiques éditoriales).<br />
+                      • <strong>Universitat Autònoma de Barcelona (2022):</strong> Seminario <em>"Transkribus y transcripción automática del impreso antiguo"</em>.<br />
+                      • <strong>Universidad de Antioquia (Colombia, 2022):</strong> Taller <em>"HTR aplicada a los manuscritos de Don Tomás Carrasquilla"</em>.<br />
+                      • <strong>Fête de la Science (2022):</strong> Taller interactivo <em>"Livre ancien et Humanités numériques"</em>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Column 2: Formación Académica */}
+              <div className="card" style={{ padding: '2rem' }}>
+                <h2 className="text-gradient" style={{ marginBottom: '1.5rem', fontSize: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <Award size={20} /> Formación Académica
+                </h2>
+                
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                  <div>
+                    <h3 style={{ fontSize: '1.1rem', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>Doctorado en Estudios Romanes y Humanidades Digitales</h3>
+                    <span className="cv-date" style={{ fontSize: '0.8rem', color: 'var(--accent)', fontWeight: 600 }}>2021 - 2025</span>
+                    <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>Université de Montpellier Paul-Valéry</p>
+                    <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>
+                      Tesis doctoral: <em>"Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire"</em> (dirigida por G. Williams y K. Benmiloud). Especialización en modelización XML-TEI, vocabularios controlados en SKOS/RDF y HTR.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 style={{ fontSize: '1.1rem', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>Máster en Humanidades Numéricas, Letras y Lexicografía</h3>
+                    <span className="cv-date" style={{ fontSize: '0.8rem', color: 'var(--accent)', fontWeight: 600 }}>2018 - 2020</span>
+                    <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>Université de Bretagne-Sud (Lorient, Francia)</p>
+                    <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>
+                      Procesamiento de corpus lexicográficos antiguos, marcado XML-TEI y bases de datos relacionales aplicadas a diccionarios antiguos (proyecto BasNum).
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 style={{ fontSize: '1.1rem', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>DNSEP (Diplôme National Supérieur d'Expression Plastique)</h3>
+                    <span className="cv-date" style={{ fontSize: '0.8rem', color: 'var(--accent)', fontWeight: 600 }}>2018</span>
+                    <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>École Européenne Supérieure d'Art de Bretagne (EESAB Lorient)</p>
+                    <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>
+                      Grado superior homólogo a máster en bellas artes e investigación en artes plásticas y visuales.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 style={{ fontSize: '1.1rem', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>Licenciatura en Educación: Artes Plásticas</h3>
+                    <span className="cv-date" style={{ fontSize: '0.8rem', color: 'var(--accent)', fontWeight: 600 }}>2010 - 2017</span>
+                    <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>Universidad de Antioquia (Medellín, Colombia)</p>
+                    <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>
+                      Formación profesional en pedagogía artística, bellas artes e historia del arte.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
         )}

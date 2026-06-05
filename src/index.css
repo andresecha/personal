@@ -688,7 +688,22 @@ p {
 
 .pub-item {
   border-left: 3px solid var(--accent);
-  padding-left: 1.5rem;
+  padding: 1rem 1.5rem;
+  transition: all var(--transition-normal);
+  cursor: pointer;
+}
+
+.pub-expandable-details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-normal), opacity var(--transition-normal), margin-top var(--transition-normal);
+}
+
+.pub-item:hover .pub-expandable-details {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 0.75rem;
 }
 
 .pub-type-badge {
