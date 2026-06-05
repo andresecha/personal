@@ -28,12 +28,3 @@ Este repositorio contiene el código fuente de mi sitio web personal y académic
 
 ---
 
-## 📘 Documentación de Configuración
-
-Para obtener instrucciones completas sobre:
-*   Configuración del dominio en **OVH** (`cachetown.fr`).
-*   Configuración de integración continua y despliegues con **GitHub Actions** (`.github/workflows/deploy.yml`).
-*   Verificación de propiedad del dominio en GitHub.
-
-Consulta el archivo de documentación en la raíz del espacio de trabajo:
-👉 **[README.md en la raíz de sitiopersonal](file:///Users/andres/Documents/GitLab/sitiopersonal/README.md)**.

@@ -19,7 +19,7 @@ export default {
     noPubsFound: "No se encontraron publicaciones que coincidan con la búsqueda o filtro.",
     downloadCv: "Ver CV completo en HAL",
     closeModal: "Cerrar modal",
-    copyright: "Andrés Felipe Echavarría Peláez © 2026. Todos los derechos reservados",
+    copyright: "Andrés Felipe Echavarría Peláez. Todos los derechos reservados",
     footerSustainability: "Alojado de manera sostenible y escalable en GitHub Pages.",
     researchSectionTitle: "Investigación & desarrollo tecnológico",
     portfolioSectionTitle: "Identidad visual & diseño de marcas",
