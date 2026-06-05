@@ -311,7 +311,7 @@ function App() {
         <div className="container nav-container">
           <a href="#" className="logo-text" id="logo-nav" onClick={() => setActiveTab('sobre-mi')} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem' }}>
             <img src="/logos/zorro.svg" alt="Zorro Logo" className="logo-fox" />
-            <span>Andrés Felipe Echavarría Peláez</span>
+            <span>Andrés Echavarría</span>
           </a>
           
           <nav>
@@ -452,7 +452,7 @@ function App() {
                   {!avatarError ? (
                     <img 
                       src="/images/profile.jpg" 
-                      alt="Andrés Felipe Echavarría Peláez" 
+                      alt="Andrés Echavarría" 
                       className="profile-avatar"
                       onError={() => setAvatarError(true)}
                     />
@@ -462,7 +462,7 @@ function App() {
                 </div>
               </div>
               <div>
-                <p className="profile-title">Digital Humanities & Computer Science</p>
+                <p className="profile-title">Humanidades Digitales & Ciencia de Textos</p>
                 <h1>Andrés Felipe Echavarría Peláez</h1>
                 <p className="profile-bio" style={{ fontSize: '1.05rem', lineHeight: '1.7', color: 'var(--text-secondary)' }}>
                   Soy un investigador colombo-francés cuya carrera se desarrolla en la convergencia entre las humanidades tradicionales y las tecnologías digitales, combinando historia, filología, lingüística, lexicografía y ciencia de los textos. Actualmente me desempeño como ingeniero de investigación en informática y humanidades digitales en el <strong>Centre National de la Recherche Scientifique (CNRS)</strong>, trabajando en el proyecto europeo <strong>AMIS (Advanced Metadata Intelligent System)</strong> financiado por el programa Horizon Europe (OSCARS), y soy miembro del comité de pilotaje científico y webmaster del Consorcio <strong>ARIANE</strong> y del proyecto <strong><a href="http://cartas.huma-num.fr/" target="_blank" rel="noopener noreferrer">ANR CARTAS</a></strong>, dentro de la infraestructura de investigación <strong>Huma-Num</strong>.
