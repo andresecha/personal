@@ -323,12 +323,6 @@ export default {
       desc: `Formation professionnelle en pédagogie artistique, beaux-arts et histoire de l'art.`
     },
     {
-      role: `Diplôme en Mémoire Historique : Récits de la Mémoire`,
-      institution: `Universidad de Antioquia - Medellín, Colombie`,
-      date: `2017`,
-      desc: `Diplôme de spécialisation axé sur la construction de la mémoire historique et les récits de paix dans le contexte social colombien.`
-    },
-    {
       role: `Enseignant d'Art en Milieu Carcéral (Engagement Social)`,
       institution: `Prison de haute sécurité La Paz - Itagüí, Colombie`,
       date: `2015 - 2017`,

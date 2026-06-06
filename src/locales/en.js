@@ -323,12 +323,6 @@ export default {
       desc: `Professional training in art education, fine arts, and art history.`
     },
     {
-      role: `Diploma in Historical Memory: Narratives of Memory`,
-      institution: `Universidad de Antioquia - Medellín, Colombia`,
-      date: `2017`,
-      desc: `Specialization diploma focused on the construction of historical memory and narratives of peace in the Colombian social context.`
-    },
-    {
       role: `Art Teacher in Prison Context (Social Engagement)`,
       institution: `La Paz Maximum Security Prison - Itagüí, Colombia`,
       date: `2015 - 2017`,

@@ -323,12 +323,6 @@ export default {
       desc: `Formación profesional en pedagogía artística, bellas artes e historia del arte.`
     },
     {
-      role: `Diploma en Memoria Histórica: Narrativas de la Memoria`,
-      institution: `Universidad de Antioquia - Medellín, Colombia`,
-      date: `2017`,
-      desc: `Diploma de especialización enfocado en la construcción de memoria histórica y narrativas de paz en el contexto social colombiano.`
-    },
-    {
       role: `Docente en Contexto Penitenciario (Compromiso Social)`,
       institution: `Cárcel de máxima seguridad La Paz - Itagüí, Colombia`,
       date: `2015 - 2017`,
