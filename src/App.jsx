@@ -230,7 +230,33 @@ function App() {
 
   const t = translations[lang];
 
-  const [activeTab, setActiveTab] = useState('sobre-mi');
+  const [activeTab, setActiveTab] = useState(() => {
+    const hash = window.location.hash.replace('#', '');
+    const validTabs = ['sobre-mi', 'portafolio', 'publicaciones', 'herramientas', 'formacion', 'cv'];
+    return validTabs.includes(hash) ? hash : 'sobre-mi';
+  });
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace('#', '');
+      const validTabs = ['sobre-mi', 'portafolio', 'publicaciones', 'herramientas', 'formacion', 'cv'];
+      if (validTabs.includes(hash)) {
+        setActiveTab(hash);
+      } else if (!hash) {
+        setActiveTab('sobre-mi');
+      }
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  const navigateToTab = (tabName, e) => {
+    if (e) e.preventDefault();
+    window.location.hash = tabName;
+  };
+
   const [theme, setTheme] = useState('light');
   const [lightboxArt, setLightboxArt] = useState(null);
   
@@ -300,7 +326,7 @@ function App() {
       {/* Header */}
       <header className="header" id="navbar">
         <div className="container nav-container">
-          <a href="#" className="logo-text" id="logo-nav" onClick={() => setActiveTab('sobre-mi')} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem' }}>
+          <a href="#sobre-mi" className="logo-text" id="logo-nav" onClick={(e) => navigateToTab('sobre-mi', e)} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem' }}>
             <img src="/logos/zorro.svg" alt={t.ui.logoFoxAlt} className="logo-fox" />
             <span>{t.ui.shortName}</span>
           </a>
@@ -311,7 +337,7 @@ function App() {
                 <button 
                   id="tab-btn-about"
                   className={`nav-btn ${activeTab === 'sobre-mi' ? 'active' : ''}`}
-                  onClick={() => setActiveTab('sobre-mi')}
+                  onClick={() => navigateToTab('sobre-mi')}
                 >
                   {t.ui.navAbout}
                 </button>
@@ -320,7 +346,7 @@ function App() {
                 <button 
                   id="tab-btn-portfolio"
                   className={`nav-btn ${activeTab === 'portafolio' ? 'active' : ''}`}
-                  onClick={() => setActiveTab('portafolio')}
+                  onClick={() => navigateToTab('portafolio')}
                 >
                   {t.ui.navPortfolio}
                 </button>
@@ -329,7 +355,7 @@ function App() {
                 <button 
                   id="tab-btn-pubs"
                   className={`nav-btn ${activeTab === 'publicaciones' ? 'active' : ''}`}
-                  onClick={() => setActiveTab('publicaciones')}
+                  onClick={() => navigateToTab('publicaciones')}
                 >
                   {t.ui.navPublications}
                 </button>
@@ -338,7 +364,7 @@ function App() {
                 <button 
                   id="tab-btn-tools"
                   className={`nav-btn ${activeTab === 'herramientas' ? 'active' : ''}`}
-                  onClick={() => setActiveTab('herramientas')}
+                  onClick={() => navigateToTab('herramientas')}
                 >
                   {t.ui.navTools}
                 </button>
@@ -347,7 +373,7 @@ function App() {
                 <button 
                   id="tab-btn-formacion"
                   className={`nav-btn ${activeTab === 'formacion' ? 'active' : ''}`}
-                  onClick={() => setActiveTab('formacion')}
+                  onClick={() => navigateToTab('formacion')}
                 >
                   {t.ui.navFormacion}
                 </button>
@@ -356,7 +382,7 @@ function App() {
                 <button 
                   id="tab-btn-cv"
                   className={`nav-btn ${activeTab === 'cv' ? 'active' : ''}`}
-                  onClick={() => setActiveTab('cv')}
+                  onClick={() => navigateToTab('cv')}
                 >
                   {t.ui.navCv}
                 </button>
@@ -393,7 +419,7 @@ function App() {
           <button 
             id="m-tab-btn-about"
             className={`mobile-nav-btn ${activeTab === 'sobre-mi' ? 'active' : ''}`}
-            onClick={() => setActiveTab('sobre-mi')}
+            onClick={() => navigateToTab('sobre-mi')}
           >
             <User size={18} />
             <span>{t.ui.navAbout}</span>
@@ -401,7 +427,7 @@ function App() {
           <button 
             id="m-tab-btn-portfolio"
             className={`mobile-nav-btn ${activeTab === 'portafolio' ? 'active' : ''}`}
-            onClick={() => setActiveTab('portafolio')}
+            onClick={() => navigateToTab('portafolio')}
           >
             <Palette size={18} />
             <span>{t.ui.navPortfolioShort}</span>
@@ -409,7 +435,7 @@ function App() {
           <button 
             id="m-tab-btn-pubs"
             className={`mobile-nav-btn ${activeTab === 'publicaciones' ? 'active' : ''}`}
-            onClick={() => setActiveTab('publicaciones')}
+            onClick={() => navigateToTab('publicaciones')}
           >
             <FileText size={18} />
             <span>{t.ui.navPublications}</span>
@@ -417,7 +443,7 @@ function App() {
           <button 
             id="m-tab-btn-tools"
             className={`mobile-nav-btn ${activeTab === 'herramientas' ? 'active' : ''}`}
-            onClick={() => setActiveTab('herramientas')}
+            onClick={() => navigateToTab('herramientas')}
           >
             <Code size={18} />
             <span>{t.ui.navToolsShort}</span>
@@ -425,7 +451,7 @@ function App() {
           <button 
             id="m-tab-btn-formacion"
             className={`mobile-nav-btn ${activeTab === 'formacion' ? 'active' : ''}`}
-            onClick={() => setActiveTab('formacion')}
+            onClick={() => navigateToTab('formacion')}
           >
             <GraduationCap size={18} />
             <span>{t.ui.navFormacionShort}</span>
@@ -433,7 +459,7 @@ function App() {
           <button 
             id="m-tab-btn-cv"
             className={`mobile-nav-btn ${activeTab === 'cv' ? 'active' : ''}`}
-            onClick={() => setActiveTab('cv')}
+            onClick={() => navigateToTab('cv')}
           >
             <Award size={18} />
             <span>{t.ui.navCv}</span>
