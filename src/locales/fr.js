@@ -60,14 +60,14 @@ export default {
   profile: {
     name: "Andrés Felipe Echavarría Peláez",
     bioParagraph1: `Je suis un chercheur colombo-français spécialisé dans la convergence des humanités traditionnelles et des technologies numériques. Mon travail intègre des disciplines telles que l'histoire, la philologie, la linguistique, la lexicographie et la science des textes. Actuellement, j'exerce en tant qu'ingénieur de recherche en humanités numériques au <strong>Centre National de la Recherche Scientifique (CNRS)</strong>. Dans ce cadre, je participe au développement de <strong>AMIS (Advanced Metadata Intelligent System)</strong>, un projet européen financé par le programme Horizon Europe (OSCARS). De plus, je suis membre du comité de pilotage scientifique en tant que webmaster du Consortium <strong>ARIANE</strong> et du projet <strong><a href="http://cartas.huma-num.fr/" target="_blank" rel="noopener noreferrer">ANR CARTAS</a></strong>, deux initiatives intégrées à l'infrastructure de recherche <strong>Huma-Num</strong>.`,
-    bioParagraph2: `Mon parcours académique a débuté par une Licence en Éducation : Arts Plastiques à l'Universidad de Antioquia, complétée en France par un Diplôme National Supérieur d'Expression Plastique à l'École Européenne Supérieure d'Art de Bretagne. Par la suite, j'ai obtenu un Master en Humanités Numériques, Lettres et Lexicographie à l'Université de Bretagne-Sud, puis j'ai soutenu mon doctorat en Études Romanes et Humanités Numériques à l'Université de Montpellier Paul-Valéry. Ma thèse de doctorat, qui prend comme cas d'étude les procès de l'Inquisition espagnole, propose une application pratique de la théorie de l'<strong><a href="https://networkcultures.org/wp-content/uploads/2018/03/Marcello_Vitali-Rosati_OnEditorialization-complete.pdf" target="_blank" rel="noopener noreferrer">éditorialisation</a></strong> formulée par Marcello Vitali-Rosati. Cette recherche s'inscrit dans une démarche de science ouverte et vise à produire des approches méthodologiques favorisant la collaboration autour de données historiques.`
+    bioParagraph2: `Mon parcours académique a débuté par une Licence en Éducation : Arts Plastiques à l'Universidad de Antioquia, avant de la compléter en France par un Diplôme National Supérieur d'Expression Plastique à l'École Européenne Supérieure d'Art de Bretagne. Par la suite, j'ai obtenu un Master en Humanités Numériques, Lettres et Lexicographie à l'Université de Bretagne-Sud, puis j'ai soutenu mon doctorat en Études Romanes et Humanités Numériques à l'Université de Montpellier Paul-Valéry. Ma thèse de doctorat, qui prend comme cas d'étude les procès de l'Inquisition espagnole, propose une application pratique de la théorie de l'<strong><a href="https://networkcultures.org/wp-content/uploads/2018/03/Marcello_Vitali-Rosati_OnEditorialization-complete.pdf" target="_blank" rel="noopener noreferrer">éditorialisation</a></strong> formulée par Marcello Vitali-Rosati. Cette recherche s'inscrit dans une démarche de science ouverte et vise à produire des approches méthodologiques favorisant la collaboration autour de données historiques.`
   },
   artworks: [
     {
       id: 'logo-zorro',
       title: 'El Zorro (marque personnelle)',
       tag: 'Identité Visuelle',
-      desc: 'Conception de l\'identité visuelle pour la marque personnelle "El Zorro". Inspiré de Joaquín Murrieta (milieu du XIXe siècle), figure de la résistance aux forces hégémoniques pour la défense des ressources d\'Amérique latine, ce concept graphique symbolise la réappropriation d\'une pensée critique située et la résistance intellectuelle. Le renard incarne l\'adaptabilité biologique et culturelle dans tout milieu. Son tracé géométrique et dynamique évoque la ruse, la recherche de solutions complexes et la capacité de se murer dans le décor. La composition visuelle joue sur la culture de la dualité du personnage masqué, articulant les tensions entre légalité et justice, vie et récit historique.',
+      desc: 'Conception de l\'identité visuelle pour la marque personnelle "El Zorro". Inspiré de Joaquín Murrieta (milieu du XIXe siècle), figure de la résistance aux forces hégémoniques pour la défense des ressources d\'Amérique latine, ce concept graphique symbolise la réappropriation d\'une pensée critique située et la résistance intellectuelle. Le renard incarne l\'adaptabilité biologique et culturelle dans tout milieu. Son tracé géométrique et dynamique évoque la ruse, la recherche de solutions complexes et la capacité de se murer dans le décor. La composition visuelle joue sur la culture de la dualité du personnage masqué et articule les tensions entre légalité et justice, vie et récit historique.',
       img: '/portfolio/zorro_presentation.png'
     },
     {
@@ -81,14 +81,14 @@ export default {
       id: 'logo-ariane',
       title: 'Consortium ARIANE (Huma-Num)',
       tag: 'Identité Visuelle',
-      desc: 'Identité graphique pour le Consortium ARIANE (Analyses, Recherches, Intelligence Artificielle et Nouvelles Éditions numériques), labellisé par l\'infrastructure nationale IR* Huma-Num. Le design du logotype symbolise le dialogue et la synergie entre la philologie et l\'informatique avancée, englobant l\'HTR, le traitement du langage naturel, les graphes de connaissances et la lecture outillée des textes.',
+      desc: 'Identité graphique pour le Consortium ARIANE (Analyses, Recherches, Intelligence Artificielle et Nouvelles Éditions numériques), lequel est labellisé par l\'infrastructure nationale IR* Huma-Num. Le design du logotype symbolise le dialogue et la synergie entre la philologie et l\'informatique avancée, englobant l\'HTR, le traitement du langage naturel, les graphes de connaissances et la lecture outillée des textes.',
       img: '/portfolio/ariane_presentation.png'
     },
     {
       id: 'logo-cartas',
       title: 'Projet ANR CARTAS',
       tag: 'Identité Visuelle',
-      desc: 'Identité visuelle du projet CARTAS (« Pablo Picasso en toutes lettres »), financé par l\'Agence Nationale de la Recherche (ANR). Le logo et sa charte graphique symbolisent la numérisation, l\'analyse sémantique et la cartographie relationnelle de la correspondance de Pablo Picasso, combinant des méthodes d\'analyse de réseaux et de graphes de connaissances pour retracer son réseau social de 1900 à 1973.',
+      desc: 'Identité visuelle du projet CARTAS (« Pablo Picasso en toutes lettres »), qui est financé par l\'Agence Nationale de la Recherche (ANR). Le logo et sa charte graphique symbolisent la numérisation, l\'analyse sémantique et la cartographie relationnelle de la correspondance de Pablo Picasso ; cette approche combine des méthodes d\'analyse de réseaux et de graphes de connaissances pour retracer son réseau social de 1900 à 1973.',
       img: '/portfolio/cartas_presentation.png'
     }
   ],
@@ -152,7 +152,7 @@ export default {
     },
     {
       title: 'Convertisseur RDF vers TEI ODD / Taxonomy (Zenodo)',
-      desc: 'Scripts Python sur Zenodo pour convertir un thésaurus SKOS RDF (exporté d\'Opentheso) en formats XML conformes à la TEI (valList pour ODD et taxonomies structurées category/taxonomy), garantissant la traçabilité des concepts.',
+      desc: 'Scripts Python sur Zenodo pour convertir un thésaurus SKOS RDF (exporté d\'Opentheso) en formats XML conformes à la TEI (valList pour ODD et taxonomies structurées category/taxonomy) afin de garantir la traçabilité des concepts.',
       tags: ['Python', 'RDF', 'SKOS', 'TEI', 'Zenodo', 'Web Sémantique'],
       link: 'https://zenodo.org/records/15044448',
       buttonText: 'Voir sur Zenodo'
@@ -173,14 +173,14 @@ export default {
     },
     {
       title: 'Procès de Pedro de Cazalla (Nakala)',
-      desc: 'Jeu de données publié sur Nakala (10.34847/nkl.aaeej9jp) contenant l\'annotation XML-TEI complète du procès inquisitorial de Valladolid (1558-1559) contre Pedro de Cazalla, prêtre de Pedrosa accusé de luthéranisme, servant de prototype pour le schéma d\'annotation de la thèse.',
+      desc: 'Jeu de données publié sur Nakala (10.34847/nkl.aaeej9jp) contenant l\'annotation XML-TEI complète du procès inquisitorial de Valladolid (1558-1559) contre Pedro de Cazalla, prêtre de Pedrosa qui a été accusé de luthéranisme. Ce jeu de données sert de prototype pour le schéma d\'annotation de la thèse.',
       tags: ['Nakala', 'XML-TEI', 'Inquisition', 'Pedro de Cazalla', 'Dataset'],
       link: 'https://nakala.fr/10.34847/nkl.aaeej9jp',
       buttonText: 'Voir sur Nakala'
     },
     {
       title: 'Thésaurus des typologies documentaires de l\'Inquisition (Nakala)',
-      desc: 'Vocabulaire contrôlé bilingüe (SKOS/RDF) publié sur Nakala (10.34847/nkl.2a4e2h52) pour l\'indexation de pièces documentaires des procès inquisitoriaux, structuré selon la norme ISO 25964 et intégré avec la TEI.',
+      desc: 'Vocabulaire contrôlé bilingue (SKOS/RDF) publié sur Nakala (10.34847/nkl.2a4e2h52) pour l\'indexation de pièces documentaires des procès inquisitoriaux. Ce vocabulaire est structuré selon la norme ISO 25964 et intégré avec la TEI.',
       tags: ['Nakala', 'SKOS', 'RDF', 'Vocabulaire Contrôlé', 'Opentheso'],
       link: 'https://nakala.fr/10.34847/nkl.2a4e2h52',
       buttonText: 'Voir sur Nakala'
@@ -209,58 +209,136 @@ export default {
   ],
   cvItems: [
     {
-      role: 'Webmaster du Consortium ARIANE et du projet ANR CARTAS',
-      institution: 'Consortium ARIANE (Huma-Num) / Projet ANR CARTAS - France',
-      date: '2024 - Présent',
-      desc: 'Administration, développement et maintenance technique des sites web officiels et des plateformes de diffusion scientifique du Consortium ARIANE (au sein de l\'infrastructure Huma-Num) et du projet de recherche <a href="http://cartas.huma-num.fr/" target="_blank" rel="noopener noreferrer">ANR CARTAS</a>.'
+      role: `Chercheur Post-Doctoral / Ingénieur de Recherche (Projet AMIS)`,
+      institution: `CNRS / Consortium ARIANE / TGIR Huma-Num / Université de Poitiers - Paris/Poitiers, France`,
+      date: `Septembre 2025 - Présent`,
+      desc: `Recherche postdoctorale consacrée au développement de l'application web AMIS (<em>Advanced Metadata Intelligent System</em>). Le programme européen Horizon Europe et l'initiative OSCARS financent ce projet. Mes tâches comprennent la modélisation de schémas documentaires et la liaison de vocabulaires dans la plateforme Opentheso. Je collabore directement avec les consortiums ARIANE, CAHIER, CORLI 2 et Biblissima+ pour intégrer des thésaurus structurés en humanités numériques.`
     },
     {
-      role: 'Chercheur Post-Doctoral / Ingénieur de Recherche (Projet AMIS)',
-      institution: 'CNRS / Consortium ARIANE / TGIR Huma-Num / Université de Poitiers - Paris/Poitiers, France',
-      date: 'Septembre 2025 - Présent',
-      desc: 'Recherche postdoctorale axée sur la modélisation et le développement de l\'application web AMIS (<em>Advanced Metadata Intelligent System</em>). Le projet bénéficie d\'un financement européen via l\'initiative OSCARS d\'Horizon Europe. Mes tâches incluent la modélisation des métadonnées et l\'alignement de vocabulaires multilingues. Je travaille en lien étroit avec les consortiums ARIANE, CAHIER, CORLI 2 et Biblissima+.'
+      role: `Évaluateur Scientifique Externe`,
+      institution: `Impossibilia. Revista Internacional de Estudios Literarios - Université de Grenade, Espagne`,
+      date: `Mai 2026`,
+      desc: `Évaluation scientifique par les pairs d'articles de recherche littéraire pour la revue internationale indexée Impossibilia (ISSN 2174-2464).`
     },
     {
-      role: 'Chargé de Cours',
-      institution: 'Université Sorbonne Nouvelle - Paris, France',
-      date: '2021 - Présent',
-      desc: 'Enseignement au sein du Master en Humanités Numériques ("Introduction à la gestion des bases de données en SHS") et du Master de Lettres Modernes ("Méthodologie de la recherche numérique").'
+      role: `Membre du Jury de Thèse de Doctorat`,
+      institution: `Universidad de Antioquia - Medellín, Colombie`,
+      date: `Mai 2026`,
+      desc: `Membre du jury d'évaluation pour la soutenance publique de la thèse de doctorat "Edición crítico-genética digital de Frutos de mi tierra (1896) —FrutosDigital—, y la ciudad finisecular latinoamericana de Tomás Carrasquilla" de Juan Esteban Hincapié Atehortúa.`
     },
     {
-      role: 'Pilote du Groupe de Trabajo GT2 (Acquisition de Données)',
-      institution: 'Consortium ARIANE, Huma-Num - Paris, France',
-      date: '2024 - Présent',
-      desc: 'Coordinateur du groupe axé sur l\'acquisition de données et la transcription assistée par ordinateur (HTR/OCR). Coordination et animation d\'ateliers spécialisés sur Transkribus et eScriptorium dans plusieurs universités européennes (Madrid Complutense, UCLouvain, etc.).'
+      role: `Évaluateur Scientifique (DH2026)`,
+      institution: `Stichting ADHO Foundation / Alliance of Digital Humanities Organizations`,
+      date: `Mars 2026`,
+      desc: `Évaluateur par les pairs (peer reviewer) pour la conférence internationale Digital Humanities Conference 2026 (DH2026) à Daejeon, Corée du Sud. Évaluation de 6 soumissions scientifiques.`
     },
     {
-      role: 'Docteur en Études Romanes et Humanités Numériques',
-      institution: 'Université de Montpellier Paul-Valéry - Montpellier, France',
-      date: '2021 - 2025',
-      desc: 'Soutenance en juin 2025 de la thèse de doctorat intitulée "Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire", réalisée sous la direction de Geoffrey Clive Williams. Spécialisation en modélisation TEI de documents historiques, taxonomies sémantiques en SKOS/RDF et principes de Science Ouverte.'
+      role: `Webmaster du Consortium ARIANE et du projet ANR CARTAS`,
+      institution: `Consortium ARIANE (Huma-Num) / Projet ANR CARTAS - France`,
+      date: `2024 - Présent`,
+      desc: `Administration, développement et maintenance technique des sites web officiels et des plateformes de diffusion scientifique du Consortium ARIANE (au sein de l'infrastructure Huma-Num) et du projet de recherche <a href="http://cartas.huma-num.fr/" target="_blank" rel="noopener noreferrer">ANR CARTAS</a>.`
     },
     {
-      role: 'Doctorant et Éditeur de Corpus Numériques (Projet ANR-D4R)',
-      institution: 'IRIEC - Université Paul-Valéry Montpellier 3 / Universitat de Barcelona',
-      date: '2021 - 2025',
-      desc: 'Recherche sur l\'exploration interactive et visuelle d\'un corpus sur l\'inquisition espagnole du XVIe siècle. Modélisation et représentation de réseaux égocentrés à partir d\'annotations XML-TEI et entraînement de modèles HTR.'
+      role: `Pilote du Groupe de Travail GT2 (Acquisition de Données)`,
+      institution: `Consortium ARIANE, Huma-Num - Paris, France`,
+      date: `2024 - Présent`,
+      desc: `Coordinateur du groupe axé sur l'acquisition de données et la transcription assistée par ordinateur (HTR/OCR). Mon rôle comprend la coordination et l'animation d'ateliers spécialisés sur Transkribus et eScriptorium dans plusieurs universités européennes (Madrid Complutense, UCLouvain, etc.).`
     },
     {
-      role: 'Ingénieur de Données (Consortium CAHIER)',
-      institution: 'CNRS / Université de Poitiers - France',
-      date: 'Avril - Octobre 2021',
-      desc: 'Migration et structuration de bases de données scientifiques pour les SHS selon les principes FAIR. Optimisation de fichiers XML-TEI.'
+      role: `Cours Pratique de Documentation Ibéro-Américaine (XVe-XIXe siècles)`,
+      institution: `Asociación de Amigos del Archivo Histórico Nacional - Espagne`,
+      date: `Juin 2024`,
+      desc: `Cours de spécialisation paléographique et archivistique sur la documentation historique ibéro-américaine.`
     },
     {
-      role: 'Master en Humanités Numériques, Lettres et Lexicographie',
-      institution: 'Université de Bretagne-Sud - Lorient, France',
-      date: '2018 - 2020',
-      desc: 'Spécialisation en lexicographie historique et traitement numérique. Travail sur le projet BasNum (ANR-18-CE38-0003) pour l\'encodage diplomatique du Dictionnaire Universel de Furetière (1690-1725) et entraînement de modèles automatiques.'
+      role: `Docteur en Études Romanes (Esp. Études Hispaniques) et Humanités Numériques`,
+      institution: `Université de Montpellier Paul-Valéry - Montpellier, France`,
+      date: `2021 - 2025`,
+      desc: `Thèse de doctorat intitulée "Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire". Cette recherche a été menée sous un contrat doctoral de l'Agence Nationale de la Recherche (ANR) et sous la direction scientifique de Karim Benmiloud et Geoffrey Clive Williams. Spécialisation dans la modélisation XML-TEI de documents historiques, les taxonomies sémantiques en SKOS/RDF et les principes de la Science Ouverte.`
     },
     {
-      role: 'Licence en Éducation : Arts Plastiques',
-      institution: 'Universidad de Antioquia - Medellín, Colombie',
-      date: '2010 - 2017',
-      desc: 'Formation pédagogique et en arts visuels. Complétée en 2018 par un Diplôme National Supérieur d\'Expression Plastique (DNSEP) à l\'École Européenne Supérieure d\'Art de Bretagne (EESAB Lorient).'
+      role: `Chargé d'Édition de Corpus Numériques (Projet ANR D4R)`,
+      institution: `IRIEC - Université Paul-Valéry Montpellier 3 / Universitat de Barcelona`,
+      date: `2021 - 2025`,
+      desc: `Travail au sein du projet ANR-21-CE38-0011 D4R (Dissidences religieuses et réception de la Réforme à la Renaissance) qui s'est concentré sur la définition de standards pour la visualisation de la documentation inquisitoriale. Ce rôle comprend la modélisation et la représentation de réseaux à partir d'annotations XML-TEI, le développement de cartographies de réseaux égocentrés et la coordination technique d'équipes internationales.`
+    },
+    {
+      role: `Enseignant (Chargé de Cours)`,
+      institution: `Université Sorbonne Nouvelle / Université Paul-Valéry Montpellier 3 / Université de Bretagne-Sud`,
+      date: `2019 - Présent`,
+      desc: `Chargé de cours à l'Université Sorbonne Nouvelle (Paris, France) depuis 2021. Mes enseignements portent sur le Master Humanités Numériques ("Introduction à la gestion de bases de données en SHS") et le Master Lettres Modernes ("Méthodologie de la recherche numérique"). J'ai également enseigné la langue et la civilisation espagnoles à l'Université Paul-Valéry Montpellier 3 (2022-2024) et à l'Université de Bretagne-Sud (2019-2021).`
+    },
+    {
+      role: `Membre du Comité d'Organisation (ICHLL 12)`,
+      institution: `International Conference on Historical Lexicography and Lexicology - Lorient, France`,
+      date: `Juin 2022`,
+      desc: `Membre du comité d'organisation du XIIe colloque International de Lexicographie et Lexicologie Historiques (ICHLL 12). Président de la table ronde "Historical lexicography and lexicology".`
+    },
+    {
+      role: `Colloque Doctoral "Encoder, Exploiter, Diffuser"`,
+      institution: `Collège Doctoral de Poitiers - Poitiers, France`,
+      date: `Mai 2022`,
+      desc: `Formation spécialisée sur les humanités numériques dans les projets de recherche. Le programme mettait l'accent sur l'encodage XML-TEI, le traitement automatique de textes et la cartographie numérique.`
+    },
+    {
+      role: `Secrétaire de Rédaction (Revue CECIL)`,
+      institution: `Revue CECIL - Cahiers d'Études des Cultures Ibériques et Latino-américaines - France`,
+      date: `2022 - 2023`,
+      desc: `Soutien éditorial pour la gestion et la publication scientifique de la revue académique CECIL (ISSN 2428-7245) sur OpenEdition Journals. La revue est éditée par l'Université Paul-Valéry Montpellier 3.`
+    },
+    {
+      role: `Stagiaire (Consortium CAHIER - CNRS)`,
+      institution: `CNRS / Université de Poitiers - France`,
+      date: `Avril - Octobre 2021`,
+      desc: `Migration et préservation à long terme de bases de données en humanités selon les principes FAIR. J'ai également réalisé des tâches de correction et d'optimisation de fichiers de balisage XML-TEI.`
+    },
+    {
+      role: `Stagiaire (Laboratoire LATTICE - CNRS)`,
+      institution: `CNRS / École Normale Supérieure / Université Sorbonne Nouvelle - Paris, France`,
+      date: `Novembre - Décembre 2020`,
+      desc: `Entrainement de modèles HTR/OCR pour la numérisation et le traitement de dictionnaires historiques en lexicographie. Construction de bases de données XML-TEI.`
+    },
+    {
+      role: `Master en Humanités Numériques, Lettres et Lexicographie`,
+      institution: `Université de Bretagne-Sud - Lorient, France`,
+      date: `2018 - 2020`,
+      desc: `Spécialisation en lexicographie historique et traitement numérique. Travail sur le projet BasNum (ANR-18-CE38-0003) pour le balisage diplomatique du Dictionnaire Universel de Furetière (1690-1725) et l'entraînement de modèles automatiques.`
+    },
+    {
+      role: `Stagiaire (Projet BasNum)`,
+      institution: `Université de Bretagne-Sud - Lorient, France`,
+      date: `Mars - Juin 2019`,
+      desc: `Balisage diplomatique et simplifié des préfaces du Dictionnaire Universel (1690-1725) dans le cadre du projet ANR-18-CE38-0003 BasNum. J'ai également effectué l'entraînement de modèles automatiques pour la délimitation de sections semi-structurées.`
+    },
+    {
+      role: `DNSEP (Diplôme National Supérieur d'Expression Plastique)`,
+      institution: `École Européenne Supérieure d'Art de Bretagne (EESAB Lorient) - Lorient, France`,
+      date: `2018`,
+      desc: `Diplôme supérieur valant grade de master en beaux-arts et recherche en arts plastiques et visuels.`
+    },
+    {
+      role: `Licence en Éducation : Arts Plastiques`,
+      institution: `Universidad de Antioquia - Medellín, Colombie`,
+      date: `2010 - 2017`,
+      desc: `Formation professionnelle en pédagogie artistique, beaux-arts et histoire de l'art.`
+    },
+    {
+      role: `Diplôme en Mémoire Historique : Récits de la Mémoire`,
+      institution: `Universidad de Antioquia - Medellín, Colombie`,
+      date: `2017`,
+      desc: `Diplôme de spécialisation axé sur la construction de la mémoire historique et les récits de paix dans le contexte social colombien.`
+    },
+    {
+      role: `Enseignant d'Art en Milieu Carcéral (Engagement Social)`,
+      institution: `Prison de haute sécurité La Paz - Itagüí, Colombie`,
+      date: `2015 - 2017`,
+      desc: `Conception et animation d'ateliers d'arts plastiques et de construction de mémoire historique. Ces ateliers s'adressaient à d'anciens combattants et à des victimes du conflit armé et social colombien pour promouvoir la réconciliation et la paix.`
+    },
+    {
+      role: `Délégué Universitaire auprès de l'ONU (Engagement Social)`,
+      institution: `Universidad de Antioquia - Genève, Suisse`,
+      date: `2015 - 2017`,
+      desc: `Représentant de l'Université de l'Antioquia auprès de l'Office des Nations Unies à Genève. J'ai participé à des sessions et des débats relatifs au processus de paix colombien, à l'éducation pour la paix et à la mémoire historique.`
     }
   ],
   teaching: [
@@ -272,16 +350,12 @@ export default {
     {
       institution: "Université Sorbonne Nouvelle (Paris, France)",
       date: "2021 - Présent",
-      desc: "<strong>Enseignant en Master d'Humanités Numériques :</strong> Cours d'<em>\"Introduction à la gestion des bases de données en SHS\"</em>.<br /><strong>Enseignant en Master de Lettres Modernes :</strong> Cours de <em>\"Méthodologie de la recherche numérique\"</em>."
+      desc: "• <strong>Colloque Humanistica (2026) :</strong> Atelier de pré-conférence <em>\"Modéliser les objets culturels littéraires et leurs métadonnées avec une ontologie. Introduction à l'ontologie CAO_CRM\"</em> (EPITA, Le Kremlin-Bicêtre).<br />• <strong>Université d'Antioquia (Colombie, 2026) :</strong> Conférence invitée <em>\"Adquisición de corpus textuales históricos y contemporáneos\"</em> et atelier intensif <em>\"Investigar en la era digital: Editorialización\"</em> (Facultad de Comunicaciones y Filología / Département d'Histoire).<br />• <strong>Université EAFIT (Colombie, 2026) :</strong> Atelier de formation <em>\"Introducción al procesamiento computacional de corpus textuales\"</em> (projet Humanidades Digitales y Esfera Pública).<br />• <strong>Université Catholique de Louvain (Belgique, 2025) :</strong> Atelier de formation <em>\"Transkribus : Formation à l'utilisation du logiciel dans le cadre d'une recherche historique\"</em> (Faculté de Théologie et d'Études des Religions / Archives de l'Université).<br />• <strong>Universidad Complutense de Madrid (2024-2025) :</strong> Atelier pratique <em>\"Transcripción automática de impresos y manuscritos: introducción\"</em> (2024), conférence et atelier <em>\"Transcripción automática de textos\"</em> (2024) et atelier pratique Transkribus lors de la Semana de las TICS (2025).<br />• <strong>Université de Castille-La Manche (2023-2024) :</strong> Conférence <em>\"Tinta, píxel y texto electrónico\"</em> (Tolède, 2023) et conférence invitée <em>\"{DES} PROGRAMAR LO {IM} PERFECTO. Pensar en Humanidades Digitales\"</em> (Ciudad Real, 2024).<br />• <strong>Campus Condorcet (2023) :</strong> Communication invitée <em>\"Éclairage TEI sur les procédures Inquisitoriales\"</em> (GT Outils et pratiques éditoriales).<br />• <strong>Universitat Autònoma de Barcelona (2022) :</strong> Séminaire <em>\"Transkribus and automatic transcription of old prints\"</em>.<br />• <strong>Université de Montpellier (2022) :</strong> Atelier de spécialisation <em>\"Introduction au XML-TEI\"</em> en humanités numériques (Montpellier).<br />• <strong>Université d'Antioquia (Colombie, 2022) :</strong> Atelier pratique <em>\"HTR appliquée aux manuscrits de Don Tomás Carrasquilla\"</em> et conférence invitée <em>\"Transcripción automática de textos antiguos: del archivo al machine readable\"</em> (Exploratorio de Humanidades Digitales).<br />• <strong>Fête de la Science (2022) :</strong> Atelier interactif <em>\"Livre ancien et Humanités numériques\"</em>.<br />• <strong>Université d'Antioquia (Colombie, 2017) :</strong> Enseignant du module <em>\"Experiencias de arte y memoria: proyecto La paz es una obra de arte\"</em> dans le cadre du Diplôme en Mémoire Historique (co-organisé avec la Deutsche Welle Akademie)."
     },
     {
       institution: "Université de Montpellier Paul-Valéry (France)",
       date: "2022 - 2024",
       desc: "Cours d'espagnol LANSAD (B1-B2), Méthodologie du travail universitaire et renforcement disciplinaire en Licences LLCER et LEA."
-    },
-    {
-      institution: "Conférences & Ateliers Invités",
-      desc: "• <strong>Campus Condorcet (2023) :</strong> Communication invitée <em>\"Éclairage TEI sur les procédures Inquisitoriales\"</em> (GT Outils et pratiques éditoriales).<br />• <strong>Universitat Autònoma de Barcelona (2022) :</strong> Séminaire <em>\"Transkribus y transcripción automática del impreso antiguo\"</em>.<br />• <strong>Universidad de Antioquia (Colombie, 2022) :</strong> Atelier <em>\"HTR aplicada a los manuscritos de Don Tomás Carrasquilla\"</em>.<br />• <strong>Fête de la Science (2022) :</strong> Atelier interactif <em>\"Livre ancien et Humanités numériques\"</em>."
     }
   ],
   education: [

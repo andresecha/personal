@@ -67,6 +67,15 @@
     "doi": null
   },
   {
+    "title": "Variabilité documentaire, TEI et vocabulaires contrôlés : annoter, classifier et réutiliser les procès de foi de l'Inquisition espagnole",
+    "year": 2025,
+    "type": "COMM",
+    "url": null,
+    "citation": "Andrés Felipe Echavarria Pelaez. \"Variabilité documentaire, TEI et vocabulaires contrôlés : annoter, classifier et réutiliser les procès de foi de l'Inquisition espagnole\". <i>Colloque Humanistica 2025</i>, Association francophone des humanités numériques, avril 2025, Dakar, Sénégal.",
+    "journal": "",
+    "doi": null
+  },
+  {
     "title": "Thésaurus des typologies documentaires inquisitoriales",
     "year": 2025,
     "type": "THES",
@@ -134,6 +143,42 @@
     "downloadUrl": "https://theses.hal.science/tel-05318449v1/file/2025_ECHAVARRIA-PELAEZ_arch.pdf"
   },
   {
+    "title": "TEI y RDF aplicados a la documentación de los procesos inquisitoriales",
+    "year": 2025,
+    "type": "COMM",
+    "url": null,
+    "citation": "Andrés Felipe Echavarría Peláez. \"TEI y RDF aplicados a la documentación de los procesos inquisitoriales\". <i>VII Congreso Internacional de la Sociedad Internacional de Humanidades Digitales Hispánicas (HDH 2025)</i>, Valencia, España, 2025.",
+    "journal": "",
+    "doi": null
+  },
+  {
+    "title": "Vocabularios controlados para las Humanidades",
+    "year": 2024,
+    "type": "COMM",
+    "url": null,
+    "citation": "Andrés Felipe Echavarría Peláez. \"Vocabularios controlados para las Humanidades\". Ponencia invitada en el <i>III Seminario de Actualización en Herramientas y Recursos de Internet para la Investigación en Humanidades</i>, Universidad Nacional de Salta, 2024, Salta, Argentina.",
+    "journal": "",
+    "doi": null
+  },
+  {
+    "title": "{DES}PROGRAMAR LO {IM}PERFECTO. Pensar en Humanidades Digitales",
+    "year": 2024,
+    "type": "COMM",
+    "url": null,
+    "citation": "Andrés Felipe Echavarría Peláez. \"{DES}PROGRAMAR LO {IM}PERFECTO. Pensar en Humanidades Digitales\". Conferencia invitada en el <i>Seminario Permanente Charta & Libri / Grupo de Investigación DeReHis</i>, Facultad de Letras de Ciudad Real, Universidad de Castilla-La Mancha, abril de 2024, Ciudad Real, España.",
+    "journal": "",
+    "doi": null
+  },
+  {
+    "title": "Tinta, píxel y texto electrónico. Transcripción asistida por computación",
+    "year": 2023,
+    "type": "COMM",
+    "url": null,
+    "citation": "Andrés Felipe Echavarría Peláez. \"Tinta, píxel y texto electrónico. Transcripción asistida por computación\". <i>Conferencia en la Facultad de Humanidades de Toledo (Universidad de Castilla-La Mancha)</i>, UCLM, diciembre de 2023, Toledo, España.",
+    "journal": "",
+    "doi": null
+  },
+  {
     "title": "Redes y formalización de las relaciones entre - XML-TEI",
     "year": 2023,
     "type": "COMM",
@@ -181,6 +226,24 @@
     "doi": null
   },
   {
+    "title": "Los semas protestantes en el proceso inquisitorial: la acusación contra Pedro de Cazalla",
+    "year": 2023,
+    "type": "COMM",
+    "url": null,
+    "citation": "Andrés Felipe Echavarría Peláez. \"Los semas protestantes en el proceso inquisitorial: la acusación contra Pedro de Cazalla\". <i>Congreso Internacional UMU-UCM \"Lo Divino y Lo Humano: Política, sociedad y expresiones culturales en los mundos ibéricos de la Edad Moderna\"</i>, Universidad de Murcia, 2023, Murcia, España.",
+    "journal": "",
+    "doi": null
+  },
+  {
+    "title": "Perennizar la ciencia en lo digital",
+    "year": 2023,
+    "type": "COMM",
+    "url": null,
+    "citation": "Andrés Felipe Echavarría Peláez. \"Perennizar la ciencia en lo digital\". Ponencia en la <i>Maratón HD 2023</i>, Universidad de Antioquia y Red Colombiana de Humanidades Digitales, septiembre de 2023, Medellín, Colombia.",
+    "journal": "",
+    "doi": null
+  },
+  {
     "title": "Transcripción automática del impreso antiguo",
     "year": 2022,
     "type": "REPORT",
@@ -212,7 +275,7 @@
     "year": 2022,
     "type": "COMM",
     "url": "https://hal.science/hal-04101451v1",
-    "citation": "Andres Echavarria. Líneas directrices TEI para la codificación de textos impresos y manuscritos en español del siglo XVI. <i>Séminaire de lancement projet Dissidences religieuses et recepción de la Réforme à la Renaissance (Espagne – XVIe s.) – Montpellier Saint Charles</i>, IRIEC – Université Paul-Valéry Montpellier 3; Projet ANR-21-CE38-0011; Institut de recherche en informatique de Toulouse UMR 5505; Praxiling UMR 5267 CNRS – Université Paul Valéry Montpellier 3; GRIAL (Grup de Recerca Interuniversitari en Aplicacions Lingüístiques); DeReHis (De Re Hispanica); UMR 5136 FRAMESPA; Universidad Bretagne Sud, Feb 2022, Montpellier, Francia. <a target=\"_blank\" href=\"https://hal.science/hal-04101451v1\">&#x27E8;hal-04101451&#x27E9;</a>",
+    "citation": "Andres Echavarria. Líneas directrices TEI para la codificación de textos impresos y manuscritos en español del siglo XVI. <i>Séminaire de lancement projet Dissidences religieuses et réception de la Réforme à la Renaissance (Espagne – XVIe s.) – Montpellier Saint Charles</i>, IRIEC – Université Paul-Valéry Montpellier 3; Projet ANR-21-CE38-0011; Institut de recherche en informatique de Toulouse UMR 5505; Praxiling UMR 5267 CNRS – Université Paul Valéry Montpellier 3; GRIAL (Grup de Recerca Interuniversitari en Aplicacions Lingüístiques); DeReHis (De Re Hispanica); UMR 5136 FRAMESPA; Universidad Bretagne Sud, Feb 2022, Montpellier, Francia. <a target=\"_blank\" href=\"https://hal.science/hal-04101451v1\">&#x27E8;hal-04101451&#x27E9;</a>",
     "journal": "",
     "doi": null
   },
@@ -221,7 +284,16 @@
     "year": 2022,
     "type": "COMM",
     "url": "https://hal.science/hal-04101445v1",
-    "citation": "Andres Echavarria. Tecnologías de HTR aplicadas al proyecto ANR-D4R. <i>Séminaire de lancement projet Dissidences religieuses et recepción de la Réforme à la Renaissance (Espagne – XVIe s.) – Montpellier Saint Charles</i>, IRIEC – Université Paul-Valéry Montpellier 3; Projet ANR-21-CE38-0011; Institut de recherche en informatique de Toulouse UMR 5505; Praxiling UMR 5267 CNRS – Université Paul Valéry Montpellier 3; GRIAL (Grup de Recerca Interuniversitari en Aplicacions Lingüístiques); DeReHis (De Re Hispanica); UMR 5136 FRAMESPA; Universidad Bretagne Sud, Feb 2022, Montpellier, Francia. <a target=\"_blank\" href=\"https://hal.science/hal-04101445v1\">&#x27E8;hal-04101445&#x27E9;</a>",
+    "citation": "Andres Echavarria. Tecnologías de HTR aplicadas al proyecto ANR-D4R. <i>Séminaire de lancement projet Dissidences religieuses et réception de la Réforme à la Renaissance (Espagne – XVIe s.) – Montpellier Saint Charles</i>, IRIEC – Université Paul-Valéry Montpellier 3; Projet ANR-21-CE38-0011; Institut de recherche en informatique de Toulouse UMR 5505; Praxiling UMR 5267 CNRS – Université Paul Valéry Montpellier 3; GRIAL (Grup de Recerca Interuniversitari en Aplicacions Lingüístiques); DeReHis (De Re Hispanica); UMR 5136 FRAMESPA; Universidad Bretagne Sud, Feb 2022, Montpellier, Francia. <a target=\"_blank\" href=\"https://hal.science/hal-04101445v1\">&#x27E8;hal-04101445&#x27E9;</a>",
+    "journal": "",
+    "doi": null
+  },
+  {
+    "title": "Transcripción automática de textos antiguos: del archivo al machine readable",
+    "year": 2022,
+    "type": "COMM",
+    "url": null,
+    "citation": "Andrés Felipe Echavarría Peláez. \"Transcripción automática de textos antiguos: del archivo al machine readable\". Charla en la <i>Agenda Virtual del Exploratorio de Humanidades Digitales</i>, Universidad de Antioquia, septiembre de 2022, Medellín, Colombia (virtual).",
     "journal": "",
     "doi": null
   },
@@ -234,5 +306,14 @@
     "journal": "",
     "doi": null,
     "downloadUrl": "https://shs.hal.science/halshs-03408209v1/file/FAIRiser%20vos%20donnees_Memo.pdf"
+  },
+  {
+    "title": "Descolonizar la universidad: la influencia del neoliberalismo y algunos aportes a la educación para la paz",
+    "year": 2016,
+    "type": "COMM",
+    "url": null,
+    "citation": "Andrés Felipe Echavarría Peláez. \"Descolonizar la universidad: la influencia del neoliberalismo y algunos aportes a la educación para la paz\". Ponencia en el <i>5to Encuentro de Semilleros de Investigación de la Facultad de Derecho y Ciencias Políticas</i>, Universidad de Antioquia, noviembre de 2016, Amalfi, Colombia.",
+    "journal": "",
+    "doi": null
   }
 ]
