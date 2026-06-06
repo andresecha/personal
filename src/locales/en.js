@@ -335,25 +335,179 @@ export default {
       desc: `Design and teaching of visual arts workshops and historical memory construction. These workshops were directed at former combatants and victims of the Colombian armed and social conflict to promote reconciliation and peace.`
     }
   ],
-  teaching: [
+    teaching: [
     {
-      institution: "ARIANE Consortium (Huma-Num)",
+      role: "Leader of Working Group WG2 (Data Acquisition)",
+      institution: "ARIANE Consortium (IR* Huma-Num)",
       date: "2024 - Present",
-      desc: "Leader of WG2 (Data Acquisition). Coordinator and instructor in specialized workshops on <strong>Transkribus</strong> and <strong>eScriptorium</strong> applied to computer-assisted transcription in European universities (such as Universidad Complutense de Madrid and UCLouvain)."
+      desc: "Leadership of the working group focused on historical data acquisition and computer-assisted transcription (HTR/OCR).",
+      points: [
+        "Coordination of international workshops on Transkribus and eScriptorium.",
+        "Design of methodological standards for automatic text recognition in digital humanities.",
+        "Technical support to scientific teams for structuring digital research corpora."
+      ]
     },
     {
+      role: "Invited Research Lecture",
+      institution: "Universidad de Antioquia (Medellín, Colombia)",
+      date: "May 2026",
+      desc: "Invited lecture on text corpus acquisition at the Department of History and the Faculty of Communications.",
+      points: [
+        "Keynote: 'Adquisición de corpus textuales históricos y contemporáneos'.",
+        "Discussions on digital paleography, metadata curation, and FAIR data preservation.",
+        "Introduction to FAIR data principles applied to research corpora."
+      ]
+    },
+    {
+      role: "Pre-conference Workshop",
+      institution: "Colloque Humanistica 2026 (EPITA, Paris, France)",
+      date: "May 2026",
+      desc: "Co-facilitation of a practical training session on semantic modeling of literary metadata.",
+      points: [
+        "Workshop: 'Modéliser les objets culturels littéraires et leurs métadonnées avec une ontologie'.",
+        "Practical introduction to mapping literary metadata using the CAO_CRM ontology.",
+        "Training focused on research data interoperability."
+      ]
+    },
+    {
+      role: "Lecture and Workshop Series",
+      institution: "Universidad de Antioquia (Medellín, Colombia)",
+      date: "April 2026",
+      desc: "Conducting an intensive training series on scholarly digital editing for graduate students.",
+      points: [
+        "Workshop series structured over three full working sessions.",
+        "Workshop: 'Investigar en la era digital: Editorialización'.",
+        "Practical exercises in XML-TEI structural tagging and semantic indexation."
+      ]
+    },
+    {
+      role: "Graduate Training Workshop",
+      institution: "Universidad EAFIT (Medellín, Colombia)",
+      date: "April 2026",
+      desc: "Specialized workshop on linguistic corpus processing in the field of Digital Humanities.",
+      points: [
+        "Workshop: 'Introducción al procesamiento computacional de corpus textuales'.",
+        "Presentation of basic tokenization and lemmatization techniques for texts.",
+        "Organized within the framework of the 'Humanidades Digitales y Esfera Pública' project."
+      ]
+    },
+    {
+      role: "Specialized Training Workshop",
+      institution: "Université Catholique de Louvain (Louvain, Belgium)",
+      date: "2025",
+      desc: "Practical workshop on machine learning applied to the transcription of historical files.",
+      points: [
+        "Workshop: 'Transkribus: Formation à l'utilisation du logiciel dans le cadre d'une recherche historique'.",
+        "HTR model training adapted to ecclesiastical and university archives.",
+        "Co-organized for the Faculty of Theology and the UCLouvain Archives."
+      ]
+    },
+    {
+      role: "Teaching Workshops and Lectures",
+      institution: "Universidad Complutense de Madrid (Madrid, Spain)",
+      date: "2024 - 2025",
+      desc: "Series of training sessions in automatic transcription for Early Modern manuscripts.",
+      points: [
+        "Practical course: 'Transcripción automática de impresos y manuscritos: introducción' (2024).",
+        "Lecture and practical workshop during TICS Week (2025).",
+        "Collaboration with the CHARTA research network and the Faculty of Philology."
+      ]
+    },
+    {
+      role: "Lecturer (Chargé de Cours)",
       institution: "Université Sorbonne Nouvelle (Paris, France)",
       date: "2021 - Present",
-      desc: "<strong>Lecturer in Master of Digital Humanities:</strong> Course <em>\"Introduction to database management in SHS\"</em>.<br /><strong>Lecturer in Master of Modern Letters:</strong> Course <em>\"Methodology of digital research\"</em>."
+      desc: "University teaching in the Master of Digital Humanities and the Master of Modern Letters.",
+      points: [
+        "Master's module: 'Introduction to database management in SHS' (relational modeling, SQL).",
+        "Master's module: 'Methodology of digital research' (HTR, Whisper, Jupyter).",
+        "Guidance and tutoring for applied digital research projects."
+      ]
     },
     {
-      institution: "Université de Montpellier Paul-Valéry (France)",
+      role: "Invited Lecture Series",
+      institution: "Universidad de Castilla-La Mancha (Toledo/Ciudad Real, Spain)",
+      date: "2023 - 2024",
+      desc: "Theoretical and methodological lectures on digitization and electronic texts.",
+      points: [
+        "Lecture: 'Tinta, píxel y texto electrónico: transcripción asistida' (Toledo, 2023).",
+        "Keynote: '{DES}PROGRAMAR LO {IM}PERFECTO. Pensar en HD' (Ciudad Real, 2024).",
+        "Critical reflections on HTR error management in historical document collections."
+      ]
+    },
+    {
+      role: "Invited Scientific Lecture",
+      institution: "Campus Condorcet (Aubervilliers, France)",
+      date: "2023",
+      desc: "Methodological presentation on the encoding of inquisitorial documents.",
+      points: [
+        "Presentation: 'Éclairage TEI sur les procédures Inquisitoriales'.",
+        "Semantic modeling of inquisitorial judicial documents using the XML-TEI standard.",
+        "Presented at the 'Outils et pratiques éditoriales' working group."
+      ]
+    },
+    {
+      role: "Language and Civilization Instructor (LANSAD)",
+      institution: "Université de Montpellier Paul-Valéry (Montpellier, France)",
       date: "2022 - 2024",
-      desc: "Courses in LANSAD Spanish (B1-B2), University Work Methodology, and reinforcement in LLCER and LEA."
+      desc: "Teaching and methodological reinforcement in the Department of Hispanic Studies.",
+      points: [
+        "Spanish courses for B1-B2 levels with a focus on humanities and translation.",
+        "University Work Methodology (MTU) modules for undergraduate students.",
+        "Disciplinary reinforcement in LLCER and LEA Bachelor's degrees."
+      ]
     },
     {
-      institution: "Outreach and Invited Workshops",
-      desc: "• <strong>Colloque Humanistica (2026):</strong> Pre-conference workshop <em>\"Modéliser les objets culturels littéraires et leurs métadonnées avec une ontologie. Introduction à l'ontologie CAO_CRM\"</em> (EPITA, Le Kremlin-Bicêtre).<br />• <strong>Universidad de Antioquia (Colombia, 2026):</strong> Invited lecture <em>\"Adquisición de corpus textuales históricos y contemporáneos\"</em> and the series of workshops with three working sessions <em>\"Investigar en la era digital: Editorialización\"</em> (Facultad de Comunicaciones y Filología / Departamento de Historia).<br />• <strong>Universidad EAFIT (Colombia, 2026):</strong> Training workshop <em>\"Introducción al procesamiento computacional de corpus textuales\"</em> (Humanidades Digitales and Esfera Pública project).<br />• <strong>Université Catholique de Louvain (Belgium, 2025):</strong> Training workshop <em>\"Transkribus: Formation à l'utilisation du logiciel dans le cadre d'une recherche historique\"</em> (Faculty of Theology and Religious Studies / Archives de l'Université).<br />• <strong>Universidad Complutense de Madrid (2024-2025):</strong> Practical workshop <em>\"Transcripción automática de impresos y manuscritos: introducción\"</em> (2024), lecture and workshop <em>\"Transcripción automática de textos\"</em> (2024), and practical Transkribus workshop during the Semana de las TICS (2025).<br />• <strong>Universidad de Castilla-La Mancha (2023-2024):</strong> Lecture <em>\"Tinta, píxel y texto electrónico\"</em> (Toledo, 2023) and invited lecture <em>\"{DES} PROGRAMAR LO {IM} PERFECTO. Pensar en Humanidades Digitales\"</em> (Ciudad Real, 2024).<br />• <strong>Campus Condorcet (2023):</strong> Invited lecture <em>\"Éclairage TEI sur les procédures Inquisitoriales\"</em> (GT Outils et pratiques éditoriales).<br />• <strong>Universitat Autònoma de Barcelona (2022):</strong> Seminar <em>\"Transkribus and automatic transcription of old prints\"</em>.<br />• <strong>Université de Montpellier (2022):</strong> Specialization workshop <em>\"Introduction au XML-TEI\"</em> in digital humanities (Montpellier).<br />• <strong>Universidad de Antioquia (Colombia, 2022):</strong> Practical workshop <em>\"HTR applied to the manuscripts of Don Tomás Carrasquilla\"</em> and invited lecture <em>\"Transcripción automática de textos antiguos: del archivo al machine readable\"</em> (Exploratorio de Humanidades Digitales).<br />• <strong>Fête de la Science (2022):</strong> Interactive workshop <em>\"Old books and digital humanities\"</em>.<br />• <strong>Universidad de Antioquia (Colombia, 2017):</strong> Lecturer for the module <em>\"Experiencias de arte y memoria: proyecto La paz es una obra de arte\"</em> in the Diploma in Historical Memory (co-organized with Deutsche Welle Akademie)."
+      role: "Theoretical-Practical Seminar",
+      institution: "Universitat Autònoma de Barcelona (Barcelona, Spain)",
+      date: "2022",
+      desc: "Practical training in intelligent paleographic transcription tools.",
+      points: [
+        "Seminar: 'Transkribus and automatic transcription of old prints'.",
+        "Exercises on HTR model training applied to Gothic and Humanistic typographies.",
+        "Aimed at researchers, archivists, and graduate students."
+      ]
+    },
+    {
+      role: "Digital Specialization Workshop",
+      institution: "Université de Montpellier (Montpellier, France)",
+      date: "2022",
+      desc: "Specialized training in XML-TEI markup for textual preservation.",
+      points: [
+        "Practical workshop: 'Introduction au XML-TEI'.",
+        "Design of RelaxNG and ODD schemas for philological data validation."
+      ]
+    },
+    {
+      role: "Outreach Workshop and Talk",
+      institution: "Universidad de Antioquia (Medellín, Colombia)",
+      date: "2022",
+      desc: "Practical activities on digital processing and transcription of 19th-century manuscripts.",
+      points: [
+        "Workshop: 'HTR applied to the manuscripts of Don Tomás Carrasquilla'.",
+        "Lecture: 'Transcripción automática de textos antiguos: del archivo al machine readable' (Exploratorio HD)."
+      ]
+    },
+    {
+      role: "Scientific Outreach Workshop",
+      institution: "Fête de la Science (France)",
+      date: "2022",
+      desc: "Interactive outreach session for the general public on heritage sciences and humanities.",
+      points: [
+        "Workshop: 'Livre ancien et Humanités numériques'.",
+        "Demonstration of digitization and intelligent processing of old books."
+      ]
+    },
+    {
+      role: "Diploma Module Instructor",
+      institution: "Universidad de Antioquia (Medellín, Colombia)",
+      date: "2017",
+      desc: "Teaching in the Historical Memory Diploma program focused on art processes for peace.",
+      points: [
+        "Training module: 'Experiencias de arte y memoria: proyecto La paz es una obra de arte'.",
+        "Co-organized alongside the Deutsche Welle Akademie.",
+        "Workshops with a focus on community reconciliation in post-conflict territories."
+      ]
     }
   ],
   education: [
@@ -361,25 +515,43 @@ export default {
       title: "PhD in Romance Studies and Digital Humanities",
       institution: "Université de Montpellier Paul-Valéry",
       date: "2021 - 2025",
-      desc: "Doctoral thesis: <em>\"Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire\"</em> (supervised by G. Williams). Specialization in XML-TEI modeling, SKOS/RDF controlled vocabularies, and HTR."
+      desc: "Doctoral thesis focused on the digital editorialization of historical trials.",
+      points: [
+        "Thesis: 'Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire'.",
+        "Specialization in XML-TEI semantic modeling of 16th-century inquisitorial trials.",
+        "Use of semantic web technologies (SKOS/RDF) and FAIR principles for open science."
+      ]
     },
     {
       title: "Master in Digital Humanities, Literature and Lexicography",
       institution: "Université de Bretagne-Sud (Lorient, France)",
       date: "2018 - 2020",
-      desc: "Processing of historical lexicographical corpora, XML-TEI markup, and relational databases applied to old dictionaries (BasNum project)."
+      desc: "Training in corpus processing and digital markup applied to lexicography.",
+      points: [
+        "Research and development in the BasNum project (diplomatic markup of Furetière's Dictionnaire).",
+        "Relational database modeling and training of HTR models.",
+        "Computational natural language processing (NLP) and analysis for old texts."
+      ]
     },
     {
-      title: "DNSEP (National Higher Diploma in Plastic Expression)",
-      institution: "École Européenne Supérieure d'Art de Bretagne (EESAB Lorient)",
+      title: "DNSEP (Higher National Diploma in Visual Arts)",
+      institution: "European Academy of Art in Brittany (EESAB Lorient)",
       date: "2018",
-      desc: "Higher degree equivalent to a master's in fine arts and research in plastic and visual arts."
+      desc: "Master's level degree in Fine Arts and visual research.",
+      points: [
+        "Development of artistic research projects and contemporary visual design.",
+        "Exploration of spatial narratives and traditional and digital graphic languages."
+      ]
     },
     {
       title: "Bachelor's Degree in Education: Visual Arts",
       institution: "Universidad de Antioquia (Medellín, Colombia)",
       date: "2010 - 2017",
-      desc: "Professional training in art education, fine arts, and art history."
+      desc: "Professional training in art education, fine arts, and art history.",
+      points: [
+        "Training in art teaching methodologies and community curating.",
+        "Design of collective memory and social reconstruction projects through art."
+      ]
     }
   ]
 };

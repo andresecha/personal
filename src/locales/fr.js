@@ -335,21 +335,179 @@ export default {
       desc: `Conception et animation d'ateliers d'arts plastiques et de construction de mémoire historique. Ces ateliers s'adressaient à d'anciens combattants et à des victimes du conflit armé et social colombien pour promouvoir la réconciliation et la paix.`
     }
   ],
-  teaching: [
+    teaching: [
     {
-      institution: "Consortium ARIANE (Huma-Num)",
+      role: "Pilote du Groupe de Travail GT2 (Acquisition de Données)",
+      institution: "Consortium ARIANE (IR* Huma-Num)",
       date: "2024 - Présent",
-      desc: "Pilote du GT2 (Acquisition de Données). Formateur et coordinateur d'ateliers sur <strong>Transkribus</strong> et <strong>eScriptorium</strong> pour la reconnaissance d'écritures manuscrites dans plusieurs universités européennes (UCM, UCLouvain)."
+      desc: "Liderazgo du groupe de travail centré sur l'acquisition de données historiques et la transcription assistée par ordinateur (HTR/OCR).",
+      points: [
+        "Coordination d'ateliers internationaux sur Transkribus et eScriptorium.",
+        "Conception de standards méthodologiques pour la reconnaissance automatique de textes.",
+        "Soutien technique aux équipes scientifiques pour la structuration de corpus numériques."
+      ]
     },
     {
+      role: "Conférence de Recherche Invitée",
+      institution: "Université d'Antioquia (Medellín, Colombie)",
+      date: "Mai 2026",
+      desc: "Conférence sur l'acquisition de corpus textuels au Département d'Histoire et à la Faculté de Communications.",
+      points: [
+        "Conférence plénière : 'Adquisición de corpus textuales históricos y contemporáneos'.",
+        "Débats sur la paléographie numérique, le commissariat aux métadonnées et la préservation de données.",
+        "Sensibilisation aux principes FAIR appliqués aux corpus de recherche."
+      ]
+    },
+    {
+      role: "Atelier de Pré-conférence",
+      institution: "Colloque Humanistica 2026 (EPITA, Paris, France)",
+      date: "Mai 2026",
+      desc: "Co-animation d'un atelier pratique sur la modélisation sémantique des métadonnées littéraires.",
+      points: [
+        "Atelier : 'Modéliser les objets culturels littéraires et leurs métadonnées avec une ontologie'.",
+        "Introduction pratique à l'utilisation de l'ontologie CAO_CRM pour la structuration de données.",
+        "Formation centrée sur l'interopérabilité des données de recherche."
+      ]
+    },
+    {
+      role: "Cycle d'Ateliers Enseignants",
+      institution: "Université d'Antioquia (Medellín, Colombie)",
+      date: "Avril 2026",
+      desc: "Animation d'un cycle de formation intensif sur l'édition académique numérique pour les étudiants de master.",
+      points: [
+        "Cycle d'ateliers structuré sur trois journées complètes de travail.",
+        "Atelier : 'Investigar en la era digital: Editorialización'.",
+        "Exercices pratiques sur le balisage structurel XML-TEI et l'indexation sémantique."
+      ]
+    },
+    {
+      role: "Atelier de Formation de Master",
+      institution: "Université EAFIT (Medellín, Colombie)",
+      date: "Avril 2026",
+      desc: "Atelier spécialisé sur le traitement des corpus linguistiques dans le domaine des Humanités Numériques.",
+      points: [
+        "Atelier : 'Introducción al procesamiento computacional de corpus textuales'.",
+        "Présentation des techniques de base de tokenisation et de lemmatisation de textes.",
+        "Dans le cadre du projet de recherche 'Humanidades Digitales y Esfera Pública'."
+      ]
+    },
+    {
+      role: "Atelier de Formation Spécialisée",
+      institution: "Université Catholique de Louvain (Louvain, Belgique)",
+      date: "2025",
+      desc: "Atelier pratique sur l'apprentissage automatique appliqué à la transcription de documents historiques.",
+      points: [
+        "Atelier : 'Transkribus : Formation à l'utilisation du logiciel dans le cadre d'une recherche historique'.",
+        "Entraînement de modèles HTR adaptés aux archives ecclésiastiques et universitaires.",
+        "Co-organisé pour la Faculté de Théologie et les Archives de l'UCLouvain."
+      ]
+    },
+    {
+      role: "Ateliers et Conférences d'Enseignement",
+      institution: "Universidad Complutense de Madrid (Madrid, Espagne)",
+      date: "2024 - 2025",
+      desc: "Cycle d'ateliers de transcription automatique pour les manuscrits de l'époque moderne.",
+      points: [
+        "Cours pratique : 'Transcripción automática de impresos y manuscritos: introducción' (2024).",
+        "Conférence et atelier pratique lors de la Semaine des TICS (2025).",
+        "Collaboration avec le réseau de recherche CHARTA et la Faculté de Philologie."
+      ]
+    },
+    {
+      role: "Chargé de Cours",
       institution: "Université Sorbonne Nouvelle (Paris, France)",
       date: "2021 - Présent",
-      desc: "• <strong>Colloque Humanistica (2026) :</strong> Atelier de pré-conférence <em>\"Modéliser les objets culturels littéraires et leurs métadonnées avec une ontologie. Introduction à l'ontologie CAO_CRM\"</em> (EPITA, Le Kremlin-Bicêtre).<br />• <strong>Université d'Antioquia (Colombie, 2026) :</strong> Conférence invitée <em>\"Adquisición de corpus textuales históricos y contemporáneos\"</em> et la série d'ateliers sur trois journées de travail <em>\"Investigar en la era digital: Editorialización\"</em> (Facultad de Comunicaciones y Filología / Département d'Histoire).<br />• <strong>Université EAFIT (Colombie, 2026) :</strong> Atelier de formation <em>\"Introducción al procesamiento computacional de corpus textuales\"</em> (projet Humanidades Digitales y Esfera Pública).<br />• <strong>Université Catholique de Louvain (Belgique, 2025) :</strong> Atelier de formation <em>\"Transkribus : Formation à l'utilisation du logiciel dans le cadre d'une recherche historique\"</em> (Faculté de Théologie et d'Études des Religions / Archives de l'Université).<br />• <strong>Universidad Complutense de Madrid (2024-2025) :</strong> Atelier pratique <em>\"Transcripción automática de impresos y manuscritos: introducción\"</em> (2024), conférence et atelier <em>\"Transcripción automática de textos\"</em> (2024) et atelier pratique Transkribus lors de la Semana de las TICS (2025).<br />• <strong>Université de Castille-La Manche (2023-2024) :</strong> Conférence <em>\"Tinta, píxel y texto electrónico\"</em> (Tolède, 2023) et conférence invitée <em>\"{DES} PROGRAMAR LO {IM} PERFECTO. Pensar en Humanidades Digitales\"</em> (Ciudad Real, 2024).<br />• <strong>Campus Condorcet (2023) :</strong> Communication invitée <em>\"Éclairage TEI sur les procédures Inquisitoriales\"</em> (GT Outils et pratiques éditoriales).<br />• <strong>Universitat Autònoma de Barcelona (2022) :</strong> Séminaire <em>\"Transkribus and automatic transcription of old prints\"</em>.<br />• <strong>Université de Montpellier (2022) :</strong> Atelier de spécialisation <em>\"Introduction au XML-TEI\"</em> en humanités numériques (Montpellier).<br />• <strong>Université d'Antioquia (Colombie, 2022) :</strong> Atelier pratique <em>\"HTR appliquée aux manuscrits de Don Tomás Carrasquilla\"</em> et conférence invitée <em>\"Transcripción automática de textos antiguos: del archivo al machine readable\"</em> (Exploratorio de Humanidades Digitales).<br />• <strong>Fête de la Science (2022) :</strong> Atelier interactif <em>\"Livre ancien et Humanités numériques\"</em>.<br />• <strong>Université d'Antioquia (Colombie, 2017) :</strong> Enseignant du module <em>\"Experiencias de arte y memoria: proyecto La paz es una obra de arte\"</em> dans le cadre du Diplôme en Mémoire Historique (co-organisé avec la Deutsche Welle Akademie)."
+      desc: "Enseignement universitaire en Master d'Humanités Numériques et Master de Lettres Modernes.",
+      points: [
+        "Module de Master : 'Introduction à la gestion des bases de données en SHS' (modélisation, SQL).",
+        "Module de Master : 'Méthodologie de la recherche numérique' (HTR, Whisper, Jupyter).",
+        "Accompagnement et tutorat de projets de recherche numérique appliquée."
+      ]
     },
     {
-      institution: "Université de Montpellier Paul-Valéry (France)",
+      role: "Cycle de Conférences Invitées",
+      institution: "Université de Castille-La Manche (Tolède/Ciudad Real, Espagne)",
+      date: "2023 - 2024",
+      desc: "Interventions théoriques et méthodologiques sur la numérisation et l'étude du texte électronique.",
+      points: [
+        "Conférence : 'Tinta, píxel y texto electrónico: transcripción asistida' (Tolède, 2023).",
+        "Conférence invitée : '{DES}PROGRAMAR LO {IM}PERFECTO. Pensar en HN' (Ciudad Real, 2024).",
+        "Réflexions critiques sur la gestion des erreurs HTR dans les collections de documents historiques."
+      ]
+    },
+    {
+      role: "Conférence Scientifique Invitée",
+      institution: "Campus Condorcet (Aubervilliers, France)",
+      date: "2023",
+      desc: "Présentation méthodologique sur l'encodage des documents inquisitoriaux.",
+      points: [
+        "Présentation : 'Éclairage TEI sur les procédures Inquisitoriales'.",
+        "Modélisation des structures judiciaires de l'Inquisition sous le standard XML-TEI.",
+        "Présenté au sein du groupe de travail 'Outils et pratiques éditoriales'."
+      ]
+    },
+    {
+      role: "Chargé de Cours en Langue et Civilisation (LANSAD)",
+      institution: "Université de Montpellier Paul-Valéry (Montpellier, France)",
       date: "2022 - 2024",
-      desc: "Cours d'espagnol LANSAD (B1-B2), Méthodologie du travail universitaire et renforcement disciplinaire en Licences LLCER et LEA."
+      desc: "Enseignement et renforcement méthodologique au Département d'Études Hispaniques.",
+      points: [
+        "Cours d'espagnol niveaux B1-B2 orientés vers les sciences humaines et la traduction.",
+        "Modules de Méthodologie du Travail Universitaire (MTU) pour les étudiants de licence.",
+        "Renforcement disciplinaire dans les licences LLCER et LEA."
+      ]
+    },
+    {
+      role: "Séminaire Théorique-Pratique",
+      institution: "Universitat Autònoma de Barcelona (Barcelone, Espagne)",
+      date: "2022",
+      desc: "Formation pratique aux outils intelligents de transcription paléographique.",
+      points: [
+        "Séminaire : 'Transkribus et transcription automatique de l'imprimé ancien'.",
+        "Exercices sur l'entraînement de modèles HTR appliqués aux typographies gothiques.",
+        "Destiné aux chercheurs, archivistes et étudiants de master."
+      ]
+    },
+    {
+      role: "Atelier de Spécialisation Numérique",
+      institution: "Université de Montpellier (Montpellier, France)",
+      date: "2022",
+      desc: "Formation spécialisée en balisage XML-TEI pour la préservation textuelle.",
+      points: [
+        "Atelier pratique : 'Introduction au XML-TEI'.",
+        "Conception de schémas RelaxNG et de spécifications ODD pour la validation de données."
+      ]
+    },
+    {
+      role: "Atelier et Conférence en Humanités Numériques",
+      institution: "Université d'Antioquia (Medellín, Colombie)",
+      date: "2022",
+      desc: "Activités pratiques sur le traitement et la transcription numérique de manuscrits du XIXe siècle.",
+      points: [
+        "Atelier : 'HTR appliquée aux manuscrits de Don Tomás Carrasquilla'.",
+        "Conférence : 'Transcripción automática de textos antiguos: del archivo al machine readable' (Exploratorio HD)."
+      ]
+    },
+    {
+      role: "Atelier de Vulgarisation Scientifique",
+      institution: "Fête de la Science (France)",
+      date: "2022",
+      desc: "Session interactive de vulgarisation pour le grand public sur les sciences du patrimoine et les humanités.",
+      points: [
+        "Atelier : 'Livre ancien et Humanités numériques'.",
+        "Démonstration de numérisation et de traitement intelligent des livres anciens."
+      ]
+    },
+    {
+      role: "Enseignant de Module de Diplôme",
+      institution: "Université d'Antioquia (Medellín, Colombie)",
+      date: "2017",
+      desc: "Enseignement dans le cadre du Diplôme en Mémoire Historique axé sur l'art pour la paix.",
+      points: [
+        "Module de formation : 'Experiencias de arte y memoria: proyecto La paz es una obra de arte'.",
+        "Co-organisé avec la Deutsche Welle Akademie.",
+        "Ateliers centrés sur la réconciliation communautaire dans les territoires post-conflit."
+      ]
     }
   ],
   education: [
@@ -357,25 +515,43 @@ export default {
       title: "Doctorat en Études Romanes et Humanités Numériques",
       institution: "Université de Montpellier Paul-Valéry",
       date: "2021 - 2025",
-      desc: "Thèse de doctorat : <em>\"Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire\"</em> (dirigée par G. Williams). Spécialisation en modélisation XML-TEI, vocabulaires SKOS/RDF et HTR."
+      desc: "Thèse de doctorat axée sur l'éditorialisation numérique des procès historiques.",
+      points: [
+        "Thèse : 'Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire'.",
+        "Spécialisation dans la modélisation XML-TEI de procès inquisitoriaux du XVIe siècle.",
+        "Utilisation des technologies du web sémantique (SKOS/RDF) et des principes FAIR pour la science ouverte."
+      ]
     },
     {
       title: "Master en Humanités Numériques, Lettres et Lexicographie",
       institution: "Université de Bretagne-Sud (Lorient, France)",
       date: "2018 - 2020",
-      desc: "Traitement de corpus lexicographiques anciens, encodage XML-TEI et bases de données relationnelles appliquées aux dictionnaires anciens (projet BasNum)."
+      desc: "Formation sur le traitement de corpus et le balisage numérique appliqués à la lexicographie.",
+      points: [
+        "Recherche et développement au sein du projet BasNum (balisage diplomatique du Dictionnaire de Furetière).",
+        "Modélisation de bases de données relationnelles et entraînement de modèles HTR.",
+        "Traitement automatique des langues (TAL) et analyse computationnelle de textes anciens."
+      ]
     },
     {
       title: "DNSEP (Diplôme National Supérieur d'Expression Plastique)",
       institution: "École Européenne Supérieure d'Art de Bretagne (EESAB Lorient)",
       date: "2018",
-      desc: "Diplôme conférant le grade de master en recherche artistique, arts plastiques et visuels."
+      desc: "Diplôme conférant le grade de master en Beaux-Arts et recherche visuelle.",
+      points: [
+        "Développement de projets de recherche artistique et design visuel contemporain.",
+        "Exploration des récits spatiaux et des langages graphiques traditionnels et numériques."
+      ]
     },
     {
       title: "Licence en Éducation : Arts Plastiques",
       institution: "Universidad de Antioquia (Medellín, Colombie)",
       date: "2010 - 2017",
-      desc: "Formation professionnelle en pédagogie artistique, beaux-arts et histoire de l'art."
+      desc: "Formation professionnelle en pédagogie artistique, beaux-arts et histoire de l'art.",
+      points: [
+        "Formation aux méthodologies d'enseignement artistique et au commissariat communautaire.",
+        "Conception de projets de mémoire collective et de reconstruction sociale par l'art."
+      ]
     }
   ]
 };

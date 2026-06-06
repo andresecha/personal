@@ -754,50 +754,74 @@ function App() {
               <p>{t.ui.formacionSectionIntro}</p>
             </div>
 
-            <div className="formacion-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', marginTop: '2rem' }}>
+            <div className="formacion-columns" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '3rem', marginTop: '2rem' }}>
               
               {/* Column 1: Talleres y Docencia */}
-              <div className="card" style={{ padding: '2rem' }}>
-                <h2 className="text-gradient" style={{ marginBottom: '1.5rem', fontSize: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <Code size={20} /> {t.ui.teachingHeader}
+              <div>
+                <h2 className="text-gradient" style={{ marginBottom: '2rem', fontSize: '1.6rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <Code size={22} /> {t.ui.teachingHeader}
                 </h2>
-                
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                <div className="cv-timeline">
                   {t.teaching.map((item, idx) => (
-                    <div key={idx}>
-                      <h3 style={{ fontSize: '1.1rem', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>{item.institution}</h3>
-                      {item.date && (
-                        <span className="cv-date" style={{ fontSize: '0.8rem', color: 'var(--accent)', fontWeight: 600 }}>{item.date}</span>
-                      )}
+                    <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.05}s` }}>
+                      <div className="cv-header">
+                        <h3 style={{ fontSize: '1.15rem', fontWeight: 650, color: 'var(--text-primary)' }}>{item.role}</h3>
+                        <span className="cv-date" style={{ fontSize: '0.8rem' }}>{item.date}</span>
+                      </div>
+                      <p className="cv-institution" style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.5rem' }}>{item.institution}</p>
                       <p 
-                        style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '0.5rem' }}
+                        className="cv-desc" 
+                        style={{ marginBottom: '0.75rem', fontSize: '0.95rem' }}
                         dangerouslySetInnerHTML={{ __html: item.desc }}
                       />
+                      {item.points && item.points.length > 0 && (
+                        <ul style={{ margin: '0.5rem 0 0 0.5rem', padding: 0, listStyleType: 'none', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                          {item.points.map((pt, pIdx) => (
+                            <li key={pIdx} style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', position: 'relative', paddingLeft: '1.25rem' }}>
+                              <span style={{ position: 'absolute', left: 0, top: '0.45rem', width: '5px', height: '5px', borderRadius: '50%', backgroundColor: 'var(--accent)' }}></span>
+                              {pt}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
                   ))}
                 </div>
               </div>
 
               {/* Column 2: Formación Académica */}
-              <div className="card" style={{ padding: '2rem' }}>
-                <h2 className="text-gradient" style={{ marginBottom: '1.5rem', fontSize: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <Award size={20} /> {t.ui.educationHeader}
+              <div>
+                <h2 className="text-gradient" style={{ marginBottom: '2rem', fontSize: '1.6rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <Award size={22} /> {t.ui.educationHeader}
                 </h2>
-                
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                <div className="cv-timeline">
                   {t.education.map((item, idx) => (
-                    <div key={idx}>
-                      <h3 style={{ fontSize: '1.1rem', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>{item.title}</h3>
-                      <span className="cv-date" style={{ fontSize: '0.8rem', color: 'var(--accent)', fontWeight: 600 }}>{item.date}</span>
-                      <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>{item.institution}</p>
+                    <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.1}s` }}>
+                      <div className="cv-header">
+                        <h3 style={{ fontSize: '1.15rem', fontWeight: 650, color: 'var(--text-primary)' }}>{item.title}</h3>
+                        <span className="cv-date" style={{ fontSize: '0.8rem' }}>{item.date}</span>
+                      </div>
+                      <p className="cv-institution" style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.5rem' }}>{item.institution}</p>
                       <p 
-                        style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}
+                        className="cv-desc" 
+                        style={{ marginBottom: '0.75rem', fontSize: '0.95rem' }}
                         dangerouslySetInnerHTML={{ __html: item.desc }}
                       />
+                      {item.points && item.points.length > 0 && (
+                        <ul style={{ margin: '0.5rem 0 0 0.5rem', padding: 0, listStyleType: 'none', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                          {item.points.map((pt, pIdx) => (
+                            <li key={pIdx} style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', position: 'relative', paddingLeft: '1.25rem' }}>
+                              <span style={{ position: 'absolute', left: 0, top: '0.45rem', width: '5px', height: '5px', borderRadius: '50%', backgroundColor: 'var(--accent)' }}></span>
+                              {pt}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
                   ))}
                 </div>
               </div>
+
             </div>
           </section>
         )}
