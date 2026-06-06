@@ -191,6 +191,20 @@ export default {
       tags: ['Nakala', 'ODD', 'RelaxNG', 'RNC', 'XSD', 'Validación'],
       link: 'https://nakala.fr/10.34847/nkl.ab374s00',
       buttonText: 'Ver Esquema en Nakala'
+    },
+    {
+      title: 'OCR y análisis de documentos con Mistral (GitHub)',
+      desc: 'Colección de cuadernos Jupyter y scripts en Python desarrollados para el curso de Metodología de la Investigación Digital. Estos recursos demuestran el uso de los modelos de visión de Mistral AI para el reconocimiento óptico de caracteres y el análisis de la estructura visual de documentos históricos.',
+      tags: ['GitHub', 'OCR', 'Mistral AI', 'Python', 'Jupyter', 'Curso'],
+      link: 'https://github.com/andresecha/Methodologie-de-la-recherche-Numerique/tree/main/OCR/Mistral',
+      buttonText: 'Ver en GitHub'
+    },
+    {
+      title: 'Transcripción de audio con Whisper (GitHub)',
+      desc: 'Materiales prácticos y cuadernos de Jupyter para la transcripción automática de grabaciones de audio mediante el modelo Whisper de OpenAI. Este recurso está orientado al procesamiento de entrevistas de historia oral y archivos sonoros de investigación.',
+      tags: ['GitHub', 'Whisper', 'Speech-to-text', 'Python', 'Jupyter', 'Curso'],
+      link: 'https://github.com/andresecha/Methodologie-de-la-recherche-Numerique/tree/main/Speech-to-text/Whisper',
+      buttonText: 'Ver en GitHub'
     }
   ],
   cvItems: [
