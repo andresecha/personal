@@ -333,12 +333,6 @@ export default {
       institution: `Prison de haute sécurité La Paz - Itagüí, Colombie`,
       date: `2015 - 2017`,
       desc: `Conception et animation d'ateliers d'arts plastiques et de construction de mémoire historique. Ces ateliers s'adressaient à d'anciens combattants et à des victimes du conflit armé et social colombien pour promouvoir la réconciliation et la paix.`
-    },
-    {
-      role: `Délégué Universitaire auprès de l'ONU (Engagement Social)`,
-      institution: `Universidad de Antioquia - Genève, Suisse`,
-      date: `2015 - 2017`,
-      desc: `Représentant de l'Université de l'Antioquia auprès de l'Office des Nations Unies à Genève. J'ai participé à des sessions et des débats relatifs au processus de paix colombien, à l'éducation pour la paix et à la mémoire historique.`
     }
   ],
   teaching: [

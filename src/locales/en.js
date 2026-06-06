@@ -333,12 +333,6 @@ export default {
       institution: `La Paz Maximum Security Prison - Itagüí, Colombia`,
       date: `2015 - 2017`,
       desc: `Design and teaching of visual arts workshops and historical memory construction. These workshops were directed at former combatants and victims of the Colombian armed and social conflict to promote reconciliation and peace.`
-    },
-    {
-      role: `University Delegate to the UN (Social Engagement)`,
-      institution: `Universidad de Antioquia - Geneva, Switzerland`,
-      date: `2015 - 2017`,
-      desc: `Representative of the Universidad de Antioquia at the United Nations Office at Geneva. I participated in sessions and debates related to the Colombian peace process, education for peace, and historical memory.`
     }
   ],
   teaching: [

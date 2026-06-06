@@ -333,12 +333,6 @@ export default {
       institution: `Cárcel de máxima seguridad La Paz - Itagüí, Colombia`,
       date: `2015 - 2017`,
       desc: `Diseño e impartición de talleres de artes plásticas y construcción de memoria histórica dirigidos a excombatientes y víctimas del conflicto armado y social colombiano para promover la reconciliación y la paz.`
-    },
-    {
-      role: `Delegado Universitario ante la ONU (Compromiso Social)`,
-      institution: `Universidad de Antioquia - Ginebra, Suiza`,
-      date: `2015 - 2017`,
-      desc: `Representante de la Universidad de Antioquia ante la Oficina de las Naciones Unidas en Ginebra. Participé en sesiones y debates relacionados con el proceso de paz colombiano, la educación para la paz y la memoria histórica.`
     }
   ],
   teaching: [
