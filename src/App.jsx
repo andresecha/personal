@@ -580,7 +580,7 @@ function App() {
                   </div>
                   <div className="portfolio-info">
                     <h3>{art.title}</h3>
-                    <p>{art.desc}</p>
+                    <p dangerouslySetInnerHTML={{ __html: art.desc }}></p>
                     <button 
                       id={`open-lightbox-${art.id}`}
                       className="portfolio-action" 
@@ -855,7 +855,7 @@ function App() {
             <div className="lightbox-info-pane">
               <span className="lightbox-tag">{lightboxArt.tag}</span>
               <h2 className="lightbox-title">{lightboxArt.title}</h2>
-              <p className="lightbox-desc">{lightboxArt.desc}</p>
+              <p className="lightbox-desc" dangerouslySetInnerHTML={{ __html: lightboxArt.desc }}></p>
             </div>
           </div>
         </div>
