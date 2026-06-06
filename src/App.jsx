@@ -428,60 +428,61 @@ function App() {
           </div>
         </div>
 
-        {/* Mobile Navigation tab bar (visible only on mobile, below the header content) */}
-        <div className="mobile-header-nav">
-          <div className="mobile-header-nav-scroll">
-            <button 
-              id="m-header-tab-btn-about"
-              className={`mobile-header-nav-btn ${activeTab === 'sobre-mi' ? 'active' : ''}`}
-              onClick={() => navigateToTab('sobre-mi')}
-            >
-              <User size={14} />
-              <span>{t.ui.navAbout}</span>
-            </button>
-            <button 
-              id="m-header-tab-btn-portfolio"
-              className={`mobile-header-nav-btn ${activeTab === 'portafolio' ? 'active' : ''}`}
-              onClick={() => navigateToTab('portafolio')}
-            >
-              <Palette size={14} />
-              <span>{t.ui.navPortfolioShort}</span>
-            </button>
-            <button 
-              id="m-header-tab-btn-pubs"
-              className={`mobile-header-nav-btn ${activeTab === 'publicaciones' ? 'active' : ''}`}
-              onClick={() => navigateToTab('publicaciones')}
-            >
-              <FileText size={14} />
-              <span>{t.ui.navPublications}</span>
-            </button>
-            <button 
-              id="m-header-tab-btn-tools"
-              className={`mobile-header-nav-btn ${activeTab === 'herramientas' ? 'active' : ''}`}
-              onClick={() => navigateToTab('herramientas')}
-            >
-              <Code size={14} />
-              <span>{t.ui.navToolsShort}</span>
-            </button>
-            <button 
-              id="m-header-tab-btn-formacion"
-              className={`mobile-header-nav-btn ${activeTab === 'formacion' ? 'active' : ''}`}
-              onClick={() => navigateToTab('formacion')}
-            >
-              <GraduationCap size={14} />
-              <span>{t.ui.navFormacionShort}</span>
-            </button>
-            <button 
-              id="m-header-tab-btn-cv"
-              className={`mobile-header-nav-btn ${activeTab === 'cv' ? 'active' : ''}`}
-              onClick={() => navigateToTab('cv')}
-            >
-              <Award size={14} />
-              <span>{t.ui.navCv}</span>
-            </button>
-          </div>
-        </div>
       </header>
+
+      {/* Mobile Navigation bar */}
+      <nav className="mobile-nav" id="mobile-navbar">
+        <div className="mobile-nav-container">
+          <button 
+            id="m-tab-btn-about"
+            className={`mobile-nav-btn ${activeTab === 'sobre-mi' ? 'active' : ''}`}
+            onClick={() => navigateToTab('sobre-mi')}
+          >
+            <User size={18} />
+            <span>{t.ui.navAbout}</span>
+          </button>
+          <button 
+            id="m-tab-btn-portfolio"
+            className={`mobile-nav-btn ${activeTab === 'portafolio' ? 'active' : ''}`}
+            onClick={() => navigateToTab('portafolio')}
+          >
+            <Palette size={18} />
+            <span>{t.ui.navPortfolioShort}</span>
+          </button>
+          <button 
+            id="m-tab-btn-pubs"
+            className={`mobile-nav-btn ${activeTab === 'publicaciones' ? 'active' : ''}`}
+            onClick={() => navigateToTab('publicaciones')}
+          >
+            <FileText size={18} />
+            <span>{t.ui.navPublications}</span>
+          </button>
+          <button 
+            id="m-tab-btn-tools"
+            className={`mobile-nav-btn ${activeTab === 'herramientas' ? 'active' : ''}`}
+            onClick={() => navigateToTab('herramientas')}
+          >
+            <Code size={18} />
+            <span>{t.ui.navToolsShort}</span>
+          </button>
+          <button 
+            id="m-tab-btn-formacion"
+            className={`mobile-nav-btn ${activeTab === 'formacion' ? 'active' : ''}`}
+            onClick={() => navigateToTab('formacion')}
+          >
+            <GraduationCap size={18} />
+            <span>{t.ui.navFormacionShort}</span>
+          </button>
+          <button 
+            id="m-tab-btn-cv"
+            className={`mobile-nav-btn ${activeTab === 'cv' ? 'active' : ''}`}
+            onClick={() => navigateToTab('cv')}
+          >
+            <Award size={18} />
+            <span>{t.ui.navCv}</span>
+          </button>
+        </div>
+      </nav>
 
       {/* Main Content Area */}
       <main className="main-content container animate-fade-in">
