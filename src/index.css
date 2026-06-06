@@ -1126,16 +1126,30 @@ p {
 /* Mobile phones responsive layout adjustments */
 @media (max-width: 480px) {
   .container {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .card, .pub-search {
+    margin-left: -10px;
+    margin-right: -10px;
+    border-radius: 0.75rem;
+  }
+
+  .card:not(.portfolio-card) {
+    padding: 1.25rem;
+  }
+
+  .portfolio-info {
+    padding: 1.25rem;
   }
   
   .cv-timeline {
-    margin-left: 15px;
-    padding-left: 1.25rem;
+    margin-left: 5px;
+    padding-left: 1.5rem;
   }
   
   .cv-item::before {
-    left: -1.625rem;
+    left: -1.875rem;
   }
 }
