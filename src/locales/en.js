@@ -169,28 +169,28 @@ export default {
       desc: 'Institutional repository on Huma-Num GitLab hosting the source code, validation schemas, and technical support documentation developed for the PhD thesis "Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire".',
       tags: ['GitLab', 'Huma-Num', 'TEI', 'SKOS', 'Documentation'],
       link: 'https://gitlab.huma-num.fr/aechavarria/annexesthese',
-      buttonText: 'View on GitLab Huma-Num'
+      buttonText: 'View on GitLab'
     },
     {
       title: 'Pedro de Cazalla Trial (Nakala)',
       desc: 'Dataset published on Nakala (10.34847/nkl.aaeej9jp) containing the complete XML/TEI annotation of the inquisitorial trial of Valladolid (1558-1559) against Pedro de Cazalla, a curate accused of Lutheranism, serving as the annotation scheme prototype for the thesis.',
       tags: ['Nakala', 'XML-TEI', 'Inquisition', 'Pedro de Cazalla', 'Dataset'],
       link: 'https://nakala.fr/10.34847/nkl.aaeej9jp',
-      buttonText: 'View Dataset on Nakala'
+      buttonText: 'View on Nakala'
     },
     {
       title: 'Thesaurus of Inquisitorial Document Types (Nakala)',
       desc: 'Bilingual (SKOS/RDF) controlled vocabulary published on Nakala (10.34847/nkl.2a4e2h52) for indexing trial documents in inquisitorial files, structured under the ISO 25964 standard and integrated with the TEI.',
       tags: ['Nakala', 'SKOS', 'RDF', 'Controlled Vocabulary', 'Opentheso'],
       link: 'https://nakala.fr/10.34847/nkl.2a4e2h52',
-      buttonText: 'View Thesaurus on Nakala'
+      buttonText: 'View on Nakala'
     },
     {
       title: 'TEI Annotation Schema for Trials (Nakala)',
       desc: 'XML validation schema structured on Nakala (10.34847/nkl.ab374s00) to encode historical trials. Includes ODD (One Document Does it all) specification, RelaxNG (RNG/RNC), XML Schema (XSD), and documentation in ODT.',
       tags: ['Nakala', 'ODD', 'RelaxNG', 'RNC', 'XSD', 'Validation'],
       link: 'https://nakala.fr/10.34847/nkl.ab374s00',
-      buttonText: 'View Schema on Nakala'
+      buttonText: 'View on Nakala'
     },
     {
       title: 'OCR and document analysis with Mistral (GitHub)',

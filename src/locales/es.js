@@ -169,28 +169,28 @@ export default {
       desc: 'Repositorio institucional en el GitLab de Huma-Num que aloja el código fuente, esquemas de validación y la documentación de apoyo técnica complementaria desarrollada para la tesis de doctorado "Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire".',
       tags: ['GitLab', 'Huma-Num', 'TEI', 'SKOS', 'Documentación'],
       link: 'https://gitlab.huma-num.fr/aechavarria/annexesthese',
-      buttonText: 'Ver en GitLab Huma-Num'
+      buttonText: 'Ver en GitLab'
     },
     {
       title: 'Proceso de fe de Pedro de Cazalla (Nakala)',
       desc: 'Dataset publicado en Nakala (10.34847/nkl.aaeej9jp) que contiene la anotación XML/TEI completa del proceso inquisitorial de Valladolid (1558-1559) contra Pedro de Cazalla, clérigo cura de Pedrosa acusado de luteranismo, sirviendo como prototipo para el esquema de anotación de la tesis.',
       tags: ['Nakala', 'XML-TEI', 'Inquisición', 'Pedro de Cazalla', 'Dataset'],
       link: 'https://nakala.fr/10.34847/nkl.aaeej9jp',
-      buttonText: 'Ver Dataset en Nakala'
+      buttonText: 'Ver en Nakala'
     },
     {
       title: 'Tesauro de tipologías documentales de la Inquisición (Nakala)',
       desc: 'Vocabulario controlado bilingüe (SKOS/RDF) publicado en Nakala (10.34847/nkl.2a4e2h52) para la indización de piezas procesales en los expedientes inquisitoriales, estructurado bajo el estándar ISO 25964 e integrado con la TEI.',
       tags: ['Nakala', 'SKOS', 'RDF', 'Vocabulario Controlado', 'Opentheso'],
       link: 'https://nakala.fr/10.34847/nkl.2a4e2h52',
-      buttonText: 'Ver Tesauro en Nakala'
+      buttonText: 'Ver en Nakala'
     },
     {
       title: 'Esquema de anotación TEI para procesos de fe (Nakala)',
       desc: 'Esquema de validación XML estructurado en Nakala (10.34847/nkl.ab374s00) para codificar juicios históricos. Incluye especificación ODD (One Document Does it all), RelaxNG (RNG/RNC), XML Schema (XSD) y documentación en ODT.',
       tags: ['Nakala', 'ODD', 'RelaxNG', 'RNC', 'XSD', 'Validación'],
       link: 'https://nakala.fr/10.34847/nkl.ab374s00',
-      buttonText: 'Ver Esquema en Nakala'
+      buttonText: 'Ver en Nakala'
     },
     {
       title: 'OCR y análisis de documentos con Mistral (GitHub)',

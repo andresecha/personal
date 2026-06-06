@@ -169,7 +169,7 @@ export default {
       desc: 'Dépôt institutionnel sur le GitLab de Huma-Num hébergeant le code source, les schémas de validation et la documentation technique complémentaire développés pour la thèse de doctorat "Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire".',
       tags: ['GitLab', 'Huma-Num', 'TEI', 'SKOS', 'Documentation'],
       link: 'https://gitlab.huma-num.fr/aechavarria/annexesthese',
-      buttonText: 'Voir sur GitLab Huma-Num'
+      buttonText: 'Voir sur GitLab'
     },
     {
       title: 'Procès de Pedro de Cazalla (Nakala)',
