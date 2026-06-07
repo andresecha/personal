@@ -496,12 +496,14 @@ function App() {
                   {!avatarError ? (
                     <img 
                       src="/images/profile.jpg" 
-                      alt="Andrés Echavarría" 
+                      alt={t.profile.name} 
                       className="profile-avatar"
                       onError={() => setAvatarError(true)}
                     />
                   ) : (
-                    <div className="avatar-placeholder">AE</div>
+                    <div className="avatar-placeholder">
+                      {t.ui.shortName ? t.ui.shortName.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase() : 'AE'}
+                    </div>
                   )}
                 </div>
               </div>
@@ -893,7 +895,6 @@ function App() {
           <p style={{ fontSize: '0.75rem', marginTop: '0.5rem' }}>
             {t.ui.footerSustainability}
           </p>
-          <p style={{ fontSize: '0.75rem', marginTop: '0.25rem' }} dangerouslySetInnerHTML={{ __html: t.ui.footerTemplateLink }} />
         </div>
       </footer>
     </>

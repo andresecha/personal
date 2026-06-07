@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Un artículo de investigación de ejemplo en humanidades digitales",
+    "citation": "Investigador, N. (2025). Un artículo de investigación de ejemplo. <i>Revista de Humanidades Digitales</i>, 10(2), 123-145.",
+    "type": "ART",
+    "year": 2025,
+    "journal": "Revista de Humanidades Digitales",
+    "url": "https://example.org/articulo",
+    "downloadUrl": "https://example.org/articulo/pdf",
+    "publisherUrl": "https://example.org/articulo"
+  },
+  {
+    "title": "Una comunicación en un congreso internacional",
+    "citation": "Investigador, N. (2024). Analizando corpus textuales mediante grafos de conocimiento. En <i>Actas del Congreso de Ciencia Abierta</i> (pp. 45-56). París, Francia.",
+    "type": "COMM",
+    "year": 2024,
+    "journal": "Actas del Congreso de Ciencia Abierta",
+    "url": "https://example.org/conferencia",
+    "downloadUrl": "",
+    "publisherUrl": "https://example.org/conferencia"
+  },
+  {
+    "title": "Título de tu tesis doctoral en acceso abierto",
+    "citation": "Investigador, N. (2025). <i>Modelado semántico y codificación de textos históricos en humanidades digitales</i> (Tesis Doctoral). Universidad de Prueba.",
+    "type": "THESE",
+    "year": 2025,
+    "journal": "Universidad de Prueba",
+    "url": "https://example.org/tesis",
+    "downloadUrl": "https://example.org/tesis/pdf",
+    "publisherUrl": "https://example.org/tesis"
+  }
+]

@@ -21,6 +21,7 @@ export default {
     closeModal: "Fermer",
     copyright: "Andrés Felipe Echavarría Peláez. Tous droits réservés.",
     footerSustainability: "Hébergé de manière durable et évolutive sur GitHub Pages.",
+    footerTemplateLink: "Code source libre sous licence <a href='/LICENSE' target='_blank'>WTFPL</a>. Utilisez ce <a href='https://github.com/andresecha/personal/tree/main/template' target='_blank' rel='noopener noreferrer'>modèle de portfolio</a> pour votre propre site.",
     researchSectionTitle: "Recherche & Développement Technologique",
     portfolioSectionTitle: "Identité Visuelle & Design de Marques",
     portfolioSectionIntro: "Une galerie de projets de design graphique et d'identité visuelle développés pour des projets scientifiques, des consortiums de recherche en humanités numériques et des marques personnelles.",
