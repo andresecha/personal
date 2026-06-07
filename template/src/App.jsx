@@ -1,3 +1,14 @@
+/**
+ * @file App.jsx
+ * @description Componente principal de la aplicación para el portafolio académico.
+ * Implementa la navegación por pestañas, traducción dinámica (ES/FR/EN),
+ * alternancia de modo oscuro/claro, buscador y filtrado de publicaciones,
+ * visualización de proyectos en ventana modal y una sección de CV unificada
+ * con índice lateral interactivo (scrollspy) para escritorio.
+ * 
+ * Toutes les fonctions et la logique de présentation sont documentées en espagnol et en français.
+ */
+
 import { useState, useEffect } from 'react';
 import publicationsData from './data/publications.json';
 import { translations } from './locales/index';
@@ -14,10 +25,19 @@ import {
   Moon, 
   X,
   GraduationCap,
-  Languages
+  Languages,
+  Users
 } from 'lucide-react';
 
-// Custom image logos for academic profiles & tech collaborations (stored locally)
+/* ==========================================================================
+   LOGOTIPOS PERSONALIZADOS / LOGOTYPES PERSONNALISÉS (SVG & PNG)
+   ========================================================================== */
+
+/**
+ * Componentes de logotipo para perfiles académicos e integraciones tecnológicas.
+ * Todos estos componentes renderizan imágenes desde la carpeta pública o SVGs.
+ */
+
 const ThesesLogo = ({ size = 18, className = "" }) => (
   <img 
     src="/logos/theses-logo.svg" 
@@ -142,6 +162,14 @@ const GithubLogo = ({ size = 18, className = "" }) => (
   </svg>
 );
 
+/* ==========================================================================
+   FUNCIONES AUXILIARES / FONCTIONS UTILITAIRES
+   ========================================================================== */
+
+/**
+ * Retorna el icono correspondiente según la URL o las etiquetas del recurso.
+ * Retourne le logotype adapté selon l'URL ou les tags de la ressource logicielle.
+ */
 const renderToolIcon = (tool, size = 96) => {
   const link = tool.link.toLowerCase();
   const tags = tool.tags.map(t => t.toLowerCase());
@@ -161,6 +189,10 @@ const renderToolIcon = (tool, size = 96) => {
   return <Code size={size * 0.8} />;
 };
 
+/**
+ * Retorna el logo correcto para las tarjetas de investigación de la página de inicio.
+ * Retourne le logo correct pour les cartes de recherche de la page d'accueil.
+ */
 const renderCardLogo = (logoType, size = 72, theme = 'light') => {
   switch (logoType) {
     case 'theses':
@@ -180,8 +212,10 @@ const renderCardLogo = (logoType, size = 72, theme = 'light') => {
   }
 };
 
-
-// Helper to label publication types
+/**
+ * Devuelve una etiqueta amigable según el tipo de documento y el idioma seleccionado.
+ * Retourne un libellé lisible selon le type de publication et la langue sélectionnée.
+ */
 const getFriendlyDocType = (type, lang) => {
   const types = {
     es: {
@@ -218,7 +252,26 @@ const getFriendlyDocType = (type, lang) => {
   return types[lang]?.[type] || (lang === 'es' ? 'Publicación' : 'Publication');
 };
 
+/**
+ * Identificadores únicos de las secciones del CV para el índice lateral e IntersectionObserver.
+ * Identifiants uniques des sections du CV pour l'index de navigation et IntersectionObserver.
+ */
+const cvSections = [
+  'formacion-academica',
+  'trayectoria-profesional',
+  'comunidad-cientifica',
+  'docencia-universitaria',
+  'talleres-conferencias',
+  'formacion-comunitaria'
+];
+
+/* ==========================================================================
+   COMPONENTE PRINCIPAL / COMPOSANT PRINCIPAL
+   ========================================================================== */
+
 function App() {
+  // Estado para el control de idiomas (por defecto: español)
+  // État pour la sélection de la langue (par défaut : espagnol)
   const [lang, setLang] = useState(() => {
     return localStorage.getItem('lang') || 'es';
   });
@@ -230,22 +283,52 @@ function App() {
 
   const t = translations[lang];
 
+  // Estado para controlar la pestaña/sección activa en la navegación principal
+  // État pour contrôler l'onglet actif dans la navigation principale
   const [activeTab, setActiveTab] = useState(() => {
     const hash = window.location.hash.replace('#', '');
-    const validTabs = ['sobre-mi', 'portafolio', 'publicaciones', 'herramientas', 'formacion', 'cv'];
+    // Redirecciones de compatibilidad hacia la sección unificada de CV
+    // Redirections de compatibilité vers la section unifiée du CV
+    if (hash === 'formacion') return 'cv';
+    if (cvSections.includes(hash)) return 'cv';
+    const validTabs = ['sobre-mi', 'portafolio', 'publicaciones', 'herramientas', 'cv'];
     return validTabs.includes(hash) ? hash : 'sobre-mi';
   });
 
+  // Estado de la sección activa dentro de la pestaña CV (para el scrollspy)
+  // État de la sous-section active dans l'onglet CV (pour le scrollspy)
+  const [activeSection, setActiveSection] = useState('formacion-academica');
+
+  // Efecto para sincronizar la pestaña según el hash de la URL
+  // Effet pour synchroniser l'onglet selon le hash de l'URL
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace('#', '');
-      const validTabs = ['sobre-mi', 'portafolio', 'publicaciones', 'herramientas', 'formacion', 'cv'];
+      
+      if (hash === 'formacion') {
+        window.location.hash = 'cv';
+        return;
+      }
+      
+      if (cvSections.includes(hash)) {
+        setActiveTab('cv');
+        setTimeout(() => {
+          const element = document.getElementById(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+        return;
+      }
+      
+      const validTabs = ['sobre-mi', 'portafolio', 'publicaciones', 'herramientas', 'cv'];
       if (validTabs.includes(hash)) {
         setActiveTab(hash);
+        window.scrollTo({ top: 0, behavior: 'instant' });
       } else if (!hash) {
         setActiveTab('sobre-mi');
+        window.scrollTo({ top: 0, behavior: 'instant' });
       }
-      window.scrollTo({ top: 0, behavior: 'instant' });
     };
 
     window.addEventListener('hashchange', handleHashChange);
@@ -257,26 +340,68 @@ function App() {
     window.location.hash = tabName;
   };
 
+  // Efecto de IntersectionObserver para resaltar el enlace correspondiente en el CV durante el desplazamiento
+  // Effet IntersectionObserver pour mettre en valeur le lien correspondant dans le CV lors du défilement
+  useEffect(() => {
+    if (activeTab !== 'cv') return;
+
+    const observerCallback = (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -60% 0px', // Activa la sección cuando pasa por el centro de la pantalla
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    cvSections.forEach(sectionId => {
+      const el = document.getElementById(sectionId);
+      if (el) observer.observe(el);
+    });
+
+    return () => {
+      cvSections.forEach(sectionId => {
+        const el = document.getElementById(sectionId);
+        if (el) observer.unobserve(el);
+      });
+    };
+  }, [activeTab]);
+
+  // Gestión del tema visual claro y oscuro
+  // Gestion du thème visuel clair et sombre
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem('theme') || 'light';
   });
+
   const [lightboxArt, setLightboxArt] = useState(null);
   
   const handleCardClick = (url, e) => {
+    // Evita abrir el recurso si se hace clic en botones, enlaces o etiquetas
+    // Évite d'ouvrir la ressource si l'utilisateur clique sur un bouton ou tag
     if (e.target.tagName.toLowerCase() === 'a' || e.target.closest('a') || e.target.classList.contains('tool-tag')) {
       return;
     }
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
+  // Manejo del correo electrónico seguro contra bots de SPAM
+  // Gestion sécurisée de l'e-mail contre les robots collecteurs de SPAM
   const handleEmailClick = (e) => {
     e.preventDefault();
-    const user = "andres-felipe.echavarria-pelaez";
-    const domain = "sorbonne-nouvelle.fr";
+    const user = "nombre.apellido";
+    const domain = "tu-institucion.fr";
     window.location.href = `mailto:${user}@${domain}`;
   };
   
-  // Publication states
+  // Estados para el buscador y filtros de la sección de publicaciones
+  // États pour le moteur de recherche et filtres de la section publications
   const [searchQuery, setSearchQuery] = useState('');
   const [typeFilter, setTypeFilter] = useState('ALL');
   const [avatarError, setAvatarError] = useState(false);
@@ -289,7 +414,8 @@ function App() {
     }));
   };
 
-  // Load and apply light/dark theme
+  // Carga y sincronización del tema visual oscuro/claro con la etiqueta body
+  // Chargement et synchronisation du thème avec la balise body
   useEffect(() => {
     if (theme === 'dark') {
       document.body.classList.add('dark-theme');
@@ -302,14 +428,10 @@ function App() {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
     localStorage.setItem('theme', newTheme);
-    if (newTheme === 'dark') {
-      document.body.classList.add('dark-theme');
-    } else {
-      document.body.classList.remove('dark-theme');
-    }
   };
 
-  // Filter publications
+  // Filtrado lógico de las publicaciones científicas cargadas desde el archivo JSON
+  // Filtrage logique des publications scientifiques chargées du fichier JSON
   const filteredPublications = publicationsData.filter(pub => {
     const matchesSearch = pub.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
                           pub.citation.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -318,15 +440,22 @@ function App() {
     return matchesSearch && matchesType;
   });
 
-  // Extract unique types of publications
+  // Obtiene los tipos únicos de documentos de la lista de publicaciones para generar los filtros automáticamente
+  // Extrait les types de documents uniques de la liste pour générer les filtres de façon dynamique
   const availableTypes = ['ALL', ...new Set(publicationsData.map(pub => pub.type))];
 
   return (
     <>
-      {/* Header */}
+      {/* Cabecera principal y barra de navegación / En-tête principal et barre de navigation */}
       <header className="header" id="navbar">
         <div className="container nav-container">
-          <a href="#sobre-mi" className="logo-text" id="logo-nav" onClick={(e) => navigateToTab('sobre-mi', e)} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem' }}>
+          <a 
+            href="#sobre-mi" 
+            className="logo-text" 
+            id="logo-nav" 
+            onClick={(e) => navigateToTab('sobre-mi', e)} 
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem' }}
+          >
             <img src="/logos/zorro.svg" alt={t.ui.logoFoxAlt} className="logo-fox" />
             <span>{t.ui.shortName}</span>
           </a>
@@ -371,15 +500,6 @@ function App() {
               </li>
               <li>
                 <button 
-                  id="tab-btn-formacion"
-                  className={`nav-btn ${activeTab === 'formacion' ? 'active' : ''}`}
-                  onClick={() => navigateToTab('formacion')}
-                >
-                  {t.ui.navFormacion}
-                </button>
-              </li>
-              <li>
-                <button 
                   id="tab-btn-cv"
                   className={`nav-btn ${activeTab === 'cv' ? 'active' : ''}`}
                   onClick={() => navigateToTab('cv')}
@@ -391,6 +511,7 @@ function App() {
           </nav>
 
           <div className="controls-container">
+            {/* Alternador de idioma / Sélecteur de langue */}
             <button 
               id="lang-toggle-btn"
               className="icon-btn lang-btn" 
@@ -401,6 +522,8 @@ function App() {
               <Languages size={16} />
               <span>{lang === 'es' ? 'FR' : lang === 'fr' ? 'EN' : 'ES'}</span>
             </button>
+            
+            {/* Alternador de modo oscuro / Bascule de mode sombre */}
             <button 
               id="theme-toggle-btn"
               className="icon-btn" 
@@ -411,10 +534,9 @@ function App() {
             </button>
           </div>
         </div>
-
       </header>
 
-      {/* Mobile Navigation bar */}
+      {/* Barra de navegación inferior móvil / Barre de navigation mobile inférieure (Fixe au bas de l'écran) */}
       <nav className="mobile-nav" id="mobile-navbar">
         <div className="mobile-nav-container">
           <button 
@@ -450,14 +572,6 @@ function App() {
             <span>{t.ui.navToolsShort}</span>
           </button>
           <button 
-            id="m-tab-btn-formacion"
-            className={`mobile-nav-btn ${activeTab === 'formacion' ? 'active' : ''}`}
-            onClick={() => navigateToTab('formacion')}
-          >
-            <GraduationCap size={18} />
-            <span>{t.ui.navFormacionShort}</span>
-          </button>
-          <button 
             id="m-tab-btn-cv"
             className={`mobile-nav-btn ${activeTab === 'cv' ? 'active' : ''}`}
             onClick={() => navigateToTab('cv')}
@@ -468,10 +582,10 @@ function App() {
         </div>
       </nav>
 
-      {/* Main Content Area */}
+      {/* Contenedor principal de contenidos / Zone principale de contenu */}
       <main className="main-content container animate-fade-in">
         
-        {/* TAB: SOBRE MÍ */}
+        {/* PESTAÑA: SOBRE MÍ / ONGLET : À PROPOS */}
         {activeTab === 'sobre-mi' && (
           <section className="animate-slide-up" id="sec-about">
             <div className="profile-grid">
@@ -486,7 +600,7 @@ function App() {
                     />
                   ) : (
                     <div className="avatar-placeholder">
-                      {t.ui.shortName ? t.ui.shortName.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase() : 'AE'}
+                      {t.ui.shortName ? t.ui.shortName.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase() : 'IN'}
                     </div>
                   )}
                 </div>
@@ -497,23 +611,24 @@ function App() {
                 <p className="profile-bio" style={{ fontSize: '1.05rem', lineHeight: '1.7', color: 'var(--text-secondary)' }} dangerouslySetInnerHTML={{ __html: t.profile.bioParagraph1 }} />
                 <p className="profile-bio" style={{ fontSize: '1.05rem', lineHeight: '1.7', color: 'var(--text-secondary)', marginTop: '1rem', marginBottom: '2.5rem' }} dangerouslySetInnerHTML={{ __html: t.profile.bioParagraph2 }} />
                 
+                {/* Enlaces a perfiles académicos y redes / Liens vers les profils académiques et réseaux */}
                 <div className="profile-socials">
                   <a href="#contacto" onClick={handleEmailClick} className="social-link email" title={t.ui.emailTooltip} id="link-email"></a>
-                  <a href="https://gitlab.huma-num.fr/aechavarria" target="_blank" rel="noopener noreferrer" className="social-link gitlab" title={t.ui.gitlabTooltip} id="link-gitlab"></a>
-                  <a href="https://github.com/andresecha" target="_blank" rel="noopener noreferrer" className="social-link github" title={t.ui.githubTooltip} id="link-github"></a>
-                  <a href="https://cv.hal.science/andres-echavarria" target="_blank" rel="noopener noreferrer" className="social-link hal" title={t.ui.halTooltip} id="link-hal"></a>
-                  <a href="https://orcid.org/0000-0002-0332-8808" target="_blank" rel="noopener noreferrer" className="social-link orcid" title={t.ui.orcidTooltip} id="link-orcid"></a>
-                  <a href="https://www.idref.fr/291243665" target="_blank" rel="noopener noreferrer" className="social-link idref" title={t.ui.idrefTooltip} id="link-idref"></a>
-                  <a href="https://theses.fr/2025UMPV0021" target="_blank" rel="noopener noreferrer" className="social-link theses" title={t.ui.thesesTooltip} id="link-theses"></a>
+                  <a href="https://gitlab.example.org/tu-usuario" target="_blank" rel="noopener noreferrer" className="social-link gitlab" title={t.ui.gitlabTooltip} id="link-gitlab"></a>
+                  <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" className="social-link github" title={t.ui.githubTooltip} id="link-github"></a>
+                  <a href="https://cv.hal.science/tu-perfil" target="_blank" rel="noopener noreferrer" className="social-link hal" title={t.ui.halTooltip} id="link-hal"></a>
+                  <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener noreferrer" className="social-link orcid" title={t.ui.orcidTooltip} id="link-orcid"></a>
+                  <a href="https://www.idref.fr/tu-idref" target="_blank" rel="noopener noreferrer" className="social-link idref" title={t.ui.idrefTooltip} id="link-idref"></a>
+                  <a href="https://theses.fr/tu-tesis" target="_blank" rel="noopener noreferrer" className="social-link theses" title={t.ui.thesesTooltip} id="link-theses"></a>
                 </div>
               </div>
             </div>
 
-            {/* Featured Research Cards Grid */}
+            {/* Tarjetas de investigación destacada / Cartes de recherche à la une */}
             <div className="animate-slide-up" style={{ marginTop: '2.5rem', textAlign: 'left' }} id="research-tech-section">
               <h2 className="text-gradient" style={{ marginBottom: '1.5rem' }}>{t.ui.researchSectionTitle}</h2>
               
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
                 {t.researchCards.map((card) => (
                   <div 
                     key={card.id} 
@@ -543,7 +658,7 @@ function App() {
           </section>
         )}
 
-        {/* TAB: PORTAFOLIO (ARTE Y DISEÑO) */}
+        {/* PESTAÑA: PORTAFOLIO (DISEÑO Y ARTE) / ONGLET : PORTFOLIO */}
         {activeTab === 'portafolio' && (
           <section className="animate-slide-up" id="sec-portfolio">
             <div className="section-intro">
@@ -586,7 +701,7 @@ function App() {
           </section>
         )}
 
-        {/* TAB: PUBLICACIONES (AUTOMATIZADAS) */}
+        {/* PESTAÑA: PRODUCCIÓN CIENTÍFICA / ONGLET : PUBLICATIONS */}
         {activeTab === 'publicaciones' && (
           <section className="animate-slide-up" id="sec-publications">
             <div className="section-intro">
@@ -595,7 +710,7 @@ function App() {
               <p>{t.ui.publicationsSectionIntro}</p>
             </div>
 
-            {/* Search and Filters */}
+            {/* Barra de búsqueda y filtros interactivos / Barre de recherche et filtres */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               <input 
                 id="pub-search-bar"
@@ -620,7 +735,7 @@ function App() {
               </div>
             </div>
 
-            {/* List of publications */}
+            {/* Lista interactiva de publicaciones / Liste des publications */}
             <div className="pub-list" id="pub-items-list">
               {filteredPublications.length > 0 ? (
                 filteredPublications.map((pub, idx) => (
@@ -700,7 +815,7 @@ function App() {
           </section>
         )}
 
-        {/* TAB: HERRAMIENTAS */}
+        {/* PESTAÑA: SOFTWARE Y RECURSOS / ONGLET : LOGICIELS */}
         {activeTab === 'herramientas' && (
           <section className="animate-slide-up" id="sec-tools">
             <div className="section-intro">
@@ -732,123 +847,234 @@ function App() {
           </section>
         )}
 
-        {/* TAB: FORMACIÓN & TALLERES */}
-        {activeTab === 'formacion' && (
-          <section className="animate-slide-up" id="sec-formacion">
-            <div className="section-intro">
-              <p className="profile-title">{t.ui.formacionSectionSubtitle}</p>
-              <h1>{t.ui.formacionSectionTitle}</h1>
-              <p>{t.ui.formacionSectionIntro}</p>
-            </div>
-
-            <div className="formacion-columns" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '3rem', marginTop: '2rem' }}>
-              
-              {/* Column 1: Talleres y Docencia */}
-              <div>
-                <h2 className="text-gradient" style={{ marginBottom: '2rem', fontSize: '1.6rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <Code size={22} /> {t.ui.teachingHeader}
-                </h2>
-                <div className="cv-timeline">
-                  {t.teaching.map((item, idx) => (
-                    <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.05}s` }}>
-                      <div className="cv-header">
-                        <h3 style={{ fontSize: '1.15rem', fontWeight: 650, color: 'var(--text-primary)' }}>{item.role}</h3>
-                        <span className="cv-date" style={{ fontSize: '0.8rem' }}>{item.date}</span>
-                      </div>
-                      <p className="cv-institution" style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.5rem' }}>{item.institution}</p>
-                      <p 
-                        className="cv-desc" 
-                        style={{ marginBottom: '0.75rem', fontSize: '0.95rem' }}
-                        dangerouslySetInnerHTML={{ __html: item.desc }}
-                      />
-                      {item.points && item.points.length > 0 && (
-                        <ul style={{ margin: '0.5rem 0 0 0.5rem', padding: 0, listStyleType: 'none', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                          {item.points.map((pt, pIdx) => (
-                            <li key={pIdx} style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', position: 'relative', paddingLeft: '1.25rem' }}>
-                              <span style={{ position: 'absolute', left: 0, top: '0.45rem', width: '5px', height: '5px', borderRadius: '50%', backgroundColor: 'var(--accent)' }}></span>
-                              {pt}
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Column 2: Formación Académica */}
-              <div>
-                <h2 className="text-gradient" style={{ marginBottom: '2rem', fontSize: '1.6rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <Award size={22} /> {t.ui.educationHeader}
-                </h2>
-                <div className="cv-timeline">
-                  {t.education.map((item, idx) => (
-                    <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.1}s` }}>
-                      <div className="cv-header">
-                        <h3 style={{ fontSize: '1.15rem', fontWeight: 650, color: 'var(--text-primary)' }}>{item.title}</h3>
-                        <span className="cv-date" style={{ fontSize: '0.8rem' }}>{item.date}</span>
-                      </div>
-                      <p className="cv-institution" style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.5rem' }}>{item.institution}</p>
-                      <p 
-                        className="cv-desc" 
-                        style={{ marginBottom: '0.75rem', fontSize: '0.95rem' }}
-                        dangerouslySetInnerHTML={{ __html: item.desc }}
-                      />
-                      {item.points && item.points.length > 0 && (
-                        <ul style={{ margin: '0.5rem 0 0 0.5rem', padding: 0, listStyleType: 'none', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                          {item.points.map((pt, pIdx) => (
-                            <li key={pIdx} style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', position: 'relative', paddingLeft: '1.25rem' }}>
-                              <span style={{ position: 'absolute', left: 0, top: '0.45rem', width: '5px', height: '5px', borderRadius: '50%', backgroundColor: 'var(--accent)' }}></span>
-                              {pt}
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-            </div>
-          </section>
-        )}
-
-        {/* TAB: CV */}
+        {/* PESTAÑA: CV UNIFICADO (FORMACIÓN, EXPERIENCIA, COMUNIDAD Y DOCENCIA) / ONGLET : CV */}
         {activeTab === 'cv' && (
           <section className="animate-slide-up" id="sec-cv">
-            <div className="section-intro" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1.5rem' }}>
+            <div className="section-intro" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1.5rem', marginBottom: '2rem' }}>
               <div>
                 <p className="profile-title">{t.ui.cvSectionSubtitle}</p>
                 <h1>{t.ui.navCv}</h1>
                 <p>{t.ui.cvSectionIntro}</p>
               </div>
-              <a href="https://cv.hal.science/andres-echavarria" target="_blank" rel="noopener noreferrer" className="btn-primary" id="download-cv-btn">
+              <a href="https://cv.hal.science/tu-perfil" target="_blank" rel="noopener noreferrer" className="btn-primary" id="download-cv-btn">
                 <Download size={16} />
                 <span>{t.ui.downloadCv}</span>
               </a>
             </div>
 
-            <div className="cv-timeline" id="cv-timeline-container">
-              {t.cvItems.map((item, idx) => (
-                <div key={idx} className="cv-item" id={`cv-item-${idx}`}>
-                  <div className="cv-header">
-                    <h3>{item.role}</h3>
-                    <span className="cv-date">{item.date}</span>
+            {/* Layout de CV con barra lateral e índice (scrollspy) / Structure de CV avec index collant */}
+            <div className="cv-layout">
+              {/* Barra lateral pegajosa (oculta en pantallas de tablet y móviles) / Index collant (caché sur mobile) */}
+              <aside className="cv-sidebar">
+                <nav className="cv-nav-index">
+                  <ul>
+                    <li>
+                      <a 
+                        href="#formacion-academica" 
+                        className={`cv-nav-link ${activeSection === 'formacion-academica' ? 'active' : ''}`}
+                      >
+                        {t.ui.educationHeader}
+                      </a>
+                    </li>
+                    <li>
+                      <a 
+                        href="#trayectoria-profesional" 
+                        className={`cv-nav-link ${activeSection === 'trayectoria-profesional' ? 'active' : ''}`}
+                      >
+                        {t.ui.cvProfessionalHeader}
+                      </a>
+                    </li>
+                    <li>
+                      <a 
+                        href="#comunidad-cientifica" 
+                        className={`cv-nav-link ${activeSection === 'comunidad-cientifica' ? 'active' : ''}`}
+                      >
+                        {t.ui.cvScientificHeader}
+                      </a>
+                    </li>
+                    <li>
+                      <a 
+                        href="#docencia-universitaria" 
+                        className={`cv-nav-link ${activeSection === 'docencia-universitaria' ? 'active' : ''}`}
+                      >
+                        {t.ui.universityTeachingHeader}
+                      </a>
+                    </li>
+                    <li>
+                      <a 
+                        href="#talleres-conferencias" 
+                        className={`cv-nav-link ${activeSection === 'talleres-conferencias' ? 'active' : ''}`}
+                      >
+                        {t.ui.workshopsHeader}
+                      </a>
+                    </li>
+                    <li>
+                      <a 
+                        href="#formacion-comunitaria" 
+                        className={`cv-nav-link ${activeSection === 'formacion-comunitaria' ? 'active' : ''}`}
+                      >
+                        {t.ui.communityTeachingHeader}
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </aside>
+
+              {/* Contenido principal del CV / Contenu textuel du CV */}
+              <div className="cv-content">
+                {/* 1. Formación académica / Formation Académique */}
+                <div id="formacion-academica" style={{ scrollMarginTop: '7.5rem', marginBottom: '4rem' }}>
+                  <h2 className="text-gradient" style={{ fontSize: '1.6rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <Award size={22} /> {t.ui.educationHeader}
+                  </h2>
+                  <div className="cv-timeline">
+                    {t.education.map((item, idx) => (
+                      <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.05}s` }}>
+                        <div className="cv-header">
+                          <h3 style={{ fontSize: '1.15rem', fontWeight: 650, color: 'var(--text-primary)' }}>{item.title}</h3>
+                          <span className="cv-date" style={{ fontSize: '0.8rem' }}>{item.date}</span>
+                        </div>
+                        <p className="cv-institution" style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.5rem' }}>{item.institution}</p>
+                        <p 
+                          className="cv-desc" 
+                          style={{ marginBottom: '0.75rem', fontSize: '0.95rem' }}
+                          dangerouslySetInnerHTML={{ __html: item.desc }}
+                        />
+                      </div>
+                    ))}
                   </div>
-                  <p className="cv-institution">{item.institution}</p>
-                  <p 
-                    className="cv-desc"
-                    dangerouslySetInnerHTML={{ __html: item.desc }}
-                  />
                 </div>
-              ))}
+
+                {/* 2. Trayectoria profesional / Parcours Professionnel */}
+                <div id="trayectoria-profesional" style={{ scrollMarginTop: '7.5rem', marginBottom: '4rem' }}>
+                  <h2 className="text-gradient" style={{ fontSize: '1.6rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <FileText size={22} /> {t.ui.cvProfessionalHeader}
+                  </h2>
+                  <div className="cv-timeline">
+                    {t.cvItems.map((item, idx) => (
+                      <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.05}s` }}>
+                        <div className="cv-header">
+                          <h3 style={{ fontSize: '1.15rem', fontWeight: 650, color: 'var(--text-primary)' }}>{item.role}</h3>
+                          <span className="cv-date" style={{ fontSize: '0.8rem' }}>{item.date}</span>
+                        </div>
+                        <p className="cv-institution" style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.5rem' }}>{item.institution}</p>
+                        <p 
+                          className="cv-desc" 
+                          style={{ marginBottom: '0.75rem', fontSize: '0.95rem' }}
+                          dangerouslySetInnerHTML={{ __html: item.desc }}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* 3. Comunidad científica / Communauté Scientifique */}
+                {t.scientificCommunity && (
+                  <div id="comunidad-cientifica" style={{ scrollMarginTop: '7.5rem', marginBottom: '4rem' }}>
+                    <h2 className="text-gradient" style={{ fontSize: '1.6rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <Users size={22} /> {t.ui.cvScientificHeader}
+                    </h2>
+                    <div className="cv-timeline">
+                      {t.scientificCommunity.map((item, idx) => (
+                        <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.05}s` }}>
+                          <div className="cv-header">
+                            <h3 style={{ fontSize: '1.15rem', fontWeight: 650, color: 'var(--text-primary)' }}>{item.role}</h3>
+                            <span className="cv-date" style={{ fontSize: '0.8rem' }}>{item.date}</span>
+                          </div>
+                          <p className="cv-institution" style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.5rem' }}>{item.institution}</p>
+                          <p 
+                            className="cv-desc" 
+                            style={{ marginBottom: '0.75rem', fontSize: '0.95rem' }}
+                            dangerouslySetInnerHTML={{ __html: item.desc }}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* 4. Docencia universitaria / Enseignement Universitaire */}
+                {t.universityTeaching && (
+                  <div id="docencia-universitaria" style={{ scrollMarginTop: '7.5rem', marginBottom: '4rem' }}>
+                    <h2 className="text-gradient" style={{ fontSize: '1.6rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <GraduationCap size={22} /> {t.ui.universityTeachingHeader}
+                    </h2>
+                    <div className="cv-timeline">
+                      {t.universityTeaching.map((item, idx) => (
+                        <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.05}s` }}>
+                          <div className="cv-header">
+                            <h3 style={{ fontSize: '1.15rem', fontWeight: 650, color: 'var(--text-primary)' }}>{item.role}</h3>
+                            <span className="cv-date" style={{ fontSize: '0.8rem' }}>{item.date}</span>
+                          </div>
+                          <p className="cv-institution" style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.5rem' }}>{item.institution}</p>
+                          <p 
+                            className="cv-desc" 
+                            style={{ marginBottom: '0.75rem', fontSize: '0.95rem' }}
+                            dangerouslySetInnerHTML={{ __html: item.desc }}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* 5. Talleres y conferencias / Ateliers et Conférences */}
+                {t.teaching && (
+                  <div id="talleres-conferencias" style={{ scrollMarginTop: '7.5rem', marginBottom: '4rem' }}>
+                    <h2 className="text-gradient" style={{ fontSize: '1.6rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <Code size={22} /> {t.ui.workshopsHeader}
+                    </h2>
+                    <div className="cv-timeline">
+                      {t.teaching.map((item, idx) => (
+                        <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.05}s` }}>
+                          <div className="cv-header">
+                            <h3 style={{ fontSize: '1.15rem', fontWeight: 650, color: 'var(--text-primary)' }}>{item.role}</h3>
+                            <span className="cv-date" style={{ fontSize: '0.8rem' }}>{item.date}</span>
+                          </div>
+                          <p className="cv-institution" style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.5rem' }}>{item.institution}</p>
+                          <p 
+                            className="cv-desc" 
+                            style={{ marginBottom: '0.75rem', fontSize: '0.95rem' }}
+                            dangerouslySetInnerHTML={{ __html: item.desc }}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* 6. Procesos de formación comunitaria / Formations Communautaires */}
+                {t.communityTeaching && (
+                  <div id="formacion-comunitaria" style={{ scrollMarginTop: '7.5rem', marginBottom: '2rem' }}>
+                    <h2 className="text-gradient" style={{ fontSize: '1.6rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <Users size={22} /> {t.ui.communityTeachingHeader}
+                    </h2>
+                    <div className="cv-timeline">
+                      {t.communityTeaching.map((item, idx) => (
+                        <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.05}s` }}>
+                          <div className="cv-header">
+                            <h3 style={{ fontSize: '1.15rem', fontWeight: 650, color: 'var(--text-primary)' }}>{item.role}</h3>
+                            <span className="cv-date" style={{ fontSize: '0.8rem' }}>{item.date}</span>
+                          </div>
+                          <p className="cv-institution" style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.5rem' }}>{item.institution}</p>
+                          <p 
+                            className="cv-desc" 
+                            style={{ marginBottom: '0.75rem', fontSize: '0.95rem' }}
+                            dangerouslySetInnerHTML={{ __html: item.desc }}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
           </section>
         )}
 
       </main>
 
-      {/* Lightbox / Art Mini Expo Overlay */}
+      {/* Ventana modal (Lightbox) para imágenes del portafolio / Boîte modale (Lightbox) pour les images */}
       {lightboxArt && (
         <div className="lightbox-overlay" onClick={() => setLightboxArt(null)} id="lightbox-modal">
           <div className="lightbox-content animate-scale-up" onClick={(e) => e.stopPropagation()}>
@@ -872,7 +1098,7 @@ function App() {
         </div>
       )}
 
-      {/* Footer */}
+      {/* Pie de página / Pied de page */}
       <footer className="footer">
         <div className="container">
           <p dangerouslySetInnerHTML={{ __html: t.ui.copyright }} />

@@ -1,10 +1,17 @@
+/**
+ * @file en.js
+ * @description Traducciones en inglés para la plantilla del portafolio académico.
+ * Los comentarios y anotaciones de este archivo están escritos exclusivamente en español.
+ */
+
 export default {
+  // Cadenas de texto para la interfaz de usuario (UI)
   ui: {
     navAbout: "About me",
     navPortfolio: "Projects & Design",
     navPublications: "Publications",
     navTools: "Software & Data",
-    navFormacion: "Education & Teaching",
+    navFormacion: "Education",
     navCv: "CV",
     roleText: "Researcher in Digital Humanities / Your Discipline",
     searchPlaceholder: "Search by title, year, authors...",
@@ -33,6 +40,11 @@ export default {
     formacionSectionIntro: "Details of formal academic history, university teaching activities, and facilitation of specialized workshops.",
     teachingHeader: "Teaching & Workshops Conducted",
     educationHeader: "Academic Education",
+    cvProfessionalHeader: "Professional Journey",
+    cvScientificHeader: "Scientific Community",
+    universityTeachingHeader: "University Teaching",
+    workshopsHeader: "Workshops and Conferences",
+    communityTeachingHeader: "Community Training",
     viewVisualIdentity: "View project details →",
     viewResource: "View Resource",
     emailTooltip: "Contact (E-mail)",
@@ -58,11 +70,15 @@ export default {
     navToolsShort: "Software",
     navFormacionShort: "Education"
   },
+  
+  // Datos del perfil del investigador
   profile: {
     name: "Full Name of the Researcher",
     bioParagraph1: `Write the first paragraph of your professional biography here. Describe your field of expertise, your primary institutional affiliation, and the research projects you are currently involved in. You can link to projects or institutions using standard HTML tags like <strong>bold</strong> and <a href="#" target="_blank" rel="noopener noreferrer">external links</a>.`,
     bioParagraph2: `Write the second paragraph of your biography here. You can detail your academic background, PhD, Master's degree, main research lines, or the methodologies you apply in your daily work. This layout is ideal for academic and digital humanities profiles.`
   },
+  
+  // Proyectos destacados de diseño o identidad
   artworks: [
     {
       id: 'project-1',
@@ -79,20 +95,28 @@ export default {
       img: '/portfolio/historical_texts.png'
     }
   ],
+  
+  // Tarjetas de investigación en la página de inicio
   researchCards: [
     {
       id: 'research-1',
       logoType: 'generic',
       title: 'Your Doctoral Thesis or Key Project',
-      desc: `Summary of your thesis or your key research project. Explain the scientific standard or methodology used. You can include download links to the institutional repository or open access datasets.`
+      desc: `Summary of your thesis or your key research project. Explain the scientific standard or methodology used. You can include download links to the institutional repository or open access datasets.`,
+      tags: ['Methodology', 'Open Science'],
+      link: 'https://example.org'
     },
     {
       id: 'research-2',
       logoType: 'generic',
       title: 'Collaborative Project or Consortium',
-      desc: `Description of your participation in research consortia or international projects. Link to official sites and the data visualization tools or digital resources you have contributed.`
+      desc: `Description of your participation in research consortia or international projects. Link to official sites and the data visualization tools or digital resources you have contributed.`,
+      tags: ['Consortium', 'Open Data'],
+      link: 'https://example.org'
     }
   ],
+  
+  // Herramientas de software y conjuntos de datos
   tools: [
     {
       title: 'Software or Tool Name',
@@ -109,50 +133,24 @@ export default {
       buttonText: 'Download Data'
     }
   ],
+  
+  // Trayectoria académica (Educación)
   education: [
     {
       title: 'PhD in Your Field',
       institution: 'University Name / Research Center',
       date: '2021 - 2025',
-      desc: 'Description of your PhD thesis. Include the thesis title, scientific advisor, and the main contributions of your research.',
-      points: [
-        'Key milestone or highlight 1 during the PhD.',
-        'Key milestone or highlight 2 during the PhD.'
-      ]
+      desc: 'Description of your PhD thesis. Include the thesis title, scientific advisor, and the main contributions of your research.'
     },
     {
       title: 'Master of Science',
       institution: 'University Name',
       date: '2019 - 2021',
-      desc: 'Specialization or track completed. Describe your graduation thesis or prominent internship.',
-      points: [
-        'Academic honors or distinction.',
-        'Details about the master\'s thesis.'
-      ]
+      desc: 'Specialization or track completed. Describe your graduation thesis or prominent internship.'
     }
   ],
-  teaching: [
-    {
-      role: 'University Lecturer',
-      institution: 'Faculty or Department Name',
-      date: '2024 (1 semester)',
-      desc: 'Courses or subjects taught at the undergraduate or graduate level. Describe the pedagogical approach and audience.',
-      points: [
-        'Name of course taught (number of hours).',
-        'Key syllabus topics covered (e.g., Digital Humanities, Databases, etc.).'
-      ]
-    },
-    {
-      role: 'Specialized Workshop Facilitator',
-      institution: 'Research Center / Doctoral School',
-      date: '2023 (3 days)',
-      desc: 'Series of practical workshops for researchers or advanced students.',
-      points: [
-        'Intensive workshop on tools or frameworks.',
-        'Hands-on methodology and development of guided exercises.'
-      ]
-    }
-  ],
+  
+  // Trayectoria profesional
   cvItems: [
     {
       role: 'Research Engineer / Postdoc',
@@ -165,6 +163,46 @@ export default {
       institution: 'University or Funding Institute',
       date: '2021 - 2025',
       desc: 'Research activities linked to the PhD, writing articles, teaching, and participation in international conferences.'
+    }
+  ],
+  
+  // Aportes a la comunidad científica
+  scientificCommunity: [
+    {
+      role: 'External Reviewer / Committee Member',
+      institution: 'Scientific Journal / Academic Association',
+      date: '2025 - Present',
+      desc: 'Participation in peer-review committees, evaluating manuscript proposals, and organizing academic conferences.'
+    }
+  ],
+  
+  // Actividades de docencia universitaria
+  universityTeaching: [
+    {
+      role: 'Course Instructor',
+      institution: 'University Name',
+      date: '2023 - 2024',
+      desc: 'Lectures given at undergraduate or postgraduate levels. Program design and academic evaluations.'
+    }
+  ],
+  
+  // Talleres impartidos y conferencias magistrales
+  teaching: [
+    {
+      role: 'Specialized Workshop Instructor / Speaker',
+      institution: 'Research Center / Doctoral School',
+      date: '2023',
+      desc: 'Practical intensive workshops aimed at transferring specific technical skills to researchers and students.'
+    }
+  ],
+  
+  // Procesos de formación comunitaria y de extensión
+  communityTeaching: [
+    {
+      role: 'Community Educator (Social Commitment)',
+      institution: 'Local Association / Cultural Center',
+      date: '2022',
+      desc: 'Planning and lecturing open workshops for the general public, promoting democratic access to knowledge.'
     }
   ]
 };

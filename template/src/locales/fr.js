@@ -1,10 +1,18 @@
+/**
+ * @file fr.js
+ * @description Traductions en français pour le modèle de portfolio académique.
+ * Ce fichier contient toutes les chaînes de texte pour l'interface utilisateur, la biographie et les données
+ * d'exemple pour les sections du portfolio (projets, publications, outils et CV).
+ */
+
 export default {
+  // Chaînes de texte pour l'interface utilisateur (UI)
   ui: {
     navAbout: "À propos",
     navPortfolio: "Projets & Design",
     navPublications: "Publications",
     navTools: "Logiciels & Données",
-    navFormacion: "Formation & Enseignement",
+    navFormacion: "Formation",
     navCv: "CV",
     roleText: "Chercheur en Humanités Numériques / Votre Discipline",
     searchPlaceholder: "Rechercher par titre, année, auteurs...",
@@ -33,6 +41,11 @@ export default {
     formacionSectionIntro: "Détails du parcours académique formel, des activités d'enseignement universitaire et de l'animation d'ateliers spécialisés.",
     teachingHeader: "Enseignement & Ateliers Animés",
     educationHeader: "Formation Académique",
+    cvProfessionalHeader: "Parcours professionnel",
+    cvScientificHeader: "Communauté scientifique",
+    universityTeachingHeader: "Enseignement universitaire",
+    workshopsHeader: "Ateliers et conférences",
+    communityTeachingHeader: "Formations communautaires",
     viewVisualIdentity: "Voir les détails du projet →",
     viewResource: "Voir la Ressource",
     emailTooltip: "Contact (E-mail)",
@@ -58,11 +71,15 @@ export default {
     navToolsShort: "Logiciels",
     navFormacionShort: "Formation"
   },
+  
+  // Données de profil
   profile: {
     name: "Nom Complet du Chercheur",
     bioParagraph1: `Écrivez ici le premier paragraphe de votre biographie professionnelle. Décrivez votre domaine d'expertise, votre affiliation institutionnelle principale et les projets de recherche dans lesquels vous êtes actuellement impliqué. Vous pouvez ajouter des liens vers des projets ou des institutions à l'aide de balises HTML standard telles que <strong>gras</strong> et <a href="#" target="_blank" rel="noopener noreferrer">des liens externes</a>.`,
     bioParagraph2: `Écrivez ici le deuxième paragraphe de votre biographie. Vous pouvez détailler votre parcours universitaire, votre doctorat, votre master, vos principaux axes de recherche ou les méthodologies que vous appliquez dans votre travail quotidien. Cette mise en page est idéale pour les profils académiques et en humanités numériques.`
   },
+  
+  // Projets ou créations graphiques
   artworks: [
     {
       id: 'project-1',
@@ -79,20 +96,28 @@ export default {
       img: '/portfolio/historical_texts.png'
     }
   ],
+  
+  // Cartes de recherche
   researchCards: [
     {
       id: 'research-1',
       logoType: 'generic',
       title: 'Votre Thèse de Doctorat ou Projet Phare',
-      desc: `Résumé de votre thèse ou de votre projet de recherche clé. Présentez le standard scientifique ou la méthodologie employée. Vous pouvez inclure des liens de téléchargement vers l'archive institutionnelle ou les jeux de données en accès libre.`
+      desc: `Résumé de votre thèse ou de votre projet de recherche clé. Présentez le standard scientifique ou la méthodologie employée. Vous pouvez inclure des liens de téléchargement vers l'archive institutionnelle ou les jeux de données en accès libre.`,
+      tags: ['Méthodologie', 'Science Ouverte'],
+      link: 'https://example.org'
     },
     {
       id: 'research-2',
       logoType: 'generic',
       title: 'Projet Collaboratif ou Consortium',
-      desc: `Description de votre participation à des consortiums de recherche ou à des projets internationaux. Ajoutez des liens vers les sites officiels et les outils de visualisation de données ou les ressources numériques que vous avez apportés.`
+      desc: `Description de votre participation à des consortiums de recherche ou à des projets internationaux. Ajoutez des liens vers les sites officiels et les outils de visualisation de données ou les ressources numériques que vous avez apportés.`,
+      tags: ['Consortium', 'Données Ouvertes'],
+      link: 'https://example.org'
     }
   ],
+  
+  // Logiciels et données
   tools: [
     {
       title: 'Nom du Logiciel ou de l\'Outil',
@@ -109,50 +134,24 @@ export default {
       buttonText: 'Télécharger Données'
     }
   ],
+  
+  // Parcours universitaire
   education: [
     {
       title: 'Doctorat dans votre Spécialité',
       institution: 'Nom de l\'Université / Centre de Recherche',
       date: '2021 - 2025',
-      desc: 'Description de votre thèse de doctorat. Mentionnez le titre de la thèse, le directeur de thèse et les principales contributions de vos recherches.',
-      points: [
-        'Jalon important ou distinction durant le doctorat.',
-        'Détails sur la valorisation scientifique des travaux.'
-      ]
+      desc: 'Description de votre thèse de doctorat. Mentionnez le titre de la thèse, le directeur de thèse et les principales contributions de vos recherches.'
     },
     {
       title: 'Master de Recherche',
       institution: 'Nom de l\'Université',
       date: '2019 - 2021',
-      desc: 'Spécialisation ou parcours suivi. Décrivez votre mémoire de recherche ou un stage significatif.',
-      points: [
-        'Mention ou distinction académique.',
-        'Détails sur le sujet du mémoire.'
-      ]
+      desc: 'Spécialisation ou parcours suivi. Décrivez votre mémoire de recherche ou un stage significatif.'
     }
   ],
-  teaching: [
-    {
-      role: 'Chargé d\'Enseignement',
-      institution: 'Nom de la Faculté ou du Département',
-      date: '2024 (1 semestre)',
-      desc: 'Cours ou travaux dirigés dispensés au niveau licence ou master. Décrivez l\'approche pédagogique et le public visé.',
-      points: [
-        'Intitulé du cours dispensé (nombre d\'heures).',
-        'Thématiques clés abordées (ex. Humanités Numériques, Bases de Données, etc.).'
-      ]
-    },
-    {
-      role: 'Animateur d\'Atelier Spécialisé',
-      institution: 'Centre de Recherche / École Doctorale',
-      date: '2023 (3 jours)',
-      desc: 'Série d\'ateliers pratiques pour chercheurs ou étudiants avancés.',
-      points: [
-        'Atelier intensif d\'outils ou de frameworks.',
-        'Méthodologie active et encadrement d\'exercices dirigés.'
-      ]
-    }
-  ],
+  
+  // Parcours professionnel
   cvItems: [
     {
       role: 'Ingénieur de Recherche / Postdoc',
@@ -165,6 +164,46 @@ export default {
       institution: 'Université ou Institution de Financement',
       date: '2021 - 2025',
       desc: 'Activités de recherche liées à la thèse, rédaction d\'articles, enseignement et participation à des conférences internationales.'
+    }
+  ],
+  
+  // Contribution à la communauté scientifique
+  scientificCommunity: [
+    {
+      role: 'Évaluateur externe / Membre de comité',
+      institution: 'Revue Scientifique / Association Académique',
+      date: '2025 - Présent',
+      desc: 'Participation à des comités d\'évaluation scientifique, relecture d\'articles (peer-review) et organisation de colloques universitaires.'
+    }
+  ],
+  
+  // Activités d'enseignement universitaire
+  universityTeaching: [
+    {
+      role: 'Chargé d\'Enseignement',
+      institution: 'Nom de l\'Université',
+      date: '2023 - 2024',
+      desc: 'Cours ou travaux dirigés dispensés au niveau licence ou master. Conception de programmes et évaluation académique.'
+    }
+  ],
+  
+  // Ateliers animés et conférences invitées
+  teaching: [
+    {
+      role: 'Animateur d\'Atelier Spécialisé / Conférencier',
+      institution: 'Centre de Recherche / École Doctorale',
+      date: '2023',
+      desc: 'Ateliers pratiques intensifs orientés vers l\'apprentissage de compétences techniques spécifiques pour les chercheurs et étudiants.'
+    }
+  ],
+  
+  // Formations populaires ou engagement social
+  communityTeaching: [
+    {
+      role: 'Enseignant en Contexte Populaire (Engagement Social)',
+      institution: 'Association Locale / Centre Culturel',
+      date: '2022',
+      desc: 'Planification et animation d\'ateliers éducatifs ouverts au grand public afin de démocratiser l\'accès aux connaissances.'
     }
   ]
 };

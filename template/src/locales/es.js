@@ -1,4 +1,12 @@
+/**
+ * @file es.js
+ * @description Traducciones en español para la plantilla del portafolio académico.
+ * Este archivo contiene todas las cadenas de texto de la interfaz de usuario, biografías y datos
+ * de ejemplo para las secciones del portafolio (proyectos, publicaciones, herramientas y CV).
+ */
+
 export default {
+  // Cadenas de texto para la interfaz de usuario (UI)
   ui: {
     navAbout: "Sobre mí",
     navPortfolio: "Proyectos & Diseño",
@@ -33,6 +41,11 @@ export default {
     formacionSectionIntro: "Detalle de trayectoria académica formal, actividades de docencia universitaria y facilitación de talleres especializados.",
     teachingHeader: "Docencia & talleres impartidos",
     educationHeader: "Formación académica",
+    cvProfessionalHeader: "Trayectoria profesional",
+    cvScientificHeader: "Comunidad científica",
+    universityTeachingHeader: "Docencia universitaria",
+    workshopsHeader: "Talleres y conferencias",
+    communityTeachingHeader: "Procesos de formación comunitaria",
     viewVisualIdentity: "Ver detalles del proyecto →",
     viewResource: "Ver Recurso",
     emailTooltip: "Contacto (E-mail)",
@@ -58,11 +71,15 @@ export default {
     navToolsShort: "Software",
     navFormacionShort: "Formación"
   },
+  
+  // Datos del perfil del investigador
   profile: {
     name: "Nombre Completo del Investigador",
     bioParagraph1: `Escribe aquí el primer párrafo de tu biografía profesional. Describe tu área de especialidad, tu afiliación institucional principal y los proyectos de investigación en los que participas actualmente. Puedes enlazar a proyectos o instituciones usando etiquetas HTML estándares como <strong>negrita</strong> y <a href="#" target="_blank" rel="noopener noreferrer">enlaces externos</a>.`,
     bioParagraph2: `Escribe aquí el segundo párrafo de tu biografía. Puedes detallar tu formación académica, doctorado, maestría, líneas de investigación principales o las metodologías que empleas en tu trabajo diario. Este diseño es ideal para perfiles académicos y de humanidades digitales.`
   },
+  
+  // Proyectos destacados de diseño o identidad
   artworks: [
     {
       id: 'proyecto-1',
@@ -79,20 +96,28 @@ export default {
       img: '/portfolio/historical_texts.png'
     }
   ],
+  
+  // Tarjetas de investigación en la página de inicio
   researchCards: [
     {
       id: 'investigacion-1',
       logoType: 'generic',
       title: 'Tu Tesis Doctoral o Proyecto Principal',
-      desc: `Resumen de tu tesis o de tu proyecto de investigación clave. Explica el estándar científico o la metodología empleada. Puedes incluir enlaces de descarga al repositorio institucional o a los conjuntos de datos en acceso abierto.`
+      desc: `Resumen de tu tesis o de tu proyecto de investigación clave. Explica el estándar científico o la metodología empleada. Puedes incluir enlaces de descarga al repositorio institucional o a los conjuntos de datos en acceso abierto.`,
+      tags: ['Metodología', 'Ciencia Abierta'],
+      link: 'https://example.org'
     },
     {
       id: 'investigacion-2',
       logoType: 'generic',
       title: 'Proyecto de Colaboración o Consorcio',
-      desc: `Descripción de tu participación en consorcios de investigación o proyectos internacionales. Enlaza a los sitios oficiales y a las herramientas de visualización de datos o recursos digitales que hayas aportado.`
+      desc: `Descripción de tu participación en consorcios de investigación o proyectos internacionales. Enlaza a los sitios oficiales y a las herramientas de visualización de datos o recursos digitales que hayas aportado.`,
+      tags: ['Consorcio', 'Datos Abiertos'],
+      link: 'https://example.org'
     }
   ],
+  
+  // Herramientas de software y conjuntos de datos
   tools: [
     {
       title: 'Nombre del Software o Herramienta',
@@ -109,50 +134,24 @@ export default {
       buttonText: 'Descargar Datos'
     }
   ],
+  
+  // Trayectoria académica (Educación)
   education: [
     {
       title: 'Doctorado en tu Especialidad',
       institution: 'Nombre de la Universidad / Centro de Investigación',
       date: '2021 - 2025',
-      desc: 'Descripción de tu tesis doctoral. Incluye el título de la tesis, director científico y las principales contribuciones de tu investigación.',
-      points: [
-        'Hito o logro destacado 1 durante el doctorado.',
-        'Hito o logro destacado 2 durante el doctorado.'
-      ]
+      desc: 'Descripción de tu tesis doctoral. Incluye el título de la tesis, director científico y las principales contribuciones de tu investigación.'
     },
     {
       title: 'Maestría / Máster en Ciencias',
       institution: 'Nombre de la Universidad',
       date: '2019 - 2021',
-      desc: 'Especialización o mención cursada. Describe tu trabajo de investigación de grado o pasantía destacada.',
-      points: [
-        'Promoción o distinción académica.',
-        'Detalles sobre la tesis de maestría.'
-      ]
+      desc: 'Especialización o mención cursada. Describe tu trabajo de investigación de grado o pasantía destacada.'
     }
   ],
-  teaching: [
-    {
-      role: 'Profesor / Docente Universitario',
-      institution: 'Nombre de la Facultad o Departamento',
-      date: '2024 (1 semestre)',
-      desc: 'Cátedra o materias impartidas a nivel de grado o posgrado. Describe el enfoque pedagógico y la audiencia.',
-      points: [
-        'Nombre del curso impartido (número de horas).',
-        'Temarios clave cubiertos (ej. Humanidades Digitales, Bases de Datos, etc.).'
-      ]
-    },
-    {
-      role: 'Animador de Taller Especializado',
-      institution: 'Centro de Investigación / Escuela Doctoral',
-      date: '2023 (3 días)',
-      desc: 'Serie de talleres prácticos para investigadores o estudiantes avanzados.',
-      points: [
-        'Taller intensivo de herramientas o frameworks.',
-        'Metodología práctica y desarrollo de ejercicios dirigidos.'
-      ]
-    }
-  ],
+  
+  // Trayectoria profesional
   cvItems: [
     {
       role: 'Ingeniero de Investigación / Postdoc',
@@ -165,6 +164,46 @@ export default {
       institution: 'Universidad o Instituto Financiador',
       date: '2021 - 2025',
       desc: 'Labores de investigación vinculadas al doctorado, redacción de artículos, docencia y participación en congresos internacionales.'
+    }
+  ],
+  
+  // Aportes a la comunidad científica
+  scientificCommunity: [
+    {
+      role: 'Evaluador científico externo / Miembro de comité',
+      institution: 'Revista Internacional / Asociación Académica',
+      date: '2025 - Presente',
+      desc: 'Evaluación científica por pares de artículos de investigación y participación activa en comités organizadores de congresos del área.'
+    }
+  ],
+  
+  // Actividades de docencia universitaria
+  universityTeaching: [
+    {
+      role: 'Docente Universitario',
+      institution: 'Nombre de la Facultad o Departamento',
+      date: '2023 - 2024',
+      desc: 'Clases impartidas a nivel de grado o posgrado. Diseño de programas y evaluación académica.'
+    }
+  ],
+  
+  // Talleres impartidos y conferencias magistrales
+  teaching: [
+    {
+      role: 'Facilitador de Taller Especializado / Conferencista',
+      institution: 'Centro de Investigación / Escuela Doctoral',
+      date: '2023',
+      desc: 'Talleres prácticos intensivos orientados a la transmisión de competencias técnicas especializadas para investigadores y estudiantes.'
+    }
+  ],
+  
+  // Procesos de formación comunitaria y de extensión
+  communityTeaching: [
+    {
+      role: 'Docente en Procesos Comunitarios (Compromiso Social)',
+      institution: 'Asociación Local / Centro Cultural',
+      date: '2022',
+      desc: 'Planificación y desarrollo de espacios educativos abiertos destinados al público general, promoviendo el acceso democrático al conocimiento.'
     }
   ]
 };
