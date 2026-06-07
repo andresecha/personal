@@ -291,7 +291,7 @@ export default {
   ],
   "cvItems": [
     {
-      "role": "Docente de metodología de trabajo universitario",
+      "role": "Docente universitario",
       "institution": "Université Sorbonne Nouvelle / Université de Montpellier Paul-Valéry (Montpellier, Francia) / Université de Bretagne-Sud",
       "date": "2019 - Presente",
       "desc": "Docente en la Université Sorbonne Nouvelle (París, Francia) desde 2021, con la impartición de asignaturas en el máster de humanidades digitales (\"Introducción a la gestión de bases de datos en SHS\") y en el máster de letras modernas (\"Metodología de la investigación digital\"). También he sido docente de lengua y civilización española en la Université de Montpellier Paul-Valéry (Montpellier, Francia) (2022-2024) y en la Université de Bretagne-Sud (2019-2021)."
@@ -451,42 +451,42 @@ export default {
     },
     {
       "role": "Taller práctico: validación y estructuración de impresos",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia) (Montpellier, Francia)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
       "date": "4 de abril de 2023",
       "desc": "Una jornada de formación especializada sobre el proceso de validación de salidas estructuradas y la organización interna de documentos en el marco del proyecto ANR D4R, titulada 'Impresos. Proceso de validación de las salidas y estructuración interna de los documentos'.",
       "points": []
     },
     {
       "role": "Taller práctico: formalización y análisis de redes",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia) (Montpellier, Francia)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
       "date": "3 de febrero de 2023",
       "desc": "Una jornada formativa centrada en los métodos de formalización, visualización y análisis de redes a partir de textos históricos anotados para el proyecto ANR D4R, titulada 'Réseaux et formalisation de réseaux'.",
       "points": []
     },
     {
       "role": "Taller práctico: codificación y fases de procesos inquisitoriales",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia) (Montpellier, Francia)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
       "date": "13 de enero de 2023",
       "desc": "Una jornada práctica dedicada a la modelización judicial y al establecimiento de fases procesales para su codificación y representación digital, titulada 'Procesos inquisitoriales y establecimiento de fases para su representación y codificación'.",
       "points": []
     },
     {
       "role": "Taller práctico: anotación de corpus impresos",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia) (Montpellier, Francia)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
       "date": "2 de diciembre de 2022",
       "desc": "Una jornada formativa orientada a la definición de etiquetas y criterios de anotación para colecciones de textos impresos, titulada 'Imprimé et dissidences. Réflexion pour une annotation des corpus imprimés de D4R. Définition du jeu de balises à privilégier'.",
       "points": []
     },
     {
       "role": "Taller práctico: taxonomía de la documentación inquisitorial",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia) (Montpellier, Francia)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
       "date": "4 de noviembre de 2022",
       "desc": "Una jornada práctica dedicada a la estructuración de vocabularios controlados y taxonomías semánticas aplicadas a la tipología documental inquisitorial del proyecto ANR D4R, titulada 'Taxonomía de la documentación inquisitorial'.",
       "points": []
     },
     {
       "role": "Co-organización y taller de divulgación científica",
-      "institution": "Fête de la Science - Université de Montpellier Paul-Valéry (Montpellier, Francia) (Montpellier, Francia)",
+      "institution": "Fête de la Science - Université de Montpellier Paul-Valéry (Montpellier, Francia)",
       "date": "Octubre de 2022",
       "desc": "Una jornada interactiva de divulgación para el público general, coorganizando y animando junto a Michel Boeglin el taller 'Livre ancien y Humanidades numéricas' en la Sala del Consejo del sitio Saint Charles. El espacio estuvo dedicado a demostraciones prácticas de digitalización y procesamiento inteligente de libros antiguos patrimoniales.",
       "points": []
@@ -500,21 +500,21 @@ export default {
     },
     {
       "role": "Taller práctico: ontologías y lenguajes controlados",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia) (Montpellier, Francia)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
       "date": "7 de octubre de 2022",
       "desc": "Una jornada de trabajo colaborativo orientada a la delimitación de lenguajes controlados y la conceptualización de ontologías basadas en CIDOC-CRM para el proyecto ANR D4R, titulada 'Definición de conceptos. Reflexiones hacia la construcción de una ontología del proyecto ANR-D4R'.",
       "points": []
     },
     {
       "role": "Taller práctico: XML-TEI adaptado a la documentación histórica",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia) (Montpellier, Francia)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
       "date": "2 de septiembre de 2022",
       "desc": "Una jornada de formación técnica sobre el diseño de esquemas RelaxNG y especificaciones de codificación de documentos históricos, titulada 'XML-TEI adaptado a la documentación D4R'.",
       "points": []
     },
     {
       "role": "Taller práctico: introducción a Transkribus y transcripción asistida",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia) (Montpellier, Francia)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
       "date": "5 de julio de 2022",
       "desc": "Una jornada de capacitación introductoria enfocada en el flujo de trabajo básico del programa Transkribus y el entrenamiento de modelos de transcripción manual asistida por ordenador, titulada 'Transkribus, funciones básicas del programa necesarias para la transcripción'.",
       "points": []
@@ -528,7 +528,7 @@ export default {
     },
     {
       "role": "Taller práctico: directrices TEI para textos del siglo XVI",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia) (Montpellier, Francia)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
       "date": "4 de febrero de 2022",
       "desc": "Una jornada formativa centrada en la definición de estándares y directrices TEI para la transcripción y marcado de textos impresos y manuscritos del siglo XVI, titulada 'Líneas directrices TEI para la codificación de textos en español del siglo XVI'.",
       "points": []
@@ -536,13 +536,13 @@ export default {
   ],
   "universityTeaching": [
     {
-      "role": "Docente de metodología de trabajo universitario",
+      "role": "Docente de metodología de la investigación digital",
       "institution": "Université Sorbonne Nouvelle (París, Francia)",
       "date": "2025 - Presente",
       "desc": "Docencia en el máster a distancia (EAD) del módulo 'FZDDC01 - Metodología de la investigación digital' para el Máster 1 de Literaturas de expresión francesa. La asignatura forma a los estudiantes en la comprensión de las cadenas de tratamiento de datos y análisis textual (textometría), la manipulación y estructuración de corpus aplicados a la investigación literaria, y el uso de herramientas de humanidades digitales en letras."
     },
     {
-      "role": "Docente de metodología de trabajo universitario",
+      "role": "Docente de bases de datos",
       "institution": "Université Sorbonne Nouvelle (París, Francia)",
       "date": "2023 - 2024",
       "desc": "Docencia en el módulo 'Introducción a la gestión de bases de datos en SHS' dentro del Máster de Humanidades Digitales (parcours NGEST). La labor cubrió la conceptualización de modelos relacionales, el diseño de esquemas entidad-relación y la normalización de bases de datos para la explotación científica de fuentes textológicas."
@@ -566,7 +566,7 @@ export default {
       "desc": "Docencia en el módulo 'Renforcement Méthodologique et Disciplinaire' (RMD) durante el primer semestre para estudiantes de primer año de Licence (L1). La asignatura consistió en tutorías de refuerzo metodológico y disciplinar adaptadas para la transición a los estudios universitarios hispánicos, fortaleciendo el análisis textual y la redacción académica."
     },
     {
-      "role": "Docente de metodología de trabajo universitario",
+      "role": "Docente de bases de datos",
       "institution": "Université Sorbonne Nouvelle (París, Francia)",
       "date": "2022 - 2023",
       "desc": "Docencia en el módulo 'Introducción a la gestión de bases de datos en SHS' dentro del Máster de Humanidades Digitales (parcours NGEST). La labor se centró en la implementación de bases de datos relacionales, el uso de SQL para consultas de agregación y el filtrado de metadatos en proyectos de investigación literaria e histórica."
@@ -584,7 +584,7 @@ export default {
       "desc": "Docencia en el módulo 'Renforcement Méthodologique et Disciplinaire' (RMD) durante los semestres 1 y 2 para estudiantes de primer año de Licence (L1). La asignatura consistió en el acompañamiento pedagógico enfocado en el desarrollo de competencias transversales de estudio (toma de notas, organización del trabajo autónomo y uso de recursos bibliográficos en biblioteca) y la consolidación de contenidos hispánicos."
     },
     {
-      "role": "Docente de metodología de trabajo universitario",
+      "role": "Docente de bases de datos",
       "institution": "Université Sorbonne Nouvelle (París, Francia)",
       "date": "2021 - 2022",
       "desc": "Docencia en el módulo 'Introducción a la gestión de bases de datos en SHS' dentro del Máster de Humanidades Digitales (parcours NGEST). La asignatura introdujo el diseño conceptual de datos, la estructura de tablas relacionales y los fundamentos de la recuperación de información en ciencias humanas y sociales."

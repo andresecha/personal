@@ -457,42 +457,42 @@ export default {
     },
     {
       "role": "Atelier pratique : validation et structuration des imprimés",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "4 avril 2023",
       "desc": "Une journée de formation spécialisée sur le processus de validation des sorties structurées et l'organisation interne des documents dans le cadre du projet ANR D4R, intitulée 'Impresos. Proceso de validación de las salidas y estructuración interna de los documents'.",
       "points": []
     },
     {
       "role": "Atelier pratique : formalisation et analyse de réseaux",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "3 février 2023",
       "desc": "Une journée de formation axée sur les méthodes de formalisation, de visualisation et d'analyse de réseaux à partir de textes historiques annotés pour le projet ANR D4R, intitulée 'Réseaux et formalisation de réseaux'.",
       "points": []
     },
     {
       "role": "Atelier pratique : encodage et phases des procès inquisitoriaux",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "13 janvier 2023",
       "desc": "Une journée pratique consacrée à la modélisation judiciaire et à l'établissement de phases procédurales pour leur encodage et représentation numérique, intitulée 'Procesos inquisitoriales y establecimiento de fases para su representación y codificación'.",
       "points": []
     },
     {
       "role": "Atelier pratique : annotation des corpus imprimés",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "2 décembre 2022",
       "desc": "Une journée de formation visant à définir les balises et critères d'annotation pour les collections d'imprimés, intitulée 'Imprimé et dissidences. Réflexion pour une annotation des corpus imprimés de D4R. Définition du jeu de balises à privilégier'.",
       "points": []
     },
     {
       "role": "Atelier pratique : taxonomie de la documentation inquisitoriale",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "4 novembre 2022",
       "desc": "Une journée pratique consacrée à la structuration de vocabulaires contrôlés et de taxonomies sémantiques appliquées à la typologie documentaire de l'Inquisition pour le projet ANR D4R, intitulée 'Taxonomía de la documentation inquisitorial'.",
       "points": []
     },
     {
       "role": "Co-organisation et atelier de diffusion scientifique",
-      "institution": "Fête de la Science - Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Fête de la Science - Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "Octobre 2022",
       "desc": "Une journée interactive de vulgarisation destinée au grand public, co-organisant et animant avec Michel Boeglin l'atelier 'Livre ancien et Humanités numériques' dans la Salle du Conseil du site Saint Charles. La session a été consacrée à des démonstrations pratiques de numérisation et de traitement intelligent de livres anciens patrimoniaux.",
       "points": []
@@ -506,21 +506,21 @@ export default {
     },
     {
       "role": "Atelier pratique : ontologies et langages contrôlés",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "7 octobre 2022",
       "desc": "Une journée de travail collaboratif orientée vers la délimitation de langages contrôlés et la conceptualisation d'ontologies basées sur CIDOC-CRM pour le projet ANR D4R, intitulée 'Definición de conceptos. Reflexiones hacia la construcción de una ontología del proyecto ANR-D4R'.",
       "points": []
     },
     {
       "role": "Atelier pratique : XML-TEI adapté à la documentation historique",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "2 septembre 2022",
       "desc": "Une journée de formation technique sur la conception de schémas RelaxNG et de spécifications d'encodage de documents historiques, intitulée 'XML-TEI adaptado a la documentación D4R'.",
       "points": []
     },
     {
       "role": "Atelier pratique : introduction à Transkribus et transcription assistée",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "5 juillet 2022",
       "desc": "Une journée de formation d'introduction axée sur le flux de travail de base du programme Transkribus et l'entraînement de modèles de transcription manuelle assistée par ordinateur, intitulée 'Transkribus, funciones básicas del programa necesarias para la transcripción'.",
       "points": []
@@ -534,7 +534,7 @@ export default {
     },
     {
       "role": "Atelier pratique : directives TEI pour les textes du XVIe siècle",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "4 février 2022",
       "desc": "Une journée de formation centrée sur la définition de normes et de directives TEI pour la transcription et le balisage de textes imprimés et manuscrits du XVIe siècle, intitulée 'Líneas directrices TEI para la codificación de textos en español del siglo XVI'.",
       "points": []

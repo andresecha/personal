@@ -291,7 +291,7 @@ export default {
   ],
   "cvItems": [
     {
-      "role": "Lecturer",
+      "role": "University Lecturer",
       "institution": "Université Sorbonne Nouvelle / Université de Montpellier Paul-Valéry (Montpellier, France) / Université de Bretagne-Sud",
       "date": "2019 - Present",
       "desc": "Lecturer at Université Sorbonne Nouvelle (Paris, France) since 2021, teaching modules in the master of digital humanities (\"Introduction to database management in SHS\") and in the master of modern letters (\"Methodology of digital research\"). I also taught Spanish language and civilization at Université de Montpellier Paul-Valéry (Montpellier, France) (2022-2024) and Université de Bretagne-Sud (2019-2021)."
@@ -451,42 +451,42 @@ export default {
     },
     {
       "role": "Practical workshop: validation and structuring of printed works",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "April 4, 2023",
       "desc": "A specialized training session on the validation process of structured outputs and the internal organization of documents within the framework of the ANR D4R project, titled 'Impresos. Proceso de validación de las salidas y estructuración interna de los documentos'.",
       "points": []
     },
     {
       "role": "Practical workshop: network formalization and analysis",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "February 3, 2023",
       "desc": "A training session focused on the methods of formalization, visualization, and analysis of networks from annotated historical texts for the ANR D4R project, titled 'Réseaux et formalisation de réseaux'.",
       "points": []
     },
     {
       "role": "Practical workshop: encoding and phases of inquisitorial processes",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "January 13, 2023",
       "desc": "A practical session dedicated to judicial modeling and establishing process phases for their digital encoding and representation, titled 'Procesos inquisitoriales y establecimiento de fases para su representación y codificación'.",
       "points": []
     },
     {
       "role": "Practical workshop: annotation of printed corpora",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "December 2, 2022",
       "desc": "A training session aimed at defining tags and annotation criteria for printed text collections, titled 'Imprimé et dissidences. Réflexion pour une annotation des corpus imprimés de D4R. Définition du jeu de balises à privilégier'.",
       "points": []
     },
     {
       "role": "Practical workshop: taxonomy of inquisitorial documentation",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "November 4, 2022",
       "desc": "A practical session dedicated to structuring controlled vocabularies and semantic taxonomies applied to the inquisitorial document typology of the ANR D4R project, titled 'Taxonomía de la documentación inquisitorial'.",
       "points": []
     },
     {
       "role": "Co-organization and scientific outreach workshop",
-      "institution": "Fête de la Science - Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Fête de la Science - Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "October 2022",
       "desc": "An interactive outreach session for the general public, co-organizing and facilitating with Michel Boeglin the workshop 'Livre ancien et Humanités numériques' in the Council Room of the Saint Charles site. The event was dedicated to practical demonstrations of digitization and intelligent processing of rare and heritage books.",
       "points": []
@@ -500,21 +500,21 @@ export default {
     },
     {
       "role": "Practical workshop: ontologies and controlled languages",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "October 7, 2022",
       "desc": "A collaborative session oriented towards the delimitation of controlled languages and the conceptualization of ontologies based on CIDOC-CRM for the ANR D4R project, titled 'Definición de conceptos. Reflexiones hacia la construcción de una ontología del proyecto ANR-D4R'.",
       "points": []
     },
     {
       "role": "Practical workshop: XML-TEI adapted to historical documentation",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "September 2, 2022",
       "desc": "A technical training session on designing RelaxNG schemas and encoding specifications for historical documents, titled 'XML-TEI adaptado a la documentación D4R'.",
       "points": []
     },
     {
       "role": "Practical workshop: introduction to Transkribus and computer-assisted transcription",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "July 5, 2022",
       "desc": "An introductory training session focused on the basic workflow of the Transkribus program and training computer-assisted transcription models, titled 'Transkribus, funciones básicas del programa necesarias para la transcripción'.",
       "points": []
@@ -528,7 +528,7 @@ export default {
     },
     {
       "role": "Practical workshop: TEI guidelines for 16th-century texts",
-      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France) (Montpellier, France)",
+      "institution": "Université de Montpellier Paul-Valéry (Montpellier, France)",
       "date": "February 4, 2022",
       "desc": "A training session focused on defining TEI standards and guidelines for the transcription and markup of 16th-century printed and manuscript texts, titled 'Líneas directrices TEI para la codificación de textos en español del siglo XVI'.",
       "points": []
@@ -536,13 +536,13 @@ export default {
   ],
   "universityTeaching": [
     {
-      "role": "Lecturer",
+      "role": "Lecturer in digital research methodology",
       "institution": "Université Sorbonne Nouvelle (Paris, France)",
       "date": "2025 - Present",
       "desc": "Distance learning (EAD) lecturing in the module 'FZDDC01 - Methodology of digital research' for the Master 1 in French-expression Literatures. The course trains students in textometric workflows and data analysis, the manipulation and structuring of literary research corpora, and the use of digital humanities tools."
     },
     {
-      "role": "Lecturer",
+      "role": "Lecturer in database management",
       "institution": "Université Sorbonne Nouvelle (Paris, France)",
       "date": "2023 - 2024",
       "desc": "Lecturing in the module 'Introduction to database management in SHS' in the Master in Digital Humanities (parcours NGEST). The work covered relational model conceptualization, entity-relationship design, and database normalization for scientific exploitation of textological sources."
@@ -566,7 +566,7 @@ export default {
       "desc": "Lecturing in the 'Renforcement Méthodologique et Disciplinaire' (RMD) module during the first semester for first-year undergraduate students (L1). The course provided methodological and disciplinary reinforcement tutorials tailored to the transition to university-level hispanic studies, strengthening text analysis and academic writing."
     },
     {
-      "role": "Lecturer",
+      "role": "Lecturer in database management",
       "institution": "Université Sorbonne Nouvelle (Paris, France)",
       "date": "2022 - 2023",
       "desc": "Lecturing in the module 'Introduction to database management in SHS' in the Master in Digital Humanities (parcours NGEST). Focus was on relational database implementation, using SQL for aggregation queries, and metadata filtering in literary and historical research projects."
@@ -584,7 +584,7 @@ export default {
       "desc": "Lecturing in the 'Renforcement Méthodologique et Disciplinaire' (RMD) module during semesters 1 and 2 for first-year undergraduate students (L1). The course focused on pedagogical support for developing transversal study skills (note-taking, organizing independent study, and using library resources) and consolidating hispanic studies foundations."
     },
     {
-      "role": "Lecturer",
+      "role": "Lecturer in database management",
       "institution": "Université Sorbonne Nouvelle (Paris, France)",
       "date": "2021 - 2022",
       "desc": "Lecturing in the module 'Introduction to database management in SHS' in the Master in Digital Humanities (parcours NGEST). The course introduced conceptual data design, relational table structures, and information retrieval fundamentals in the humanities and social sciences."
