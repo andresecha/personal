@@ -520,22 +520,46 @@ export default {
       desc: "Docencia en el módulo 'Introducción a la gestión de bases de datos en SHS' dentro del Máster de Humanidades Digitales (parcours NGEST). La labor cubrió la conceptualización de modelos relacionales, el diseño de esquemas entidad-relación y la normalización de bases de datos para la explotación científica de fuentes textológicas."
     },
     {
+      role: "Docente de lengua y civilización (LANSAD)",
+      institution: "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
+      date: "2023 - 2024",
+      desc: "Docencia de español de nivel B1 en el marco del programa LANSAD (Lenguas para Especialistas de Otras Disciplinas) para dos grupos en el segundo semestre, dirigido a estudiantes de segundo año de Licence (L2). La labor implicó el diseño de talleres de debate, comprensión auditiva e interacción oral, adaptados a estudiantes de diversas disciplinas científicas y humanísticas."
+    },
+    {
+      role: "Docente de metodología de trabajo universitario (MTU)",
+      institution: "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
+      date: "2023 - 2024",
+      desc: "Docencia del módulo transversal 'Méthodologie de Travail Universitaire' (MTU) durante el segundo semestre para estudiantes de primer año de Licence (L1). La asignatura guio a los alumnos en el conocimiento del funcionamiento institucional, el uso avanzado del entorno digital de aprendizaje (ENT y Moodle) y la iniciación a la investigación documental bibliográfica."
+    },
+    {
+      role: "Docente de refuerzo metodológico y disciplinar",
+      institution: "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
+      date: "2023 - 2024",
+      desc: "Docencia en el módulo 'Renforcement Méthodologique et Disciplinaire' (RMD) durante el primer semestre para estudiantes de primer año de Licence (L1). La asignatura consistió en tutorías de refuerzo metodológico y disciplinar adaptadas para la transición a los estudios universitarios hispánicos, fortaleciendo el análisis textual y la redacción académica."
+    },
+    {
       role: "Encargado de cursos (chargé de cours)",
       institution: "Université Sorbonne Nouvelle (París, Francia)",
       date: "2022 - 2023",
       desc: "Docencia en el módulo 'Introducción a la gestión de bases de datos en SHS' dentro del Máster de Humanidades Digitales (parcours NGEST). La labor se centró en la implementación de bases de datos relacionales, el uso de SQL para consultas de agregación y el filtrado de metadatos en proyectos de investigación literaria e histórica."
     },
     {
+      role: "Docente de lengua y civilización (LANSAD)",
+      institution: "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
+      date: "2022 - 2023",
+      desc: "Docencia de español de nivel B1 en el marco del programa LANSAD durante el segundo semestre para estudiantes de segundo año de Licence (L2). El curso se centró en la adquisición de competencias de comprensión y expresión oral y escrita, promoviendo el conocimiento lingüístico y cultural en un entorno académico interdisciplinario."
+    },
+    {
+      role: "Docente de refuerzo metodológico y disciplinar",
+      institution: "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
+      date: "2022 - 2023",
+      desc: "Docencia en el módulo 'Renforcement Méthodologique et Disciplinaire' (RMD) durante los semestres 1 y 2 para estudiantes de primer año de Licence (L1). La asignatura consistió en el acompañamiento pedagógico enfocado en el desarrollo de competencias transversales de estudio (toma de notas, organización del trabajo autónomo y uso de recursos bibliográficos en biblioteca) y la consolidación de contenidos hispánicos."
+    },
+    {
       role: "Encargado de cursos (chargé de cours)",
       institution: "Université Sorbonne Nouvelle (París, Francia)",
       date: "2021 - 2022",
       desc: "Docencia en el módulo 'Introducción a la gestión de bases de datos en SHS' dentro del Máster de Humanidades Digitales (parcours NGEST). La asignatura introdujo el diseño conceptual de datos, la estructura de tablas relacionales y los fundamentos de la recuperación de información en ciencias humanas y sociales."
-    },
-    {
-      role: "Docente de lengua y civilización (LANSAD)",
-      institution: "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
-      date: "2022 - 2024",
-      desc: "Docencia y refuerzo pedagógico en el Departamento de Estudios Hispanos, dictando clases de español orientadas a la traducción y la cultura en niveles B1-B2. Adicionalmente, impartí módulos de Metodología de Trabajo Universitario (MTU) para estudiantes de primer año en las licenciaturas LLCER y LEA."
     },
     {
       role: "Tutor de español",

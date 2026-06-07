@@ -522,22 +522,46 @@ export default {
       desc: "Lecturing in the module 'Introduction to database management in SHS' in the Master in Digital Humanities (parcours NGEST). The work covered relational model conceptualization, entity-relationship design, and database normalization for scientific exploitation of textological sources."
     },
     {
+      role: "Language and civilization instructor (LANSAD)",
+      institution: "Université de Montpellier Paul-Valéry (Montpellier, France)",
+      date: "2023 - 2024",
+      desc: "Teaching Spanish at B1 level within the LANSAD program (Languages for Specialists of Other Disciplines) for two groups during the second semester, directed at second-year undergraduate students (L2). The role involved designing workshops for debate, listening comprehension, and oral interaction, adapted to students from diverse scientific and humanistic disciplines."
+    },
+    {
+      role: "University work methodology instructor (MTU)",
+      institution: "Université de Montpellier Paul-Valéry (Montpellier, France)",
+      date: "2023 - 2024",
+      desc: "Teaching the transversal module 'Méthodologie de Travail Universitaire' (MTU) during the second semester for first-year undergraduate students (L1). The course guided students in understanding university structures, advanced usage of the digital learning environment (ENT and Moodle), and introduction to bibliographic research."
+    },
+    {
+      role: "Methodological and disciplinary reinforcement instructor",
+      institution: "Université de Montpellier Paul-Valéry (Montpellier, France)",
+      date: "2023 - 2024",
+      desc: "Lecturing in the 'Renforcement Méthodologique et Disciplinaire' (RMD) module during the first semester for first-year undergraduate students (L1). The course provided methodological and disciplinary reinforcement tutorials tailored to the transition to university-level hispanic studies, strengthening text analysis and academic writing."
+    },
+    {
       role: "Lecturer (chargé de cours)",
       institution: "Université Sorbonne Nouvelle (Paris, France)",
       date: "2022 - 2023",
       desc: "Lecturing in the module 'Introduction to database management in SHS' in the Master in Digital Humanities (parcours NGEST). Focus was on relational database implementation, using SQL for aggregation queries, and metadata filtering in literary and historical research projects."
     },
     {
+      role: "Language and civilization instructor (LANSAD)",
+      institution: "Université de Montpellier Paul-Valéry (Montpellier, France)",
+      date: "2022 - 2023",
+      desc: "Teaching Spanish at B1 level within the LANSAD program during the second semester for second-year undergraduate students (L2). The course focused on acquiring oral and written comprehension and expression skills, promoting linguistic and cultural knowledge in an interdisciplinary academic environment."
+    },
+    {
+      role: "Methodological and disciplinary reinforcement instructor",
+      institution: "Université de Montpellier Paul-Valéry (Montpellier, France)",
+      date: "2022 - 2023",
+      desc: "Lecturing in the 'Renforcement Méthodologique et Disciplinaire' (RMD) module during semesters 1 and 2 for first-year undergraduate students (L1). The course focused on pedagogical support for developing transversal study skills (note-taking, organizing independent study, and using library resources) and consolidating hispanic studies foundations."
+    },
+    {
       role: "Lecturer (chargé de cours)",
       institution: "Université Sorbonne Nouvelle (Paris, France)",
       date: "2021 - 2022",
       desc: "Lecturing in the module 'Introduction to database management in SHS' in the Master in Digital Humanities (parcours NGEST). The course introduced conceptual data design, relational table structures, and information retrieval fundamentals in the humanities and social sciences."
-    },
-    {
-      role: "Language and civilization instructor (LANSAD)",
-      institution: "Université de Montpellier Paul-Valéry (Montpellier, France)",
-      date: "2022 - 2024",
-      desc: "Teaching and pedagogical reinforcement in the Department of Hispanic Studies, teaching Spanish courses focused on translation and culture at B1-B2 levels. Additionally, I taught University Work Methodology (MTU) modules for first-year students in the LLCER and LEA bachelor's degrees."
     },
     {
       role: "Spanish language tutor",

@@ -522,22 +522,46 @@ export default {
       desc: "Enseignement du module 'Introduction à la gestion des bases de données en SHS' au sein du Master Humanités Numériques (parcours NGEST). Les cours ont couvert la conceptualisation de modèles relationnels, la conception de schémas entité-association et la normalisation de bases de données pour l'exploitation scientifique de sources textuelles."
     },
     {
+      role: "Enseignant de langue et civilisation (LANSAD)",
+      institution: "Université de Montpellier Paul-Valéry (Montpellier, France)",
+      date: "2023 - 2024",
+      desc: "Enseignement de l'espagnol de niveau B1 dans le cadre du programme LANSAD (Langues pour Spécialistes d'Autres Disciplines) pour deux groupes au second semestre pour les étudiants de deuxième année de Licence (L2). La mission comprenait la conception d'ateliers de débat, de compréhension de l'oral et d'interaction, adaptés à des étudiants issus de diverses filières."
+    },
+    {
+      role: "Enseignant de méthodologie du travail universitaire (MTU)",
+      institution: "Université de Montpellier Paul-Valéry (Montpellier, France)",
+      date: "2023 - 2024",
+      desc: "Enseignement du module transversal 'Méthodologie de Travail Universitaire' (MTU) au second semestre pour les étudiants de première année de Licence (L1). Ce cours guidait les étudiants dans la découverte de l'environnement universitaire, l'utilisation avancée de l'ENT et de Moodle, et l'initiation à la recherche documentaire."
+    },
+    {
+      role: "Enseignant de renforcement méthodologique et disciplinaire",
+      institution: "Université de Montpellier Paul-Valéry (Montpellier, France)",
+      date: "2023 - 2024",
+      desc: "Enseignement au sein de l'unité d'enseignement 'Renforcement Méthodologique et Disciplinaire' (RMD) au semestre 1 pour les étudiants de première année de Licence (L1). Le cours consistait en des tutorats de renforcement méthodologique et disciplinaire adaptés à la transition vers les études hispaniques, consolidant l'analyse textuelle et la rédaction."
+    },
+    {
       role: "Chargé de cours",
       institution: "Université Sorbonne Nouvelle (Paris, France)",
       date: "2022 - 2023",
       desc: "Enseignement du module 'Introduction à la gestion des bases de données en SHS' au sein du Master Humanités Numériques (parcours NGEST). L'accent a été mis sur l'implémentation de bases de données relationnelles, l'utilisation de SQL pour des requêtes d'agrégation et le filtrage de métadonnées dans des projets de recherche littéraire et historique."
     },
     {
+      role: "Enseignant de langue et civilisation (LANSAD)",
+      institution: "Université de Montpellier Paul-Valéry (Montpellier, France)",
+      date: "2022 - 2023",
+      desc: "Chargé de TD en espagnol niveau B1 dans le cadre du dispositif LANSAD au second semestre pour les étudiants de deuxième année de Licence (L2). Le cours portait sur l'acquisition de compétences de compréhension et d'expression orales et écrites, favorisant l'apprentissage linguistique et culturel dans un cadre pluridisciplinaire."
+    },
+    {
+      role: "Enseignant de renforcement méthodologique et disciplinaire",
+      institution: "Université de Montpellier Paul-Valéry (Montpellier, France)",
+      date: "2022 - 2023",
+      desc: "Enseignement au sein de l'unité d'enseignement 'Renforcement Méthodologique et Disciplinaire' (RMD) aux semestres 1 et 2 pour les étudiants de première année de Licence (L1). Le cours consistait en un accompagnement pédagogique axé sur le développement de compétences d'études transversales (prise de notes, organisation du travail autonome, recherche documentaire) et la consolidation des fondamentaux."
+    },
+    {
       role: "Chargé de cours",
       institution: "Université Sorbonne Nouvelle (Paris, France)",
       date: "2021 - 2022",
       desc: "Enseignement du module 'Introduction à la gestion des bases de données en SHS' au sein du Master Humanités Numériques (parcours NGEST). Le cours a introduit la modélisation conceptuelle de données, la structure des tables relationnelles et les bases de la recherche d'information en sciences humaines et sociales."
-    },
-    {
-      role: "Enseignant de langue et civilisation (LANSAD)",
-      institution: "Université de Montpellier Paul-Valéry (Montpellier, France)",
-      date: "2022 - 2024",
-      desc: "Enseignement et renforcement pédagogique au Département d'Études Hispaniques, donnant des cours d'espagnol axés sur la traduction et la culture aux niveaux B1-B2. De plus, j'ai dispensé des modules de Méthodologie du Travail Universitaire (MTU) pour les étudiants de première année en licence LLCER et LEA."
     },
     {
       role: "Tuteur d'espagnol",
