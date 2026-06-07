@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import publicationsData from './data/publications.json';
 import { translations } from './locales/index';
 import { 
@@ -6,11 +6,9 @@ import {
   FileText, 
   Palette, 
   Code, 
-  Mail, 
   ExternalLink, 
   Calendar, 
   Award, 
-  BookOpen, 
   Download, 
   Sun, 
   Moon, 
@@ -182,20 +180,6 @@ const renderCardLogo = (logoType, size = 72, theme = 'light') => {
   }
 };
 
-// Helper functions for direct publication downloads
-const getDownloadUrl = (url) => {
-  if (!url) return '';
-  if (url.includes('hal.science')) {
-    if (url.endsWith('/document')) return url;
-    return `${url}/document`;
-  }
-  return url;
-};
-
-const formatCitation = (citation) => {
-  if (!citation) return '';
-  return citation.replace(/href="https:\/\/([^"]+?\.hal\.science\/[^"]+?)"/g, 'href="https://$1/document"');
-};
 
 // Helper to label publication types
 const getFriendlyDocType = (type, lang) => {
@@ -273,7 +257,9 @@ function App() {
     window.location.hash = tabName;
   };
 
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('theme') || 'light';
+  });
   const [lightboxArt, setLightboxArt] = useState(null);
   
   const handleCardClick = (url, e) => {
@@ -305,14 +291,12 @@ function App() {
 
   // Load and apply light/dark theme
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    setTheme(savedTheme);
-    if (savedTheme === 'dark') {
+    if (theme === 'dark') {
       document.body.classList.add('dark-theme');
     } else {
       document.body.classList.remove('dark-theme');
     }
-  }, []);
+  }, [theme]);
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';

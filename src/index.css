@@ -89,13 +89,13 @@ body {
 }
 
 /* Monospace & Green Links globally (except UI buttons/logos and publication links) */
-a:not(.btn-primary):not(.btn-secondary):not(.logo-text):not(.social-link):not(.nav-btn):not(.pub-title-link):not(.pub-download-link):not(.pub-publisher-link) {
+a:not(.btn-primary):not(.btn-secondary):not(.logo-text):not(.social-link):not(.nav-btn):not(.pub-title-link):not(.pub-download-link):not(.pub-publisher-link):not(.cv-nav-link) {
   font-family: 'Cascadia Code Semilight', 'Cascadia Code', Consolas, 'Courier New', monospace !important;
   color: var(--accent) !important;
   font-weight: bold !important;
 }
 
-a:not(.btn-primary):not(.btn-secondary):not(.logo-text):not(.social-link):not(.nav-btn):not(.pub-title-link):not(.pub-download-link):not(.pub-publisher-link):hover {
+a:not(.btn-primary):not(.btn-secondary):not(.logo-text):not(.social-link):not(.nav-btn):not(.pub-title-link):not(.pub-download-link):not(.pub-publisher-link):not(.cv-nav-link):hover {
   color: var(--border-hover) !important;
   text-decoration: underline !important;
 }
@@ -1155,5 +1155,85 @@ p {
   
   .cv-item::before {
     left: -1.875rem;
+  }
+}
+
+/* CV Layout & Nav Index */
+.cv-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 3rem;
+  margin-top: 2.5rem;
+  align-items: start;
+}
+
+.cv-sidebar {
+  position: sticky;
+  top: 7rem;
+  align-self: start;
+  z-index: 10;
+}
+
+.cv-nav-index {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: background-color var(--transition-normal), border-color var(--transition-normal);
+}
+
+.cv-nav-index ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.cv-nav-index a.cv-nav-link {
+  display: block;
+  font-family: var(--sans) !important;
+  color: var(--text-secondary) !important;
+  font-weight: 500 !important;
+  font-size: 0.9rem;
+  text-decoration: none !important;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: all var(--transition-fast);
+  border-left: 3px solid transparent;
+}
+
+.cv-nav-index a.cv-nav-link:hover {
+  color: var(--text-primary) !important;
+  background-color: var(--bg-card-hover);
+  border-left-color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .cv-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .cv-sidebar {
+    position: relative;
+    top: 0;
+  }
+  
+  .cv-nav-index ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .cv-nav-index a.cv-nav-link {
+    border-left: none;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .cv-nav-index a.cv-nav-link:hover {
+    border-bottom-color: var(--accent);
   }
 }

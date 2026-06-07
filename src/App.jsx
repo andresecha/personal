@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import publicationsData from './data/publications.json';
 import { translations } from './locales/index';
 import { 
@@ -6,11 +6,9 @@ import {
   FileText, 
   Palette, 
   Code, 
-  Mail, 
   ExternalLink, 
   Calendar, 
   Award, 
-  BookOpen, 
   Download, 
   Sun, 
   Moon, 
@@ -183,20 +181,6 @@ const renderCardLogo = (logoType, size = 72, theme = 'light') => {
   }
 };
 
-// Helper functions for direct publication downloads
-const getDownloadUrl = (url) => {
-  if (!url) return '';
-  if (url.includes('hal.science')) {
-    if (url.endsWith('/document')) return url;
-    return `${url}/document`;
-  }
-  return url;
-};
-
-const formatCitation = (citation) => {
-  if (!citation) return '';
-  return citation.replace(/href="https:\/\/([^"]+?\.hal\.science\/[^"]+?)"/g, 'href="https://$1/document"');
-};
 
 // Helper to label publication types
 const getFriendlyDocType = (type, lang) => {
@@ -249,14 +233,19 @@ function App() {
 
   const [activeTab, setActiveTab] = useState(() => {
     const hash = window.location.hash.replace('#', '');
-    const validTabs = ['sobre-mi', 'portafolio', 'publicaciones', 'herramientas', 'formacion', 'cv'];
+    if (hash === 'formacion') return 'cv';
+    const validTabs = ['sobre-mi', 'portafolio', 'publicaciones', 'herramientas', 'cv'];
     return validTabs.includes(hash) ? hash : 'sobre-mi';
   });
 
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace('#', '');
-      const validTabs = ['sobre-mi', 'portafolio', 'publicaciones', 'herramientas', 'formacion', 'cv'];
+      if (hash === 'formacion') {
+        window.location.hash = 'cv';
+        return;
+      }
+      const validTabs = ['sobre-mi', 'portafolio', 'publicaciones', 'herramientas', 'cv'];
       if (validTabs.includes(hash)) {
         setActiveTab(hash);
       } else if (!hash) {
@@ -274,7 +263,9 @@ function App() {
     window.location.hash = tabName;
   };
 
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('theme') || 'light';
+  });
   const [lightboxArt, setLightboxArt] = useState(null);
   
   const handleCardClick = (url, e) => {
@@ -306,14 +297,12 @@ function App() {
 
   // Load and apply light/dark theme
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    setTheme(savedTheme);
-    if (savedTheme === 'dark') {
+    if (theme === 'dark') {
       document.body.classList.add('dark-theme');
     } else {
       document.body.classList.remove('dark-theme');
     }
-  }, []);
+  }, [theme]);
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
@@ -386,15 +375,7 @@ function App() {
                   {t.ui.navTools}
                 </button>
               </li>
-              <li>
-                <button 
-                  id="tab-btn-formacion"
-                  className={`nav-btn ${activeTab === 'formacion' ? 'active' : ''}`}
-                  onClick={() => navigateToTab('formacion')}
-                >
-                  {t.ui.navFormacion}
-                </button>
-              </li>
+
               <li>
                 <button 
                   id="tab-btn-cv"
@@ -466,14 +447,7 @@ function App() {
             <Code size={18} />
             <span>{t.ui.navToolsShort}</span>
           </button>
-          <button 
-            id="m-tab-btn-formacion"
-            className={`mobile-nav-btn ${activeTab === 'formacion' ? 'active' : ''}`}
-            onClick={() => navigateToTab('formacion')}
-          >
-            <GraduationCap size={18} />
-            <span>{t.ui.navFormacionShort}</span>
-          </button>
+
           <button 
             id="m-tab-btn-cv"
             className={`mobile-nav-btn ${activeTab === 'cv' ? 'active' : ''}`}
@@ -747,47 +721,138 @@ function App() {
           </section>
         )}
 
-        {/* TAB: FORMACIÓN & TALLERES */}
-        {activeTab === 'formacion' && (
-          <section className="animate-slide-up" id="sec-formacion">
-            <div className="section-intro">
-              <p className="profile-title">{t.ui.formacionSectionSubtitle}</p>
-              <h1>{t.ui.formacionSectionTitle}</h1>
-              <p>{t.ui.formacionSectionIntro}</p>
+        {/* TAB: CV (Integrated with Academic & Professional Timelines) */}
+        {activeTab === 'cv' && (
+          <section className="animate-slide-up" id="sec-cv">
+            <div className="section-intro" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1.5rem', marginBottom: '2rem' }}>
+              <div>
+                <p className="profile-title">{t.ui.cvSectionSubtitle}</p>
+                <h1>{t.ui.navCv}</h1>
+                <p>{t.ui.cvSectionIntro}</p>
+              </div>
+              <a href="https://cv.hal.science/andres-echavarria" target="_blank" rel="noopener noreferrer" className="btn-primary" id="download-cv-btn">
+                <Download size={16} />
+                <span>{t.ui.downloadCv}</span>
+              </a>
             </div>
 
-            <div className="formacion-columns" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '3rem', marginTop: '2rem' }}>
-              
-              {/* Column 1: Talleres y Docencia */}
-              <div>
-                {/* Section 1: Talleres y conferencias */}
-                <h2 className="text-gradient" style={{ marginBottom: '1.5rem', fontSize: '1.6rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <Code size={22} /> {t.ui.workshopsHeader}
-                </h2>
-                <div className="cv-timeline" style={{ marginBottom: '3rem' }}>
-                  {t.teaching.map((item, idx) => (
-                    <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.05}s` }}>
-                      <div className="cv-header">
-                        <h3 style={{ fontSize: '1.15rem', fontWeight: 650, color: 'var(--text-primary)' }}>{item.role}</h3>
-                        <span className="cv-date" style={{ fontSize: '0.8rem' }}>{item.date}</span>
+            <div className="cv-layout">
+              <aside className="cv-sidebar">
+                <nav className="cv-nav-index">
+                  <ul>
+                    <li>
+                      <a href="#formacion-academica" className="cv-nav-link">
+                        {t.ui.educationHeader}
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#trayectoria-profesional" className="cv-nav-link">
+                        {t.ui.cvProfessionalHeader}
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#comunidad-cientifica" className="cv-nav-link">
+                        {t.ui.cvScientificHeader}
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#docencia-universitaria" className="cv-nav-link">
+                        {t.ui.universityTeachingHeader}
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#talleres-conferencias" className="cv-nav-link">
+                        {t.ui.workshopsHeader}
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#formacion-comunitaria" className="cv-nav-link">
+                        {t.ui.communityTeachingHeader}
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </aside>
+
+              <div className="cv-content">
+                {/* 1. Formación académica */}
+                <div id="formacion-academica" style={{ scrollMarginTop: '7.5rem', marginBottom: '4rem' }}>
+                  <h2 className="text-gradient" style={{ fontSize: '1.6rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <Award size={22} /> {t.ui.educationHeader}
+                  </h2>
+                  <div className="cv-timeline">
+                    {t.education.map((item, idx) => (
+                      <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.05}s` }}>
+                        <div className="cv-header">
+                          <h3 style={{ fontSize: '1.15rem', fontWeight: 650, color: 'var(--text-primary)' }}>{item.title}</h3>
+                          <span className="cv-date" style={{ fontSize: '0.8rem' }}>{item.date}</span>
+                        </div>
+                        <p className="cv-institution" style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.5rem' }}>{item.institution}</p>
+                        <p 
+                          className="cv-desc" 
+                          style={{ marginBottom: '0.75rem', fontSize: '0.95rem' }}
+                          dangerouslySetInnerHTML={{ __html: item.desc }}
+                        />
                       </div>
-                      <p className="cv-institution" style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.5rem' }}>{item.institution}</p>
-                      <p 
-                        className="cv-desc" 
-                        style={{ marginBottom: '0.75rem', fontSize: '0.95rem' }}
-                        dangerouslySetInnerHTML={{ __html: item.desc }}
-                      />
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
 
-                {/* Section 2: Docencia universitaria */}
+                {/* 2. Trayectoria profesional */}
+                <div id="trayectoria-profesional" style={{ scrollMarginTop: '7.5rem', marginBottom: '4rem' }}>
+                  <h2 className="text-gradient" style={{ fontSize: '1.6rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <FileText size={22} /> {t.ui.cvProfessionalHeader}
+                  </h2>
+                  <div className="cv-timeline">
+                    {t.cvItems.map((item, idx) => (
+                      <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.05}s` }}>
+                        <div className="cv-header">
+                          <h3 style={{ fontSize: '1.15rem', fontWeight: 650, color: 'var(--text-primary)' }}>{item.role}</h3>
+                          <span className="cv-date" style={{ fontSize: '0.8rem' }}>{item.date}</span>
+                        </div>
+                        <p className="cv-institution" style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.5rem' }}>{item.institution}</p>
+                        <p 
+                          className="cv-desc" 
+                          style={{ marginBottom: '0.75rem', fontSize: '0.95rem' }}
+                          dangerouslySetInnerHTML={{ __html: item.desc }}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* 3. Comunidad científica */}
+                {t.scientificCommunity && (
+                  <div id="comunidad-cientifica" style={{ scrollMarginTop: '7.5rem', marginBottom: '4rem' }}>
+                    <h2 className="text-gradient" style={{ fontSize: '1.6rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <Users size={22} /> {t.ui.cvScientificHeader}
+                    </h2>
+                    <div className="cv-timeline">
+                      {t.scientificCommunity.map((item, idx) => (
+                        <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.05}s` }}>
+                          <div className="cv-header">
+                            <h3 style={{ fontSize: '1.15rem', fontWeight: 650, color: 'var(--text-primary)' }}>{item.role}</h3>
+                            <span className="cv-date" style={{ fontSize: '0.8rem' }}>{item.date}</span>
+                          </div>
+                          <p className="cv-institution" style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.5rem' }}>{item.institution}</p>
+                          <p 
+                            className="cv-desc" 
+                            style={{ marginBottom: '0.75rem', fontSize: '0.95rem' }}
+                            dangerouslySetInnerHTML={{ __html: item.desc }}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* 4. Docencia universitaria */}
                 {t.universityTeaching && (
-                  <>
-                    <h2 className="text-gradient" style={{ marginBottom: '1.5rem', fontSize: '1.6rem', display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '2.5rem' }}>
+                  <div id="docencia-universitaria" style={{ scrollMarginTop: '7.5rem', marginBottom: '4rem' }}>
+                    <h2 className="text-gradient" style={{ fontSize: '1.6rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                       <GraduationCap size={22} /> {t.ui.universityTeachingHeader}
                     </h2>
-                    <div className="cv-timeline" style={{ marginBottom: '3rem' }}>
+                    <div className="cv-timeline">
                       {t.universityTeaching.map((item, idx) => (
                         <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.05}s` }}>
                           <div className="cv-header">
@@ -803,13 +868,38 @@ function App() {
                         </div>
                       ))}
                     </div>
-                  </>
+                  </div>
                 )}
 
-                {/* Section 3: Procesos de formación comunitaria */}
+                {/* 5. Talleres y conferencias */}
+                {t.teaching && (
+                  <div id="talleres-conferencias" style={{ scrollMarginTop: '7.5rem', marginBottom: '4rem' }}>
+                    <h2 className="text-gradient" style={{ fontSize: '1.6rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <Code size={22} /> {t.ui.workshopsHeader}
+                    </h2>
+                    <div className="cv-timeline">
+                      {t.teaching.map((item, idx) => (
+                        <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.05}s` }}>
+                          <div className="cv-header">
+                            <h3 style={{ fontSize: '1.15rem', fontWeight: 650, color: 'var(--text-primary)' }}>{item.role}</h3>
+                            <span className="cv-date" style={{ fontSize: '0.8rem' }}>{item.date}</span>
+                          </div>
+                          <p className="cv-institution" style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.5rem' }}>{item.institution}</p>
+                          <p 
+                            className="cv-desc" 
+                            style={{ marginBottom: '0.75rem', fontSize: '0.95rem' }}
+                            dangerouslySetInnerHTML={{ __html: item.desc }}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* 6. Procesos de formación comunitaria */}
                 {t.communityTeaching && (
-                  <>
-                    <h2 className="text-gradient" style={{ marginBottom: '1.5rem', fontSize: '1.6rem', display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '2.5rem' }}>
+                  <div id="formacion-comunitaria" style={{ scrollMarginTop: '7.5rem', marginBottom: '2rem' }}>
+                    <h2 className="text-gradient" style={{ fontSize: '1.6rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                       <Users size={22} /> {t.ui.communityTeachingHeader}
                     </h2>
                     <div className="cv-timeline">
@@ -828,103 +918,10 @@ function App() {
                         </div>
                       ))}
                     </div>
-                  </>
+                  </div>
                 )}
               </div>
-
-              {/* Column 2: Formación Académica */}
-              <div>
-                <h2 className="text-gradient" style={{ marginBottom: '2rem', fontSize: '1.6rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <Award size={22} /> {t.ui.educationHeader}
-                </h2>
-                <div className="cv-timeline">
-                  {t.education.map((item, idx) => (
-                    <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.1}s` }}>
-                      <div className="cv-header">
-                        <h3 style={{ fontSize: '1.15rem', fontWeight: 650, color: 'var(--text-primary)' }}>{item.title}</h3>
-                        <span className="cv-date" style={{ fontSize: '0.8rem' }}>{item.date}</span>
-                      </div>
-                      <p className="cv-institution" style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.5rem' }}>{item.institution}</p>
-                      <p 
-                        className="cv-desc" 
-                        style={{ marginBottom: '0.75rem', fontSize: '0.95rem' }}
-                        dangerouslySetInnerHTML={{ __html: item.desc }}
-                      />
-                      {item.points && item.points.length > 0 && (
-                        <ul style={{ margin: '0.5rem 0 0 0.5rem', padding: 0, listStyleType: 'none', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                          {item.points.map((pt, pIdx) => (
-                            <li key={pIdx} style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', position: 'relative', paddingLeft: '1.25rem' }}>
-                              <span style={{ position: 'absolute', left: 0, top: '0.45rem', width: '5px', height: '5px', borderRadius: '50%', backgroundColor: 'var(--accent)' }}></span>
-                              {pt}
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-
             </div>
-          </section>
-        )}
-
-        {/* TAB: CV */}
-        {activeTab === 'cv' && (
-          <section className="animate-slide-up" id="sec-cv">
-            <div className="section-intro" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1.5rem' }}>
-              <div>
-                <p className="profile-title">{t.ui.cvSectionSubtitle}</p>
-                <h1>{t.ui.navCv}</h1>
-                <p>{t.ui.cvSectionIntro}</p>
-              </div>
-              <a href="https://cv.hal.science/andres-echavarria" target="_blank" rel="noopener noreferrer" className="btn-primary" id="download-cv-btn">
-                <Download size={16} />
-                <span>{t.ui.downloadCv}</span>
-              </a>
-            </div>
-
-            <h2 className="text-gradient" style={{ fontSize: '1.6rem', marginTop: '2rem', marginBottom: '2rem' }}>
-              {t.ui.cvProfessionalHeader}
-            </h2>
-            <div className="cv-timeline" id="cv-timeline-container">
-              {t.cvItems.map((item, idx) => (
-                <div key={idx} className="cv-item" id={`cv-item-${idx}`}>
-                  <div className="cv-header">
-                    <h3>{item.role}</h3>
-                    <span className="cv-date">{item.date}</span>
-                  </div>
-                  <p className="cv-institution">{item.institution}</p>
-                  <p 
-                    className="cv-desc"
-                    dangerouslySetInnerHTML={{ __html: item.desc }}
-                  />
-                </div>
-              ))}
-            </div>
-
-            {t.scientificCommunity && (
-              <>
-                <h2 className="text-gradient" style={{ fontSize: '1.6rem', marginTop: '4.5rem', marginBottom: '2rem' }}>
-                  {t.ui.cvScientificHeader}
-                </h2>
-                <div className="cv-timeline" id="cv-scientific-container">
-                  {t.scientificCommunity.map((item, idx) => (
-                    <div key={idx} className="cv-item" id={`cv-sci-item-${idx}`}>
-                      <div className="cv-header">
-                        <h3>{item.role}</h3>
-                        <span className="cv-date">{item.date}</span>
-                      </div>
-                      <p className="cv-institution">{item.institution}</p>
-                      <p 
-                        className="cv-desc"
-                        dangerouslySetInnerHTML={{ __html: item.desc }}
-                      />
-                    </div>
-                  ))}
-                </div>
-              </>
-            )}
           </section>
         )}
 
