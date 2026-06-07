@@ -53,7 +53,7 @@ export default {
     "toolsSectionSubtitle": "Código abierto, datos y recursos",
     "formacionSectionSubtitle": "Educación, docencia y divulgación",
     "cvSectionSubtitle": "Trayectoria profesional",
-    "cvSectionIntro": "Síntesis de mi formación y experiencia laboral en el ecosistema digital francés.",
+    "cvSectionIntro": "Trayectoria académica y profesional enfocada en la intersección entre las humanidades digitales, la filología y la ingeniería de datos. Mi experiencia comprende la investigación y la coordinación técnica en consorcios científicos internacionales, el diseño de estándares de validación XML-TEI y vocabularios controlados semánticos, y la docencia universitaria en bases de datos relacionales y metodologías de investigación digital. Este espacio detalla mi formación académica formal, mis labores de docencia, mis contribuciones científicas y mis procesos de formación comunitaria.",
     "cvProfessionalHeader": "Trayectoria profesional",
     "cvScientificHeader": "Comunidad científica",
     "logoFoxAlt": "Logo de Zorro",

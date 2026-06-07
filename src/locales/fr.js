@@ -53,7 +53,7 @@ export default {
     "toolsSectionSubtitle": "Code source, Données et Ressources",
     "formacionSectionSubtitle": "Enseignement, Éducation et Vulgarisation",
     "cvSectionSubtitle": "Parcours Professionnel",
-    "cvSectionIntro": "Résumé structuré de mon parcours académique et professionnel en France.",
+    "cvSectionIntro": "Parcours académique et professionnel axé sur l'intersection des humanités numériques, de la philologie et de l'ingénierie des données. Mon expérience comprend la recherche et la coordination technique au sein de consortiums scientifiques internationaux, la conception de standards de validation XML-TEI et de vocabulaires contrôlés sémantiques, ainsi que l'enseignement universitaire en bases de données relationnelles et méthodologies de recherche numérique. Cet espace détaille ma formation académique, mes activités d'enseignement, mes contributions scientifiques et mes processus de formation communautaire.",
     "cvProfessionalHeader": "Parcours Professionnel",
     "cvScientificHeader": "Communauté Scientifique",
     "logoFoxAlt": "Logo de Renard",

@@ -53,7 +53,7 @@ export default {
     "toolsSectionSubtitle": "Open Source, Data and Resources",
     "formacionSectionSubtitle": "Education, Teaching and Outreach",
     "cvSectionSubtitle": "Professional Path",
-    "cvSectionIntro": "Structured summary of my training and work experience in the French digital ecosystem.",
+    "cvSectionIntro": "Academic and professional trajectory focused on the intersection of digital humanities, philology, and data engineering. My experience includes research and technical coordination within international scientific consortia, the design of XML-TEI validation standards and semantic controlled vocabularies, and university teaching in relational databases and digital research methodologies. This section details my formal academic training, teaching activities, scientific contributions, and community outreach processes.",
     "cvProfessionalHeader": "Professional Path",
     "cvScientificHeader": "Scientific Community",
     "logoFoxAlt": "Zorro Logo",
