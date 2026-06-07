@@ -21,7 +21,7 @@ export default {
     "closeModal": "Cerrar modal",
     "copyright": "Licencia <a href='https://creativecommons.org/licenses/by-sa/4.0/deed.es' target='_blank' rel='noopener noreferrer'>Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a> &mdash; Andrés Echavarría",
     "footerSustainability": "Alojado de manera sostenible en GitHub Pages.",
-    "footerTemplateLink": "¿Quieres usar este diseño? Descarga la <a href='https://github.com/andresecha/personal/tree/main/template' target='_blank' rel='noopener noreferrer'>plantilla de portafolio</a> (licenciada libre bajo WTFPL).",
+    "footerTemplateLink": "¿Quieres usar este diseño? Descarga la <a href='https://github.com/andresecha/personal/tree/main/template' target='_blank' rel='noopener noreferrer'>plantilla de portafolio</a> (licenciada libre bajo <a href='http://www.wtfpl.net/' target='_blank' rel='noopener noreferrer'>WTFPL</a>).",
     "researchSectionTitle": "Investigación & desarrollo tecnológico",
     "portfolioSectionTitle": "Identidad visual & diseño de marcas",
     "portfolioSectionIntro": "Galería de proyectos de diseño gráfico y dirección de arte orientados a la comunicación científica y la identidad visual académica. Mi trabajo se enfoca en el desarrollo de marcas y sistemas visuales para consorcios de investigación, laboratorios y proyectos en humanidades digitales, uniendo la precisión conceptual con una estética moderna. Cada propuesta busca estructurar y jerarquizar la información visual, dotando de personalidad y claridad a las plataformas y a los productos de divulgación del conocimiento.",
