@@ -32,6 +32,9 @@ export default {
     formacionSectionTitle: "Teaching & Workshops",
     formacionSectionIntro: "Details of my formal academic background, university teaching activities, and specialized digital humanities workshops conducted at international institutions.",
     teachingHeader: "Teaching & Workshops Conducted",
+    workshopsHeader: "Workshops and lectures",
+    universityTeachingHeader: "University teaching",
+    communityTeachingHeader: "Community training processes",
     educationHeader: "Academic Background",
     viewVisualIdentity: "View Visual Identity →",
     viewResource: "View Resource",
@@ -361,7 +364,7 @@ export default {
       role: "Workshop series: research in the digital era and editorialization of historical sources",
       institution: "Universidad de Antioquia (Medellín, Colombia)",
       date: "April 28, 29, and 30, 2026",
-      desc: "An intensive training cycle structured over three working sessions at the Department of History of the Universidad de Antioquia. The first session addressed the theoretical foundations of digital space creation based on Marcello Vitali-Rosati's theory of editorialization. The second session consisted of a practical exercise applying editorialization directly to historical manuscript sources. The third session focused on an open discussion and consulting on local researchers' workflows to provide specific methodological recommendations for their own research projects.",
+      desc: "An intensive training cycle structured over three working sessions at the Department of History of the Universidad de Antioquia. The first session addressed the theoretical foundations of digital space creation based on Marcello Visuali-Rosati's theory of editorialization. The second session consisted of a practical exercise applying editorialization directly to historical manuscript sources. The third session focused on an open discussion and consulting on local researchers' workflows to provide specific methodological recommendations for their own research projects.",
       points: []
     },
     {
@@ -369,13 +372,6 @@ export default {
       institution: "Universidad EAFIT (Medellín, Colombia)",
       date: "April 27, 2026",
       desc: "A training session aimed at students and researchers within the framework of the 'Humanidades Digitales y Esfera Pública' project at Universidad EAFIT. The session was dedicated to introducing computational methods for text acquisition and linguistic corpus processing, with a particular focus on modeling text alignment processes and automatic collation of translations.",
-      points: []
-    },
-    {
-      role: "Lecturer (chargé de cours)",
-      institution: "Université Sorbonne Nouvelle (Paris, France)",
-      date: "2021 - Present",
-      desc: "University teaching at the master's level in digital humanities and modern letters, teaching the modules 'Introduction to database management in SHS' (conceptual and relational modeling, SQL) and 'Methodology of digital research' (application of HTR, Whisper, and Jupyter interactive notebooks). The role includes supervising student projects and providing applied methodological tutoring.",
       points: []
     },
     {
@@ -510,20 +506,46 @@ export default {
       date: "February 4, 2022",
       desc: "A training session focused on defining TEI standards and guidelines for the transcription and markup of 16th-century printed and manuscript texts, titled 'Líneas directrices TEI para la codificación de textos en español del siglo XVI'.",
       points: []
+    }
+  ],
+  universityTeaching: [
+    {
+      role: "Lecturer (chargé de cours)",
+      institution: "Université Sorbonne Nouvelle (Paris, France)",
+      date: "2021 - Present",
+      desc: "University teaching at the master's level in digital humanities and modern letters, teaching the modules 'Introduction to database management in SHS' (relational modeling, SQL) and 'Methodology of digital research' (HTR, Whisper, Jupyter). The role includes supervising student projects and providing applied methodological tutoring."
     },
     {
       role: "Language and civilization instructor (LANSAD)",
       institution: "Université de Montpellier Paul-Valéry (Montpellier, France)",
       date: "2022 - 2024",
-      desc: "Teaching and pedagogical reinforcement in the Department of Hispanic Studies, teaching Spanish courses focused on translation and culture at B1-B2 levels. Additionally, I taught University Work Methodology (MTU) modules for first-year students in the LLCER and LEA bachelor's degrees.",
-      points: []
+      desc: "Teaching and pedagogical reinforcement in the Department of Hispanic Studies, teaching Spanish courses focused on translation and culture at B1-B2 levels. Additionally, I taught University Work Methodology (MTU) modules for first-year students in the LLCER and LEA bachelor's degrees."
+    },
+    {
+      role: "Spanish language tutor",
+      institution: "Université de Bretagne-Sud (Lorient, France)",
+      date: "2019 - 2021",
+      desc: "Responsible for Spanish language tutoring and pedagogical support for students in the Bachelor's degree (Licence) in Applied Foreign Languages (LEA), facilitating conversation, grammar, and translation sessions."
+    }
+  ],
+  communityTeaching: [
+    {
+      role: "Spanish language instructor (Université du Temps Libre)",
+      institution: "Université de Bretagne-Sud (Lorient, France)",
+      date: "Academic years 2019-2020 and 2020-2021",
+      desc: "Design and teaching of Spanish language, culture, and civilization courses and workshops adapted for senior citizens within the community outreach program of the Université du Temps Libre (UTL)."
     },
     {
       role: "Diploma module instructor",
       institution: "Universidad de Antioquia (Medellín, Colombia)",
       date: "September 4, 2017",
-      desc: "Teaching and coordination of the module 'Experiencias de arte y memoria: proyecto La paz es una obra de arte' within the Historical Memory Diploma, co-organized with the Deutsche Welle Akademie. The work consisted of delivering workshops on collective memory reconstruction and social reconciliation in post-conflict correctional facilities.",
-      points: []
+      desc: "Teaching and coordination of the module 'Experiencias de arte y memoria: proyecto La paz es una obra de arte' within the Historical Memory Diploma, co-organized with the Deutsche Welle Akademie. The work consisted of delivering workshops on collective memory reconstruction and social reconciliation in post-conflict correctional facilities."
+    },
+    {
+      role: "Visual arts teacher in prison context",
+      institution: "La Paz Maximum Security Prison (Itagüí, Colombia)",
+      date: "2015 - 2017",
+      desc: "Design and teaching of visual arts workshops and historical memory construction directed at former combatants and victims of the Colombian armed and social conflict to promote reconciliation and peace."
     }
   ],
   education: [

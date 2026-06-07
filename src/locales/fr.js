@@ -32,6 +32,9 @@ export default {
     formacionSectionTitle: "Formations & Ateliers",
     formacionSectionIntro: "Détail de mon parcours académique formel, de mes activités d'enseignement universitaire et des ateliers spécialisés animés à l'échelle internationale dans le domaine des humanités numériques.",
     teachingHeader: "Enseignement & Ateliers Animés",
+    workshopsHeader: "Ateliers et conférences",
+    universityTeachingHeader: "Enseignement universitaire",
+    communityTeachingHeader: "Processus de formation communautaire",
     educationHeader: "Parcours Académique",
     viewVisualIdentity: "Voir l'identité visuelle →",
     viewResource: "Voir la ressource",
@@ -372,13 +375,6 @@ export default {
       points: []
     },
     {
-      role: "Chargé de cours",
-      institution: "Université Sorbonne Nouvelle (Paris, France)",
-      date: "2021 - Présent",
-      desc: "Enseignement universitaire au niveau master en humanités numériques et lettres modernes, dispensant les modules 'Introduction à la gestion des bases de données en SHS' (modélisation conceptuelle et relationnelle, SQL) et 'Méthodologie de la recherche numérique' (application de l'HTR, de Whisper et des carnets interactifs Jupyter). La mission comprend la direction de projets étudiants et un tutorat méthodologique appliqué.",
-      points: []
-    },
-    {
       role: "Conférence et atelier pratique",
       institution: "Universidad Complutense de Madrid (Madrid, Espagne)",
       date: "23 janvier 2025",
@@ -510,20 +506,46 @@ export default {
       date: "4 février 2022",
       desc: "Une journée de formation centrée sur la définition de normes et de directives TEI pour la transcription et le balisage de textes imprimés et manuscrits du XVIe siècle, intitulée 'Líneas directrices TEI para la codificación de textos en español del siglo XVI'.",
       points: []
+    }
+  ],
+  universityTeaching: [
+    {
+      role: "Chargé de cours",
+      institution: "Université Sorbonne Nouvelle (Paris, France)",
+      date: "2021 - Présent",
+      desc: "Enseignement universitaire au niveau master en humanités numériques et lettres modernes, dispensant les modules 'Introduction à la gestion des bases de données en SHS' (modélisation conceptuelle et relationnelle, SQL) et 'Méthodologie de la recherche numérique' (application de l'HTR, de Whisper et des carnets interactifs Jupyter). La mission comprend la direction de projets étudiants et un tutorat méthodologique appliqué."
     },
     {
       role: "Enseignant de langue et civilisation (LANSAD)",
       institution: "Université de Montpellier Paul-Valéry (Montpellier, France)",
       date: "2022 - 2024",
-      desc: "Enseignement et renforcement pédagogique au Département d'Études Hispaniques, donnant des cours d'espagnol axés sur la traduction et la culture aux niveaux B1-B2. De plus, j'ai dispensé des modules de Méthodologie du Travail Universitaire (MTU) pour les étudiants de première année en licence LLCER et LEA.",
-      points: []
+      desc: "Enseignement et renforcement pédagogique au Département d'Études Hispaniques, donnant des cours d'espagnol axés sur la traduction et la culture aux niveaux B1-B2. De plus, j'ai dispensé des modules de Méthodologie du Travail Universitaire (MTU) pour les étudiants de première année en licence LLCER et LEA."
+    },
+    {
+      role: "Tuteur d'espagnol",
+      institution: "Université de Bretagne-Sud (Lorient, France)",
+      date: "2019 - 2021",
+      desc: "Chargé des tutorats de langue espagnole et du soutien pédagogique pour les étudiants de la Licence en Lettres Étrangères Appliquées (LEA), animant des séances de conversation, de grammaire et de traduction."
+    }
+  ],
+  communityTeaching: [
+    {
+      role: "Enseignant d'espagnol (Université du Temps Libre)",
+      institution: "Université de Bretagne-Sud (Lorient, France)",
+      date: "Années universitaires 2019-2020 et 2020-2021",
+      desc: "Conception et animation de cours et d'ateliers de langue, culture et civilisation espagnoles adaptés aux seniors dans le cadre du programme d'ouverture sociale et communautaire de l'Université du Temps Libre (UTL)."
     },
     {
       role: "Enseignant de module de diplôme",
-      institution: "Universidad de Antioquia (Medellín, Colombie)",
+      institution: "Universidad de Antioquia (Médellín, Colombie)",
       date: "4 septembre 2017",
-      desc: "Enseignement et coordination du module 'Experiencias de arte y memoria: proyecto La paz es una obra de arte' dans le cadre du Diplôme en Mémoire Historique, co-organisé avec la Deutsche Welle Akademie. La mission a consisté à animer des ateliers de reconstruction de la mémoire collective et de réconciliation sociale dans des établissements pénitentiaires de post-conflit.",
-      points: []
+      desc: "Enseignement et coordination du module 'Experiencias de arte y memoria: proyecto La paz es una obra de arte' dans le cadre du Diplôme en Mémoire Historique, co-organisé avec la Deutsche Welle Akademie. La mission a consisté à animer des ateliers de reconstruction de la mémoire collective et de réconciliation sociale dans des établissements pénitentiaires de post-conflit."
+    },
+    {
+      role: "Enseignant d'arts plastiques en milieu carcéral",
+      institution: "Prison de haute sécurité La Paz (Itagüí, Colombie)",
+      date: "2015 - 2017",
+      desc: "Conception et animation d'ateliers d'arts plastiques et de construction de mémoire historique destinés à d'anciens combattants et aux victimes du conflit armé et social colombien pour promouvoir la réconciliation et la paix."
     }
   ],
   education: [

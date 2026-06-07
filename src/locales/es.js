@@ -32,6 +32,9 @@ export default {
     formacionSectionTitle: "Formación & talleres",
     formacionSectionIntro: "Detalle de mi trayectoria académica formal, actividades de docencia universitaria y la animación de talleres especializados en humanidades digitales en instituciones universitarias y centros de investigación.",
     teachingHeader: "Docencia & talleres impartidos",
+    workshopsHeader: "Talleres y conferencias",
+    universityTeachingHeader: "Docencia universitaria",
+    communityTeachingHeader: "Procesos de formación comunitaria",
     educationHeader: "Formación académica",
     viewVisualIdentity: "Ver identidad visual →",
     viewResource: "Ver Recurso",
@@ -370,13 +373,6 @@ export default {
       points: []
     },
     {
-      role: "Encargado de cursos (chargé de cours)",
-      institution: "Université Sorbonne Nouvelle (París, Francia)",
-      date: "2021 - Presente",
-      desc: "Docencia universitaria en el nivel de máster en humanidades digitales y letras modernas, dictando los módulos de 'Introducción a la gestión de bases de datos en SHS' (modelado conceptual y relacional, SQL) y 'Metodología de la investigación digital' (aplicación de HTR, Whisper y cuadernos interactivos Jupyter). La labor incluye el acompañamiento de proyectos estudiantiles y la tutoría metodológica aplicada.",
-      points: []
-    },
-    {
       role: "Conferencia y taller práctico",
       institution: "Universidad Complutense de Madrid (Madrid, España)",
       date: "23 de enero de 2025",
@@ -464,7 +460,7 @@ export default {
       role: "Co-organización y taller de divulgación científica",
       institution: "Fête de la Science - Université Paul-Valéry Montpellier 3 (Montpellier, Francia)",
       date: "Octubre de 2022",
-      desc: "Una jornada interactiva de divulgación para el público general, coorganizando y animando junto a Michel Boeglin el taller 'Livre ancien et Humanités numériques' en la Sala del Consejo del sitio Saint Charles. El espacio estuvo dedicado a demostraciones prácticas de digitalización y procesamiento inteligente de libros antiguos patrimoniales.",
+      desc: "Una jornada interactiva de divulgación para el público general, coorganizando y animando junto a Michel Boeglin el taller 'Livre ancien y Humanidades numéricas' en la Sala del Consejo del sitio Saint Charles. El espacio estuvo dedicado a demostraciones prácticas de digitalización y procesamiento inteligente de libros antiguos patrimoniales.",
       points: []
     },
     {
@@ -508,20 +504,46 @@ export default {
       date: "4 de febrero de 2022",
       desc: "Una jornada formativa centrada en la definición de estándares y directrices TEI para la transcripción y marcado de textos impresos y manuscritos del siglo XVI, titulada 'Líneas directrices TEI para la codificación de textos en español del siglo XVI'.",
       points: []
+    }
+  ],
+  universityTeaching: [
+    {
+      role: "Encargado de cursos (chargé de cours)",
+      institution: "Université Sorbonne Nouvelle (París, Francia)",
+      date: "2021 - Presente",
+      desc: "Docencia universitaria en el nivel de máster en humanidades digitales y letras modernas, dictando los módulos de 'Introducción a la gestión de bases de datos en SHS' (modelado conceptual y relacional, SQL) y 'Metodología de la investigación digital' (aplicación de HTR, Whisper y cuadernos interactivos Jupyter). La labor incluye el acompañamiento de proyectos estudiantiles y la tutoría metodológica aplicada."
     },
     {
       role: "Docente de lengua y civilización (LANSAD)",
       institution: "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
       date: "2022 - 2024",
-      desc: "Docencia y refuerzo pedagógico en el Departamento de Estudios Hispanos, dictando clases de español orientadas a la traducción y la cultura en niveles B1-B2. Adicionalmente, impartí módulos de Metodología de Trabajo Universitario (MTU) para estudiantes de primer año en las licenciaturas LLCER y LEA.",
-      points: []
+      desc: "Docencia y refuerzo pedagógico en el Departamento de Estudios Hispanos, dictando clases de español orientadas a la traducción y la cultura en niveles B1-B2. Adicionalmente, impartí módulos de Metodología de Trabajo Universitario (MTU) para estudiantes de primer año en las licenciaturas LLCER y LEA."
+    },
+    {
+      role: "Tutor de español",
+      institution: "Université de Bretagne-Sud (Lorient, Francia)",
+      date: "2019 - 2021",
+      desc: "Encargado de las tutorías de lengua española y apoyo pedagógico para estudiantes de la Licenciatura (Licence) en Lenguas Extranjeras Aplicadas (LEA), facilitando sesiones de conversación, gramática y traducción."
+    }
+  ],
+  communityTeaching: [
+    {
+      role: "Docente de español (Universidad del Tiempo Libre)",
+      institution: "Université de Bretagne-Sud (Lorient, Francia)",
+      date: "Años académicos 2019-2020 y 2020-2021",
+      desc: "Diseño e impartición de cursos y talleres de lengua, cultura y civilización española adaptados para adultos mayores en el marco del programa de extensión comunitaria de la Université du Temps Libre (UTL)."
     },
     {
       role: "Docente de módulo de diploma",
       institution: "Universidad de Antioquia (Medellín, Colombia)",
       date: "4 de septiembre de 2017",
-      desc: "Docencia y coordinación del módulo 'Experiencias de arte y memoria: proyecto La paz es una obra de arte' dentro del Diploma de Memoria Histórica, coorganizado con la Deutsche Welle Akademie. La labor consistió en impartir talleres de reconstrucción de memoria colectiva y reconciliación social en centros penitenciarios de posconflicto.",
-      points: []
+      desc: "Docencia y coordinación del módulo 'Experiencias de arte y memoria: proyecto La paz es una obra de arte' dentro del Diploma de Memoria Histórica, coorganizado con la Deutsche Welle Akademie. La labor consistió en impartir talleres de reconstrucción de memoria colectiva y reconciliación social en centros penitenciarios de posconflicto."
+    },
+    {
+      role: "Docente de artes plásticas en contexto penitenciario",
+      institution: "Cárcel de máxima seguridad La Paz (Itagüí, Colombia)",
+      date: "2015 - 2017",
+      desc: "Diseño e impartición de talleres de artes plásticas y construcción de memoria histórica dirigidos a excombatientes y víctimas del conflicto armado y social colombiano para promover la reconciliación y la paz."
     }
   ],
   education: [

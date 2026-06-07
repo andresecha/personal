@@ -16,7 +16,8 @@ import {
   Moon, 
   X,
   GraduationCap,
-  Languages
+  Languages,
+  Users
 } from 'lucide-react';
 
 // Custom image logos for academic profiles & tech collaborations (stored locally)
@@ -759,10 +760,11 @@ function App() {
               
               {/* Column 1: Talleres y Docencia */}
               <div>
-                <h2 className="text-gradient" style={{ marginBottom: '2rem', fontSize: '1.6rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <Code size={22} /> {t.ui.teachingHeader}
+                {/* Section 1: Talleres y conferencias */}
+                <h2 className="text-gradient" style={{ marginBottom: '1.5rem', fontSize: '1.6rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <Code size={22} /> {t.ui.workshopsHeader}
                 </h2>
-                <div className="cv-timeline">
+                <div className="cv-timeline" style={{ marginBottom: '3rem' }}>
                   {t.teaching.map((item, idx) => (
                     <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.05}s` }}>
                       <div className="cv-header">
@@ -775,19 +777,59 @@ function App() {
                         style={{ marginBottom: '0.75rem', fontSize: '0.95rem' }}
                         dangerouslySetInnerHTML={{ __html: item.desc }}
                       />
-                      {item.points && item.points.length > 0 && (
-                        <ul style={{ margin: '0.5rem 0 0 0.5rem', padding: 0, listStyleType: 'none', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                          {item.points.map((pt, pIdx) => (
-                            <li key={pIdx} style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', position: 'relative', paddingLeft: '1.25rem' }}>
-                              <span style={{ position: 'absolute', left: 0, top: '0.45rem', width: '5px', height: '5px', borderRadius: '50%', backgroundColor: 'var(--accent)' }}></span>
-                              {pt}
-                            </li>
-                          ))}
-                        </ul>
-                      )}
                     </div>
                   ))}
                 </div>
+
+                {/* Section 2: Docencia universitaria */}
+                {t.universityTeaching && (
+                  <>
+                    <h2 className="text-gradient" style={{ marginBottom: '1.5rem', fontSize: '1.6rem', display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '2.5rem' }}>
+                      <GraduationCap size={22} /> {t.ui.universityTeachingHeader}
+                    </h2>
+                    <div className="cv-timeline" style={{ marginBottom: '3rem' }}>
+                      {t.universityTeaching.map((item, idx) => (
+                        <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.05}s` }}>
+                          <div className="cv-header">
+                            <h3 style={{ fontSize: '1.15rem', fontWeight: 650, color: 'var(--text-primary)' }}>{item.role}</h3>
+                            <span className="cv-date" style={{ fontSize: '0.8rem' }}>{item.date}</span>
+                          </div>
+                          <p className="cv-institution" style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.5rem' }}>{item.institution}</p>
+                          <p 
+                            className="cv-desc" 
+                            style={{ marginBottom: '0.75rem', fontSize: '0.95rem' }}
+                            dangerouslySetInnerHTML={{ __html: item.desc }}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                )}
+
+                {/* Section 3: Procesos de formación comunitaria */}
+                {t.communityTeaching && (
+                  <>
+                    <h2 className="text-gradient" style={{ marginBottom: '1.5rem', fontSize: '1.6rem', display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '2.5rem' }}>
+                      <Users size={22} /> {t.ui.communityTeachingHeader}
+                    </h2>
+                    <div className="cv-timeline">
+                      {t.communityTeaching.map((item, idx) => (
+                        <div key={idx} className="cv-item animate-slide-up" style={{ animationDelay: `${idx * 0.05}s` }}>
+                          <div className="cv-header">
+                            <h3 style={{ fontSize: '1.15rem', fontWeight: 650, color: 'var(--text-primary)' }}>{item.role}</h3>
+                            <span className="cv-date" style={{ fontSize: '0.8rem' }}>{item.date}</span>
+                          </div>
+                          <p className="cv-institution" style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.5rem' }}>{item.institution}</p>
+                          <p 
+                            className="cv-desc" 
+                            style={{ marginBottom: '0.75rem', fontSize: '0.95rem' }}
+                            dangerouslySetInnerHTML={{ __html: item.desc }}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                )}
               </div>
 
               {/* Column 2: Formación Académica */}
