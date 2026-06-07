@@ -226,7 +226,7 @@ export default {
     {
       role: "Curso práctico de documentación iberoamericana (siglos XV-XIX)",
       institution: "Asociación de Amigos del Archivo Histórico Nacional - España",
-      date: "Junio de 2024",
+      date: "27 de mayo – 25 de junio de 2024",
       desc: "Curso de especialización paleográfica y archivística sobre documentación histórica iberoamericana."
     },
     {
@@ -250,7 +250,7 @@ export default {
     {
       role: "Coloquio doctoral \"Encoder, exploiter, diffuser\"",
       institution: "Collège Doctoral de Poitiers - Poitiers, Francia",
-      date: "Mayo de 2022",
+      date: "9–13 de mayo de 2022",
       desc: "Formación especializada sobre humanidades digitales en proyectos de investigación, con enfoque en codificación XML-TEI, procesamiento de texto y cartografía digital."
     },
     {
@@ -304,21 +304,21 @@ export default {
   ],
   scientificCommunity: [
     {
-      role: "Miembro del jurado de tesis doctoral",
-      institution: "Universidad de Antioquia - Medellín, Colombia",
-      date: "Mayo de 2026",
-      desc: "Miembro del jurado evaluador para la sustentación pública de la tesis doctoral \"Edición crítico-genética digital de Frutos de mi tierra (1896) —FrutosDigital—, y la ciudad finisecular latinoamericana de Tomás Carrasquilla\" de Juan Esteban Hincapié Atehortúa."
-    },
-    {
       role: "Evaluador científico externo",
       institution: "Impossibilia. Revista Internacional de Estudios Literarios - Universidad de Granada, España",
-      date: "Mayo de 2026",
+      date: "24 de mayo de 2026",
       desc: "Evaluación científica por pares de artículos de investigación literaria para la revista internacional indexada Impossibilia (ISSN 2174-2464)."
+    },
+    {
+      role: "Miembro del jurado de tesis doctoral",
+      institution: "Universidad de Antioquia - Medellín, Colombia",
+      date: "8 de mayo de 2026",
+      desc: "Miembro del jurado evaluador para la sustentación pública de la tesis doctoral \"Edición crítico-genética digital de Frutos de mi tierra (1896) —FrutosDigital—, y la ciudad finisecular latinoamericana de Tomás Carrasquilla\" de Juan Esteban Hincapié Atehortúa."
     },
     {
       role: "Evaluador científico (DH2026)",
       institution: "Stichting ADHO Foundation / Alliance of Digital Humanities Organizations",
-      date: "Marzo de 2026",
+      date: "10 de marzo de 2026",
       desc: "Evaluador de pares (peer reviewer) para la conferencia internacional Digital Humanities Conference 2026 (DH2026) en Daejeon, Corea del Sur. Evaluación de 6 propuestas científicas."
     },
     {
@@ -336,25 +336,11 @@ export default {
     {
       role: "Miembro del comité de organización (ICHLL 12)",
       institution: "International Conference on Historical Lexicography and Lexicology - Lorient, Francia",
-      date: "Junio de 2022",
+      date: "22–24 de junio de 2022",
       desc: "Miembro del comité de organización del XII Congreso Internacional de Lexicografía y Lexicología Histórica (ICHLL 12). Presidente de la mesa redonda \"Historical lexicography and lexicology\"."
     }
   ],
   teaching: [
-    {
-      role: "Conferencia y taller: modelos de adquisición de textos y OCR inteligente para corpus lingüísticos",
-      institution: "Universidad de Antioquia (Medellín, Colombia)",
-      date: "Mayo de 2026",
-      desc: "Una jornada académica de divulgación e investigación en la Facultad de Comunicaciones y Filología de la Universidad de Antioquia. El espacio consistió en una conferencia introductoria a los modelos de adquisición de textos y de transcripción automática asistida por ordenador, complementada con un ejercicio práctico enfocado en el uso del modelo de visión MistralOCR aplicado a la extracción y estructuración de corpus lingüísticos y literarios.",
-      points: []
-    },
-    {
-      role: "Ciclo de talleres: investigar en la era digital y editorialización de fuentes históricas",
-      institution: "Universidad de Antioquia (Medellín, Colombia)",
-      date: "Mayo de 2026",
-      desc: "Un ciclo de formación intensiva estructurado en tres jornadas de trabajo en el Departamento de Historia de la Universidad de Antioquia. La primera jornada abordó los fundamentos teóricos de la constitución del espacio digital a partir de la teoría de la editorialización de Marcello Vitali-Rosati. La segunda jornada consistió en un ejercicio de práctica de editorialización aplicada directamente a fuentes historiográficas manuscritas. La tercera jornada se centró en una discusión abierta y consultoría sobre las prácticas investigativas de los investigadores locales para ofrecer recomendaciones metodológicas específicas a sus propios proyectos de investigación.",
-      points: []
-    },
     {
       role: "Taller de preconferencia",
       institution: "Colloque Humanistica 2026 (EPITA, París, Francia)",
@@ -363,9 +349,23 @@ export default {
       points: []
     },
     {
+      role: "Conferencia y taller: modelos de adquisición de textos y OCR inteligente para corpus lingüísticos",
+      institution: "Universidad de Antioquia (Medellín, Colombia)",
+      date: "11 de mayo de 2026",
+      desc: "Una jornada académica de divulgación e investigación en la Facultad de Comunicaciones y Filología de la Universidad de Antioquia. El espacio consistió en una conferencia introductoria a los modelos de adquisición de textos y de transcripción automática asistida por ordenador, complementada con un ejercicio práctico enfocado en el uso del modelo de visión MistralOCR aplicado a la extracción y estructuración de corpus lingüísticos y literarios.",
+      points: []
+    },
+    {
+      role: "Ciclo de talleres: investigar en la era digital y editorialización de fuentes históricas",
+      institution: "Universidad de Antioquia (Medellín, Colombia)",
+      date: "28, 29 y 30 de abril de 2026",
+      desc: "Un ciclo de formación intensiva estructurado en tres jornadas de trabajo en el Departamento de Historia de la Universidad de Antioquia. La primera jornada abordó los fundamentos teóricos de la constitución del espacio digital a partir de la teoría de la editorialización de Marcello Vitali-Rosati. La segunda jornada consistió en un ejercicio de práctica de editorialización aplicada directamente a fuentes historiográficas manuscritas. La tercera jornada se centró en una discusión abierta y consultoría sobre las prácticas investigativas de los investigadores locales para ofrecer recomendaciones metodológicas específicas a sus propios proyectos de investigación.",
+      points: []
+    },
+    {
       role: "Taller: métodos de adquisición y colación digital de textos",
       institution: "Universidad EAFIT (Medellín, Colombia)",
-      date: "Abril de 2026",
+      date: "27 de abril de 2026",
       desc: "Una jornada formativa orientada a estudiantes e investigadores en el marco del proyecto 'Humanidades Digitales y Esfera Pública' en la Universidad EAFIT. El espacio estuvo dedicado a la introducción de métodos computacionales de adquisición de textos y el procesamiento de corpus lingüísticos, con un enfoque particular en la modelización de procesos de alineamiento textual y la colación automática de traducciones.",
       points: []
     },
@@ -377,37 +377,37 @@ export default {
       points: []
     },
     {
-      role: "Taller de formación especializada",
-      institution: "Université Catholique de Louvain (Lovaina, Bélgica)",
-      date: "2025",
-      desc: "Una jornada de capacitación práctica en aprendizaje automático aplicado a la transcripción automática de archivos eclesiásticos y universitarios. El taller se tituló 'Transkribus: Formation à l'utilisation du logiciel dans le cadre d'une recherche historique' y fue coorganizado para la Facultad de Teología y los Archivos de la UCLouvain, capacitando a investigadores en el entrenamiento de modelos HTR específicos.",
-      points: []
-    },
-    {
       role: "Conferencia y taller práctico",
       institution: "Universidad Complutense de Madrid (Madrid, España)",
-      date: "2025",
+      date: "17–23 de enero de 2025",
       desc: "Una jornada formativa impartida en la Semana de las TICs de la Facultad de Filología de la Universidad Complutense de Madrid, en colaboración con la red de investigación CHARTA. La sesión consistió en una conferencia y un taller práctico dedicados a los métodos avanzados de transcripción automática de manuscritos históricos y la integración de tecnologías HTR en proyectos de humanidades digitales.",
       points: []
     },
     {
-      role: "Curso práctico de introducción",
-      institution: "Universidad Complutense de Madrid (Madrid, España)",
-      date: "2024",
-      desc: "Una jornada de formación consistente en el curso práctico 'Transcripción automática de impresos y manuscritos: introducción', impartido en la Facultad de Filología de la Universidad Complutense de Madrid en colaboración con la red CHARTA. El curso cubrió los fundamentos del entrenamiento de modelos de reconocimiento de texto y la puesta en marcha de flujos de trabajo de transcripción asistida por ordenador.",
+      role: "Taller de formación especializada",
+      institution: "Université Catholique de Louvain (Lovaina, Bélgica)",
+      date: "17 de enero de 2025",
+      desc: "Una jornada de capacitación práctica en aprendizaje automático aplicado a la transcripción automática de archivos eclesiásticos y universitarios. El taller se tituló 'Transkribus: Formation à l'utilisation du logiciel dans le cadre d'une recherche historique' y fue coorganizado para la Facultad de Teología y los Archivos de la UCLouvain, capacitando a investigadores en el entrenamiento de modelos HTR específicos.",
       points: []
     },
     {
       role: "Conferencia invitada",
       institution: "Universidad de Castilla-La Mancha (Ciudad Real, España)",
-      date: "2024",
+      date: "17 de abril de 2024",
       desc: "Una jornada académica consistente en la conferencia '{DES}PROGRAMAR LO {IM}PERFECTO. Pensar en HD', dictada por invitación en la Universidad de Castilla-La Mancha en el campus de Ciudad Real. La ponencia propuso una reflexión crítica sobre el manejo de errores de lectura HTR y su integración epistemológica y metodológica en las colecciones digitales de documentos históricos.",
+      points: []
+    },
+    {
+      role: "Curso práctico de introducción",
+      institution: "Universidad Complutense de Madrid (Madrid, España)",
+      date: "10 de abril de 2024",
+      desc: "Una jornada de formación consistente en el curso práctico 'Transcripción automática de impresos y manuscritos: introducción', impartido en la Facultad de Filología de la Universidad Complutense de Madrid en colaboración con la red CHARTA. El curso cubrió los fundamentos del entrenamiento de modelos de reconocimiento de texto y la puesta en marcha de flujos de trabajo de transcripción asistida por ordenador.",
       points: []
     },
     {
       role: "Conferencia metodológica",
       institution: "Universidad de Castilla-La Mancha (Toledo, España)",
-      date: "2023",
+      date: "12 de diciembre de 2023",
       desc: "Una jornada académica con la ponencia 'Tinta, píxel y texto electrónico: transcripción asistida', impartida en la Universidad de Castilla-La Mancha en Toledo. La charla abordó los retos metodológicos de la digitalización, la naturaleza del texto electrónico y el uso práctico de herramientas inteligentes para el reconocimiento automático de textos históricos.",
       points: []
     },
@@ -456,7 +456,7 @@ export default {
     {
       role: "Docente de módulo de diploma",
       institution: "Universidad de Antioquia (Medellín, Colombia)",
-      date: "2017",
+      date: "4 de septiembre de 2017",
       desc: "Docencia y coordinación del módulo 'Experiencias de arte y memoria: proyecto La paz es una obra de arte' dentro del Diploma de Memoria Histórica, coorganizado con la Deutsche Welle Akademie. La labor consistió en impartir talleres de reconstrucción de memoria colectiva y reconciliación social en centros penitenciarios de posconflicto.",
       points: []
     }
