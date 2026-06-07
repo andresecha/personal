@@ -19,7 +19,7 @@ export default {
     noPubsFound: "No publications found matching your search or filters.",
     downloadCv: "View complete CV on HAL / ORCID",
     closeModal: "Close",
-    copyright: "Researcher Name. All rights reserved",
+    copyright: "Researcher Name. Open source under WTFPL license.",
     footerSustainability: "Hosted sustainably and scalably on GitHub Pages.",
     footerTemplateLink: "Open source under <a href='/LICENSE' target='_blank'>WTFPL</a> license. Based on this <a href='https://github.com/andresecha/personal' target='_blank' rel='noopener noreferrer'>portfolio template</a>.",
     researchSectionTitle: "Research & technological development",

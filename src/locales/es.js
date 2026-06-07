@@ -19,7 +19,7 @@ export default {
     noPubsFound: "No se encontraron publicaciones que coincidan con la búsqueda o filtro.",
     downloadCv: "Ver CV completo en HAL",
     closeModal: "Cerrar modal",
-    copyright: "Andrés Felipe Echavarría Peláez. Todos los derechos reservados",
+    copyright: "Andrés Felipe Echavarría Peláez. Código libre bajo licencia WTFPL.",
     footerSustainability: "Alojado de manera sostenible y escalable en GitHub Pages.",
     footerTemplateLink: "Código libre bajo licencia <a href='/LICENSE' target='_blank'>WTFPL</a>. Usa esta <a href='https://github.com/andresecha/personal/tree/main/template' target='_blank' rel='noopener noreferrer'>plantilla de portafolio</a> para tu propio sitio.",
     researchSectionTitle: "Investigación & desarrollo tecnológico",

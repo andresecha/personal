@@ -19,7 +19,7 @@ export default {
     noPubsFound: "No se encontraron publicaciones que coincidan con la búsqueda o filtro.",
     downloadCv: "Ver CV completo en HAL / ORCID",
     closeModal: "Cerrar",
-    copyright: "Nombre del Investigador. Todos los derechos reservados",
+    copyright: "Nombre del Investigador. Código libre bajo licencia WTFPL.",
     footerSustainability: "Alojado de manera sostenible y escalable en GitHub Pages.",
     footerTemplateLink: "Código libre bajo licencia <a href='/LICENSE' target='_blank'>WTFPL</a>. Basado en esta <a href='https://github.com/andresecha/personal' target='_blank' rel='noopener noreferrer'>plantilla de portafolio</a>.",
     researchSectionTitle: "Investigación & desarrollo tecnológico",
