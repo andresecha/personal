@@ -415,6 +415,13 @@ export default {
       "points": []
     },
     {
+      "role": "Invited keynote lecture: controlled vocabularies for the Humanities",
+      "institution": "Universidad Nacional de Salta (Salta, Argentina)",
+      "date": "October 31, 2024",
+      "desc": "An academic session within the III Seminar on Internet Tools and Resources for Research in the Humanities, organized by the School of History of the Faculty of Humanities. I delivered the keynote lecture 'Controlled vocabularies for the Humanities' and facilitated the subsequent discussion with researchers and graduate students.",
+      "points": []
+    },
+    {
       "role": "Invited lecture",
       "institution": "Universidad de Castilla-La Mancha (Ciudad Real, Spain)",
       "date": "April 17, 2024",
@@ -440,6 +447,13 @@ export default {
       "institution": "Campus Condorcet (Aubervilliers, France)",
       "date": "November 28, 2023",
       "desc": "A methodological presentation session titled 'Éclairage TEI sur les procédures inquisitoriales' in the working group 'Outils et prátiques éditoriales'. The presentation addressed the conceptual modeling and encoding of the judicial structure of inquisitorial files under the XML-TEI standard.",
+      "points": []
+    },
+    {
+      "role": "Invited keynote lecture: new digital tools for the study of inquisitorial documentation",
+      "institution": "Universidad Nacional de Salta (Salta, Argentina)",
+      "date": "October 26, 2023",
+      "desc": "An academic session within the II Seminar on Internet Tools and Resources for Research in the Humanities, hosted by the School of History of the Faculty of Humanities. In collaboration with Mathilde Albisson, I delivered the keynote lecture titled 'New digital tools for the study of inquisitorial documentation', which included a discussion session with attendees on automatic transcription methods and data modeling.",
       "points": []
     },
     {

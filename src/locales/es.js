@@ -415,6 +415,13 @@ export default {
       "points": []
     },
     {
+      "role": "Conferencia magistral invitada: vocabularios controlados para las Humanidades",
+      "institution": "Universidad Nacional de Salta (Salta, Argentina)",
+      "date": "31 de octubre de 2024",
+      "desc": "Una jornada académica en el marco del III Seminario de Actualización en Herramientas y Recursos de Internet para la Investigación en Humanidades, organizado por la Escuela de Historia de la Facultad de Humanidades. Impartí la conferencia magistral 'Vocabularios controlados para las Humanidades' y coordiné el coloquio posterior con investigadores y estudiantes de posgrado.",
+      "points": []
+    },
+    {
       "role": "Conferencia invitada",
       "institution": "Universidad de Castilla-La Mancha (Ciudad Real, España)",
       "date": "17 de abril de 2024",
@@ -440,6 +447,13 @@ export default {
       "institution": "Campus Condorcet (Aubervilliers, Francia)",
       "date": "28 de noviembre de 2023",
       "desc": "Una jornada de presentación metodológica titulada 'Éclairage TEI sur les procédures inquisitoriales' en el grupo de trabajo 'Outils et prátiques éditoriales'. La ponencia abordó el modelado conceptual y la codificación de la estructura judicial de los expedientes inquisitoriales bajo el estándar XML-TEI.",
+      "points": []
+    },
+    {
+      "role": "Conferencia magistral invitada: nuevas herramientas digitales para el estudio de la documentación inquisitorial",
+      "institution": "Universidad Nacional de Salta (Salta, Argentina)",
+      "date": "26 de octubre de 2023",
+      "desc": "Una jornada académica en el marco del II Seminario de Actualización en Herramientas y Recursos de Internet para la Investigación en Humanidades, auspiciado por la Escuela de Historia de la Facultad de Humanidades. Impartí, en colaboración con Mathilde Albisson, la conferencia magistral titulada 'Nuevas herramientas digitales para el estudio de la documentación inquisitorial', la cual incluyó un coloquio debate con los asistentes sobre métodos de transcripción automática y modelado de datos.",
       "points": []
     },
     {

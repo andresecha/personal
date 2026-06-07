@@ -421,6 +421,13 @@ export default {
       "points": []
     },
     {
+      "role": "Conférence plénière invitée : vocabulaires contrôlés pour les Humanités",
+      "institution": "Universidad Nacional de Salta (Salta, Argentine)",
+      "date": "31 octobre 2024",
+      "desc": "Une journée académique dans le cadre du IIIe Séminaire d'actualisation des outils et ressources d'Internet pour la recherche en humanités, organisé par l'École d'histoire de la Faculté des humanités. J'ai prononcé la conférence plénière 'Vocabulaires contrôlés pour les Humanités' et animé le débat qui a suivi avec les chercheurs et les étudiants.",
+      "points": []
+    },
+    {
       "role": "Conférence invitée",
       "institution": "Universidad de Castilla-La Mancha (Ciudad Real, Espagne)",
       "date": "17 avril 2024",
@@ -446,6 +453,13 @@ export default {
       "institution": "Campus Condorcet (Aubervilliers, France)",
       "date": "28 novembre 2023",
       "desc": "Une journée de présentation méthodologique intitulée 'Éclairage TEI sur les procédures inquisitoriales' au sein du groupe de travail 'Outils et pratiques éditoriales'. L'intervention a abordé la modélisation conceptuelle et l'encodage de la structure judiciaire des dossiers inquisitoriaux sous le standard XML-TEI.",
+      "points": []
+    },
+    {
+      "role": "Conférence plénière invitée : nouveaux outils numériques pour l'étude de la documentation inquisitoriale",
+      "institution": "Universidad Nacional de Salta (Salta, Argentine)",
+      "date": "26 octobre 2023",
+      "desc": "Une journée académique dans le cadre du IIe Séminaire d'actualisation des outils et ressources d'Internet pour la recherche en humanités, organisé par l'École d'histoire de la Faculté des humanités. J'ai prononcé, en collaboration avec Mathilde Albisson, la conférence plénière intitulée 'Nouveaux outils numériques pour l'étude de la documentation inquisitoriale', qui a été suivie d'un débat avec le public sur les méthodes de transcription automatique et la modélisation des données.",
       "points": []
     },
     {
