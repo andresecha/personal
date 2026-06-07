@@ -474,7 +474,7 @@ p {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 2rem;
 }
 
@@ -1274,5 +1274,14 @@ p {
     background-color: transparent;
     border-bottom-color: var(--accent);
     color: var(--accent) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-sidebar {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
