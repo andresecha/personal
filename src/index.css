@@ -1008,6 +1008,10 @@ p {
 
 .footer p {
   color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+.footer p:last-child {
+  margin-bottom: 0;
 }
 
 /* Animations */
