@@ -512,8 +512,26 @@ export default {
     {
       role: "Chargé de cours",
       institution: "Université Sorbonne Nouvelle (Paris, France)",
-      date: "2021 - Présent",
-      desc: "Enseignement universitaire au niveau master en humanités numériques et lettres modernes, dispensant les modules 'Introduction à la gestion des bases de données en SHS' (modélisation conceptuelle et relationnelle, SQL) et 'Méthodologie de la recherche numérique' (application de l'HTR, de Whisper et des carnets interactifs Jupyter). La mission comprend la direction de projets étudiants et un tutorat méthodologique appliqué."
+      date: "2025 - Présent",
+      desc: "Enseignement à distance (EAD) du module 'FZDDC01 - Méthodologie de la recherche numérique' au sein du Master 1 Littératures d'expression française. Ce cours vise à accompagner les étudiants dans la compréhension des chaînes de traitement pour l'analyse de données textuelles (textométrie) et à les former à la manipulation de corpus pour la recherche en lettres."
+    },
+    {
+      role: "Chargé de cours",
+      institution: "Université Sorbonne Nouvelle (Paris, France)",
+      date: "2023 - 2024",
+      desc: "Enseignement du module 'Introduction à la gestion des bases de données en SHS' au sein du Master Humanités Numériques (parcours NGEST). Les cours ont couvert la conceptualisation de modèles relationnels, la conception de schémas entité-association et la normalisation de bases de données pour l'exploitation scientifique de sources textuelles."
+    },
+    {
+      role: "Chargé de cours",
+      institution: "Université Sorbonne Nouvelle (Paris, France)",
+      date: "2022 - 2023",
+      desc: "Enseignement du module 'Introduction à la gestion des bases de données en SHS' au sein du Master Humanités Numériques (parcours NGEST). L'accent a été mis sur l'implémentation de bases de données relationnelles, l'utilisation de SQL pour des requêtes d'agrégation et le filtrage de métadonnées dans des projets de recherche littéraire et historique."
+    },
+    {
+      role: "Chargé de cours",
+      institution: "Université Sorbonne Nouvelle (Paris, France)",
+      date: "2021 - 2022",
+      desc: "Enseignement du module 'Introduction à la gestion des bases de données en SHS' au sein du Master Humanités Numériques (parcours NGEST). Le cours a introduit la modélisation conceptuelle de données, la structure des tables relationnelles et les bases de la recherche d'information en sciences humaines et sociales."
     },
     {
       role: "Enseignant de langue et civilisation (LANSAD)",
@@ -532,7 +550,7 @@ export default {
     {
       role: "Enseignant d'espagnol (Université du Temps Libre)",
       institution: "Université de Bretagne-Sud (Lorient, France)",
-      date: "Années universitaires 2019-2020 et 2020-2021",
+      date: "2019 - 2021",
       desc: "Conception et animation de cours et d'ateliers de langue, culture et civilisation espagnoles adaptés aux seniors dans le cadre du programme d'ouverture sociale et communautaire de l'Université du Temps Libre (UTL)."
     },
     {

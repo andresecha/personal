@@ -512,8 +512,26 @@ export default {
     {
       role: "Lecturer (chargé de cours)",
       institution: "Université Sorbonne Nouvelle (Paris, France)",
-      date: "2021 - Present",
-      desc: "University teaching at the master's level in digital humanities and modern letters, teaching the modules 'Introduction to database management in SHS' (relational modeling, SQL) and 'Methodology of digital research' (HTR, Whisper, Jupyter). The role includes supervising student projects and providing applied methodological tutoring."
+      date: "2025 - Present",
+      desc: "Distance learning (EAD) lecturing in the module 'FZDDC01 - Methodology of digital research' for the Master 1 in French-expression Literatures. The course trains students in textometric workflows and data analysis, the manipulation and structuring of literary research corpora, and the use of digital humanities tools."
+    },
+    {
+      role: "Lecturer (chargé de cours)",
+      institution: "Université Sorbonne Nouvelle (Paris, France)",
+      date: "2023 - 2024",
+      desc: "Lecturing in the module 'Introduction to database management in SHS' in the Master in Digital Humanities (parcours NGEST). The work covered relational model conceptualization, entity-relationship design, and database normalization for scientific exploitation of textological sources."
+    },
+    {
+      role: "Lecturer (chargé de cours)",
+      institution: "Université Sorbonne Nouvelle (Paris, France)",
+      date: "2022 - 2023",
+      desc: "Lecturing in the module 'Introduction to database management in SHS' in the Master in Digital Humanities (parcours NGEST). Focus was on relational database implementation, using SQL for aggregation queries, and metadata filtering in literary and historical research projects."
+    },
+    {
+      role: "Lecturer (chargé de cours)",
+      institution: "Université Sorbonne Nouvelle (Paris, France)",
+      date: "2021 - 2022",
+      desc: "Lecturing in the module 'Introduction to database management in SHS' in the Master in Digital Humanities (parcours NGEST). The course introduced conceptual data design, relational table structures, and information retrieval fundamentals in the humanities and social sciences."
     },
     {
       role: "Language and civilization instructor (LANSAD)",
@@ -532,7 +550,7 @@ export default {
     {
       role: "Spanish language instructor (Université du Temps Libre)",
       institution: "Université de Bretagne-Sud (Lorient, France)",
-      date: "Academic years 2019-2020 and 2020-2021",
+      date: "2019 - 2021",
       desc: "Design and teaching of Spanish language, culture, and civilization courses and workshops adapted for senior citizens within the community outreach program of the Université du Temps Libre (UTL)."
     },
     {

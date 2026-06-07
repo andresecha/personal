@@ -510,8 +510,26 @@ export default {
     {
       role: "Encargado de cursos (chargé de cours)",
       institution: "Université Sorbonne Nouvelle (París, Francia)",
-      date: "2021 - Presente",
-      desc: "Docencia universitaria en el nivel de máster en humanidades digitales y letras modernas, dictando los módulos de 'Introducción a la gestión de bases de datos en SHS' (modelado conceptual y relacional, SQL) y 'Metodología de la investigación digital' (aplicación de HTR, Whisper y cuadernos interactivos Jupyter). La labor incluye el acompañamiento de proyectos estudiantiles y la tutoría metodológica aplicada."
+      date: "2025 - Presente",
+      desc: "Docencia en el máster a distancia (EAD) del módulo 'FZDDC01 - Metodología de la investigación digital' para el Máster 1 de Literaturas de expresión francesa. La asignatura forma a los estudiantes en la comprensión de las cadenas de tratamiento de datos y análisis textual (textometría), la manipulación y estructuración de corpus aplicados a la investigación literaria, y el uso de herramientas de humanidades digitales en letras."
+    },
+    {
+      role: "Encargado de cursos (chargé de cours)",
+      institution: "Université Sorbonne Nouvelle (París, Francia)",
+      date: "2023 - 2024",
+      desc: "Docencia en el módulo 'Introducción a la gestión de bases de datos en SHS' dentro del Máster de Humanidades Digitales (parcours NGEST). La labor cubrió la conceptualización de modelos relacionales, el diseño de esquemas entidad-relación y la normalización de bases de datos para la explotación científica de fuentes textológicas."
+    },
+    {
+      role: "Encargado de cursos (chargé de cours)",
+      institution: "Université Sorbonne Nouvelle (París, Francia)",
+      date: "2022 - 2023",
+      desc: "Docencia en el módulo 'Introducción a la gestión de bases de datos en SHS' dentro del Máster de Humanidades Digitales (parcours NGEST). La labor se centró en la implementación de bases de datos relacionales, el uso de SQL para consultas de agregación y el filtrado de metadatos en proyectos de investigación literaria e histórica."
+    },
+    {
+      role: "Encargado de cursos (chargé de cours)",
+      institution: "Université Sorbonne Nouvelle (París, Francia)",
+      date: "2021 - 2022",
+      desc: "Docencia en el módulo 'Introducción a la gestión de bases de datos en SHS' dentro del Máster de Humanidades Digitales (parcours NGEST). La asignatura introdujo el diseño conceptual de datos, la estructura de tablas relacionales y los fundamentos de la recuperación de información en ciencias humanas y sociales."
     },
     {
       role: "Docente de lengua y civilización (LANSAD)",
@@ -530,7 +548,7 @@ export default {
     {
       role: "Docente de español (Universidad del Tiempo Libre)",
       institution: "Université de Bretagne-Sud (Lorient, Francia)",
-      date: "Años académicos 2019-2020 y 2020-2021",
+      date: "2019 - 2021",
       desc: "Diseño e impartición de cursos y talleres de lengua, cultura y civilización española adaptados para adultos mayores en el marco del programa de extensión comunitaria de la Université du Temps Libre (UTL)."
     },
     {
