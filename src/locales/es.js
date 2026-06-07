@@ -379,8 +379,8 @@ export default {
     {
       role: "Conferencia y taller práctico",
       institution: "Universidad Complutense de Madrid (Madrid, España)",
-      date: "17–23 de enero de 2025",
-      desc: "Una jornada formativa impartida en la Semana de las TICs de la Facultad de Filología de la Universidad Complutense de Madrid, en colaboración con la red de investigación CHARTA. La sesión consistió en una conferencia y un taller práctico dedicados a los métodos avanzados de transcripción automática de manuscritos históricos y la integración de tecnologías HTR en proyectos de humanidades digitales.",
+      date: "23 de enero de 2025",
+      desc: "Una jornada formativa el 23 de enero de 2025 en el marco de la Semana de las TICs organizada en la Facultad de Filología de la Universidad Complutense de Madrid, en colaboración con la red de investigación CHARTA. La sesión consistió en una conferencia y un taller práctico dedicados a los métodos avanzados de transcripción automática de manuscritos históricos y la integración de tecnologías HTR en proyectos de humanidades digitales.",
       points: []
     },
     {
