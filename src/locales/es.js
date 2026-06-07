@@ -239,7 +239,7 @@ export default {
       role: "Encargado de edición de corpus digitales (proyecto ANR D4R)",
       institution: "IRIEC - Université Paul-Valéry Montpellier 3 / Universitat de Barcelona",
       date: "2021 - 2025",
-      desc: "Trabajo en el proyecto ANR-21-CE38-0011 D4R (Disidencias religiosas y recepción de la Reforma en el Renacimiento). Esta labor se centra en la definición de estándares para la visualización de documentación inquisitorial, el modelado y la representación de redes a partir de anotaciones XML-TEI, el desarrollo de cartografías de redes egocentradas y la coordinación técnica de los equipos internacionales."
+      desc: "Trabajo en el proyecto ANR-21-CE38-0011 D4R (Disidencias religiosas y recepción de la Reforma en el Renacimiento). Esta labor se centra en la definición de estándares para la visualización de documentación inquisitorial, el modelado y la representación de redes a partir de anotaciones XML-TEI, el desarrollo de cartografías de redes egocentradas y la coordinación técnica de los equipos internacionales. Asimismo, completó la totalidad de los seminarios de investigación 'Les Vendredis de l'IRIEC' (2022-2023) y participó en los talleres de doctorandos animados por Aude Plagnard."
     },
     {
       role: "Docente (chargé de cours)",
@@ -414,8 +414,99 @@ export default {
     {
       role: "Ponencia científica invitada",
       institution: "Campus Condorcet (Aubervilliers, Francia)",
-      date: "2023",
+      date: "28 de noviembre de 2023",
       desc: "Una jornada de presentación metodológica titulada 'Éclairage TEI sur les procédures inquisitoriales' en el grupo de trabajo 'Outils et prátiques éditoriales'. La ponencia abordó el modelado conceptual y la codificación de la estructura judicial de los expedientes inquisitoriales bajo el estándar XML-TEI.",
+      points: []
+    },
+    {
+      role: "Co-organización y talleres en el Workshop de Barcelona (ANR D4R)",
+      institution: "Universitat Autònoma de Barcelona (Barcelona, España)",
+      date: "14–17 de junio de 2023",
+      desc: "Cuatro jornadas de trabajo especializado participando en el comité de organización de la edición 2023 del Workshop de Barcelona dentro del proyecto ANR D4R. La labor incluyó la animación de dos talleres prácticos sobre flujos de trabajo en humanidades digitales, codificación de textos y herramientas de transcripción automática de manuscritos.",
+      points: []
+    },
+    {
+      role: "Taller práctico: validación y estructuración de impresos",
+      institution: "Université Paul-Valéry Montpellier 3 (Montpellier, Francia)",
+      date: "4 de abril de 2023",
+      desc: "Una jornada de formación especializada sobre el proceso de validación de salidas estructuradas y la organización interna de documentos en el marco del proyecto ANR D4R, titulada 'Impresos. Proceso de validación de las salidas y estructuración interna de los documentos'.",
+      points: []
+    },
+    {
+      role: "Taller práctico: formalización y análisis de redes",
+      institution: "Université Paul-Valéry Montpellier 3 (Montpellier, Francia)",
+      date: "3 de febrero de 2023",
+      desc: "Una jornada formativa centrada en los métodos de formalización, visualización y análisis de redes a partir de textos históricos anotados para el proyecto ANR D4R, titulada 'Réseaux et formalisation de réseaux'.",
+      points: []
+    },
+    {
+      role: "Taller práctico: codificación y fases de procesos inquisitoriales",
+      institution: "Université Paul-Valéry Montpellier 3 (Montpellier, Francia)",
+      date: "13 de enero de 2023",
+      desc: "Una jornada práctica dedicada a la modelización judicial y al establecimiento de fases procesales para su codificación y representación digital, titulada 'Procesos inquisitoriales y establecimiento de fases para su representación y codificación'.",
+      points: []
+    },
+    {
+      role: "Taller práctico: anotación de corpus impresos",
+      institution: "Université Paul-Valéry Montpellier 3 (Montpellier, Francia)",
+      date: "2 de diciembre de 2022",
+      desc: "Una jornada formativa orientada a la definición de etiquetas y criterios de anotación para colecciones de textos impresos, titulada 'Imprimé et dissidences. Réflexion pour une annotation des corpus imprimés de D4R. Définition du jeu de balises à privilégier'.",
+      points: []
+    },
+    {
+      role: "Taller práctico: taxonomía de la documentación inquisitorial",
+      institution: "Université Paul-Valéry Montpellier 3 (Montpellier, Francia)",
+      date: "4 de noviembre de 2022",
+      desc: "Una jornada práctica dedicada a la estructuración de vocabularios controlados y taxonomías semánticas aplicadas a la tipología documental inquisitorial del proyecto ANR D4R, titulada 'Taxonomía de la documentación inquisitorial'.",
+      points: []
+    },
+    {
+      role: "Co-organización y taller de divulgación científica",
+      institution: "Fête de la Science - Université Paul-Valéry Montpellier 3 (Montpellier, Francia)",
+      date: "Octubre de 2022",
+      desc: "Una jornada interactiva de divulgación para el público general, coorganizando y animando junto a Michel Boeglin el taller 'Livre ancien et Humanités numériques' en la Sala del Consejo del sitio Saint Charles. El espacio estuvo dedicado a demostraciones prácticas de digitalización y procesamiento inteligente de libros antiguos patrimoniales.",
+      points: []
+    },
+    {
+      role: "Seminario de estudios del renacimiento: transcripción y paleografía digital",
+      institution: "Universitat Autònoma de Barcelona (Barcelona, España)",
+      date: "14 de octubre de 2022",
+      desc: "Una jornada de capacitación práctica en el Seminario de Estudios del Renacimiento en la Universidad Autónoma de Barcelona, enfocada en la transcripción automática del impreso antiguo, el uso de Transkribus y el entrenamiento de modelos HTR adaptados a tipografías góticas.",
+      points: []
+    },
+    {
+      role: "Taller práctico: ontologías y lenguajes controlados",
+      institution: "Université Paul-Valéry Montpellier 3 (Montpellier, Francia)",
+      date: "7 de octubre de 2022",
+      desc: "Una jornada de trabajo colaborativo orientada a la delimitación de lenguajes controlados y la conceptualización de ontologías basadas en CIDOC-CRM para el proyecto ANR D4R, titulada 'Definición de conceptos. Reflexiones hacia la construcción de una ontología del proyecto ANR-D4R'.",
+      points: []
+    },
+    {
+      role: "Taller práctico: XML-TEI adaptado a la documentación histórica",
+      institution: "Université Paul-Valéry Montpellier 3 (Montpellier, Francia)",
+      date: "2 de septiembre de 2022",
+      desc: "Una jornada de formación técnica sobre el diseño de esquemas RelaxNG y especificaciones de codificación de documentos históricos, titulada 'XML-TEI adaptado a la documentación D4R'.",
+      points: []
+    },
+    {
+      role: "Taller práctico: introducción a Transkribus y transcripción asistida",
+      institution: "Université Paul-Valéry Montpellier 3 (Montpellier, Francia)",
+      date: "5 de julio de 2022",
+      desc: "Una jornada de capacitación introductoria enfocada en el flujo de trabajo básico del programa Transkribus y el entrenamiento de modelos de transcripción manual asistida por ordenador, titulada 'Transkribus, funciones básicas del programa necesarias para la transcripción'.",
+      points: []
+    },
+    {
+      role: "Co-organización e intervenciones en el Workshop de Barcelona (ANR D4R)",
+      institution: "Universitat de Barcelona (Barcelona, España)",
+      date: "31 de mayo y 1 de junio de 2022",
+      desc: "Dos jornadas de trabajo académico como miembro del comité organizador del Workshop de Barcelona dentro del proyecto ANR D4R. Impartí dos ponencias en la Sala 0.1: la primera sobre la síntesis y estado de avance del proyecto junto con el modelado TEI y el entrenamiento de modelos HTR PyLaia (31 de mayo); la segunda enfocada en el diseño de ontologías, conceptos clave y vocabularios controlados en el corpus del proyecto (1 de junio).",
+      points: []
+    },
+    {
+      role: "Taller práctico: directrices TEI para textos del siglo XVI",
+      institution: "Université Paul-Valéry Montpellier 3 (Montpellier, Francia)",
+      date: "4 de febrero de 2022",
+      desc: "Una jornada formativa centrada en la definición de estándares y directrices TEI para la transcripción y marcado de textos impresos y manuscritos del siglo XVI, titulada 'Líneas directrices TEI para la codificación de textos en español del siglo XVI'.",
       points: []
     },
     {
@@ -423,34 +514,6 @@ export default {
       institution: "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
       date: "2022 - 2024",
       desc: "Docencia y refuerzo pedagógico en el Departamento de Estudios Hispanos, dictando clases de español orientadas a la traducción y la cultura en niveles B1-B2. Adicionalmente, impartí módulos de Metodología de Trabajo Universitario (MTU) para estudiantes de primer año en las licenciaturas LLCER y LEA.",
-      points: []
-    },
-    {
-      role: "Seminario teórico-práctico",
-      institution: "Universitat Autònoma de Barcelona (Barcelona, España)",
-      date: "2022",
-      desc: "Una jornada de capacitación práctica titulada 'Transkribus y transcripción automática del impreso antiguo', dirigida a investigadores, archiveros y estudiantes de posgrado. El seminario se centró en el entrenamiento de modelos HTR adaptados a tipografías góticas y en el procesamiento digital de colecciones bibliográficas patrimoniales.",
-      points: []
-    },
-    {
-      role: "Taller de especialización digital",
-      institution: "Université de Montpellier (Montpellier, Francia)",
-      date: "2022",
-      desc: "Una jornada práctica titulada 'Introduction au XML-TEI', centrada en el marcado semántico y la preservación textual de documentos históricos, abordando el diseño de esquemas RelaxNG y especificaciones ODD para la validación formal de datos filológicos.",
-      points: []
-    },
-    {
-      role: "Taller y charla de divulgación",
-      institution: "Universidad de Antioquia (Medellín, Colombia)",
-      date: "2022",
-      desc: "Una jornada de actividades prácticas sobre el procesamiento y transcripción digital de manuscritos del siglo XIX, dictando el taller 'HTR aplicada a los manuscritos de Don Tomás Carrasquilla' y la conferencia metodológica 'Transcripción automática de textos antiguos: del archivo al machine readable' en el marco del Exploratorio HD.",
-      points: []
-    },
-    {
-      role: "Taller de divulgación científica",
-      institution: "Fête de la Science (Francia)",
-      date: "2022",
-      desc: "Una jornada interactiva de divulgación para público general titulada 'Livre ancien et Humanités numériques', presentando demostraciones en vivo sobre la digitalización, captura de texto y procesamiento inteligente de colecciones de libros antiguos patrimoniales.",
       points: []
     },
     {

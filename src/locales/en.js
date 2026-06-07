@@ -51,6 +51,10 @@ export default {
     formacionSectionSubtitle: "Education, Teaching and Outreach",
     cvSectionSubtitle: "Professional Path",
     cvSectionIntro: "Structured summary of my training and work experience in the French digital ecosystem.",
+    cvProfessionalHeader: "Professional Path",
+    cvScientificHeader: "Scientific Community",
+    cvProfessionalHeader: "Professional Path",
+    cvScientificHeader: "Scientific Community",
     logoFoxAlt: "Zorro Logo",
     langToggleAriaLabel: "Cambiar de idioma a español",
     themeToggleAriaLabel: "Toggle light and dark mode",
@@ -210,103 +214,73 @@ export default {
   ],
   cvItems: [
     {
-      role: `Post-Doctoral Researcher / Research Engineer (AMIS Project)`,
+      role: `Post-doctoral researcher / research engineer (AMIS project)`,
       institution: `CNRS / ARIANE Consortium / TGIR Huma-Num / Université de Poitiers - Paris/Poitiers, France`,
       date: `September 2025 - Present`,
       desc: `Post-doctoral research dedicated to the development of the AMIS (<em>Advanced Metadata Intelligent System</em>) web application. The European program Horizon Europe and the OSCARS initiative fund this project. My work includes metadata modeling and linking vocabularies in the Opentheso platform. I collaborate directly with the ARIANE, CAHIER, CORLI 2, and Biblissima+ consortia to integrate structured thesauri in digital humanities.`
     },
     {
-      role: `External Scientific Reviewer`,
-      institution: `Impossibilia. Revista Internacional de Estudios Literarios - University of Granada, Spain`,
-      date: `May 2026`,
-      desc: `Peer review of scientific articles on literary research for the indexed international journal Impossibilia (ISSN 2174-2464).`
-    },
-    {
-      role: `PhD Thesis Jury Member`,
-      institution: `Universidad de Antioquia - Medellín, Colombia`,
-      date: `May 2026`,
-      desc: `Jury member for the public defense of the PhD thesis "Edición crítico-genética digital de Frutos de mi tierra (1896) —FrutosDigital—, y la city finisecular latinoamericana de Tomás Carrasquilla" by Juan Esteban Hincapié Atehortúa.`
-    },
-    {
-      role: `Peer Reviewer (DH2026)`,
-      institution: `Stichting ADHO Foundation / Alliance of Digital Humanities Organizations`,
-      date: `March 2026`,
-      desc: `Peer reviewer for the international Digital Humanities Conference 2026 (DH2026) in Daejeon, South Korea. Reviewed 6 scientific submissions.`
-    },
-    {
-      role: `Webmaster of the ARIANE Consortium and the ANR CARTAS Project`,
+      role: `Webmaster of the ARIANE consortium and the ANR CARTAS project`,
       institution: `ARIANE Consortium (Huma-Num) / ANR CARTAS Project - France`,
       date: `2024 - Present`,
-      desc: `Administration, development, and technical maintenance of the official websites and scientific dissemination platforms of the ARIANE Consortium (within the Huma-Num infrastructure) and the <a href="http://cartas.huma-num.fr/" target="_blank" rel="noopener noreferrer">ANR CARTAS</a> research project.`
+      desc: `Administration, development, and technical maintenance of the official websites and scientific dissemination platforms of the ARIANE consortium (within the Huma-Num infrastructure) and the <a href="http://cartas.huma-num.fr/" target="_blank" rel="noopener noreferrer">ANR CARTAS</a> research project.`
     },
     {
-      role: `Leader of Working Group WG2 (Data Acquisition)`,
-      institution: `ARIANE Consortium, Huma-Num - Paris, France`,
-      date: `2024 - Present`,
-      desc: `Coordinator of the group focused on data acquisition and computer-assisted transcription (HTR/OCR). My role includes coordination and animation of specialized workshops on Transkribus and eScriptorium at various European universities (Madrid Complutense, UCLouvain, etc.).`
-    },
-    {
-      role: `Practical Course on Ibero-American Documentation (15th-19th Centuries)`,
+      role: `Practical course on Ibero-American documentation (15th-19th centuries)`,
       institution: `Asociación de Amigos del Archivo Histórico Nacional - Spain`,
-      date: `June 2024`,
+      date: `May 27 – June 25, 2024`,
       desc: `Specialization course in paleography and archival studies on Ibero-American historical documentation.`
     },
     {
-      role: `PhD in Romance Studies (Sp. Hispanic Studies) and Digital Humanities`,
+      role: `PhD in Romance studies (sp. Hispanic studies) and digital humanities`,
       institution: `Université de Montpellier Paul-Valéry - Montpellier, France`,
       date: `2021 - 2025`,
-      desc: `Doctoral thesis titled "Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire". This research was conducted under a doctoral contract from the Agence Nationale de la Recherche (ANR) and the scientific direction of Karim Benmiloud and Geoffrey Clive Williams. Specialization in XML-TEI modeling of historical documents, semantic taxonomies in SKOS/RDF, and Open Science principles.`
+      desc: `Doctoral thesis titled "Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire". This research was conducted under a doctoral contract from the Agence Nationale de la Recherche (ANR) and the scientific direction of Karim Benmiloud and Geoffrey Clive Williams. Specialization in XML-TEI modeling of historical documents, semantic taxonomies in SKOS/RDF, and open science principles.`
     },
     {
-      role: `Digital Corpus Editor (ANR D4R Project)`,
+      role: `Digital corpus editor (ANR D4R project)`,
       institution: `IRIEC - Université Paul-Valéry Montpellier 3 / Universitat de Barcelona`,
       date: `2021 - 2025`,
-      desc: `Work in the ANR-21-CE38-0011 D4R project (Religious Dissidence and Reception of the Reformation in the Renaissance) which focused on defining standards for the visualization of inquisitorial documentation. This role involves network modeling and representation from XML-TEI annotations, development of egocentered network mappings, and technical coordination of international teams.`
+      desc: `Work in the ANR-21-CE38-0011 D4R project (Religious Dissidence and Reception of the Reformation in the Renaissance) focused on defining standards for the visualization of inquisitorial documentation. This role involves network modeling and representation from XML-TEI annotations, development of egocentered network mappings, and technical coordination of international teams. Additionally, he completed all research seminars in the 'Les Vendredis de l'IRIEC' series (academic year 2022-2023) and participated in the doctoral workshops led by Aude Plagnard.`
     },
     {
-      role: `Lecturer (Chargé de Cours)`,
+      role: `Lecturer (chargé de cours)`,
       institution: `Université Sorbonne Nouvelle / Université Paul-Valéry Montpellier 3 / Université de Bretagne-Sud`,
       date: `2019 - Present`,
-      desc: `Lecturer at Université Sorbonne Nouvelle (Paris, France) since 2021. My courses include the Master of Digital Humanities ("Introduction to database management in SHS") and the Master of Modern Letters ("Methodology of digital research"). I also taught Spanish language and civilization at Université Paul-Valéry Montpellier 3 (2022-2024) and Université de Bretagne-Sud (2019-2021).`
+      desc: `Lecturer at Université Sorbonne Nouvelle (Paris, France) since 2021, teaching modules in the master of digital humanities ("Introduction to database management in SHS") and in the master of modern letters ("Methodology of digital research"). I also taught Spanish language and civilization at Université Paul-Valéry Montpellier 3 (2022-2024) and Université de Bretagne-Sud (2019-2021).`
     },
     {
-      role: `Organizing Committee Member (ICHLL 12)`,
-      institution: `International Conference on Historical Lexicography and Lexicology - Lorient, France`,
-      date: `June 2022`,
-      desc: `Organizing committee member for the 12th International Conference on Historical Lexicography and Lexicology (ICHLL 12). Chaired the forum "Historical lexicography and lexicology".`
-    },
-    {
-      role: `Doctoral Colloquium "Encoder, Exploiter, Diffuser"`,
+      role: `Doctoral colloquium "Encoder, exploiter, diffuser"`,
       institution: `Collège Doctoral de Poitiers - Poitiers, France`,
-      date: `May 2022`,
-      desc: `Specialized training on digital humanities in research projects, with a focus on XML-TEI encoding, automatic text processing, and digital mapping.`
+      date: `May 9–13, 2022`,
+      desc: `Specialized training on digital humanities in research projects, with a focus on XML-TEI encoding, text processing, and digital mapping.`
     },
     {
-      role: `Editorial Secretary (CECIL Journal)`,
+      role: `Editorial secretary (CECIL journal)`,
       institution: `CECIL Journal - Cahiers d'Études des Cultures Ibériques et Latino-américaines - France`,
       date: `2022 - 2023`,
       desc: `Editorial support in the management and scientific publication of the academic journal CECIL (ISSN 2428-7245) on OpenEdition Journals. The journal is published by Université Paul-Valéry Montpellier 3.`
     },
     {
-      role: `Intern (CAHIER Consortium - CNRS)`,
-      institution: `CNRS / University of Poitiers - France`,
+      role: `Intern (CAHIER consortium - CNRS)`,
+      institution: `CNRS / Université de Poitiers - France`,
       date: `April - October 2021`,
       desc: `Migration and long-term preservation of digital humanities databases in accordance with FAIR principles. I also performed correction and optimization of XML-TEI markup files.`
     },
     {
-      role: `Intern (LATTICE Laboratory - CNRS)`,
+      role: `Intern (LATTICE laboratory - CNRS)`,
       institution: `CNRS / École Normale Supérieure / Université Sorbonne Nouvelle - Paris, France`,
       date: `November - December 2020`,
       desc: `Training of HTR/OCR models for the digitization and processing of historical dictionaries in lexicography. Construction of XML-TEI databases.`
     },
     {
-      role: `Master in Digital Humanities, Literature and Lexicography`,
+      role: `Master in digital humanities, literature and lexicography`,
       institution: `Université de Bretagne-Sud - Lorient, France`,
       date: `2018 - 2020`,
       desc: `Specialization in historical lexicography and digital processing. Work on the BasNum project (ANR-18-CE38-0003) for the diplomatic markup of Furetière's Dictionnaire Universel (1690-1725) and training of automatic models.`
     },
     {
-      role: `Intern (BasNum Project)`,
+      role: `Intern (BasNum project)`,
       institution: `Université de Bretagne-Sud - Lorient, France`,
       date: `March - June 2019`,
       desc: `Diplomatic and simplified markup of the prefaces of the Dictionnaire Universel (1690-1725) within the ANR-18-CE38-0003 BasNum project. I also conducted training of automatic models for the delimitation of semi-structured sections.`
@@ -318,191 +292,238 @@ export default {
       desc: `Higher degree equivalent to a master's degree in fine arts and research in plastic and visual arts.`
     },
     {
-      role: `Bachelor's Degree in Education: Visual Arts`,
+      role: `Bachelor's degree in education: visual arts`,
       institution: `Universidad de Antioquia - Medellín, Colombia`,
       date: `2010 - 2017`,
       desc: `Professional training in art education, fine arts, and art history.`
     },
     {
-      role: `Art Teacher in Prison Context (Social Engagement)`,
+      role: `Art teacher in prison context (social engagement)`,
       institution: `La Paz Maximum Security Prison - Itagüí, Colombia`,
       date: `2015 - 2017`,
       desc: `Design and teaching of visual arts workshops and historical memory construction. These workshops were directed at former combatants and victims of the Colombian armed and social conflict to promote reconciliation and peace.`
     }
   ],
+  scientificCommunity: [
+    {
+      role: `External scientific reviewer`,
+      institution: `Impossibilia. Revista Internacional de Estudios Literarios - Universidad de Granada, Spain`,
+      date: `May 24, 2026`,
+      desc: `Peer review of research articles on literary studies for the indexed international journal Impossibilia (ISSN 2174-2464).`
+    },
+    {
+      role: `PhD thesis jury member`,
+      institution: `Universidad de Antioquia - Medellín, Colombia`,
+      date: `May 8, 2026`,
+      desc: `Jury member for the public defense of the PhD thesis "Edición crítico-genética digital de Frutos de mi tierra (1896) —FrutosDigital—, y la ciudad finisecular latinoamericana de Tomás Carrasquilla" by Juan Esteban Hincapié Atehortúa.`
+    },
+    {
+      role: `Scientific reviewer (DH2026)`,
+      institution: `Stichting ADHO Foundation / Alliance of Digital Humanities Organizations`,
+      date: `March 10, 2026`,
+      desc: `Peer reviewer for the international Digital Humanities Conference 2026 (DH2026) in Daejeon, South Korea. Evaluated 6 scientific submissions.`
+    },
+    {
+      role: `Scientific steering committee member`,
+      institution: `ARIANE Consortium, IR* Huma-Num - Paris, France`,
+      date: `2023 - Present`,
+      desc: `Participation in defining the scientific and methodological orientations of the ARIANE consortium to promote the use of artificial intelligence, natural language processing, and digital publishing in digital humanities.`
+    },
+    {
+      role: `Co-leader of working group WG2 (data acquisition)`,
+      institution: `ARIANE Consortium, IR* Huma-Num - Paris, France`,
+      date: `2023 - Present`,
+      desc: `Coordination and co-direction of the working group focused on automatic text recognition (HTR/OCR), historical data acquisition, and computer-assisted transcription guidelines for European scientific projects.`
+    },
+    {
+      role: `Organizing committee member (ICHLL 12)`,
+      institution: `International Conference on Historical Lexicography and Lexicology - Lorient, France`,
+      date: `June 22–24, 2022`,
+      desc: `Organizing committee member for the 12th International Conference on Historical Lexicography and Lexicology (ICHLL 12). Chaired the round table "Historical lexicography and lexicology".`
+    }
+  ],
     teaching: [
     {
-      role: "Leader of Working Group WG2 (Data Acquisition)",
-      institution: "ARIANE Consortium (IR* Huma-Num)",
-      date: "2024 - Present",
-      desc: "Leadership of the working group focused on historical data acquisition and computer-assisted transcription (HTR/OCR).",
-      points: [
-        "Coordination of international workshops on Transkribus and eScriptorium.",
-        "Design of methodological standards for automatic text recognition in digital humanities.",
-        "Technical support to scientific teams for structuring digital research corpora."
-      ]
-    },
-    {
-      role: "Invited Research Lecture",
-      institution: "Universidad de Antioquia (Medellín, Colombia)",
-      date: "May 2026",
-      desc: "Invited lecture on text corpus acquisition at the Department of History and the Faculty of Communications.",
-      points: [
-        "Keynote: 'Adquisición de corpus textuales históricos y contemporáneos'.",
-        "Discussions on digital paleography, metadata curation, and FAIR data preservation.",
-        "Introduction to FAIR data principles applied to research corpora."
-      ]
-    },
-    {
-      role: "Pre-conference Workshop",
+      role: "Pre-conference workshop",
       institution: "Colloque Humanistica 2026 (EPITA, Paris, France)",
-      date: "May 2026",
-      desc: "Co-facilitation of a practical training session on semantic modeling of literary metadata.",
-      points: [
-        "Workshop: 'Modéliser les objets culturels littéraires et leurs métadonnées avec une ontologie'.",
-        "Practical introduction to mapping literary metadata using the CAO_CRM ontology.",
-        "Training focused on research data interoperability."
-      ]
+      date: "May 19, 2026",
+      desc: "A hands-on training session within the framework of the Colloque Humanistica 2026 at EPITA, consisting of co-facilitating the workshop titled 'Modéliser les objets culturels littéraires et leurs métadonnées avec une ontologie'. The session introduced the conceptual model of the AMIS (Advanced Metadata Intelligent System) project and included exercises on data structuring and using the CAO_CRM ontology for research metadata enrichment and interoperability.",
+      points: []
     },
     {
-      role: "Lecture and Workshop Series",
+      role: "Lecture and workshop: text acquisition models and intelligent OCR for linguistic corpora",
       institution: "Universidad de Antioquia (Medellín, Colombia)",
-      date: "April 2026",
-      desc: "Conducting an intensive training series on scholarly digital editing for graduate students.",
-      points: [
-        "Workshop series structured over three full working sessions.",
-        "Workshop: 'Investigar en la era digital: Editorialización'.",
-        "Practical exercises in XML-TEI structural tagging and semantic indexation."
-      ]
+      date: "May 11, 2026",
+      desc: "An academic day of dissemination and research at the Faculty of Communications and Philology of the Universidad de Antioquia. The event consisted of an introductory lecture on text acquisition models and computer-assisted automatic transcription, complemented by a practical exercise focused on using the MistralOCR vision model for linguistic and literary corpus extraction and structuring.",
+      points: []
     },
     {
-      role: "Graduate Training Workshop",
+      role: "Workshop series: research in the digital era and editorialization of historical sources",
+      institution: "Universidad de Antioquia (Medellín, Colombia)",
+      date: "April 28, 29, and 30, 2026",
+      desc: "An intensive training cycle structured over three working sessions at the Department of History of the Universidad de Antioquia. The first session addressed the theoretical foundations of digital space creation based on Marcello Vitali-Rosati's theory of editorialization. The second session consisted of a practical exercise applying editorialization directly to historical manuscript sources. The third session focused on an open discussion and consulting on local researchers' workflows to provide specific methodological recommendations for their own research projects.",
+      points: []
+    },
+    {
+      role: "Workshop: text acquisition and digital collation methods",
       institution: "Universidad EAFIT (Medellín, Colombia)",
-      date: "April 2026",
-      desc: "Specialized workshop on linguistic corpus processing in the field of Digital Humanities.",
-      points: [
-        "Workshop: 'Introducción al procesamiento computacional de corpus textuales'.",
-        "Presentation of basic tokenization and lemmatization techniques for texts.",
-        "Organized within the framework of the 'Humanidades Digitales y Esfera Pública' project."
-      ]
+      date: "April 27, 2026",
+      desc: "A training session aimed at students and researchers within the framework of the 'Humanidades Digitales y Esfera Pública' project at Universidad EAFIT. The session was dedicated to introducing computational methods for text acquisition and linguistic corpus processing, with a particular focus on modeling text alignment processes and automatic collation of translations.",
+      points: []
     },
     {
-      role: "Specialized Training Workshop",
-      institution: "Université Catholique de Louvain (Louvain, Belgium)",
-      date: "2025",
-      desc: "Practical workshop on machine learning applied to the transcription of historical files.",
-      points: [
-        "Workshop: 'Transkribus: Formation à l'utilisation du logiciel dans le cadre d'une recherche historique'.",
-        "HTR model training adapted to ecclesiastical and university archives.",
-        "Co-organized for the Faculty of Theology and the UCLouvain Archives."
-      ]
-    },
-    {
-      role: "Teaching Workshops and Lectures",
-      institution: "Universidad Complutense de Madrid (Madrid, Spain)",
-      date: "2024 - 2025",
-      desc: "Series of training sessions in automatic transcription for Early Modern manuscripts.",
-      points: [
-        "Practical course: 'Transcripción automática de impresos y manuscritos: introducción' (2024).",
-        "Lecture and practical workshop during TICS Week (2025).",
-        "Collaboration with the CHARTA research network and the Faculty of Philology."
-      ]
-    },
-    {
-      role: "Lecturer (Chargé de Cours)",
+      role: "Lecturer (chargé de cours)",
       institution: "Université Sorbonne Nouvelle (Paris, France)",
       date: "2021 - Present",
-      desc: "University teaching in the Master of Digital Humanities and the Master of Modern Letters.",
-      points: [
-        "Master's module: 'Introduction to database management in SHS' (relational modeling, SQL).",
-        "Master's module: 'Methodology of digital research' (HTR, Whisper, Jupyter).",
-        "Guidance and tutoring for applied digital research projects."
-      ]
+      desc: "University teaching at the master's level in digital humanities and modern letters, teaching the modules 'Introduction to database management in SHS' (conceptual and relational modeling, SQL) and 'Methodology of digital research' (application of HTR, Whisper, and Jupyter interactive notebooks). The role includes supervising student projects and providing applied methodological tutoring.",
+      points: []
     },
     {
-      role: "Invited Lecture Series",
-      institution: "Universidad de Castilla-La Mancha (Toledo/Ciudad Real, Spain)",
-      date: "2023 - 2024",
-      desc: "Theoretical and methodological lectures on digitization and electronic texts.",
-      points: [
-        "Lecture: 'Tinta, píxel y texto electrónico: transcripción asistida' (Toledo, 2023).",
-        "Keynote: '{DES}PROGRAMAR LO {IM}PERFECTO. Pensar en HD' (Ciudad Real, 2024).",
-        "Critical reflections on HTR error management in historical document collections."
-      ]
+      role: "Lecture and practical workshop",
+      institution: "Universidad Complutense de Madrid (Madrid, Spain)",
+      date: "January 23, 2025",
+      desc: "A training session on January 23, 2025, within the framework of the TICs Week organized at the Faculty of Philology of the Universidad Complutense de Madrid, in collaboration with the CHARTA research network. The session consisted of a lecture and a practical workshop dedicated to advanced methods of automatic transcription of historical manuscripts and the integration of HTR technologies in digital humanities projects.",
+      points: []
     },
     {
-      role: "Invited Scientific Lecture",
+      role: "Specialized training workshop",
+      institution: "Université Catholique de Louvain (Louvain, Belgium)",
+      date: "January 17, 2025",
+      desc: "A practical training session on machine learning applied to the automatic transcription of ecclesiastical and university archives. The workshop was titled 'Transkribus: Formation à l'utilisation du logiciel dans le cadre d'une recherche historique' and was co-organized for the Faculty of Theology and the UCLouvain Archives, training researchers in building specific HTR models.",
+      points: []
+    },
+    {
+      role: "Invited lecture",
+      institution: "Universidad de Castilla-La Mancha (Ciudad Real, Spain)",
+      date: "April 17, 2024",
+      desc: "An academic event consisting of the invited lecture '{DES}PROGRAMAR LO {IM}PERFECTO. Pensar en HD', delivered at the Universidad de Castilla-La Mancha on the Ciudad Real campus. The presentation proposed a critical reflection on handling HTR reading errors and their epistemological and methodological integration into digital collections of historical documents.",
+      points: []
+    },
+    {
+      role: "Introductory practical course",
+      institution: "Universidad Complutense de Madrid (Madrid, Spain)",
+      date: "April 10, 2024",
+      desc: "A training session consisting of the practical course 'Transcripción automática de impresos y manuscritos: introducción', taught at the Faculty of Philology of the Universidad Complutense de Madrid in collaboration with the CHARTA network. The course covered the fundamentals of training text recognition models and setting up computer-assisted transcription workflows.",
+      points: []
+    },
+    {
+      role: "Methodological lecture",
+      institution: "Universidad de Castilla-La Mancha (Toledo, Spain)",
+      date: "December 12, 2023",
+      desc: "An academic lecture titled 'Tinta, píxel y texto electrónico: transcripción asistida', delivered at the Universidad de Castilla-La Mancha in Toledo. The talk addressed the methodological challenges of digitization, the nature of electronic texts, and the practical use of intelligent tools for the automatic recognition of historical texts.",
+      points: []
+    },
+    {
+      role: "Invited scientific lecture",
       institution: "Campus Condorcet (Aubervilliers, France)",
-      date: "2023",
-      desc: "Methodological presentation on the encoding of inquisitorial documents.",
-      points: [
-        "Presentation: 'Éclairage TEI sur les procédures Inquisitoriales'.",
-        "Semantic modeling of inquisitorial judicial documents using the XML-TEI standard.",
-        "Presented at the 'Outils et pratiques éditoriales' working group."
-      ]
+      date: "November 28, 2023",
+      desc: "A methodological presentation session titled 'Éclairage TEI sur les procédures inquisitoriales' in the working group 'Outils et prátiques éditoriales'. The presentation addressed the conceptual modeling and encoding of the judicial structure of inquisitorial files under the XML-TEI standard.",
+      points: []
     },
     {
-      role: "Language and Civilization Instructor (LANSAD)",
+      role: "Co-organization and workshops at the Barcelona Workshop (ANR D4R)",
+      institution: "Universitat Autònoma de Barcelona (Barcelona, Spain)",
+      date: "June 14–17, 2023",
+      desc: "Four days of specialized work participating in the organizing committee of the 2023 Barcelona Workshop within the ANR D4R project. The work included facilitating two practical workshops on digital humanities workflows, text encoding, and automatic manuscript transcription tools.",
+      points: []
+    },
+    {
+      role: "Practical workshop: validation and structuring of printed works",
+      institution: "Université Paul-Valéry Montpellier 3 (Montpellier, France)",
+      date: "April 4, 2023",
+      desc: "A specialized training session on the validation process of structured outputs and the internal organization of documents within the framework of the ANR D4R project, titled 'Impresos. Proceso de validación de las salidas y estructuración interna de los documentos'.",
+      points: []
+    },
+    {
+      role: "Practical workshop: network formalization and analysis",
+      institution: "Université Paul-Valéry Montpellier 3 (Montpellier, France)",
+      date: "February 3, 2023",
+      desc: "A training session focused on the methods of formalization, visualization, and analysis of networks from annotated historical texts for the ANR D4R project, titled 'Réseaux et formalisation de réseaux'.",
+      points: []
+    },
+    {
+      role: "Practical workshop: encoding and phases of inquisitorial processes",
+      institution: "Université Paul-Valéry Montpellier 3 (Montpellier, France)",
+      date: "January 13, 2023",
+      desc: "A practical session dedicated to judicial modeling and establishing process phases for their digital encoding and representation, titled 'Procesos inquisitoriales y establecimiento de fases para su representación y codificación'.",
+      points: []
+    },
+    {
+      role: "Practical workshop: annotation of printed corpora",
+      institution: "Université Paul-Valéry Montpellier 3 (Montpellier, France)",
+      date: "December 2, 2022",
+      desc: "A training session aimed at defining tags and annotation criteria for printed text collections, titled 'Imprimé et dissidences. Réflexion pour une annotation des corpus imprimés de D4R. Définition du jeu de balises à privilégier'.",
+      points: []
+    },
+    {
+      role: "Practical workshop: taxonomy of inquisitorial documentation",
+      institution: "Université Paul-Valéry Montpellier 3 (Montpellier, France)",
+      date: "November 4, 2022",
+      desc: "A practical session dedicated to structuring controlled vocabularies and semantic taxonomies applied to the inquisitorial document typology of the ANR D4R project, titled 'Taxonomía de la documentación inquisitorial'.",
+      points: []
+    },
+    {
+      role: "Co-organization and scientific outreach workshop",
+      institution: "Fête de la Science - Université Paul-Valéry Montpellier 3 (Montpellier, France)",
+      date: "October 2022",
+      desc: "An interactive outreach session for the general public, co-organizing and facilitating with Michel Boeglin the workshop 'Livre ancien et Humanités numériques' in the Council Room of the Saint Charles site. The event was dedicated to practical demonstrations of digitization and intelligent processing of rare and heritage books.",
+      points: []
+    },
+    {
+      role: "Renaissance studies seminar: digital transcription and paleography",
+      institution: "Universitat Autònoma de Barcelona (Barcelona, Spain)",
+      date: "October 14, 2022",
+      desc: "A practical training session at the Renaissance Studies Seminar at the Universitat Autònoma de Barcelona, focusing on the automatic transcription of early printed books, the use of Transkribus, and the training of HTR models adapted to gothic typefaces.",
+      points: []
+    },
+    {
+      role: "Practical workshop: ontologies and controlled languages",
+      institution: "Université Paul-Valéry Montpellier 3 (Montpellier, France)",
+      date: "October 7, 2022",
+      desc: "A collaborative session oriented towards the delimitation of controlled languages and the conceptualization of ontologies based on CIDOC-CRM for the ANR D4R project, titled 'Definición de conceptos. Reflexiones hacia la construcción de una ontología del proyecto ANR-D4R'.",
+      points: []
+    },
+    {
+      role: "Practical workshop: XML-TEI adapted to historical documentation",
+      institution: "Université Paul-Valéry Montpellier 3 (Montpellier, France)",
+      date: "September 2, 2022",
+      desc: "A technical training session on designing RelaxNG schemas and encoding specifications for historical documents, titled 'XML-TEI adaptado a la documentación D4R'.",
+      points: []
+    },
+    {
+      role: "Practical workshop: introduction to Transkribus and computer-assisted transcription",
+      institution: "Université Paul-Valéry Montpellier 3 (Montpellier, France)",
+      date: "July 5, 2022",
+      desc: "An introductory training session focused on the basic workflow of the Transkribus program and training computer-assisted transcription models, titled 'Transkribus, funciones básicas del programa necesarias para la transcripción'.",
+      points: []
+    },
+    {
+      role: "Co-organization and presentations at the Barcelona Workshop (ANR D4R)",
+      institution: "Universitat de Barcelona (Barcelona, Spain)",
+      date: "May 31 and June 1, 2022",
+      desc: "Two days of academic work as a member of the organizing committee of the Barcelona Workshop within the ANR D4R project. I gave two presentations in Room 0.1: the first on the synthesis and progress of the project alongside TEI modeling and PyLaia HTR model training (May 31); the second focused on the design of ontologies, key concepts, and controlled vocabularies in the project corpus (June 1).",
+      points: []
+    },
+    {
+      role: "Practical workshop: TEI guidelines for 16th-century texts",
+      institution: "Université Paul-Valéry Montpellier 3 (Montpellier, France)",
+      date: "February 4, 2022",
+      desc: "A training session focused on defining TEI standards and guidelines for the transcription and markup of 16th-century printed and manuscript texts, titled 'Líneas directrices TEI para la codificación de textos en español del siglo XVI'.",
+      points: []
+    },
+    {
+      role: "Language and civilization instructor (LANSAD)",
       institution: "Université de Montpellier Paul-Valéry (Montpellier, France)",
       date: "2022 - 2024",
-      desc: "Teaching and methodological reinforcement in the Department of Hispanic Studies.",
-      points: [
-        "Spanish courses for B1-B2 levels with a focus on humanities and translation.",
-        "University Work Methodology (MTU) modules for undergraduate students.",
-        "Disciplinary reinforcement in LLCER and LEA Bachelor's degrees."
-      ]
+      desc: "Teaching and pedagogical reinforcement in the Department of Hispanic Studies, teaching Spanish courses focused on translation and culture at B1-B2 levels. Additionally, I taught University Work Methodology (MTU) modules for first-year students in the LLCER and LEA bachelor's degrees.",
+      points: []
     },
     {
-      role: "Theoretical-Practical Seminar",
-      institution: "Universitat Autònoma de Barcelona (Barcelona, Spain)",
-      date: "2022",
-      desc: "Practical training in intelligent paleographic transcription tools.",
-      points: [
-        "Seminar: 'Transkribus and automatic transcription of old prints'.",
-        "Exercises on HTR model training applied to Gothic and Humanistic typographies.",
-        "Aimed at researchers, archivists, and graduate students."
-      ]
-    },
-    {
-      role: "Digital Specialization Workshop",
-      institution: "Université de Montpellier (Montpellier, France)",
-      date: "2022",
-      desc: "Specialized training in XML-TEI markup for textual preservation.",
-      points: [
-        "Practical workshop: 'Introduction au XML-TEI'.",
-        "Design of RelaxNG and ODD schemas for philological data validation."
-      ]
-    },
-    {
-      role: "Outreach Workshop and Talk",
+      role: "Diploma module instructor",
       institution: "Universidad de Antioquia (Medellín, Colombia)",
-      date: "2022",
-      desc: "Practical activities on digital processing and transcription of 19th-century manuscripts.",
-      points: [
-        "Workshop: 'HTR applied to the manuscripts of Don Tomás Carrasquilla'.",
-        "Lecture: 'Transcripción automática de textos antiguos: del archivo al machine readable' (Exploratorio HD)."
-      ]
-    },
-    {
-      role: "Scientific Outreach Workshop",
-      institution: "Fête de la Science (France)",
-      date: "2022",
-      desc: "Interactive outreach session for the general public on heritage sciences and humanities.",
-      points: [
-        "Workshop: 'Livre ancien et Humanités numériques'.",
-        "Demonstration of digitization and intelligent processing of old books."
-      ]
-    },
-    {
-      role: "Diploma Module Instructor",
-      institution: "Universidad de Antioquia (Medellín, Colombia)",
-      date: "2017",
-      desc: "Teaching in the Historical Memory Diploma program focused on art processes for peace.",
-      points: [
-        "Training module: 'Experiencias de arte y memoria: proyecto La paz es una obra de arte'.",
-        "Co-organized alongside the Deutsche Welle Akademie.",
-        "Workshops with a focus on community reconciliation in post-conflict territories."
-      ]
+      date: "September 4, 2017",
+      desc: "Teaching and coordination of the module 'Experiencias de arte y memoria: proyecto La paz es una obra de arte' within the Historical Memory Diploma, co-organized with the Deutsche Welle Akademie. The work consisted of delivering workshops on collective memory reconstruction and social reconciliation in post-conflict correctional facilities.",
+      points: []
     }
   ],
   education: [
