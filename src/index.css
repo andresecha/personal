@@ -262,7 +262,8 @@ a:not(.btn-primary):not(.btn-secondary):not(.logo-text):not(.social-link):not(.n
 /* Main Layout */
 .main-content {
   flex-grow: 1;
-  padding: 3rem 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 @media (max-width: 768px) {
   .main-content {
@@ -1135,8 +1136,6 @@ p {
   }
   
   .card, .pub-search {
-    margin-left: -10px;
-    margin-right: -10px;
     border-radius: 0.75rem;
   }
 
@@ -1149,7 +1148,7 @@ p {
   }
   
   .cv-timeline {
-    margin-left: 5px;
+    margin-left: 1rem;
     padding-left: 1.5rem;
   }
   
@@ -1205,10 +1204,15 @@ p {
   border-left: 3px solid transparent;
 }
 
-.cv-nav-index a.cv-nav-link:hover {
+.cv-nav-index a.cv-nav-link:hover,
+.cv-nav-index a.cv-nav-link.active {
   color: var(--text-primary) !important;
   background-color: var(--bg-card-hover);
   border-left-color: var(--accent);
+}
+
+.cv-nav-index a.cv-nav-link.active {
+  font-weight: 600 !important;
 }
 
 @media (max-width: 900px) {
@@ -1218,22 +1222,57 @@ p {
   }
   
   .cv-sidebar {
-    position: relative;
-    top: 0;
+    position: sticky;
+    top: 5.4rem; /* Stays sticky just under the main header on mobile/tablet */
+    background-color: var(--bg-main);
+    z-index: 10;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding: 0.5rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color var(--transition-normal), border-color var(--transition-normal);
+  }
+  
+  .cv-nav-index {
+    border: none;
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
   }
   
   .cv-nav-index ul {
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 0.75rem;
+    padding-bottom: 0.25rem;
+  }
+  
+  /* Hide scrollbar */
+  .cv-nav-index ul::-webkit-scrollbar {
+    display: none;
+  }
+  .cv-nav-index ul {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
   
   .cv-nav-index a.cv-nav-link {
+    white-space: nowrap;
     border-left: none;
     border-bottom: 3px solid transparent;
+    padding: 0.5rem 0.25rem;
+    border-radius: 0;
+    font-size: 0.85rem;
   }
   
-  .cv-nav-index a.cv-nav-link:hover {
+  .cv-nav-index a.cv-nav-link:hover,
+  .cv-nav-index a.cv-nav-link.active {
+    background-color: transparent;
     border-bottom-color: var(--accent);
+    color: var(--accent) !important;
   }
 }

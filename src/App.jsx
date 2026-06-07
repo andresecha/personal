@@ -219,6 +219,15 @@ const getFriendlyDocType = (type, lang) => {
   return types[lang]?.[type] || (lang === 'es' ? 'Publicación' : 'Publication');
 };
 
+const cvSections = [
+  'formacion-academica',
+  'trayectoria-profesional',
+  'comunidad-cientifica',
+  'docencia-universitaria',
+  'talleres-conferencias',
+  'formacion-comunitaria'
+];
+
 function App() {
   const [lang, setLang] = useState(() => {
     return localStorage.getItem('lang') || 'es';
@@ -234,9 +243,12 @@ function App() {
   const [activeTab, setActiveTab] = useState(() => {
     const hash = window.location.hash.replace('#', '');
     if (hash === 'formacion') return 'cv';
+    if (cvSections.includes(hash)) return 'cv';
     const validTabs = ['sobre-mi', 'portafolio', 'publicaciones', 'herramientas', 'cv'];
     return validTabs.includes(hash) ? hash : 'sobre-mi';
   });
+
+  const [activeSection, setActiveSection] = useState('formacion-academica');
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -245,18 +257,61 @@ function App() {
         window.location.hash = 'cv';
         return;
       }
+      if (cvSections.includes(hash)) {
+        setActiveTab('cv');
+        setTimeout(() => {
+          const element = document.getElementById(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+        return;
+      }
       const validTabs = ['sobre-mi', 'portafolio', 'publicaciones', 'herramientas', 'cv'];
       if (validTabs.includes(hash)) {
         setActiveTab(hash);
+        window.scrollTo({ top: 0, behavior: 'instant' });
       } else if (!hash) {
         setActiveTab('sobre-mi');
+        window.scrollTo({ top: 0, behavior: 'instant' });
       }
-      window.scrollTo({ top: 0, behavior: 'instant' });
     };
 
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
+
+  // IntersectionObserver for active CV section highlighting (scrollspy)
+  useEffect(() => {
+    if (activeTab !== 'cv') return;
+
+    const observerCallback = (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -60% 0px',
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    cvSections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        observer.observe(el);
+      }
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [activeTab]);
 
   const navigateToTab = (tabName, e) => {
     if (e) e.preventDefault();
@@ -741,32 +796,50 @@ function App() {
                 <nav className="cv-nav-index">
                   <ul>
                     <li>
-                      <a href="#formacion-academica" className="cv-nav-link">
+                      <a 
+                        href="#formacion-academica" 
+                        className={`cv-nav-link ${activeSection === 'formacion-academica' ? 'active' : ''}`}
+                      >
                         {t.ui.educationHeader}
                       </a>
                     </li>
                     <li>
-                      <a href="#trayectoria-profesional" className="cv-nav-link">
+                      <a 
+                        href="#trayectoria-profesional" 
+                        className={`cv-nav-link ${activeSection === 'trayectoria-profesional' ? 'active' : ''}`}
+                      >
                         {t.ui.cvProfessionalHeader}
                       </a>
                     </li>
                     <li>
-                      <a href="#comunidad-cientifica" className="cv-nav-link">
+                      <a 
+                        href="#comunidad-cientifica" 
+                        className={`cv-nav-link ${activeSection === 'comunidad-cientifica' ? 'active' : ''}`}
+                      >
                         {t.ui.cvScientificHeader}
                       </a>
                     </li>
                     <li>
-                      <a href="#docencia-universitaria" className="cv-nav-link">
+                      <a 
+                        href="#docencia-universitaria" 
+                        className={`cv-nav-link ${activeSection === 'docencia-universitaria' ? 'active' : ''}`}
+                      >
                         {t.ui.universityTeachingHeader}
                       </a>
                     </li>
                     <li>
-                      <a href="#talleres-conferencias" className="cv-nav-link">
+                      <a 
+                        href="#talleres-conferencias" 
+                        className={`cv-nav-link ${activeSection === 'talleres-conferencias' ? 'active' : ''}`}
+                      >
                         {t.ui.workshopsHeader}
                       </a>
                     </li>
                     <li>
-                      <a href="#formacion-comunitaria" className="cv-nav-link">
+                      <a 
+                        href="#formacion-comunitaria" 
+                        className={`cv-nav-link ${activeSection === 'formacion-comunitaria' ? 'active' : ''}`}
+                      >
                         {t.ui.communityTeachingHeader}
                       </a>
                     </li>
