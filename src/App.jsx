@@ -842,6 +842,9 @@ function App() {
               </a>
             </div>
 
+            <h2 className="text-gradient" style={{ fontSize: '1.6rem', marginTop: '2rem', marginBottom: '2rem' }}>
+              {t.ui.cvProfessionalHeader}
+            </h2>
             <div className="cv-timeline" id="cv-timeline-container">
               {t.cvItems.map((item, idx) => (
                 <div key={idx} className="cv-item" id={`cv-item-${idx}`}>
@@ -857,6 +860,29 @@ function App() {
                 </div>
               ))}
             </div>
+
+            {t.scientificCommunity && (
+              <>
+                <h2 className="text-gradient" style={{ fontSize: '1.6rem', marginTop: '4.5rem', marginBottom: '2rem' }}>
+                  {t.ui.cvScientificHeader}
+                </h2>
+                <div className="cv-timeline" id="cv-scientific-container">
+                  {t.scientificCommunity.map((item, idx) => (
+                    <div key={idx} className="cv-item" id={`cv-sci-item-${idx}`}>
+                      <div className="cv-header">
+                        <h3>{item.role}</h3>
+                        <span className="cv-date">{item.date}</span>
+                      </div>
+                      <p className="cv-institution">{item.institution}</p>
+                      <p 
+                        className="cv-desc"
+                        dangerouslySetInnerHTML={{ __html: item.desc }}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
           </section>
         )}
 
