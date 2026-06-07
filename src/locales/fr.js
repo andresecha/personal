@@ -542,13 +542,13 @@ export default {
   ],
   "universityTeaching": [
     {
-      "role": "Enseignant",
+      "role": "Enseignant en Méthodologie de la recherche numérique",
       "institution": "Université Sorbonne Nouvelle (Paris, France)",
       "date": "2025 - Présent",
-      "desc": "Enseignement à distance (EAD) du module 'FZDDC01 - Méthodologie de la recherche numérique' au sein du Master 1 Littératures d'expression française. Ce cours vise à accompagner les étudiants dans la compréhension des chaînes de traitement pour l'analyse de données textuelles (textométrie) et à les former à la manipulation de corpus pour la recherche en lettres."
+      "desc": "Enseignement à distance (EAD) du module 'Méthodologie de la recherche numérique' au sein du Master 1 Littératures d'expression française. Ce cours vise à accompagner les étudiants dans la compréhension des chaînes de traitement pour l'analyse de données textuelles (textométrie) et à les former à la manipulation de corpus pour la recherche en lettres."
     },
     {
-      "role": "Enseignant",
+      "role": "Enseignant en Introduction à la gestion des bases de données en SHS",
       "institution": "Université Sorbonne Nouvelle (Paris, France)",
       "date": "2023 - 2024",
       "desc": "Enseignement du module 'Introduction à la gestion des bases de données en SHS' au sein du Master Humanités Numériques (parcours NGEST). Les cours ont couvert la conceptualisation de modèles relationnels, la conception de schémas entité-association et la normalisation de bases de données pour l'exploitation scientifique de sources textuelles."
@@ -572,7 +572,7 @@ export default {
       "desc": "Enseignement au sein de l'unité d'enseignement 'Renforcement Méthodologique et Disciplinaire' (RMD) au semestre 1 pour les étudiants de première année de Licence (L1). Le cours consistait en des tutorats de renforcement méthodologique et disciplinaire adaptés à la transition vers les études hispaniques, consolidant l'analyse textuelle et la rédaction."
     },
     {
-      "role": "Enseignant",
+      "role": "Enseignant en Introduction à la gestion des bases de données en SHS",
       "institution": "Université Sorbonne Nouvelle (Paris, France)",
       "date": "2022 - 2023",
       "desc": "Enseignement du module 'Introduction à la gestion des bases de données en SHS' au sein du Master Humanités Numériques (parcours NGEST). L'accent a été mis sur l'implémentation de bases de données relationnelles, l'utilisation de SQL pour des requêtes d'agrégation et le filtrage de métadonnées dans des projets de recherche littéraire et historique."
@@ -590,7 +590,7 @@ export default {
       "desc": "Enseignement au sein de l'unité d'enseignement 'Renforcement Méthodologique et Disciplinaire' (RMD) aux semestres 1 et 2 pour les étudiants de première année de Licence (L1). Le cours consistait en un accompagnement pédagogique axé sur le développement de compétences d'études transversales (prise de notes, organisation du travail autonome, recherche documentaire) et la consolidation des fondamentaux."
     },
     {
-      "role": "Enseignant",
+      "role": "Enseignant en Introduction à la gestion des bases de données en SHS",
       "institution": "Université Sorbonne Nouvelle (Paris, France)",
       "date": "2021 - 2022",
       "desc": "Enseignement du module 'Introduction à la gestion des bases de données en SHS' au sein du Master Humanités Numériques (parcours NGEST). Le cours a introduit la modélisation conceptuelle de données, la structure des tables relationnelles et les bases de la recherche d'information en sciences humaines et sociales."
@@ -633,13 +633,13 @@ export default {
       "title": "Master en humanités numériques, lettres et lexicographie",
       "institution": "Université de Bretagne-Sud (Lorient, France)",
       "date": "2018 - 2020",
-      "desc": "Formation de second cycle interdisciplinaire alliant l'étude des lettres et de la lexicographie aux méthodes informatiques avancées. Le programme approfondit la conception de bases de données relationnelles, l'analyse quantitative de textes (textométrie), le traitement automatique du langage naturel (TAL) et l'entraînement de modèles de reconnaissance d'écritures (HTR/OCR) appliqués à des corpus historiques. Durant ce parcours, j'ai collaboré au projet ANR BasNum pour la numérisation et le balisage diplomatique structuré en XML-TEI du Dictionnaire Universel de Furetière (1690-1725), validant des outils intelligents de segmentation textuelle."
+      "desc": "Formation de second cycle interdisciplinaire alliant l'étude des lettres et de la lexicographie aux méthodes informatiques avancées. Le programme approfondit la conception de bases de données relationnelles, l'analyse quantitative de textes (textometrie), le traitement automatique du langage naturel (TAL) et l'entraînement de modèles de reconnaissance d'écritures (HTR/OCR) appliqués à des corpus historiques. Durant ce parcours, j'ai collaboré au projet ANR BasNum pour la numérisation et le balisage diplomatique structuré en XML-TEI du Dictionnaire Universel de Furetière (1690-1725), ce qui a permis de valider l'utilisation d'outils intelligents de segmentation textuelle."
     },
     {
       "title": "DNSEP (Diplôme National Supérieur d'Expression Plastique)",
       "institution": "École Européenne Supérieure d'Art de Bretagne (EESAB Lorient) - Lorient, France",
       "date": "2018",
-      "desc": "Diplôme national valant grade de master, validant une formation supérieure en recherche artistique, arts plastiques et design visuel contemporain. Le programme encourage le développement de méthodologies de création personnelles, l'exploration de la narrativité spatiale et des langages graphiques, ainsi que l'articulation entre pratiques traditionnelles et médias numériques, préparant à la conception visuelle et à la direction artistique de projets éditoriaux et de communication."
+      "desc": "Diplôme national valant grade de master, validant une formation supérieure en recherche artistique, arts plastiques et design visuel contemporain. Le programme encourage le développement de méthodologies de création personnelles, l'exploration de la narrativité spatiale et des langages graphiques, ainsi que l'articulation entre pratiques traditionnelles et médias numériques; ce parcours prépare à la conception visuelle et à la direction artistique de projets éditoriaux et de communication."
     },
     {
       "title": "Licence en éducation : arts plastiques",

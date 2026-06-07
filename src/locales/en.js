@@ -536,13 +536,13 @@ export default {
   ],
   "universityTeaching": [
     {
-      "role": "Lecturer in digital research methodology",
+      "role": "Lecturer in Methodology of digital research",
       "institution": "Université Sorbonne Nouvelle (Paris, France)",
       "date": "2025 - Present",
-      "desc": "Distance learning (EAD) lecturing in the module 'FZDDC01 - Methodology of digital research' for the Master 1 in French-expression Literatures. The course trains students in textometric workflows and data analysis, the manipulation and structuring of literary research corpora, and the use of digital humanities tools."
+      "desc": "Distance learning (EAD) lecturing in the module 'Methodology of digital research' for the Master 1 in French-expression Literatures. The course trains students in textometric workflows and data analysis, the manipulation and structuring of literary research corpora, and the use of digital humanities tools."
     },
     {
-      "role": "Lecturer in database management",
+      "role": "Lecturer in Introduction to database management in SHS",
       "institution": "Université Sorbonne Nouvelle (Paris, France)",
       "date": "2023 - 2024",
       "desc": "Lecturing in the module 'Introduction to database management in SHS' in the Master in Digital Humanities (parcours NGEST). The work covered relational model conceptualization, entity-relationship design, and database normalization for scientific exploitation of textological sources."
@@ -566,7 +566,7 @@ export default {
       "desc": "Lecturing in the 'Renforcement Méthodologique et Disciplinaire' (RMD) module during the first semester for first-year undergraduate students (L1). The course provided methodological and disciplinary reinforcement tutorials tailored to the transition to university-level hispanic studies, strengthening text analysis and academic writing."
     },
     {
-      "role": "Lecturer in database management",
+      "role": "Lecturer in Introduction to database management in SHS",
       "institution": "Université Sorbonne Nouvelle (Paris, France)",
       "date": "2022 - 2023",
       "desc": "Lecturing in the module 'Introduction to database management in SHS' in the Master in Digital Humanities (parcours NGEST). Focus was on relational database implementation, using SQL for aggregation queries, and metadata filtering in literary and historical research projects."
@@ -584,7 +584,7 @@ export default {
       "desc": "Lecturing in the 'Renforcement Méthodologique et Disciplinaire' (RMD) module during semesters 1 and 2 for first-year undergraduate students (L1). The course focused on pedagogical support for developing transversal study skills (note-taking, organizing independent study, and using library resources) and consolidating hispanic studies foundations."
     },
     {
-      "role": "Lecturer in database management",
+      "role": "Lecturer in Introduction to database management in SHS",
       "institution": "Université Sorbonne Nouvelle (Paris, France)",
       "date": "2021 - 2022",
       "desc": "Lecturing in the module 'Introduction to database management in SHS' in the Master in Digital Humanities (parcours NGEST). The course introduced conceptual data design, relational table structures, and information retrieval fundamentals in the humanities and social sciences."

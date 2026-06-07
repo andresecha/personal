@@ -294,13 +294,13 @@ export default {
       "role": "Docente universitario",
       "institution": "Université Sorbonne Nouvelle / Université de Montpellier Paul-Valéry (Montpellier, Francia) / Université de Bretagne-Sud",
       "date": "2019 - Presente",
-      "desc": "Docente en la Université Sorbonne Nouvelle (París, Francia) desde 2021, con la impartición de asignaturas en el máster de humanidades digitales (\"Introducción a la gestión de bases de datos en SHS\") y en el máster de letras modernas (\"Metodología de la investigación digital\"). También he sido docente de lengua y civilización española en la Université de Montpellier Paul-Valéry (Montpellier, Francia) (2022-2024) y en la Université de Bretagne-Sud (2019-2021)."
+      "desc": "Docencia en la Université Sorbonne Nouvelle (París, Francia) desde 2021, donde he impartido asignaturas en el máster de humanidades digitales (\"Introducción a la gestión de bases de datos en SHS\") y en el máster de letras modernas (\"Metodología de la investigación digital\"). También he sido docente de lengua y civilización española en la Université de Montpellier Paul-Valéry (Montpellier, Francia) (2022-2024) y en la Université de Bretagne-Sud (2019-2021)."
     },
     {
       "role": "Encargado de edición de corpus digitales (proyecto ANR D4R)",
       "institution": "IRIEC - Université de Montpellier Paul-Valéry (Montpellier, Francia) / Universitat de Barcelona",
       "date": "2021 - 2025",
-      "desc": "Trabajo en el proyecto ANR-21-CE38-0011 D4R (Disidencias religiosas y recepción de la Reforma en el Renacimiento). Esta labor se centra en la definición de estándares para la visualización de documentación inquisitorial, el modelado y la representación de redes a partir de anotaciones XML-TEI, el desarrollo de cartografías de redes egocentradas y la coordinación técnica de los equipos internacionales. Asimismo, completó la totalidad de los seminarios de investigación 'Les Vendredis de l'IRIEC' (2022-2023) y participó en los talleres de doctorandos animados por Aude Plagnard."
+      "desc": "Desarrollo de labores de investigación y coordinación técnica para el proyecto ANR-21-CE38-0011 D4R (Disidencias religiosas y recepción de la Reforma en el Renacimiento). Esta función incluyó la definición de estándares para la visualización de documentación inquisitorial, el modelado y la representación de redes a partir de anotaciones XML-TEI, el desarrollo de cartografías de redes egocentradas y la coordinación técnica de los equipos internacionales. Asimismo, cursé la totalidad de los seminarios de investigación 'Les Vendredis de l'IRIEC' (2022-2023) y participó en los talleres para doctorandos coordinados por Aude Plagnard."
     },
     {
       "role": "Secretario de redacción (revista CECIL)",
@@ -376,14 +376,14 @@ export default {
       "role": "Taller de preconferencia",
       "institution": "Colloque Humanistica 2026 (EPITA, París, Francia)",
       "date": "19 de mayo de 2026",
-      "desc": "Una jornada de formación práctica en el marco del Colloque Humanistica 2026 en la EPITA, consistente en la co-animación del taller titulado 'Modéliser les objets culturels littéraires et leurs métadonnées avec une ontologie'. La sesión sirvió para introducir el modelo conceptual asociado al proyecto AMIS (Advanced Metadata Intelligent System) y realizar ejercicios sobre la estructuración de datos y el uso de la ontología CAO_CRM para el enriquecimiento y la interoperabilidad de metadatos de investigación.",
+      "desc": "Una jornada de formación práctica en el marco del Colloque Humanistica 2026 en la EPITA, que consistió en la coanimación del taller titulado 'Modéliser les objets culturels littéraires et leurs métadonnées avec une ontologie'. La sesión sirvió para introducir el modelo conceptual asociado al proyecto AMIS (Advanced Metadata Intelligent System) y realizar ejercicios sobre la estructuración de datos y el uso de la ontología CAO_CRM para el enriquecimiento y la interoperabilidad de metadatos de investigación.",
       "points": []
     },
     {
       "role": "Conferencia y taller: modelos de adquisición de textos y OCR inteligente para corpus lingüísticos",
       "institution": "Universidad de Antioquia (Medellín, Colombia)",
       "date": "11 de mayo de 2026",
-      "desc": "Una jornada académica de divulgación e investigación en la Facultad de Comunicaciones y Filología de la Universidad de Antioquia. El espacio consistió en una conferencia introductoria a los modelos de adquisición de textos y de transcripción automática asistida por ordenador, complementada con un ejercicio práctico enfocado en el uso del modelo de visión MistralOCR aplicado a la extracción y estructuración de corpus lingüísticos y literarios.",
+      "desc": "Una jornada académica de divulgación e investigación en la Facultad de Comunicaciones y Filología de la Universidad de Antioquia. El espacio consistió en una conferencia introductoria a los modelos de adquisición de textos y de transcripción automática asistida por ordenador, la cual se complementó con un ejercicio práctico enfocado en el uso del modelo de visión MistralOCR aplicado a la extracción y estructuración de corpus lingüísticos y literarios.",
       "points": []
     },
     {
@@ -411,28 +411,28 @@ export default {
       "role": "Taller de formación especializada",
       "institution": "Université Catholique de Louvain (Lovaina, Bélgica)",
       "date": "17 de enero de 2025",
-      "desc": "Una jornada de capacitación práctica en aprendizaje automático aplicado a la transcripción automática de archivos eclesiásticos y universitarios. El taller se tituló 'Transkribus: Formation à l'utilisation du logiciel dans le cadre d'une recherche historique' y fue coorganizado para la Facultad de Teología y los Archivos de la UCLouvain, capacitando a investigadores en el entrenamiento de modelos HTR específicos.",
+      "desc": "Una jornada de capacitación práctica en aprendizaje automático aplicado a la transcripción automática de archivos eclesiásticos y universitarios. El taller se tituló 'Transkribus: Formation à l'utilisation du logiciel dans le cadre d'une recherche historique' y fue coorganizado para la Facultad de Teología y los Archivos de la UCLouvain, con el fin de capacitar a investigadores en el entrenamiento de modelos HTR específicos.",
       "points": []
     },
     {
       "role": "Conferencia invitada",
       "institution": "Universidad de Castilla-La Mancha (Ciudad Real, España)",
       "date": "17 de abril de 2024",
-      "desc": "Una jornada académica consistente en la conferencia '{DES}PROGRAMAR LO {IM}PERFECTO. Pensar en HD', dictada por invitación en la Universidad de Castilla-La Mancha en el campus de Ciudad Real. La ponencia propuso una reflexión crítica sobre el manejo de errores de lectura HTR y su integración epistemológica y metodológica en las colecciones digitales de documentos históricos.",
+      "desc": "Una jornada académica consistente en la conferencia '{DES}PROGRAMAR LO {IM}PERFECTO. Pensar en HD', la cual se dictó por invitación en la Universidad de Castilla-La Mancha en el campus de Ciudad Real. La ponencia propuso una reflexión crítica sobre el manejo de errores de lectura HTR y su integración epistemológica y metodológica en las colecciones digitales de documentos históricos.",
       "points": []
     },
     {
       "role": "Curso práctico de introducción",
       "institution": "Universidad Complutense de Madrid (Madrid, España)",
       "date": "10 de abril de 2024",
-      "desc": "Una jornada de formación consistente en el curso práctico 'Transcripción automática de impresos y manuscritos: introducción', impartido en la Facultad de Filología de la Universidad Complutense de Madrid en colaboración con la red CHARTA. El curso cubrió los fundamentos del entrenamiento de modelos de reconocimiento de texto y la puesta en marcha de flujos de trabajo de transcripción asistida por ordenador.",
+      "desc": "Una jornada de formación consistente en el curso práctico 'Transcripción automática de impresos y manuscritos: introducción', el que se impartió en la Facultad de Filología de la Universidad Complutense de Madrid en colaboración con la red CHARTA. El curso cubrió los fundamentos del entrenamiento de modelos de reconocimiento de texto y la puesta en marcha de flujos de trabajo de transcripción asistida por ordenador.",
       "points": []
     },
     {
       "role": "Conferencia metodológica",
       "institution": "Universidad de Castilla-La Mancha (Toledo, España)",
       "date": "12 de diciembre de 2023",
-      "desc": "Una jornada académica con la ponencia 'Tinta, píxel y texto electrónico: transcripción asistida', impartida en la Universidad de Castilla-La Mancha en Toledo. La charla abordó los retos metodológicos de la digitalización, la naturaleza del texto electrónico y el uso práctico de herramientas inteligentes para el reconocimiento automático de textos históricos.",
+      "desc": "Una jornada académica con la ponencia 'Tinta, píxel y texto electrónico: transcripción asistida', la que se dictó en la Universidad de Castilla-La Mancha en Toledo. La charla abordó los retos metodológicos de la digitalización, la naturaleza del texto electrónico y el uso práctico de herramientas inteligentes para el reconocimiento automático de textos históricos.",
       "points": []
     },
     {
@@ -446,7 +446,7 @@ export default {
       "role": "Co-organización y talleres en el Workshop de Barcelona (ANR D4R)",
       "institution": "Universitat Autònoma de Barcelona (Barcelona, España)",
       "date": "14–17 de junio de 2023",
-      "desc": "Cuatro jornadas de trabajo especializado participando en el comité de organización de la edición 2023 del Workshop de Barcelona dentro del proyecto ANR D4R. La labor incluyó la animación de dos talleres prácticos sobre flujos de trabajo en humanidades digitales, codificación de textos y herramientas de transcripción automática de manuscritos.",
+      "desc": "Cuatro jornadas de trabajo especializado en las que participé en el comité de organización de la edición 2023 del Workshop de Barcelona dentro del proyecto ANR D4R. La labor incluyó la animación de dos talleres prácticos sobre flujos de trabajo en humanidades digitales, codificación de textos y herramientas de transcripción automática de manuscritos.",
       "points": []
     },
     {
@@ -488,14 +488,14 @@ export default {
       "role": "Co-organización y taller de divulgación científica",
       "institution": "Fête de la Science - Université de Montpellier Paul-Valéry (Montpellier, Francia)",
       "date": "Octubre de 2022",
-      "desc": "Una jornada interactiva de divulgación para el público general, coorganizando y animando junto a Michel Boeglin el taller 'Livre ancien y Humanidades numéricas' en la Sala del Consejo del sitio Saint Charles. El espacio estuvo dedicado a demostraciones prácticas de digitalización y procesamiento inteligente de libros antiguos patrimoniales.",
+      "desc": "Una jornada interactiva de divulgación para el público general, en la que coorganicé y animé junto a Michel Boeglin el taller 'Livre ancien y Humanidades numéricas' en la Sala del Consejo del sitio Saint Charles. El espacio estuvo dedicado a demostraciones prácticas de digitalización y procesamiento inteligente de libros antiguos patrimoniales.",
       "points": []
     },
     {
       "role": "Seminario de estudios del renacimiento: transcripción y paleografía digital",
       "institution": "Universitat Autònoma de Barcelona (Barcelona, España)",
       "date": "14 de octubre de 2022",
-      "desc": "Una jornada de capacitación práctica en el Seminario de Estudios del Renacimiento en la Universidad Autónoma de Barcelona, enfocada en la transcripción automática del impreso antiguo, el uso de Transkribus y el entrenamiento de modelos HTR adaptados a tipografías góticas.",
+      "desc": "Una jornada de capacitación práctica en el Seminario de Estudios del Renacimiento en la Universidad Autónoma de Barcelona, la que se enfocó en la transcripción automática del impreso antiguo, el uso de Transkribus y el entrenamiento de modelos HTR adaptados a tipografías góticas.",
       "points": []
     },
     {
@@ -523,7 +523,7 @@ export default {
       "role": "Co-organización e intervenciones en el Workshop de Barcelona (ANR D4R)",
       "institution": "Universitat de Barcelona (Barcelona, España)",
       "date": "31 de mayo y 1 de junio de 2022",
-      "desc": "Dos jornadas de trabajo académico como miembro del comité organizador del Workshop de Barcelona dentro del proyecto ANR D4R. Impartí dos ponencias en la Sala 0.1: la primera sobre la síntesis y estado de avance del proyecto junto con el modelado TEI y el entrenamiento de modelos HTR PyLaia (31 de mayo); la segunda enfocada en el diseño de ontologías, conceptos clave y vocabularios controlados en el corpus del proyecto (1 de junio).",
+      "desc": "Dos jornadas de trabajo académico como miembro del comité organizador del Workshop de Barcelona dentro del proyecto ANR D4R. Impartí dos ponencias en la Sala 0.1: la primera sobre la síntesis y estado de avance del proyecto junto con el modelado TEI y el entrenamiento de modelos HTR PyLaia (31 de mayo) y la segunda, centrada en el diseño de ontologías, conceptos clave y vocabularios controlados en el corpus del proyecto (1 de junio).",
       "points": []
     },
     {
@@ -536,22 +536,22 @@ export default {
   ],
   "universityTeaching": [
     {
-      "role": "Docente de metodología de la investigación digital",
+      "role": "Docente de Metodología de la investigación digital",
       "institution": "Université Sorbonne Nouvelle (París, Francia)",
       "date": "2025 - Presente",
-      "desc": "Docencia en el máster a distancia (EAD) del módulo 'FZDDC01 - Metodología de la investigación digital' para el Máster 1 de Literaturas de expresión francesa. La asignatura forma a los estudiantes en la comprensión de las cadenas de tratamiento de datos y análisis textual (textometría), la manipulación y estructuración de corpus aplicados a la investigación literaria, y el uso de herramientas de humanidades digitales en letras."
+      "desc": "Docencia en el máster a distancia (EAD) del módulo 'Metodología de la investigación digital' para el Máster 1 de Literaturas de expresión francesa. La asignatura forma a los estudiantes en la comprensión de las cadenas de tratamiento de datos y análisis textual (textometría), la manipulación y estructuración de corpus aplicados a la investigación literaria, y el uso de herramientas de humanidades digitales en letras."
     },
     {
-      "role": "Docente de bases de datos",
+      "role": "Docente de Introducción a la gestión de bases de datos en SHS",
       "institution": "Université Sorbonne Nouvelle (París, Francia)",
       "date": "2023 - 2024",
-      "desc": "Docencia en el módulo 'Introducción a la gestión de bases de datos en SHS' dentro del Máster de Humanidades Digitales (parcours NGEST). La labor cubrió la conceptualización de modelos relacionales, el diseño de esquemas entidad-relación y la normalización de bases de datos para la explotación científica de fuentes textológicas."
+      "desc": "Docencia en el módulo 'Introducción a la gestión de bases de datos en SHS' dentro del Máster de Humanidades Digitales (mención NGEST). La labor cubrió la conceptualización de modelos relacionales, el diseño de esquemas entidad-relación y la normalización de bases de datos para la explotación científica de fuentes textológicas."
     },
     {
       "role": "Docente de lengua y civilización (LANSAD)",
       "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
       "date": "2023 - 2024",
-      "desc": "Docencia de español de nivel B1 en el marco del programa LANSAD (Lenguas para Especialistas de Otras Disciplinas) para dos grupos en el segundo semestre, dirigido a estudiantes de segundo año de Licence (L2). La labor implicó el diseño de talleres de debate, comprensión auditiva e interacción oral, adaptados a estudiantes de diversas disciplinas científicas y humanísticas."
+      "desc": "Docencia de español de nivel B1 en el marco del programa LANSAD (Lenguas para Especialistas de Otras Disciplinas) para dos grupos en el segundo semestre, los cuales estuvieron integrados por estudiantes de segundo año de Licence (L2). La labor implicó el diseño de talleres de debate, comprensión auditiva e interacción oral, los cuales se adaptaron a las necesidades de estudiantes de diversas disciplinas científicas y humanísticas."
     },
     {
       "role": "Docente de metodología de trabajo universitario (MTU)",
@@ -563,19 +563,19 @@ export default {
       "role": "Docente de refuerzo metodológico y disciplinar",
       "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
       "date": "2023 - 2024",
-      "desc": "Docencia en el módulo 'Renforcement Méthodologique et Disciplinaire' (RMD) durante el primer semestre para estudiantes de primer año de Licence (L1). La asignatura consistió en tutorías de refuerzo metodológico y disciplinar adaptadas para la transición a los estudios universitarios hispánicos, fortaleciendo el análisis textual y la redacción académica."
+      "desc": "Docencia en el módulo 'Renforcement Méthodologique et Disciplinaire' (RMD) durante el primer semestre para estudiantes de primer año de Licence (L1). La asignatura consistió en tutorías de refuerzo metodológico y disciplinar adaptadas para la transición a los estudios universitarios hispánicos, con el fin de fortalecer el análisis textual y la redacción académica."
     },
     {
-      "role": "Docente de bases de datos",
+      "role": "Docente de Introducción a la gestión de bases de datos en SHS",
       "institution": "Université Sorbonne Nouvelle (París, Francia)",
       "date": "2022 - 2023",
-      "desc": "Docencia en el módulo 'Introducción a la gestión de bases de datos en SHS' dentro del Máster de Humanidades Digitales (parcours NGEST). La labor se centró en la implementación de bases de datos relacionales, el uso de SQL para consultas de agregación y el filtrado de metadatos en proyectos de investigación literaria e histórica."
+      "desc": "Docencia en el módulo 'Introducción a la gestión de bases de datos en SHS' dentro del Máster de Humanidades Digitales (mención NGEST). La labor se centró en la implementación de bases de datos relacionales, el uso de SQL para consultas de agregación y el filtrado de metadatos en proyectos de investigación literaria e histórica."
     },
     {
       "role": "Docente de lengua y civilización (LANSAD)",
       "institution": "Université de Montpellier Paul-Valéry (Montpellier, Francia)",
       "date": "2022 - 2023",
-      "desc": "Docencia de español de nivel B1 en el marco del programa LANSAD durante el segundo semestre para estudiantes de segundo año de Licence (L2). El curso se centró en la adquisición de competencias de comprensión y expresión oral y escrita, promoviendo el conocimiento lingüístico y cultural en un entorno académico interdisciplinario."
+      "desc": "Docencia de español de nivel B1 en el marco del programa LANSAD durante el segundo semestre para estudiantes de segundo año de Licence (L2). El curso se centró en la adquisición de competencias de comprensión y expresión oral y escrita con el objetivo de promover el conocimiento lingüístico y cultural en un entorno académico interdisciplinario."
     },
     {
       "role": "Docente de refuerzo metodológico y disciplinar",
@@ -584,16 +584,16 @@ export default {
       "desc": "Docencia en el módulo 'Renforcement Méthodologique et Disciplinaire' (RMD) durante los semestres 1 y 2 para estudiantes de primer año de Licence (L1). La asignatura consistió en el acompañamiento pedagógico enfocado en el desarrollo de competencias transversales de estudio (toma de notas, organización del trabajo autónomo y uso de recursos bibliográficos en biblioteca) y la consolidación de contenidos hispánicos."
     },
     {
-      "role": "Docente de bases de datos",
+      "role": "Docente de Introducción a la gestión de bases de datos en SHS",
       "institution": "Université Sorbonne Nouvelle (París, Francia)",
       "date": "2021 - 2022",
-      "desc": "Docencia en el módulo 'Introducción a la gestión de bases de datos en SHS' dentro del Máster de Humanidades Digitales (parcours NGEST). La asignatura introdujo el diseño conceptual de datos, la estructura de tablas relacionales y los fundamentos de la recuperación de información en ciencias humanas y sociales."
+      "desc": "Docencia en el módulo 'Introducción a la gestión de bases de datos en SHS' dentro del Máster de Humanidades Digitales (mención NGEST). La asignatura introdujo el diseño conceptual de datos, la estructura de tablas relacionales y los fundamentos de la recuperación de información en ciencias humanas y sociales."
     },
     {
       "role": "Tutor de español",
       "institution": "Université de Bretagne-Sud (Lorient, Francia)",
       "date": "2019 - 2021",
-      "desc": "Encargado de las tutorías de lengua española y apoyo pedagógico para estudiantes de la Licenciatura (Licence) en Lenguas Extranjeras Aplicadas (LEA), facilitando sesiones de conversación, gramática y traducción."
+      "desc": "Encargado de las tutorías de lengua española y apoyo pedagógico para estudiantes de la Licenciatura (Licence) en Lenguas Extranjeras Aplicadas (LEA), donde impartí sesiones de conversación, gramática y traducción."
     }
   ],
   "communityTeaching": [
@@ -607,7 +607,7 @@ export default {
       "role": "Docente de módulo de diploma",
       "institution": "Universidad de Antioquia (Medellín, Colombia)",
       "date": "4 de septiembre de 2017",
-      "desc": "Docencia y coordinación del módulo 'Experiencias de arte y memoria: proyecto La paz es una obra de arte' dentro del Diploma de Memoria Histórica, coorganizado con la Deutsche Welle Akademie. La labor consistió en impartir talleres de reconstrucción de memoria colectiva y reconciliación social en centros penitenciarios de posconflicto."
+      "desc": "Docencia y coordinación del módulo 'Experiencias de arte y memoria: proyecto La paz es una obra de arte' dentro del Diploma de Memoria Histórica, el cual se coorganizó con la Deutsche Welle Akademie. La labor consistió en jugar un papel activo impartiendo talleres de reconstrucción de memoria colectiva y reconciliación social en centros penitenciarios de posconflicto."
     },
     {
       "role": "Docente de artes plásticas en contexto penitenciario",
@@ -627,13 +627,13 @@ export default {
       "title": "Máster en humanidades digitales, letras y lexicografía",
       "institution": "Université de Bretagne-Sud (Lorient, Francia)",
       "date": "2018 - 2020",
-      "desc": "Formación de posgrado interdisciplinar que integra el estudio de las letras y la lexicografía con métodos computacionales avanzados. El plan de estudios profundiza en el diseño de bases de datos relacionales, el análisis cuantitativo de textos (textometría), el procesamiento del lenguaje natural (NLP) y el entrenamiento de modelos de reconocimiento de texto (HTR/OCR) aplicados a corpus históricos. Durante este periodo, se colaboró en el proyecto ANR BasNum para la digitalización y marcado diplomático estructurado en XML-TEI del Dictionnaire Universel de Furetière (1690-1725), validando el uso de herramientas inteligentes de segmentación textual."
+      "desc": "Formación de posgrado interdisciplinar que integra el estudio de las letras y la lexicografía con métodos computacionales avanzados. El plan de estudios profundiza en el diseño de bases de datos relacionales, el análisis cuantitativo de textos (textometría), el procesamiento del lenguaje natural (NLP) y el entrenamiento de modelos de reconocimiento de texto (HTR/OCR) aplicados a corpus históricos. Durante este periodo, se colaboró en el proyecto ANR BasNum para la digitalización y marcado diplomático estructurado en XML-TEI del Dictionnaire Universel de Furetière (1690-1725), espacio en el que se validó el uso de herramientas inteligentes de segmentación textual."
     },
     {
       "title": "DNSEP (Diploma Nacional Superior de Expresión Plástica)",
       "institution": "Escuela Europea Superior de Arte de Bretaña (EESAB Lorient) - Lorient, Francia",
       "date": "2018",
-      "desc": "Título nacional de nivel de maestría que valida una formación superior en investigación artística, bellas artes y diseño visual contemporáneo. El programa promueve el desarrollo de metodologías creativas individuales, la exploración de la narratividad espacial y los lenguajes gráficos, y la articulación entre técnicas tradicionales y medios digitales, capacitando para el diseño conceptual, la dirección artística de proyectos editoriales y de comunicación visual."
+      "desc": "Título nacional de nivel de maestría que valida una formación superior en investigación artística, bellas artes y diseño visual contemporáneo. El programa promueve el desarrollo de metodologías creativas individuales, la exploración de la narratividad espacial y los lenguajes gráficos, y la articulación entre técnicas tradicionales y medios digitales; esta formación prepara para el diseño conceptual, la dirección artística de proyectos editoriales y la comunicación visual."
     },
     {
       "title": "Licenciatura en educación: artes plásticas",
