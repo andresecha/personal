@@ -891,7 +891,7 @@ function App() {
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <p>© {new Date().getFullYear()} {t.ui.copyright}</p>
+          <p dangerouslySetInnerHTML={{ __html: t.ui.copyright }} />
           <p style={{ fontSize: '0.75rem' }}>
             {t.ui.footerSustainability}
           </p>
