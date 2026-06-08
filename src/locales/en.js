@@ -73,28 +73,28 @@ export default {
       "id": "logo-zorro",
       "title": "El Zorro (Personal Brand)",
       "tag": "Visual Identity",
-      "desc": "Visual identity design for the personal brand \"El Zorro\". Inspired by the figure of Joaquín Murrieta (mid-19th century), who stood up to external interests to defend Latin American resources, this graphic concept symbolizes the reclaiming of situated critical thinking and intellectual resistance. The fox represents biological and cultural adaptability, capable of inhabiting any environment. Its geometric and dynamic design evokes cleverness, the active search for solutions to complex problems, and the ability to blend in and integrate with the surroundings. The visual composition plays on the duality of the masked character and articulates tensions between legality and justice, life and historical narrative.",
+      "desc": "Visual identity design for the personal brand \"El Zorro\". Inspired by the figure of Joaquín Murrieta (mid-19th century), who confronted the interests of US imperialism to defend Latin American resources. This graphic concept symbolizes the recovery of situated critical thinking and intellectual resistance. The fox represents biological and cultural adaptability, capable of inhabiting any environment. Its geometric design represents the active search for solutions to complex problems and the ability to integrate with the environment. The visual composition plays with the duality of the masked character and articulates tensions between the legitimacy of direct action, social justice, vital responsibility, and the participation of peoples in building their own narratives.",
       "img": "/portfolio/zorro_presentation.png"
     },
     {
       "id": "logo-amis",
       "title": "AMIS Project (OSCARS)",
       "tag": "Visual Identity",
-      "desc": "This graphic concept represents the visual identity of the AMIS (<em>Advanced Metadata Intelligent System</em>) project. The initiative is part of the Horizon Europe program and receives backing from the OSCARS (<em>Open Science Clusters Action for Research and Society</em>) framework. The logo design conveys intelligent automation and semantic structuring. The layout highlights the integration of research metadata. This work aims to support open science and data interoperability.",
+      "desc": "This graphic identity represents the AMIS (<em>Advanced Metadata Intelligent System</em>) project. The European program Horizon Europe and the OSCARS (<em>Open Science Clusters Action for Research and Society</em>) initiative fund this development. The visual concept evokes the intelligent processing of information and the semantic structuring of files. The proposal highlights the interconnection of metadata in humanities and social sciences. In this way, open science is promoted.",
       "img": "/portfolio/amis_presentation.png"
     },
     {
       "id": "logo-ariane",
       "title": "ARIANE Consortium (Huma-Num)",
       "tag": "Visual Identity",
-      "desc": "Graphic identity developed for the ARIANE Consortium (Analyses, Recherches, Intelligence Artificielle et Nouvelles Éditions numériques), which is backed by the French research infrastructure IR* Huma-Num. The visual concept represents the synergy and interdisciplinary dialogue between the humanities and advanced computing methods, ranging from digital publishing and artificial intelligence (HTR, NLP) to semantic analysis and deep reading.",
+      "desc": "Graphic identity developed for the ARIANE Consortium (<em>Analyses, Recherches, Intelligence Artificielle et Nouvelles Éditions numériques</em>), which is backed by the French research infrastructure IR* Huma-Num. The visual concept represents the synergy and interdisciplinary dialogue between the humanities and advanced computing methods.",
       "img": "/portfolio/ariane_presentation.png"
     },
     {
       "id": "logo-cartas",
       "title": "ANR CARTAS Project",
       "tag": "Visual Identity",
-      "desc": "Visual identity design for the CARTAS project (\"Pablo Picasso en toutes lettres\"), which is funded by the Agence Nationale de la Recherche (ANR). The logo and its branding symbolize the digitization, analysis, and relational mapping of Pablo Picasso's historical correspondence; this approach combines digital humanities techniques and knowledge graphs to map the artist's network of contacts between 1900 and 1973.",
+      "desc": "Visual identity design for the CARTAS project (\"Pablo Picasso en toutes lettres\"), which is funded by the Agence Nationale de la Recherche (ANR). The logo and its visual guidelines symbolize the digitization, analysis, and relational mapping of Pablo Picasso's historical correspondence; this design combines digital humanities techniques and knowledge graphs to map the artist's contact networks between 1900 and 1973.",
       "img": "/portfolio/cartas_presentation.png"
     }
   ],

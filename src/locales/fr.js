@@ -73,28 +73,28 @@ export default {
       "id": "logo-zorro",
       "title": "El Zorro (marque personnelle)",
       "tag": "Identité Visuelle",
-      "desc": "Conception de l'identité visuelle pour la marque personnelle \"El Zorro\". Inspiré de Joaquín Murrieta (milieu du XIXe siècle), figure de la résistance aux forces hégémoniques pour la défense des ressources d'Amérique latine, ce concept graphique symbolise la réappropriation d'une pensée critique située et la résistance intellectuelle. Le renard incarne l'adaptabilité biologique et culturelle dans tout milieu. Son tracé géométrique et dynamique évoque la ruse, la recherche de solutions complexes et la capacité de se murer dans le décor. La composition visuelle joue sur la culture de la dualité du personnage masqué et articule les tensions entre légalité et justice, vie et récit historique.",
+      "desc": "Conception de l'identité visuelle de la marque personnelle \"El Zorro\". Inspiré de la figure de Joaquín Murrieta (milieu du XIXe siècle), qui s'est opposé aux intérêts de l'impérialisme américain pour défendre les ressources de l'Amérique latine. Ce concept graphique symbolise la récupération d'une pensée critique située et la résistance intellectuelle. Le renard représente l'adaptabilité biologique et culturelle, capable de vivre dans n'importe quel environnement. Sa conception géométrique représente la recherche active de solutions à des problèmes complexes et la capacité de s'intégrer à son environnement. La composition visuelle joue avec la dualité du personnage masqué et articule les tensions entre la légitimité de l'action directe, la justice sociale, la responsabilité vitale et la participation des peuples à la constitution de leurs propres récits.",
       "img": "/portfolio/zorro_presentation.png"
     },
     {
       "id": "logo-amis",
       "title": "Projet AMIS (OSCARS)",
       "tag": "Identité Visuelle",
-      "desc": "Ce concept graphique définit l'identité visuelle du projet AMIS (<em>Advanced Metadata Intelligent System</em>). L'initiative OSCARS et le programme Horizon Europe de l'Union européenne soutiennent cette recherche. Le logotype illustre le traitement intelligent de l'information et la structuration sémantique des fichiers. Le graphisme met en valeur l'interconnexion automatique des métadonnées scientifiques. Cette approche renforce l'accès ouvert aux données en sciences humaines.",
+      "desc": "Cette identité graphique représente le projet AMIS (<em>Advanced Metadata Intelligent System</em>). Le programme européen Horizon Europe et l'initiative OSCARS (<em>Open Science Clusters Action for Research and Society</em>) subventionnent ce développement. Le concept visuel évoque le traitement intelligent de l'information et la structuration sémantique de fichiers. La proposition met en valeur l'interconnexion des métadonnées en humanités et sciences sociales. De cette façon, on encourage la science ouverte.",
       "img": "/portfolio/amis_presentation.png"
     },
     {
       "id": "logo-ariane",
       "title": "Consortium ARIANE (Huma-Num)",
       "tag": "Identité Visuelle",
-      "desc": "Identité graphique pour le Consortium ARIANE (Analyses, Recherches, Intelligence Artificielle et Nouvelles Éditions numériques), lequel est labellisé par l'infrastructure nationale IR* Huma-Num. Le design du logotype symbolise le dialogue et la synergie entre la philologie et l'informatique avancée, englobant l'HTR, le traitement du langage naturel, les graphes de connaissances et la lecture outillée des textes.",
+      "desc": "Identité graphique développée pour le Consortium ARIANE (<em>Analyses, Recherches, Intelligence Artificielle et Nouvelles Éditions numériques</em>), lequel bénéficie du soutien de l'infrastructure de recherche française IR* Huma-Num. Le concept visuel représente la synergie et le dialogue interdisciplinaire entre les sciences humaines et les méthodes informatiques avancées.",
       "img": "/portfolio/ariane_presentation.png"
     },
     {
       "id": "logo-cartas",
       "title": "Projet ANR CARTAS",
       "tag": "Identité Visuelle",
-      "desc": "Identité visuelle du projet CARTAS (« Pablo Picasso en toutes lettres »), qui est financé par l'Agence Nationale de la Recherche (ANR). Le logo et sa charte graphique symbolisent la numérisation, l'analyse sémantique et la cartographie relationnelle de la correspondance de Pablo Picasso ; cette approche combine des méthodes d'analyse de réseaux et de graphes de connaissances pour retracer son réseau social de 1900 à 1973.",
+      "desc": "Conception de l'identité visuelle pour le projet CARTAS (« Pablo Picasso en toutes lettres »), financé par l'Agence Nationale de la Recherche (ANR). Le logo et sa charte graphique symbolisent la numérisation, l'analyse et la cartographie relationnelle de la correspondance historique de Pablo Picasso ; ce design combine des techniques d'humanités numériques et des graphes de connaissances pour cartographier les réseaux de contact de l'artiste entre 1900 et 1973.",
       "img": "/portfolio/cartas_presentation.png"
     }
   ],
