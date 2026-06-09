@@ -390,7 +390,7 @@ p {
 /* Hero Section / Profile */
 .profile-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  grid-template-columns: auto 1fr;
   gap: 3rem;
   align-items: center;
   margin-bottom: 4rem;
@@ -398,7 +398,7 @@ p {
 
 @media (max-width: 768px) {
   .profile-grid {
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: 1fr;
     gap: 2rem;
     text-align: left;
   }
@@ -407,40 +407,33 @@ p {
 .profile-avatar-container {
   display: flex;
   justify-content: center;
-  min-width: 0;
 }
 
 .profile-avatar-glow {
   position: relative;
-  width: 100%;
-  max-width: 440px;
-  height: auto;
-  aspect-ratio: 1 / 1;
+  width: 380px;
+  height: 380px;
   border-radius: 50%;
   padding: 3px;
   background: var(--accent-gradient);
   box-shadow: var(--shadow-glow);
+  flex-shrink: 0;
 }
 
 .profile-avatar {
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  right: 3px;
-  bottom: 3px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   object-fit: cover;
   background-color: #1e293b;
   border: 4px solid var(--bg-main);
+  display: block;
 }
 
 /* User avatar placeholder */
 .avatar-placeholder {
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  right: 3px;
-  bottom: 3px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background: #1f2937;
   display: flex;
@@ -449,8 +442,38 @@ p {
   color: var(--accent);
   font-family: var(--heading);
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: 4rem;
   border: 4px solid var(--bg-main);
+}
+
+@media (max-width: 1024px) {
+  .profile-avatar-glow {
+    width: 300px;
+    height: 300px;
+  }
+  .avatar-placeholder {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-avatar-glow {
+    width: 240px;
+    height: 240px;
+  }
+  .avatar-placeholder {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-avatar-glow {
+    width: 200px;
+    height: 200px;
+  }
+  .avatar-placeholder {
+    font-size: 2rem;
+  }
 }
 
 .profile-title {
