@@ -154,6 +154,13 @@ a:not(.btn-primary):not(.btn-secondary):not(.logo-text):not(.social-link):not(.n
   .nav-links {
     display: none; /* Se puede añadir un menú desplegable móvil más adelante, o mantenerlo compacto / Un menu déroulant mobile peut être ajouté plus tard, ou rester compact */
   }
+  .logo-fox {
+    width: 48px;
+    height: 48px;
+  }
+  .logo-text {
+    font-size: 1.1rem;
+  }
 }
 
 .nav-btn {
@@ -416,8 +423,11 @@ p {
 }
 
 .profile-avatar {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
   border-radius: 50%;
   object-fit: cover;
   background-color: #1e293b;
@@ -426,8 +436,11 @@ p {
 
 /* Marcador de posición para el avatar del usuario / Espace réservé pour l'avatar de l'utilisateur */
 .avatar-placeholder {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
   border-radius: 50%;
   background: #1f2937;
   display: flex;
@@ -475,7 +488,7 @@ p {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
   gap: 2rem;
 }
 
@@ -828,7 +841,7 @@ p {
 /* Sección de herramientas y software de investigación / Section des outils et logiciels de recherche */
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
   gap: 1.5rem;
 }
 
@@ -1157,6 +1170,15 @@ p {
   
   .cv-item::before {
     left: -1.875rem;
+  }
+
+  .logo-fox {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-text {
+    font-size: 1.0rem;
   }
 }
 

@@ -557,7 +557,7 @@ function App() {
             <div className="animate-slide-up" style={{ marginTop: '2.5rem', textAlign: 'left' }} id="research-tech-section">
               <h2 className="text-gradient" style={{ marginBottom: '1.5rem' }}>{t.ui.researchSectionTitle}</h2>
               
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '1.5rem' }}>
                 {t.researchCards.map((card) => (
                   <div 
                     key={card.id} 
