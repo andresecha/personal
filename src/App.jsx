@@ -15,8 +15,7 @@ import {
   X,
   GraduationCap,
   Languages,
-  Users,
-  BookOpen
+  Users
 } from 'lucide-react';
 
 // Custom image logos for academic profiles & tech collaborations (stored locally)
@@ -245,7 +244,7 @@ function App() {
     const hash = window.location.hash.replace('#', '');
     if (hash === 'formacion') return 'cv';
     if (cvSections.includes(hash)) return 'cv';
-    const validTabs = ['sobre-mi', 'portafolio', 'publicaciones', 'herramientas', 'cv', 'blog'];
+    const validTabs = ['sobre-mi', 'portafolio', 'publicaciones', 'herramientas', 'cv'];
     return validTabs.includes(hash) ? hash : 'sobre-mi';
   });
 
@@ -268,7 +267,7 @@ function App() {
         }, 100);
         return;
       }
-      const validTabs = ['sobre-mi', 'portafolio', 'publicaciones', 'herramientas', 'cv', 'blog'];
+      const validTabs = ['sobre-mi', 'portafolio', 'publicaciones', 'herramientas', 'cv'];
       if (validTabs.includes(hash)) {
         setActiveTab(hash);
         window.scrollTo({ top: 0, behavior: 'instant' });
@@ -442,15 +441,6 @@ function App() {
                   {t.ui.navCv}
                 </button>
               </li>
-              <li>
-                <button 
-                  id="tab-btn-blog"
-                  className={`nav-btn ${activeTab === 'blog' ? 'active' : ''}`}
-                  onClick={() => navigateToTab('blog')}
-                >
-                  {t.ui.navBlog}
-                </button>
-              </li>
             </ul>
           </nav>
 
@@ -522,14 +512,6 @@ function App() {
             <Award size={18} />
             <span>{t.ui.navCv}</span>
           </button>
-          <button 
-            id="m-tab-btn-blog"
-            className={`mobile-nav-btn ${activeTab === 'blog' ? 'active' : ''}`}
-            onClick={() => navigateToTab('blog')}
-          >
-            <BookOpen size={18} />
-            <span>{t.ui.navBlogShort}</span>
-          </button>
         </div>
       </nav>
 
@@ -572,56 +554,59 @@ function App() {
               </div>
             </div>
 
-            {/* Sección: Metodología y Posicionamiento / Section: Méthodologie et Positionnement */}
-            {t.positioning && (
-              <div className="positioning-container animate-slide-up" style={{ marginTop: '3.5rem', marginBottom: '3.5rem' }}>
+            {/* Sección: Reflexiones (Blog) */}
+            {t.blogPosts && (
+              <div className="blog-section-container animate-slide-up" style={{ marginTop: '3.5rem', marginBottom: '3.5rem' }}>
                 <h2 className="text-gradient" style={{ marginBottom: '0.5rem', textAlign: 'left' }}>
-                  {t.positioning.sectionTitle}
+                  {t.ui.blogSectionTitle || "Reflexiones"}
                 </h2>
                 <p style={{ color: 'var(--text-secondary)', marginBottom: '2.5rem', fontSize: '1.1rem', fontStyle: 'italic', textAlign: 'left' }}>
-                  {t.positioning.sectionSubtitle}
+                  {t.ui.blogSectionIntro}
                 </p>
                 
-                <div className="positioning-grid">
-                  {/* Card 1: Constataciones / Constats */}
-                  <div className="positioning-card card">
-                    <div className="positioning-badge badge-constatations">
-                      {t.positioning.constatations.subtitle}
-                    </div>
-                    <h3>{t.positioning.constatations.title}</h3>
-                    <ul className="positioning-list">
-                      {t.positioning.constatations.items.map((item, idx) => (
-                        <li key={idx} dangerouslySetInnerHTML={{ __html: item }} />
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Card 2: Problemáticas / Problématiques */}
-                  <div className="positioning-card card">
-                    <div className="positioning-badge badge-problems">
-                      {t.positioning.problems.subtitle}
-                    </div>
-                    <h3>{t.positioning.problems.title}</h3>
-                    <ul className="positioning-list">
-                      {t.positioning.problems.items.map((item, idx) => (
-                        <li key={idx} dangerouslySetInnerHTML={{ __html: item }} />
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Card 3: Andrés Echavarría (Solución / Solution) */}
-                  <div className="positioning-card card highlighted-card">
-                    <div className="positioning-badge badge-solution">
-                      {t.positioning.solution.subtitle}
-                    </div>
-                    <h3 className="text-gradient-accent">{t.positioning.solution.title}</h3>
-                    <ul className="positioning-list">
-                      {t.positioning.solution.items.map((item, idx) => (
-                        <li key={idx} dangerouslySetInnerHTML={{ __html: item }} />
-                      ))}
-                    </ul>
-                  </div>
+                <div className="blog-grid">
+                  {t.blogPosts.map((post) => (
+                    <article key={post.id} className="card blog-card" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', borderBottom: '1px solid var(--border-color)', paddingBottom: '0.75rem' }}>
+                        <span className="blog-date" style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: 500 }}>{post.date}</span>
+                        <span className="blog-read-time tool-tag" style={{ margin: 0 }}>{post.readTime}</span>
+                      </div>
+                      <h2 className="text-gradient" style={{ fontSize: '1.4rem', marginBottom: '1rem', cursor: 'pointer', fontFamily: 'var(--heading)', fontWeight: 700 }} onClick={() => setSelectedPost(post)}>
+                        {post.title}
+                      </h2>
+                      <p style={{ fontSize: '0.98rem', lineHeight: '1.6', color: 'var(--text-secondary)', flexGrow: 1, marginBottom: '1.5rem' }}>
+                        {post.summary}
+                      </p>
+                      <button className="btn-primary" style={{ alignSelf: 'flex-start' }} onClick={() => setSelectedPost(post)}>
+                        <span>{t.ui.blogReadMore || "Leer artículo →"}</span>
+                      </button>
+                    </article>
+                  ))}
                 </div>
+
+                {/* Modal para leer el artículo completo */}
+                {selectedPost && (
+                  <div className="lightbox-overlay active" onClick={() => setSelectedPost(null)} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000, position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(39, 41, 21, 0.75)', backdropFilter: 'blur(8px)' }}>
+                    <div className="lightbox-content blog-modal-content" onClick={(e) => e.stopPropagation()} style={{ maxWidth: '800px', width: '90%', padding: '2.5rem', maxHeight: '80vh', overflowY: 'auto', borderRadius: '1rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border-color)', position: 'relative' }}>
+                      <button className="lightbox-close" onClick={() => setSelectedPost(null)} aria-label={t.ui.closeModal} style={{ position: 'absolute', top: '1.5rem', right: '1.5rem', background: 'transparent', border: 'none', color: 'var(--text-primary)', fontSize: '2rem', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '2rem', height: '2rem' }}>
+                        <X size={20} />
+                      </button>
+                      <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '1rem', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+                        <span>{selectedPost.date}</span>
+                        <span>•</span>
+                        <span className="tool-tag" style={{ margin: 0 }}>{selectedPost.readTime}</span>
+                      </div>
+                      <h1 className="text-gradient" style={{ fontSize: '1.8rem', marginBottom: '2rem', lineHeight: '1.3', fontFamily: 'var(--heading)', fontWeight: 700, paddingRight: '2rem' }}>
+                        {selectedPost.title}
+                      </h1>
+                      <div 
+                        className="blog-article-body" 
+                        style={{ fontSize: '1.05rem', lineHeight: '1.8', color: 'var(--text-primary)' }}
+                        dangerouslySetInnerHTML={{ __html: selectedPost.content }}
+                      />
+                    </div>
+                  </div>
+                )}
               </div>
             )}
 
@@ -1070,60 +1055,7 @@ function App() {
           </section>
         )}
 
-        {/* TAB: BLOG / REFLEXIONES */}
-        {activeTab === 'blog' && (
-          <section className="animate-slide-up" id="sec-blog">
-            <div className="section-intro">
-              <p className="profile-title">{t.ui.navBlogShort}</p>
-              <h1>{t.ui.blogSectionTitle}</h1>
-              <p>{t.ui.blogSectionIntro}</p>
-            </div>
 
-            <div className="blog-grid" style={{ marginTop: '2.5rem' }}>
-              {t.blogPosts.map((post) => (
-                <article key={post.id} className="card blog-card" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', borderBottom: '1px solid var(--border-color)', paddingBottom: '0.75rem' }}>
-                    <span className="blog-date" style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: 500 }}>{post.date}</span>
-                    <span className="blog-read-time tool-tag" style={{ margin: 0 }}>{post.readTime}</span>
-                  </div>
-                  <h2 className="text-gradient" style={{ fontSize: '1.4rem', marginBottom: '1rem', cursor: 'pointer', fontFamily: 'var(--heading)', fontWeight: 700 }} onClick={() => setSelectedPost(post)}>
-                    {post.title}
-                  </h2>
-                  <p style={{ fontSize: '0.98rem', lineHeight: '1.6', color: 'var(--text-secondary)', flexGrow: 1, marginBottom: '1.5rem' }}>
-                    {post.summary}
-                  </p>
-                  <button className="btn-primary" style={{ alignSelf: 'flex-start' }} onClick={() => setSelectedPost(post)}>
-                    <span>{t.ui.blogReadMore || "Leer artículo →"}</span>
-                  </button>
-                </article>
-              ))}
-            </div>
-
-            {/* Modal para leer el artículo completo */}
-            {selectedPost && (
-              <div className="lightbox-overlay active" onClick={() => setSelectedPost(null)} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000, position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(39, 41, 21, 0.75)', backdropFilter: 'blur(8px)' }}>
-                <div className="lightbox-content blog-modal-content" onClick={(e) => e.stopPropagation()} style={{ maxWidth: '800px', width: '90%', padding: '2.5rem', maxHeight: '80vh', overflowY: 'auto', borderRadius: '1rem', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border-color)', position: 'relative' }}>
-                  <button className="lightbox-close" onClick={() => setSelectedPost(null)} aria-label={t.ui.closeModal} style={{ position: 'absolute', top: '1.5rem', right: '1.5rem', background: 'transparent', border: 'none', color: 'var(--text-primary)', fontSize: '2rem', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '2rem', height: '2rem' }}>
-                    <X size={20} />
-                  </button>
-                  <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '1rem', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-                    <span>{selectedPost.date}</span>
-                    <span>•</span>
-                    <span className="tool-tag" style={{ margin: 0 }}>{selectedPost.readTime}</span>
-                  </div>
-                  <h1 className="text-gradient" style={{ fontSize: '1.8rem', marginBottom: '2rem', lineHeight: '1.3', fontFamily: 'var(--heading)', fontWeight: 700, paddingRight: '2rem' }}>
-                    {selectedPost.title}
-                  </h1>
-                  <div 
-                    className="blog-article-body" 
-                    style={{ fontSize: '1.05rem', lineHeight: '1.8', color: 'var(--text-primary)' }}
-                    dangerouslySetInnerHTML={{ __html: selectedPost.content }}
-                  />
-                </div>
-              </div>
-            )}
-          </section>
-        )}
 
 
       </main>
