@@ -1382,3 +1382,80 @@ p {
   font-weight: bold;
 }
 
+/* ==========================================================================
+   SECCIÓN DEL BLOG / REFLEXIONES (BLOG / RÉFLEXIONS)
+   ========================================================================== */
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  gap: 2rem;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.blog-card h2 {
+  font-family: var(--heading);
+  font-weight: 700;
+  transition: color var(--transition-fast);
+}
+
+.blog-card h2:hover {
+  color: var(--accent) !important;
+}
+
+.blog-modal-content {
+  box-shadow: var(--shadow-lg), var(--shadow-glow) !important;
+}
+
+.blog-article-body h3 {
+  font-family: var(--heading);
+  font-size: 1.3rem;
+  color: var(--text-title);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.blog-article-body p {
+  margin-bottom: 1.25rem;
+  font-size: 1.025rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+  text-align: justify;
+}
+
+.blog-article-body ul {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.blog-article-body li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.blog-article-body ul.bibliography {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.5rem;
+}
+
+.blog-article-body ul.bibliography li {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  text-indent: -1.5rem;
+  padding-left: 1.5rem;
+}
+
+
