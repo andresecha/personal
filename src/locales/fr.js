@@ -69,33 +69,33 @@ export default {
     "bioParagraph2": "Mon parcours académique a débuté par une Licence en Éducation : Arts Plastiques à l'Universidad de Antioquia, avant de la compléter en France par un Diplôme National Supérieur d'Expression Plastique à l'École Européenne Supérieure d'Art de Bretagne. Par la suite, j'ai obtenu un Master en Humanités Numériques, Lettres et Lexicographie à l'Université de Bretagne-Sud, puis j'ai soutenu mon doctorat en Études Romanes et Humanités Numériques à l'Université de Montpellier Paul-Valéry. Ma thèse de doctorat, qui prend comme cas d'étude les procès de l'Inquisition espagnole, propose une application pratique de la théorie de l'<strong><a href=\"https://networkcultures.org/wp-content/uploads/2018/03/Marcello_Vitali-Rosati_OnEditorialization-complete.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">éditorialisation</a></strong> formulée par Marcello Vitali-Rosati. Cette recherche s'inscrit dans une démarche de science ouverte et vise à produire des approches méthodologiques favorisant la collaboration autour de données historiques."
   },
   "positioning": {
-    "sectionTitle": "Transition méthodologique en Humanités Numériques",
-    "sectionSubtitle": "Constats → Problématiques → Pilotage",
+    "sectionTitle": "Infrastructures Épistémiques et Souveraineté Numérique",
+    "sectionSubtitle": "Constats → Problématiques → Pilotage et Transfert",
     "constatations": {
       "title": "1. Constats",
-      "subtitle": "L'état de l'art",
+      "subtitle": "La dépendance technologique dans l'académie",
       "items": [
-        "<strong>Numérisation de masse :</strong> Les institutions patrimoniales et universitaires en Amérique latine et en Europe ont numérisé des millions de manuscrits historiques. Néanmoins, l'accumulation de ces images ne se traduit pas automatiquement en données exploitables pour l'analyse textuelle.",
-        "<strong>Données isolées (Silos) :</strong> Une grande partie de la transcription et du catalogage actuel reste confinée dans des formats de traitement de texte locaux (fichiers Word, PDF sans OCR structuré), déconnectés des standards du Web Sémantique.",
-        "<strong>Scission disciplinaire :</strong> Il persiste un fossé entre les approches humanistes traditionnelles (philologie, paléographie, histoire) et l'ingénierie des données (bases de données relationnelles, apprentissage automatique, modélisation sémantique)."
+        "<strong>Le cycle d'extraction commerciale :</strong> Les universités financent la recherche sur fonds publics pour ensuite céder gratuitement les droits à des éditeurs privés, payant ensuite de lourds abonnements et des frais de traitement d'articles (APCs) pour lire et publier leur propre production.",
+        "<strong>Silos documentaires statiques :</strong> Le déploiement de dépôts plats (comme DSpace dans ses versions standards) isole les fichiers PDF. Cela empêche l'exploitation de données ouvertes liées (LOD) et rend impossible l'interprétation sémantique de la production scientifique locale.",
+        "<strong>Formations instrumentales et monopolisées :</strong> L'enseignement des humanités numériques se limite souvent à l'usage technique d'outils commerciaux propriétaires, occultant la souveraineté numérique, le design d'infrastructures ouvertes et la gouvernance des données."
       ]
     },
     "problems": {
       "title": "2. Problématiques",
-      "subtitle": "Les verrous méthodologiques",
+      "subtitle": "Les verrous institutionnels",
       "items": [
-        "<strong>Le goulot d'étranglement de la transcription manuelle :</strong> Les équipes de recherche et les doctorants consacrent des années de financement à la saisie manuelle des sources, au détriment du temps nécessaire à l'analyse critique et historique.",
-        "<strong>Absence d'interopérabilité internationale :</strong> Le manque d'adoption de standards ouverts (comme le XML-TEI pour l'encodage de textes et le SKOS/RDF pour les thésaurus) empêche l'indexation des collections locales par les grands agrégateurs mondiaux, limitant leur visibilité.",
-        "<strong>Risque d'obsolescence numérique :</strong> Les bases de données créées sans appliquer les principes FAIR (Facile à trouver, Accessible, Interopérable, Réutilisable) risquent de devenir inutilisables dès la clôture des projets de recherche."
+        "<strong>Asphyxie financière et licences :</strong> Les crises budgétaires universitaires se heurtent à des transferts de fonds irrationnels vers des monopoles éditoriaux étrangers et des logiciels propriétaires aux coûts de maintenance élevés.",
+        "<strong>Incompatibilité avec les données primaires :</strong> Les plateformes traditionnelles ne sont pas conçues pour gérer et valoriser les données de recherche brutes (code, bases de données, corpus patrimoniaux). Cela pénalise les chercheurs face aux exigences de science ouverte des bailleurs internationaux (tels qu'Horizon Europe).",
+        "<strong>Évaluation et découragement des chercheurs :</strong> Les modèles traditionnels d'évaluation valorisent uniquement les indicateurs commerciaux (Scopus, WoS). La curation de données et la publication en Accès Ouvert Diamant (comme OpenEdition, AmeliCA, Redalyc) restent marginalisées."
       ]
     },
     "solution": {
       "title": "3. Andrés Echavarría",
-      "subtitle": "Piloter la transition numérique",
+      "subtitle": "Solutions souveraines et pilotage",
       "items": [
-        "<strong>Un profil hybride et situé :</strong> Historien de formation, docteur en études romanes et humanités numériques, et ingénieur de recherche au CNRS. Andrés ne propose pas de solutions techniques génériques et déconnectées ; il comprend la sensibilité du chercheur face au manuscrit et la rigueur technique requise pour la structuration des données.",
-        "<strong>Des outils et des données validés :</strong> Ses compétences s'appuient sur des projets fonctionnels : bibliothèques Python publiques (PyPI), administration et traduction de thésaurus multilingues (Opentheso au sein de l'IR* Huma-Num) et dépôts de jeux de données scientifiques (Nakala/Zenodo).",
-        "<strong>Un partenaire académique rigoureux :</strong> Fort de son expérience dans la coordination technique de consortiums nationaux et européens (Consortium ARIANE, projet européen AMIS), Andrés conseille à partir de la pratique scientifique. C'est l'interlocuteur idéal pour animer des ateliers pratiques (HTR/OCR) en master et doctorat, expertiser des projets méthodologiques ou structurer l'infrastructure de données de projets scientifiques compétitifs."
+        "<strong>Design d'infrastructures de données FAIR :</strong> Docteur en humanités numériques et ingénieur de recherche au CNRS. Il conçoit et déploie des architectures de données ouvertes de faible coût inspirées du modèle français (Dataverse pour Recherche Data Gouv, Nakala d'Huma-Num, Stylo, Wikibase), associant informaticiens, bibliothécaires et chercheurs.",
+        "<strong>Alliances stratégiques et durabilité :</strong> Fort de son expérience dans la coordination technique de consortiums (ARIANE, projet européen AMIS) et de gestionnaires de thésaurus (Opentheso). Il facilite des partenariats internationaux (comme le modèle Freemium d'OpenEdition) générant des revenus réinvestis dans les revues locales.",
+        "<strong>Formations et transfert de compétences :</strong> Il conçoit des programmes académiques et anime des ateliers intensifs (HTR/OCR sémantique, XML-TEI, graphes de connaissances SPARQL) visant à bâtir des compétences techniques locales autonomes, en phase avec les politiques nationales de Science Ouverte."
       ]
     }
   },

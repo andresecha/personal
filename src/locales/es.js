@@ -69,33 +69,33 @@ export default {
     "bioParagraph2": "Mi formación académica se inició con una Licenciatura en educación en Artes Plásticas por la Universidad de Antioquia, y se complementó en Francia con un Diploma Nacional Superior de Expresión Plástica en la Escuela Europea Superior de Arte de Bretaña. Posteriormente, obtuve una Maestría en Humanidades Digitales, Letras y Lexicografía en la Universidad de Bretagne Sud, para luego concluir mi doctorado en Estudios Románicos y Humanidades Digitales en la Universidad de Montpellier Paul-Valéry. Mi tesis doctoral, que toma como caso de estudio los procesos de la Inquisición española, propone una aplicación práctica de la teoría de la <a href=\"https://networkcultures.org/wp-content/uploads/2018/03/Marcello_Vitali-Rosati_OnEditorialization-complete.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">editorialización</a> formulada por Marcello Vitali-Rosati. Esta investigación representa un esfuerzo por impulsar la ciencia abierta y desarrollar marcos metodológicos que promuevan la colaboración académica en torno a datos históricos."
   },
   "positioning": {
-    "sectionTitle": "Transición metodológica en Humanidades Digitales",
-    "sectionSubtitle": "Constataciones → Problemáticas → Pilotaje",
+    "sectionTitle": "Infraestructuras Epistémicas y Soberanía Digital",
+    "sectionSubtitle": "Constataciones → Problemáticas → Pilotaje y Transferencia",
     "constatations": {
       "title": "1. Constataciones",
-      "subtitle": "El estado del arte",
+      "subtitle": "La dependencia tecnológica en la academia",
       "items": [
-        "<strong>Digitalización a gran escala:</strong> Las instituciones culturales y académicas de América Latina y Europa han digitalizado millones de manuscritos e impresos históricos. Sin embargo, la acumulación de imágenes no se traduce automáticamente en datos explotables para la ciencia de los textos.",
-        "<strong>Datos aislados (Silos):</strong> Gran parte de la transcripción y catalogación actual se almacena en formatos de texto plano o procesadores de palabras locales (Word, PDF sin OCR estructurado), desconectados de los estándares de la Web Semántica.",
-        "<strong>Separación disciplinar:</strong> Subsiste una brecha entre las metodologías humanísticas tradicionales (filología, paleografía, historia) y el desarrollo de tecnologías de la información (bases de datos relacionales, aprendizaje automático y modelado semántico)."
+        "<strong>El ciclo de extracción comercial:</strong> Las universidades financian investigaciones con fondos públicos y ceden los derechos del conocimiento a consorcios editoriales privados, pagando luego costosas suscripciones y cargos por procesamiento de artículos (APCs) para poder leer y publicar su propia producción.",
+        "<strong>Silos documentales estáticos:</strong> El despliegue de repositorios planos (como DSpace en configuraciones estándar) almacena PDFs de forma aislada. Esto impide el aprovechamiento de datos abiertos conectados (LOD) e imposibilita que la Web Semántica interprete y reutilice la producción científica local.",
+        "<strong>Formación instrumental y monopolizada:</strong> La enseñanza de las humanidades digitales a menudo se reduce al uso técnico de herramientas comerciales propietarias, marginando el debate político sobre la soberanía digital, el diseño de infraestructuras abiertas y el control soberano sobre los datos."
       ]
     },
     "problems": {
       "title": "2. Problemáticas",
-      "subtitle": "Los cuellos de botella",
+      "subtitle": "Los cuellos de botella institucionales",
       "items": [
-        "<strong>El costo de la transcripción manual:</strong> Los grupos de investigación y doctorandos consumen años de financiación en la digitalización manual de fuentes, en detrimento del tiempo dedicado al análisis interpretativo y crítico.",
-        "<strong>Pérdida de estándares e interoperabilidad:</strong> La falta de adopción de estándares internacionales (como XML-TEI para marcado de textos o SKOS/RDF para tesauros) impide que las colecciones digitales nacionales sean indexadas por agregadores globales, restándoles visibilidad y acceso abierto.",
-        "<strong>Riesgo de obsolescencia:</strong> Las bases de datos locales creadas sin principios FAIR (Encontrable, Accesible, Interoperable, Reutilizable) corren el riesgo de quedar inutilizables una vez concluidos los fondos de los proyectos."
+        "<strong>Asfixia fiscal y licencias:</strong> Las crisis presupuestarias universitarias chocan con transferencias irracionales de recursos hacia monopolios editoriales extranjeros y plataformas de software propietario de alto coste de mantenimiento.",
+        "<strong>Incompatibilidad con los datos primarios:</strong> Las plataformas tradicionales no están diseñadas para gestionar y curar datos científicos primarios (código, bases de datos relacionales, corpus patrimoniales). Esto dificulta que los investigadores cumplan con los mandatos obligatorios de Ciencia Abierta de agencias financiadoras internacionales (como Horizon Europe).",
+        "<strong>Evaluación y desincentivo docente:</strong> Los modelos de evaluación tradicionales valoran únicamente los indicadores comerciales de Scopus o WoS. Se margina la curaduría de datos científicos y la publicación en Acceso Abierto Diamante (como OpenEdition, AmeliCA o Redalyc), desincentivando la apertura de la investigación."
       ]
     },
     "solution": {
       "title": "3. Andrés Echavarría",
-      "subtitle": "Pilotar la transición metodológica",
+      "subtitle": "Soluciones soberanas y pilotaje",
       "items": [
-        "<strong>Un perfil híbrido y situado:</strong> Historiador/artista de base, doctor en estudios románicos y humanidades digitales, e ingeniero de investigación del CNRS (Francia). Andrés no propone herramientas genéricas desde fuera; comprende la sensibilidad del paleógrafo ante la fuente y el rigor técnico que exige el modelado de datos.",
-        "<strong>Soluciones de software y datos reales:</strong> Su trabajo se respalda con desarrollos funcionales: bibliotecas públicas de Python para cómputo histórico (PyPI), traducción e integración de vocabularios controlados multilingües (Opentheso en la infraestructura Huma-Num) y esquemas de validación de datos (Nakala/Zenodo).",
-        "<strong>Par académico de confianza:</strong> Con experiencia en el codiseño y la coordinación técnica de consorcios internacionales (consorcio ARIANE, proyecto AMIS financiado por la UE), Andrés asesora desde la práctica científica. Es el colaborador ideal para dictar talleres intensivos HTR/OCR en posgrados, evaluar proyectos metodológicos y diseñar la infraestructura de datos en investigaciones competitivas."
+        "<strong>Diseño de infraestructuras de datos FAIR:</strong> Doctor en humanidades digitales e ingeniero de investigación del CNRS (Francia). Propone y despliega arquitecturas de datos abiertas y de bajo coste basadas en modelos de éxito franceses (como Dataverse para Recherche Data Gouv, Nakala de Huma-Num, Stylo y Wikibase), integrando a técnicos, bibliotecarios e investigadores.",
+        "<strong>Alianzas estratégicas y sostenibilidad:</strong> Experto en la coordinación técnica de consorcios científicos (ARIANE, proyecto europeo AMIS) y en la administración de vocabularios controlados (Opentheso). Facilita acuerdos internacionales (como el modelo Freemium de OpenEdition) que retornan ingresos a las revistas locales y mejoran su visibilidad global.",
+        "<strong>Formación con perspectiva social:</strong> Diseña programas académicos y dirige talleres intensivos (HTR/OCR semántico, XML-TEI, grafos de conocimiento SPARQL) orientados a construir capacidades técnicas locales y autónomas en las universidades, alineando las instituciones con la normativa nacional de Ciencia Abierta (Resolución 0777 de 2022)."
       ]
     }
   },
