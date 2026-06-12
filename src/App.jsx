@@ -553,6 +553,59 @@ function App() {
               </div>
             </div>
 
+            {/* Sección: Metodología y Posicionamiento / Section: Méthodologie et Positionnement */}
+            {t.positioning && (
+              <div className="positioning-container animate-slide-up" style={{ marginTop: '3.5rem', marginBottom: '3.5rem' }}>
+                <h2 className="text-gradient" style={{ marginBottom: '0.5rem', textAlign: 'left' }}>
+                  {t.positioning.sectionTitle}
+                </h2>
+                <p style={{ color: 'var(--text-secondary)', marginBottom: '2.5rem', fontSize: '1.1rem', fontStyle: 'italic', textAlign: 'left' }}>
+                  {t.positioning.sectionSubtitle}
+                </p>
+                
+                <div className="positioning-grid">
+                  {/* Card 1: Constataciones / Constats */}
+                  <div className="positioning-card card">
+                    <div className="positioning-badge badge-constatations">
+                      {t.positioning.constatations.subtitle}
+                    </div>
+                    <h3>{t.positioning.constatations.title}</h3>
+                    <ul className="positioning-list">
+                      {t.positioning.constatations.items.map((item, idx) => (
+                        <li key={idx} dangerouslySetInnerHTML={{ __html: item }} />
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Card 2: Problemáticas / Problématiques */}
+                  <div className="positioning-card card">
+                    <div className="positioning-badge badge-problems">
+                      {t.positioning.problems.subtitle}
+                    </div>
+                    <h3>{t.positioning.problems.title}</h3>
+                    <ul className="positioning-list">
+                      {t.positioning.problems.items.map((item, idx) => (
+                        <li key={idx} dangerouslySetInnerHTML={{ __html: item }} />
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Card 3: Andrés Echavarría (Solución / Solution) */}
+                  <div className="positioning-card card highlighted-card">
+                    <div className="positioning-badge badge-solution">
+                      {t.positioning.solution.subtitle}
+                    </div>
+                    <h3 className="text-gradient-accent">{t.positioning.solution.title}</h3>
+                    <ul className="positioning-list">
+                      {t.positioning.solution.items.map((item, idx) => (
+                        <li key={idx} dangerouslySetInnerHTML={{ __html: item }} />
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            )}
+
             {/* Featured Research Cards Grid */}
             <div className="animate-slide-up" style={{ marginTop: '2.5rem', textAlign: 'left' }} id="research-tech-section">
               <h2 className="text-gradient" style={{ marginBottom: '1.5rem' }}>{t.ui.researchSectionTitle}</h2>

@@ -68,6 +68,37 @@ export default {
     "bioParagraph1": "I am a Franco-Colombian researcher specializing in the intersection of the humanities and digital technologies. My work draws on methods from history, philology, linguistics, lexicography, and textual studies. I currently work as a research engineer in digital humanities at the <strong>Centre National de la Recherche Scientifique (CNRS)</strong>. In this capacity, I contribute to the development of <strong>AMIS (Advanced Metadata Intelligent System)</strong>, a European project funded under the Horizon Europe OSCARS program. I also serve as webmaster and a member of the scientific steering committee for the <strong>ARIANE</strong> Consortium and the <strong><a href=\"http://cartas.huma-num.fr/\" target=\"_blank\" rel=\"noopener noreferrer\">ANR CARTAS</a></strong> project, both of which are integrated into the <strong>Huma-Num</strong> research infrastructure.",
     "bioParagraph2": "My academic background began with a Bachelor's degree in Fine Arts Education from the University of Antioquia, which I later complemented in France by earning a Higher National Diploma in Visual Arts from the <strong>European Academy of Art in Brittany</strong>. Subsequently, I obtained a Master's degree in Digital Humanities, Literature, and Lexicography from the <strong>University of Southern Brittany</strong>. I later completed my doctorate in Romance Studies and Digital Humanities at the <strong>University of Montpellier Paul-Valéry</strong>. My doctoral dissertation, using Spanish Inquisition trial records as a case study, proposes a practical application of the <a href=\"https://networkcultures.org/wp-content/uploads/2018/03/Marcello_Vitali-Rosati_OnEditorialization-complete.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">editorialization</a> theory formulated by Marcello Vitali-Rosati. This research aims to promote open science and develop methodological frameworks that foster academic collaboration on historical data."
   },
+  "positioning": {
+    "sectionTitle": "Methodological Transition in Digital Humanities",
+    "sectionSubtitle": "Findings → Challenges → Driving Force",
+    "constatations": {
+      "title": "1. Findings",
+      "subtitle": "The state of the art",
+      "items": [
+        "<strong>Large-scale digitization:</strong> Cultural and academic institutions in Latin America and Europe have digitized millions of historical manuscripts. However, compiling images does not automatically result in exploitable data for textual science.",
+        "<strong>Siloed data:</strong> Much of the current transcription and cataloging remains locked in local text formats (Word files, unstructured PDFs), disconnected from Semantic Web standards.",
+        "<strong>Disciplinary divide:</strong> A gap persists between traditional humanistic methodologies (philology, paleography, history) and information technologies (relational databases, machine learning, semantic modeling)."
+      ]
+    },
+    "problems": {
+      "title": "2. Challenges",
+      "subtitle": "The bottlenecks",
+      "items": [
+        "<strong>High cost of manual transcription:</strong> Research teams and doctoral candidates spend years of funding on manual transcription, limiting the time available for interpretive and critical analysis.",
+        "<strong>Lack of standards and interoperability:</strong> The slow adoption of international standards (such as XML-TEI for text encoding or SKOS/RDF for thesauri) prevents national digital collections from being indexed by global aggregators, reducing their visibility and open access.",
+        "<strong>Risk of obsolescence:</strong> Local databases built without adhering to FAIR principles (Findable, Accessible, Interoperable, Reusable) run the risk of becoming unusable once project funding ends."
+      ]
+    },
+    "solution": {
+      "title": "3. Andrés Echavarría",
+      "subtitle": "Driving the methodological transition",
+      "items": [
+        "<strong>A situated, hybrid profile:</strong> Historian and visual artist by training, PhD in Romance Studies and Digital Humanities, and research engineer at the CNRS (France). Andrés does not propose generic, external software tools; he understands both the paleographer's sensitivity toward the source and the technical rigor required for data modeling.",
+        "<strong>Validated software and data solutions:</strong> His expertise is backed by functional developments: public Python libraries for historical computing (PyPI), the translation and integration of multilingual controlled vocabularies (Opentheso within the Huma-Num infrastructure), and data validation schemas (Nakala/Zenodo).",
+        "<strong>A trusted academic partner:</strong> Experienced in the technical co-design and coordination of international consortia (ARIANE consortium, EU-funded AMIS project), Andrés provides advice grounded in scientific practice. He is the ideal collaborator to lead intensive HTR/OCR workshops for graduate programs, evaluate methodological projects, and design data infrastructures for competitive research proposals."
+      ]
+    }
+  },
   "artworks": [
     {
       "id": "logo-zorro",

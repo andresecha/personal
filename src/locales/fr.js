@@ -68,6 +68,37 @@ export default {
     "bioParagraph1": "Je suis un chercheur colombo-français spécialisé dans la convergence des humanités traditionnelles et des technologies numériques. Mon travail intègre des disciplines telles que l'histoire, la philologie, la linguistique, la lexicographie et la science des textes. Actuellement, j'exerce en tant qu'ingénieur de recherche en humanités numériques au <strong>Centre National de la Recherche Scientifique (CNRS)</strong>. Dans ce cadre, je participe au développement de <strong>AMIS (Advanced Metadata Intelligent System)</strong>, un projet européen financé par le programme Horizon Europe (OSCARS). De plus, je suis membre du comité de pilotage scientifique en tant que webmaster du Consortium <strong>ARIANE</strong> et du projet <strong><a href=\"http://cartas.huma-num.fr/\" target=\"_blank\" rel=\"noopener noreferrer\">ANR CARTAS</a></strong>, deux initiatives intégrées à l'infrastructure de recherche <strong>Huma-Num</strong>.",
     "bioParagraph2": "Mon parcours académique a débuté par une Licence en Éducation : Arts Plastiques à l'Universidad de Antioquia, avant de la compléter en France par un Diplôme National Supérieur d'Expression Plastique à l'École Européenne Supérieure d'Art de Bretagne. Par la suite, j'ai obtenu un Master en Humanités Numériques, Lettres et Lexicographie à l'Université de Bretagne-Sud, puis j'ai soutenu mon doctorat en Études Romanes et Humanités Numériques à l'Université de Montpellier Paul-Valéry. Ma thèse de doctorat, qui prend comme cas d'étude les procès de l'Inquisition espagnole, propose une application pratique de la théorie de l'<strong><a href=\"https://networkcultures.org/wp-content/uploads/2018/03/Marcello_Vitali-Rosati_OnEditorialization-complete.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">éditorialisation</a></strong> formulée par Marcello Vitali-Rosati. Cette recherche s'inscrit dans une démarche de science ouverte et vise à produire des approches méthodologiques favorisant la collaboration autour de données historiques."
   },
+  "positioning": {
+    "sectionTitle": "Transition méthodologique en Humanités Numériques",
+    "sectionSubtitle": "Constats → Problématiques → Pilotage",
+    "constatations": {
+      "title": "1. Constats",
+      "subtitle": "L'état de l'art",
+      "items": [
+        "<strong>Numérisation de masse :</strong> Les institutions patrimoniales et universitaires en Amérique latine et en Europe ont numérisé des millions de manuscrits historiques. Néanmoins, l'accumulation de ces images ne se traduit pas automatiquement en données exploitables pour l'analyse textuelle.",
+        "<strong>Données isolées (Silos) :</strong> Une grande partie de la transcription et du catalogage actuel reste confinée dans des formats de traitement de texte locaux (fichiers Word, PDF sans OCR structuré), déconnectés des standards du Web Sémantique.",
+        "<strong>Scission disciplinaire :</strong> Il persiste un fossé entre les approches humanistes traditionnelles (philologie, paléographie, histoire) et l'ingénierie des données (bases de données relationnelles, apprentissage automatique, modélisation sémantique)."
+      ]
+    },
+    "problems": {
+      "title": "2. Problématiques",
+      "subtitle": "Les verrous méthodologiques",
+      "items": [
+        "<strong>Le goulot d'étranglement de la transcription manuelle :</strong> Les équipes de recherche et les doctorants consacrent des années de financement à la saisie manuelle des sources, au détriment du temps nécessaire à l'analyse critique et historique.",
+        "<strong>Absence d'interopérabilité internationale :</strong> Le manque d'adoption de standards ouverts (comme le XML-TEI pour l'encodage de textes et le SKOS/RDF pour les thésaurus) empêche l'indexation des collections locales par les grands agrégateurs mondiaux, limitant leur visibilité.",
+        "<strong>Risque d'obsolescence numérique :</strong> Les bases de données créées sans appliquer les principes FAIR (Facile à trouver, Accessible, Interopérable, Réutilisable) risquent de devenir inutilisables dès la clôture des projets de recherche."
+      ]
+    },
+    "solution": {
+      "title": "3. Andrés Echavarría",
+      "subtitle": "Piloter la transition numérique",
+      "items": [
+        "<strong>Un profil hybride et situé :</strong> Historien de formation, docteur en études romanes et humanités numériques, et ingénieur de recherche au CNRS. Andrés ne propose pas de solutions techniques génériques et déconnectées ; il comprend la sensibilité du chercheur face au manuscrit et la rigueur technique requise pour la structuration des données.",
+        "<strong>Des outils et des données validés :</strong> Ses compétences s'appuient sur des projets fonctionnels : bibliothèques Python publiques (PyPI), administration et traduction de thésaurus multilingues (Opentheso au sein de l'IR* Huma-Num) et dépôts de jeux de données scientifiques (Nakala/Zenodo).",
+        "<strong>Un partenaire académique rigoureux :</strong> Fort de son expérience dans la coordination technique de consortiums nationaux et européens (Consortium ARIANE, projet européen AMIS), Andrés conseille à partir de la pratique scientifique. C'est l'interlocuteur idéal pour animer des ateliers pratiques (HTR/OCR) en master et doctorat, expertiser des projets méthodologiques ou structurer l'infrastructure de données de projets scientifiques compétitifs."
+      ]
+    }
+  },
   "artworks": [
     {
       "id": "logo-zorro",
