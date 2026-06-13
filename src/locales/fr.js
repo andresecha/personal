@@ -65,7 +65,7 @@ export default {
     "navBlog": "Réflexions",
     "navBlogShort": "Blog",
     "blogSectionTitle": "Réflexions sur la Science Ouverte et la Souveraineté Technologique",
-    "blogSectionIntro": "Un espace de débat critique sur les infrastructures de recherche, les humanités numériques situées et l'accès ouvert non commercial en Amérique latine.",
+    "blogSectionIntro": "Un espace de débat critique sur les infrastructures de recherche, les humanités numériques situées et l'accès ouvert non commercial, en prenant comme exemple des cas pratiques comme celui de la Colombie.",
     "blogReadMore": "Lire l'article complet"
   },
   "profile": {

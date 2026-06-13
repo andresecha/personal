@@ -65,7 +65,7 @@ export default {
     "navBlog": "Reflections",
     "navBlogShort": "Blog",
     "blogSectionTitle": "Reflections on Open Science & Technological Sovereignty",
-    "blogSectionIntro": "An academic space for critical debate on research infrastructure, situated digital humanities, and non-commercial open access in Colombia and Latin America.",
+    "blogSectionIntro": "An academic space for critical debate on research infrastructure, situated digital humanities, and non-commercial open access, taking practical cases like Colombia as an example.",
     "blogReadMore": "Read full article"
   },
   "profile": {

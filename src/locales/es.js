@@ -65,7 +65,7 @@ export default {
     "navBlog": "Reflexiones",
     "navBlogShort": "Blog",
     "blogSectionTitle": "Reflexiones sobre Ciencia Abierta y Soberanía Tecnológica",
-    "blogSectionIntro": "Un espacio académico de debate crítico en torno a la infraestructura epistémica, las humanidades digitales situadas y el acceso abierto no comercial en Colombia y América Latina.",
+    "blogSectionIntro": "Un espacio académico de debate crítico en torno a la infraestructura epistémica, las humanidades digitales situadas y el acceso abierto no comercial, tomando como ejemplo casos prácticos como el de Colombia.",
     "blogReadMore": "Leer artículo completo"
   },
   "profile": {
