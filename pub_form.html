@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector de Publicaciones</title>
+  <style>
+    :root {
+      --primary-color: #a4b494;
+      --primary-hover: #8f9f7f;
+      --bg-color: #171810;
+      --card-bg: #222417;
+      --text-color: #e3e4db;
+      --text-muted: #a3a49b;
+      --border-color: #333622;
+      --accent: #d2a450;
+      --input-bg: #1c1d12;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      padding: 2rem 1rem;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 650px;
+      width: 100%;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.75rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label.section-title {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    select, input[type="text"] {
+      background-color: var(--input-bg);
+      border: 1px solid var(--border-color);
+      color: var(--text-color);
+      padding: 0.75rem;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    select:focus, input[type="text"]:focus {
+      border-color: var(--primary-color);
+    }
+
+    .search-box {
+      margin-bottom: 1rem;
+    }
+
+    .checkbox-container {
+      max-height: 250px;
+      overflow-y: auto;
+      border: 1px solid var(--border-color);
+      background-color: var(--input-bg);
+      border-radius: 6px;
+      padding: 1rem;
+    }
+
+    .year-group h3 {
+      font-size: 1rem;
+      margin: 0.75rem 0 0.5rem 0;
+      color: var(--accent);
+      border-bottom: 1px dashed var(--border-color);
+      padding-bottom: 0.25rem;
+    }
+
+    .pub-checkbox-label {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 0.65rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      color: var(--text-color);
+    }
+
+    .pub-checkbox-label input[type="checkbox"] {
+      margin-right: 0.75rem;
+      margin-top: 0.15rem;
+      accent-color: var(--primary-color);
+    }
+
+    .pub-checkbox-label:hover {
+      color: var(--primary-color);
+    }
+
+    .btn-submit {
+      background-color: var(--primary-color);
+      color: var(--bg-color);
+      border: none;
+      padding: 0.85rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.1s;
+      margin-top: 1rem;
+    }
+
+    .btn-submit:hover {
+      background-color: var(--primary-hover);
+    }
+
+    .btn-submit:active {
+      transform: scale(0.98);
+    }
+
+    /* Scrollbar styling */
+    .checkbox-container::-webkit-scrollbar {
+      width: 6px;
+    }
+    .checkbox-container::-webkit-scrollbar-track {
+      background: var(--input-bg);
+    }
+    .checkbox-container::-webkit-scrollbar-thumb {
+      background: var(--border-color);
+      border-radius: 3px;
+    }
+    .checkbox-container::-webkit-scrollbar-thumb:hover {
+      background: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Selector de Publicaciones</h1>
+    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+      Código fuente HTML estructurado para integración en formularios académicos o de contacto.
+    </p>
+
+    <form id="pub-selection-form" action="#" method="POST" onsubmit="handleSubmit(event)">
+      
+      <!-- 1. Menú Desplegable (Select Dropdown) -->
+      <div class="form-group">
+        <label class="section-title" for="pub-dropdown">Opción A: Selección Única (Dropdown)</label>
+        <select id="pub-dropdown" name="single_publication">
+      <option value="">-- Seleccione una publicación --</option>
+      <option value="https://opentheso.huma-num.fr/?idt=43">2026 - Typologie des genres textuels (traducción al español)</option>
+      <option value="https://doi.org/10.58079/15uxf">2026 - Importar y exportar un tesauro</option>
+      <option value="https://doi.org/10.58079/15uxe">2026 - Construir un tesauro</option>
+      <option value="https://doi.org/10.58079/15tup">2026 - Buenas prácticas para estructurar un tesauro</option>
+      <option value="https://hal.science/hal-05631254v1">2026 - Du script artisanal à l’infrastructure ouverte</option>
+      <option value="https://hal.science/hal-05631466v1">2026 - Aplicación de HTR a la transcripción de impresos antiguos y manuscritos</option>
+      <option value="https://www.iberoamericana-vervuert.es/FichaLibro2.aspx?P1=266046">2026 - Las normas del secreto: El Orden de processar de Pablo García y la TEI como modelos de estandarización documental</option>
+      <option value="#">2025 - Variabilité documentaire, TEI et vocabulaires contrôlés : annoter, classifier et réutiliser les procès de foi de l'Inquisition espagnole</option>
+      <option value="https://opentheso.huma-num.fr/?idt=Inq_Thes">2025 - Thésaurus des typologies documentaires inquisitoriales</option>
+      <option value="https://hal.science/hal-05267873v1">2025 - CER et WER : métriques d'évaluation de modèles de reconnaissance automatique de manuscrits et d'imprimés anciens</option>
+      <option value="https://hal.science/hal-05267874v1">2025 - CER y WER: métricas de evaluación de modelos de reconocimiento automático de manuscritos e impresos antiguos</option>
+      <option value="https://univ-montpellier3-paul-valery.hal.science/hal-04915679v1">2025 - D4R: An Interactive and Visual Exploration of a 16th Century Corpus on Spanish Inquisition</option>
+      <option value="https://hal.science/hal-05337238v1">2025 - Critères du recensement d'ontologies, thésaurus et vocabulaire contrôlé en littérature</option>
+      <option value="https://hal.science/hal-05017096v1">2025 - D4R: An Interactive and Visual Exploration of a 16th Century Corpus on Spanish Inquisition</option>
+      <option value="https://theses.hal.science/tel-05318449v1">2025 - Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire</option>
+      <option value="#">2025 - TEI y RDF aplicados a la documentación de los procesos inquisitoriales</option>
+      <option value="#">2024 - Vocabularios controlados para las Humanidades</option>
+      <option value="#">2024 - {DES}PROGRAMAR LO {IM}PERFECTO. Pensar en Humanidades Digitales</option>
+      <option value="#">2023 - Tinta, píxel y texto electrónico. Transcripción asistida por computación</option>
+      <option value="https://hal.science/hal-04102093v1">2023 - Redes y formalización de las relaciones entre - XML-TEI</option>
+      <option value="https://hal.science/hal-04367139v1">2023 - Nuevas herramientas digitales para el estudio de la documentación inquisitorial</option>
+      <option value="https://hal.science/hal-04148001v1">2023 - Exploration des réseaux et leur representación</option>
+      <option value="https://shs.hal.science/halshs-04254996v1">2023 - West meets East</option>
+      <option value="https://hal.science/hal-04102105v1">2023 - Procesos inquisitoriales: establecimiento de fases para su representación y codificación en XML-TEI</option>
+      <option value="#">2023 - Los semas protestantes en el proceso inquisitorial: la acusación contra Pedro de Cazalla</option>
+      <option value="#">2023 - Perennizar la ciencia en lo digital</option>
+      <option value="https://hal.science/hal-03863011v1">2022 - Transcripción automática del impreso antiguo</option>
+      <option value="https://hal.science/hal-04101469v1">2022 - Síntesis y avances del proyecto ANR-D4R</option>
+      <option value="https://hal.science/hal-03993560v1">2022 - Definición de conceptos. Reflexiones hacia la construcción de una Ontología del proyecto D4R</option>
+      <option value="https://hal.science/hal-04101451v1">2022 - Líneas directrices TEI para la codificación de textos impresos y manuscritos en español del siglo XVI</option>
+      <option value="https://hal.science/hal-04101445v1">2022 - Tecnologías de HTR aplicadas al proyecto ANR-D4R</option>
+      <option value="#">2022 - Transcripción automática de textos antiguos: del archivo al machine readable</option>
+      <option value="https://shs.hal.science/halshs-03408209v1">2021 - FAIRiser vos données : mémorandum</option>
+      <option value="#">2016 - Descolonizar la universidad: la influencia del neoliberalismo y algunos aportes a la educación para la paz</option>
+        </select>
+      </div>
+
+      <!-- 2. Checklist de Selección Múltiple con Filtro -->
+      <div class="form-group">
+        <label class="section-title">Opción B: Selección Múltiple (Checklist)</label>
+        
+        <!-- Buscador integrado -->
+        <input type="text" id="pub-search" class="search-box" placeholder="Buscar publicación por título o palabra clave..." onkeyup="filterPublications()">
+        
+        <div class="checkbox-container" id="checkbox-list">
+      <div class="year-group">
+        <h3>2026</h3>
+        <label class="pub-checkbox-label" for="pub_2026_0">
+          <input type="checkbox" id="pub_2026_0" name="selected_publications" value="https://opentheso.huma-num.fr/?idt=43">
+          <span class="checkbox-text">Typologie des genres textuels (traducción al español)</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2026_1">
+          <input type="checkbox" id="pub_2026_1" name="selected_publications" value="https://doi.org/10.58079/15uxf">
+          <span class="checkbox-text">Importar y exportar un tesauro</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2026_2">
+          <input type="checkbox" id="pub_2026_2" name="selected_publications" value="https://doi.org/10.58079/15uxe">
+          <span class="checkbox-text">Construir un tesauro</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2026_3">
+          <input type="checkbox" id="pub_2026_3" name="selected_publications" value="https://doi.org/10.58079/15tup">
+          <span class="checkbox-text">Buenas prácticas para estructurar un tesauro</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2026_4">
+          <input type="checkbox" id="pub_2026_4" name="selected_publications" value="https://hal.science/hal-05631254v1">
+          <span class="checkbox-text">Du script artisanal à l’infrastructure ouverte</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2026_5">
+          <input type="checkbox" id="pub_2026_5" name="selected_publications" value="https://hal.science/hal-05631466v1">
+          <span class="checkbox-text">Aplicación de HTR a la transcripción de impresos antiguos y manuscritos</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2026_6">
+          <input type="checkbox" id="pub_2026_6" name="selected_publications" value="https://www.iberoamericana-vervuert.es/FichaLibro2.aspx?P1=266046">
+          <span class="checkbox-text">Las normas del secreto: El Orden de processar de Pablo García y la TEI como modelos de estandarización documental</span>
+        </label>
+      </div>
+      <div class="year-group">
+        <h3>2025</h3>
+        <label class="pub-checkbox-label" for="pub_2025_0">
+          <input type="checkbox" id="pub_2025_0" name="selected_publications" value="#">
+          <span class="checkbox-text">Variabilité documentaire, TEI et vocabulaires contrôlés : annoter, classifier et réutiliser les procès de foi de l'Inquisition espagnole</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2025_1">
+          <input type="checkbox" id="pub_2025_1" name="selected_publications" value="https://opentheso.huma-num.fr/?idt=Inq_Thes">
+          <span class="checkbox-text">Thésaurus des typologies documentaires inquisitoriales</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2025_2">
+          <input type="checkbox" id="pub_2025_2" name="selected_publications" value="https://hal.science/hal-05267873v1">
+          <span class="checkbox-text">CER et WER : métriques d'évaluation de modèles de reconnaissance automatique de manuscrits et d'imprimés anciens</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2025_3">
+          <input type="checkbox" id="pub_2025_3" name="selected_publications" value="https://hal.science/hal-05267874v1">
+          <span class="checkbox-text">CER y WER: métricas de evaluación de modelos de reconocimiento automático de manuscritos e impresos antiguos</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2025_4">
+          <input type="checkbox" id="pub_2025_4" name="selected_publications" value="https://univ-montpellier3-paul-valery.hal.science/hal-04915679v1">
+          <span class="checkbox-text">D4R: An Interactive and Visual Exploration of a 16th Century Corpus on Spanish Inquisition</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2025_5">
+          <input type="checkbox" id="pub_2025_5" name="selected_publications" value="https://hal.science/hal-05337238v1">
+          <span class="checkbox-text">Critères du recensement d'ontologies, thésaurus et vocabulaire contrôlé en littérature</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2025_6">
+          <input type="checkbox" id="pub_2025_6" name="selected_publications" value="https://hal.science/hal-05017096v1">
+          <span class="checkbox-text">D4R: An Interactive and Visual Exploration of a 16th Century Corpus on Spanish Inquisition</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2025_7">
+          <input type="checkbox" id="pub_2025_7" name="selected_publications" value="https://theses.hal.science/tel-05318449v1">
+          <span class="checkbox-text">Éditorialisation des procès de foi espagnols : annotation textuelle et thésaurus documentaire</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2025_8">
+          <input type="checkbox" id="pub_2025_8" name="selected_publications" value="#">
+          <span class="checkbox-text">TEI y RDF aplicados a la documentación de los procesos inquisitoriales</span>
+        </label>
+      </div>
+      <div class="year-group">
+        <h3>2024</h3>
+        <label class="pub-checkbox-label" for="pub_2024_0">
+          <input type="checkbox" id="pub_2024_0" name="selected_publications" value="#">
+          <span class="checkbox-text">Vocabularios controlados para las Humanidades</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2024_1">
+          <input type="checkbox" id="pub_2024_1" name="selected_publications" value="#">
+          <span class="checkbox-text">{DES}PROGRAMAR LO {IM}PERFECTO. Pensar en Humanidades Digitales</span>
+        </label>
+      </div>
+      <div class="year-group">
+        <h3>2023</h3>
+        <label class="pub-checkbox-label" for="pub_2023_0">
+          <input type="checkbox" id="pub_2023_0" name="selected_publications" value="#">
+          <span class="checkbox-text">Tinta, píxel y texto electrónico. Transcripción asistida por computación</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2023_1">
+          <input type="checkbox" id="pub_2023_1" name="selected_publications" value="https://hal.science/hal-04102093v1">
+          <span class="checkbox-text">Redes y formalización de las relaciones entre - XML-TEI</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2023_2">
+          <input type="checkbox" id="pub_2023_2" name="selected_publications" value="https://hal.science/hal-04367139v1">
+          <span class="checkbox-text">Nuevas herramientas digitales para el estudio de la documentación inquisitorial</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2023_3">
+          <input type="checkbox" id="pub_2023_3" name="selected_publications" value="https://hal.science/hal-04148001v1">
+          <span class="checkbox-text">Exploration des réseaux et leur representación</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2023_4">
+          <input type="checkbox" id="pub_2023_4" name="selected_publications" value="https://shs.hal.science/halshs-04254996v1">
+          <span class="checkbox-text">West meets East</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2023_5">
+          <input type="checkbox" id="pub_2023_5" name="selected_publications" value="https://hal.science/hal-04102105v1">
+          <span class="checkbox-text">Procesos inquisitoriales: establecimiento de fases para su representación y codificación en XML-TEI</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2023_6">
+          <input type="checkbox" id="pub_2023_6" name="selected_publications" value="#">
+          <span class="checkbox-text">Los semas protestantes en el proceso inquisitorial: la acusación contra Pedro de Cazalla</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2023_7">
+          <input type="checkbox" id="pub_2023_7" name="selected_publications" value="#">
+          <span class="checkbox-text">Perennizar la ciencia en lo digital</span>
+        </label>
+      </div>
+      <div class="year-group">
+        <h3>2022</h3>
+        <label class="pub-checkbox-label" for="pub_2022_0">
+          <input type="checkbox" id="pub_2022_0" name="selected_publications" value="https://hal.science/hal-03863011v1">
+          <span class="checkbox-text">Transcripción automática del impreso antiguo</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2022_1">
+          <input type="checkbox" id="pub_2022_1" name="selected_publications" value="https://hal.science/hal-04101469v1">
+          <span class="checkbox-text">Síntesis y avances del proyecto ANR-D4R</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2022_2">
+          <input type="checkbox" id="pub_2022_2" name="selected_publications" value="https://hal.science/hal-03993560v1">
+          <span class="checkbox-text">Definición de conceptos. Reflexiones hacia la construcción de una Ontología del proyecto D4R</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2022_3">
+          <input type="checkbox" id="pub_2022_3" name="selected_publications" value="https://hal.science/hal-04101451v1">
+          <span class="checkbox-text">Líneas directrices TEI para la codificación de textos impresos y manuscritos en español del siglo XVI</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2022_4">
+          <input type="checkbox" id="pub_2022_4" name="selected_publications" value="https://hal.science/hal-04101445v1">
+          <span class="checkbox-text">Tecnologías de HTR aplicadas al proyecto ANR-D4R</span>
+        </label>
+        <label class="pub-checkbox-label" for="pub_2022_5">
+          <input type="checkbox" id="pub_2022_5" name="selected_publications" value="#">
+          <span class="checkbox-text">Transcripción automática de textos antiguos: del archivo al machine readable</span>
+        </label>
+      </div>
+      <div class="year-group">
+        <h3>2021</h3>
+        <label class="pub-checkbox-label" for="pub_2021_0">
+          <input type="checkbox" id="pub_2021_0" name="selected_publications" value="https://shs.hal.science/halshs-03408209v1">
+          <span class="checkbox-text">FAIRiser vos données : mémorandum</span>
+        </label>
+      </div>
+      <div class="year-group">
+        <h3>2016</h3>
+        <label class="pub-checkbox-label" for="pub_2016_0">
+          <input type="checkbox" id="pub_2016_0" name="selected_publications" value="#">
+          <span class="checkbox-text">Descolonizar la universidad: la influencia del neoliberalismo y algunos aportes a la educación para la paz</span>
+        </label>
+      </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit">Enviar Selección</button>
+    </form>
+  </div>
+
+  <script>
+    // Filtro dinámico en tiempo real
+    function filterPublications() {
+      const query = document.getElementById('pub-search').value.toLowerCase();
+      const labels = document.querySelectorAll('.pub-checkbox-label');
+      const groups = document.querySelectorAll('.year-group');
+
+      groups.forEach(group => {
+        let hasVisibleLabel = false;
+        const groupLabels = group.querySelectorAll('.pub-checkbox-label');
+        
+        groupLabels.forEach(label => {
+          const text = label.querySelector('.checkbox-text').textContent.toLowerCase();
+          if (text.includes(query)) {
+            label.style.display = 'flex';
+            hasVisibleLabel = true;
+          } else {
+            label.style.display = 'none';
+          }
+        });
+
+        // Ocultar el grupo del año si no contiene publicaciones coincidentes
+        const heading = group.querySelector('h3');
+        if (hasVisibleLabel) {
+          group.style.display = 'block';
+          if (heading) heading.style.display = 'block';
+        } else {
+          group.style.display = 'none';
+          if (heading) heading.style.display = 'none';
+        }
+      });
+    }
+
+    // Manejador del envío del formulario (ejemplo)
+    function handleSubmit(event) {
+      event.preventDefault();
+      const form = event.target;
+      const data = new FormData(form);
+      
+      const singlePub = data.get('single_publication');
+      const multiplePubs = data.getAll('selected_publications');
+      
+      console.log('Publicación Única Seleccionada:', singlePub);
+      console.log('Publicaciones Múltiples Seleccionadas:', multiplePubs);
+      
+      alert(
+        '¡Formulario enviado!\n\n' +
+        'Dropdown: ' + (singlePub || 'Ninguna') + '\n' +
+        'Seleccionadas en Checklist: ' + multiplePubs.length + ' publicaciones.'
+      );
+    }
+  </script>
+</body>
+</html>
